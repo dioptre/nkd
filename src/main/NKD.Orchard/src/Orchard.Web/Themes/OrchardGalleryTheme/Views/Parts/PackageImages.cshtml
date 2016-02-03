@@ -1,0 +1,59 @@
+﻿@{
+    var packageType = Model.PackageType.ToLower();
+    var usingDefaultIcon = false;
+
+    var iconUrl = @Model.IconUrl;
+    if (iconUrl == null || String.IsNullOrEmpty(iconUrl.ToString()))
+    {
+        usingDefaultIcon = true;
+        iconUrl = Href(String.Format("../../Content/Images/{0}DefaultIcon.png", packageType));
+    }
+}
+
+@if (Model.Screenshots.Count > 0)
+{
+    var firstScreenshot = Model.Screenshots[0];
+    var firstScreenshotUrl = firstScreenshot.StartsWith("/") ? Href(firstScreenshot) : firstScreenshot;
+    <div class="screenshot" id="screenshotDiv">
+        <img src="@firstScreenshotUrl" alt="@Model.Title" />
+    </div>
+<ul>
+    @for (var i = 0; i < Model.Screenshots.Count; i++)
+    {
+        var screenshotUrl = Model.Screenshots[i].StartsWith("/") ? Href(Model.Screenshots[i]) : Model.Screenshots[i];
+        <li>
+            <a href="@screenshotUrl">
+                <img src="@screenshotUrl" alt="Screenshot @((i + 1).ToString())" />
+            </a>
+        </li>
+    }
+    @if (!usingDefaultIcon)
+    {
+        <li class="list-icon">
+            <img src="@iconUrl" alt="@Model.Title" />
+        </li>
+    }
+</ul>
+}
+else {
+    <div class="packageLogo">
+        <img src="@iconUrl" alt="@Model.Title" />
+    </div>
+}
+
+@using (Script.Foot())
+{
+    <script type="text/javascript">
+    //<![CDATA[
+        $(document).ready(function () {
+            $("#thumbnails > ul > li > a").lightBox({
+                imageLoading: '@Href("../../Content/Images/lightbox-ico-loading.gif")',
+                imageBtnClose: '@Href("../../Content/Images/lightbox-btn-close.gif")',
+                imageBtnPrev: '@Href("../../Content/Images/lightbox-btn-prev.gif")',
+                imageBtnNext: '@Href("../../Content/Images/lightbox-btn-next.gif")',
+                imageBlank: '@Href("../../Content/Images/lightbox-blank.gif")'
+            });
+        });
+    //]]>
+    </script>
+}

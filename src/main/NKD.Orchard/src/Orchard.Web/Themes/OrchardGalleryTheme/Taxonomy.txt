@@ -1,0 +1,36 @@
+Module; Modules
+	Administration; administration
+	Blog; blog
+	Commerce; commerce
+	Community; community
+	Content; content
+	Developer; developer
+	Deployment; deployment
+	Command-line; command-line
+	Voting and Rating; voting-and-rating
+	Events and Calendar; events-and-calendar
+	Experimental; experimental
+	File Management; file-management
+	Games; games
+	Hosting; hosting
+	Location; location
+	Messaging and Mail; messaging-and-mail
+	Media; media
+	Mobile; mobile
+	Localization; localization
+	Performance; performance
+	Publishing; publishing
+	Reporting; reporting
+	Search; search
+	Security; security
+	SEO; seo
+	Site Navigation; site-navigation
+	Statistics; statistics
+	Syndication; syndication
+	Taxonomy; taxonomy
+	Themes; themes
+	Users; users
+	Utility; utility
+	Widgets; widgets
+	Typography; typography
+Theme; Themes

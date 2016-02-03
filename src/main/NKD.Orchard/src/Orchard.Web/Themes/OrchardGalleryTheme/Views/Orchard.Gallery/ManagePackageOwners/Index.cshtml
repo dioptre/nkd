@@ -1,0 +1,83 @@
+﻿@model Orchard.Gallery.ViewModels.ManagePackageOwnersViewModel
+@{
+    Style.Include("Gallery.css");
+    Style.Require("jQueryUI_Orchard");
+}
+<section>
+    <header>
+        <h2>Manage Owners for Package "@Model.PackageId"</h2>
+    </header>
+    <div id="form">
+        <div>
+            <label>Current Owners</label>
+            @if (@Model.OtherOwners != null && @Model.OtherOwners.Any()) {
+                <ul id="package-owner-list">
+                <li>
+                    @Model.OwnerViewingPage.UserName
+                </li>
+                @foreach (var owner in @Model.OtherOwners) {
+                <li>
+                    @owner.UserName <a href="#" onclick="RemoveOwnerFromPackage(@owner.Id, '@owner.UserName'); return false;" class="delete">Remove</a>
+                </li>
+                }
+            </ul>
+            } else {
+                <p>No other owners are associated with "@Model.PackageId".</p>
+            }
+        </div>
+    </div>
+    <div>
+        @using (Html.BeginFormAntiForgeryPost(Url.Action("AddNewOwner"), FormMethod.Post, new { id = "form" }))
+        {
+            @Html.HiddenFor(m => m.PackageId)
+            <div>
+                <label for="newOwnerUserName">Add New Owner</label>
+                <p>Enter an owner's username to add them as a package owner.</p>
+                <aside style="width:357px !important;">
+                    <p><strong>NOTE:</strong> All package owners have full control over their packages, including the ability to remove other users as owners.</p>
+                </aside>
+                <input type="text" id="newOwnerUserName" name="newOwnerUserName" class="long" />
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Add" />
+            </div>
+        }
+    </div>
+    <div id="removeUserConfirmationDialogDiv" title="Confirm Owner Removal">
+        <p>@T("Are you sure you wish to remove") "<span id="nameOfUserToRemoveSpan"></span>" @T("from this package?")</p>
+        @using (Html.BeginFormAntiForgeryPost(Url.Action("RemoveOwner"), FormMethod.Post))
+        {
+            @Html.HiddenFor(m => m.PackageId)
+            <input type="hidden" id="idOfUserToRemove" name="idOfUserToRemove" />
+            <input type="hidden" id="nameOfUserToRemove" name="nameOfUserToRemove" />
+            <input type="submit" value="Yes" />
+            <a href="#" onclick="CloseConfirmationDialogDiv(); return false;">No</a>
+        }
+    </div>
+    @using (Script.Foot())
+    {
+        Script.Require("jQueryUI_Core");
+        <script type="text/javascript">
+        //<![CDATA[
+            var $removeUserConfirmationDialogDiv = $('#removeUserConfirmationDialogDiv');
+            $(function () {
+                $removeUserConfirmationDialogDiv.dialog({ autoOpen: false, modal: true, resizable: false });
+            });
+
+            function RemoveOwnerFromPackage(idOfUserToRemove, nameOfUserToRemove) {
+                $('#idOfUserToRemove').val(idOfUserToRemove);
+                $('#nameOfUserToRemove').val(nameOfUserToRemove);
+                $('#nameOfUserToRemoveSpan').text(nameOfUserToRemove);
+                $removeUserConfirmationDialogDiv.dialog('open');
+                return false;
+            }
+
+            function CloseConfirmationDialogDiv() {
+                $removeUserConfirmationDialogDiv.dialog('close');
+                return false;
+            }
+        //]]>
+        </script>
+        Script.Include("gallery.form.js");
+    }
+</section>

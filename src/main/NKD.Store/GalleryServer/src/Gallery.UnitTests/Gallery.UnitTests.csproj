@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E46E6750-ED76-4CC8-A916-0647384CEEB0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gallery.UnitTests</RootNamespace>
+    <AssemblyName>Gallery.UnitTests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.1.10311.0\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Http, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Moq, Version=4.0.10827.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Moq\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Extensions.Logging, Version=2.1.0.16, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL" />
+    <Reference Include="nunit.framework, Version=2.5.7.10213, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.5.7.10213\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoMapper\AutoMapperBootstrapperTester.cs" />
+    <Compile Include="AutoMapper\AutoMapperTester.cs" />
+    <Compile Include="AutoMapper\PackageToPackageTester.cs" />
+    <Compile Include="AutoMapper\PackageToPublishedPackageTester.cs" />
+    <Compile Include="ConfigSettings\BasicPropertiesTester.cs" />
+    <Compile Include="ConfigSettings\ConfigSettingsTester.cs" />
+    <Compile Include="ConfigSettings\ConnectionStringSettingsTester.cs" />
+    <Compile Include="ConfigSettings\TryGetStringTester.cs" />
+    <Compile Include="FileNameHelpers\GetFileExtensionTester.cs" />
+    <Compile Include="HashEncodingType\FromNameTester.cs" />
+    <Compile Include="HashEncodingType\ToStringTester.cs" />
+    <Compile Include="IoC\RegisterTester.cs" />
+    <Compile Include="LatestVersionChecker\IsLatestVersionTester.cs" />
+    <Compile Include="LatestVersionUpdater\SetLatestVersionFlagsOfOtherPackagesWithSameIdTester.cs" />
+    <Compile Include="PackageCreator\CreatePackageTester.cs" />
+    <Compile Include="PackageDataAggregateUpdater\IncrementDownloadForPackageTester.cs" />
+    <Compile Include="PackageDataAggregateUpdater\PackageDataAggregateUpdaterTester.cs" />
+    <Compile Include="PackageDataAggregateUpdater\RecalculateTotalDownloadCountTester.cs" />
+    <Compile Include="PackageGetter\GetPackageTester.cs" />
+    <Compile Include="PackageIdValidator\IsValidPackageIdTester.cs" />
+    <Compile Include="PackageLogEntryCreator\CreateTester.cs" />
+    <Compile Include="PackageLogService\GetPackageLogEntriesAfterIdTester.cs" />
+    <Compile Include="DependencyStringFactory\CreateDependencyListAsStringTester.cs" />
+    <Compile Include="DependencyStringFactory\CreateDependencyStringTester.cs" />
+    <Compile Include="HashGetter\ConstructorTester.cs" />
+    <Compile Include="HashGetter\GetHashFromFileTester.cs" />
+    <Compile Include="PackageAuthenticatorService\RegisterPackageAuthenticatorTester.cs" />
+    <Compile Include="PackageAuthenticator\EnsureKeyCanAccessPackageTester.cs" />
+    <Compile Include="PackageAuthenticator\PackageTesterBase.cs" />
+    <Compile Include="PackageController\DownloadTester.cs" />
+    <Compile Include="PackageDeleter\DeletePackageTester.cs" />
+    <Compile Include="PackageDownloadCountIncrementer\IncrementTester.cs" />
+    <Compile Include="PackagePublishingService\PackagePublishingServiceTester.cs" />
+    <Compile Include="PackagePublishingService\RePublishTester.cs" />
+    <Compile Include="PackageService\GetUnfinishedTester.cs" />
+    <Compile Include="PackageUnpublisher\UnpublishPackageTester.cs" />
+    <Compile Include="PackagePublisher\PublishPackageTester.cs" />
+    <Compile Include="PackagePublishingService\UnpublishTester.cs" />
+    <Compile Include="PackagePublishingService\PublishTester.cs" />
+    <Compile Include="PackageRatingCalculator\GetAverageRatingTester.cs" />
+    <Compile Include="PackageRatingUpdater\GivenNoRatingsShould.cs" />
+    <Compile Include="PackageRatingUpdater\GivenPackageVersionRatingsShould.cs" />
+    <Compile Include="PackageRecommendedVersionManager\SetLatestVersionAsRecommendedTester.cs" />
+    <Compile Include="PackageReportAbuseUriCreator\CreateUriTester.cs" />
+    <Compile Include="PackageService\DeleteTester.cs" />
+    <Compile Include="PackageService\PackageServiceTester.cs" />
+    <Compile Include="PackageService\RatePackageTester.cs" />
+    <Compile Include="PackageService\UpdatePackageRatingsTester.cs" />
+    <Compile Include="PackageService\UpdateTester.cs" />
+    <Compile Include="PackageSlugCreator\CreateSlugTester.cs" />
+    <Compile Include="PackageUpdater\UpdateExistingPackageTester.cs" />
+    <Compile Include="GalleryUriValidator\IsValidUriTester.cs" />
+    <Compile Include="PackageUriValidator\ValidatePackageUrisTester.cs" />
+    <Compile Include="PackageVersionValidator\IsValidPackageVersionTester.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublishedPackageTests\IsPublishedTester.cs" />
+    <Compile Include="LatestVersionGetter\GetLatestVersionTester.cs" />
+    <Compile Include="RecommendedVersionSetter\SetAsRecommendedVersionTester.cs" />
+    <Compile Include="RepositoryBase\CreateTester.cs" />
+    <Compile Include="RepositoryBase\DeleteSingleTester.cs" />
+    <Compile Include="TestHelpers\FakeStringDbSet.cs" />
+    <Compile Include="RepositoryBase\RepositoryBaseTester.cs" />
+    <Compile Include="ServiceInputValidator\ServiceInputValidatorTester.cs" />
+    <Compile Include="TaskScheduler\ScheduleTaskTester.cs" />
+    <Compile Include="StringExtensions\AppendWithForwardSlashTester.cs" />
+    <Compile Include="TestHelpers\FakeStringRepository.cs" />
+    <Compile Include="ScreenshotDeleter\DeleteScreenshotTester.cs" />
+    <Compile Include="ScreenshotService\DeleteTester.cs" />
+    <Compile Include="ServiceBase\ExecuteActionTester.cs" />
+    <Compile Include="ServiceBase\ExecuteVoidActionTester.cs" />
+    <Compile Include="ServiceBase\FakeServiceBase.cs" />
+    <Compile Include="StringExtensions\NullifyEmptyTester.cs" />
+    <Compile Include="TestHelpers\ExceptionAssert.cs" />
+    <Compile Include="TestHelpers\FakeTaskScheduler.cs" />
+    <Compile Include="UnfinishedPackageGetter\GetUnfinishedPackagesTester.cs" />
+    <Compile Include="UserKeyValidator\IsValidUserKeyTester.cs" />
+    <Compile Include="WebFaultExceptionCreator\CreateWebFaultExceptionTester.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gallery.Core\Gallery.Core.csproj">
+      <Project>{0DA50B7F-F0F6-4B7F-884E-939D4DD3EE0A}</Project>
+      <Name>Gallery.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gallery.DependencyResolution\Gallery.DependencyResolution.csproj">
+      <Project>{7A59A99B-1710-468C-9501-CBD35568F94B}</Project>
+      <Name>Gallery.DependencyResolution</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gallery.Infrastructure\Gallery.Infrastructure.csproj">
+      <Project>{F23A69BE-2DC9-4608-9413-989437FFFAA8}</Project>
+      <Name>Gallery.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gallery.Server\Gallery.Server.csproj">
+      <Project>{6F49BD7D-D1C4-406A-B29D-74F52B4E3807}</Project>
+      <Name>Gallery.Server</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

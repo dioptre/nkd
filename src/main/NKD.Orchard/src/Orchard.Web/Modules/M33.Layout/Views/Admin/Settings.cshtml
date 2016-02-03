@@ -1,0 +1,60 @@
+﻿@model M33.Layout.ViewModels.Settings
+@using Orchard.Utility.Extensions;
+
+@{ 
+    Layout.Title = T("Theme Settings").ToString();
+    Style.Include("orchard-css-editor-admin.css");
+    Script.Require("jQuery");
+}
+
+@using (Html.BeginForm("Settings", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" })) { 
+
+    @Html.ValidationSummary()     
+
+    <fieldset>
+         <legend>Theme description</legend>
+        <div>
+            <span class="hint">@T("Theme.txt")</span>
+            @Html.TextArea("Description", new { style = "height:150px; width: 600px;" }) 
+        </div> 
+   </fieldset>
+    
+    <fieldset>
+        <legend>Placement</legend>
+        <div> 
+            <span class="hint">@T("Placement.info")</span>
+             @Html.TextArea("Placement", new { style = "height:300px; width: 600px;" }) 
+        </div>
+    </fieldset>
+    
+
+     <fieldset>
+         <legend>Theme preview image</legend>
+        <div>
+            <span class="hint">@T("Theme.png")</span>
+             <input id="ThemeImage" name="ThemeImage" type="file" value="@T("Browse")" size="64"/>
+        </div>
+  </fieldset>
+     <fieldset>
+      <legend>Theme Zone image</legend>
+         <div>
+            <span class="hint">@T("ThemeZonePreview.png")</span>
+            <input id="ThemeZoneImage" name="ThemeZoneImage" type="file" value="@T("Browse")" size="64"/>
+        </div>
+     </fieldset>
+    
+         <fieldset>
+      <legend>Additional theme file (.png)</legend>
+         <div>
+            <span class="hint">@T("ThemeExtended")</span>
+            <input id="ThemeExtended" name="ThemeExtended" type="file" value="@T("Browse")" size="64"/>
+        </div>
+     </fieldset>
+    
+     <fieldset>
+        <div>
+        <button class="primaryAction" type="submit">@T("Save")</button>
+        </div>
+         @Html.AntiForgeryTokenOrchard()
+    </fieldset>
+}

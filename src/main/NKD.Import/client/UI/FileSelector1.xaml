@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="NKD.Import.Client.UI.FileSelector1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="125"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="50"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="0" Name="labelFileChooser" Content="Select file:" HorizontalAlignment="Left" Margin="5,5,5,0" VerticalAlignment="Center"/>
+        <TextBox x:Name="SelectedInputFile" Grid.Column="1" HorizontalAlignment="Stretch" Height="23" Margin="5,5,5,0" Text="" VerticalAlignment="Center" />
+        <Button Grid.Column="2" Content="..."  HorizontalAlignment="Left" Margin="5,5,5,0" VerticalAlignment="Center" Width="25" ToolTip="Press to select a file from your system" Click="Button_Click_1"/>
+    </Grid>
+</UserControl>

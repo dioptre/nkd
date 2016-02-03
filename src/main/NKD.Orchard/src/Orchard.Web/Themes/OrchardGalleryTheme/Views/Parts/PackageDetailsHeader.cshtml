@@ -1,0 +1,40 @@
+﻿@{
+    //The HTML helpers can't take a dynamic value, so we need cast these to strings
+    string projectUrl = Model.ProjectUrl.ToString();
+    string licenseUrl = Model.LicenseUrl.ToString();
+    string reportAbuseUrl = Model.ReportAbuseUrl.ToString();
+}
+
+<header>
+    <div>
+        @if (Model.IsRecommendedVersion) {
+            <span class="isRecommended">@T("Recommended Version")</span>
+        } else if (!Model.IsPublished) {
+            <span class="isNotPublished">@T("This {0} is not published", Model.PackageType)</span>
+        } else {
+            <span class="isNotRecommended">@T("This is not the recommended version")</span>
+        }
+        <h2>@Model.Title - @Model.Version</h2>
+    </div>
+    <div>
+        @{
+            if (Model.AllowOwnerActions == true) {
+                @Display(Layout.Actions)
+            }
+        }
+        @Display(Layout.Authors)
+    </div>
+</header>
+<p>@(new HtmlString(((Html.Encode(Model.Description ?? "")).Replace("\n", "<br />"))))</p>
+<ul class="links">
+    @if (!string.IsNullOrWhiteSpace(projectUrl)) {
+        <li>@Html.Link("Project site", projectUrl, new { title = "Visit the project site to learn more about this package" })</li>
+    }
+    @if (!string.IsNullOrWhiteSpace(licenseUrl)) {
+        <li>@Html.Link("License", licenseUrl, new { title = "Make sure you agree with the license" })</li>
+    }
+    @if (!string.IsNullOrWhiteSpace(reportAbuseUrl)) {
+        <li>@Html.Link("Report Abuse", reportAbuseUrl, new { title = "Report Abuse" })</li>
+    }
+    <li>@Html.ActionLink("Contact Owners", "Index", "ContactOwners", new { area="Orchard.Gallery", packageId = Model.PackageID }, null)</li>
+</ul>

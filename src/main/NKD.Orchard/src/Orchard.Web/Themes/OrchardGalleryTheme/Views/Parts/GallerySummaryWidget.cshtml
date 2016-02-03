@@ -1,0 +1,14 @@
+﻿@{
+    string newPackageExclamation = Model.NewPackages > 0 ? "!" : "";
+    string totalDownloads = Model.TotalDownloads.ToString("N0");
+    string totalPackages = Model.TotalPackages.ToString("N0");
+    string uniquePackages = Model.UniquePackages.ToString("N0");
+}
+<div>
+  <ul>
+    <li>@totalDownloads <span>Total Downloads</span></li>
+    <li>@totalPackages <span>Total Packages</span></li>
+    <li>@uniquePackages <span>Unique Packages</span></li>
+    <li>@Model.NewPackages <span>Packages Added Today<text>@newPackageExclamation</text></span></li>
+  </ul>
+</div>

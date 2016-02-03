@@ -1,0 +1,14 @@
+﻿@using Orchard.ContentManagement;
+@{
+    var userCanRegister = @WorkContext.CurrentSite.As<Orchard.Users.Models.RegistrationSettingsPart>().UsersCanRegister;
+}
+
+<nav id="leftNav">
+    <img src="@Href("../Content/Images/userGraphic.png")" style="padding-left:70px"/>
+    <!-- <p>
+        @T("Please enter your username and password.") 
+    </p> -->
+    <p>
+        @if (userCanRegister) { @T("Don't have an account yet? ") @Html.ActionLink(T("Register now.").Text, "Register") }
+    </p>
+</nav>

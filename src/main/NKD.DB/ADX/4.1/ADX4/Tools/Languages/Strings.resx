@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="defBelowDetection" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="defNA" xml:space="preserve">
+    <value>n/a</value>
+  </data>
+  <data name="defOverRange" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="fldProcessingPathKey" xml:space="preserve">
+    <value>PATH</value>
+  </data>
+  <data name="fldSampleIdKey" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="valChainOfCustodySampleHasNoRef" xml:space="preserve">
+    <value>Chain of custody sample has not sample reference.</value>
+  </data>
+  <data name="valChainOfCustodySampleRefDoesNotExist" xml:space="preserve">
+    <value>Chain of custody sample [{0}] is not listed in the list of available samples.</value>
+  </data>
+  <data name="valMeasurementHasAnUnspecifiedStatus" xml:space="preserve">
+    <value>Measurement [{0}] has an unspecified status in an analysis for result [{1}].</value>
+  </data>
+  <data name="valNoAnalysisRecordMeasurementsSpecified" xml:space="preserve">
+    <value>No measurements are specified in an analysis record for the result [{0}].</value>
+  </data>
+  <data name="valNoAnalyteSpecified" xml:space="preserve">
+    <value>No analyte is specified for a measurement in result [{0}].</value>
+  </data>
+  <data name="valNoChainOfCustody" xml:space="preserve">
+    <value>No chain of custody section is defined in the ADX document.</value>
+  </data>
+  <data name="valNoChainOfCustodyBatch" xml:space="preserve">
+    <value>No chain of custody batchs are defined in the ADX document.</value>
+  </data>
+  <data name="valNoChainOfCustodyLabReceiveProcedure" xml:space="preserve">
+    <value>There is no ReceiveProcedure for the laboratory in the Chain Of Custody procedure.</value>
+  </data>
+  <data name="valNoChainOfCustodyLabReceiveSamples" xml:space="preserve">
+    <value>There are no list of samples received by the laboratory in the Chain Of Custody section.</value>
+  </data>
+  <data name="valNoHeader" xml:space="preserve">
+    <value>No header section is defined in the ADX document.</value>
+  </data>
+  <data name="valNoHeaderAnalyticalReport" xml:space="preserve">
+    <value>No analytical report section is defined in the ADX header.</value>
+  </data>
+  <data name="valNoHeaderAnalyticalReportLabJobNo" xml:space="preserve">
+    <value>No lab job number is defined for the analytical report.</value>
+  </data>
+  <data name="valNoHeaderAnalyticalReportStatus" xml:space="preserve">
+    <value>There is an unspecified status for the analytical report.</value>
+  </data>
+  <data name="valNoHeaderDespatch" xml:space="preserve">
+    <value>No despatch section is defined in the ADX header.</value>
+  </data>
+  <data name="valNoHeaderDespatchSpecified" xml:space="preserve">
+    <value>The despatch is not specified.</value>
+  </data>
+  <data name="valNoHeaderLaboratory" xml:space="preserve">
+    <value>No laboratory section is defined in the ADX header.</value>
+  </data>
+  <data name="valNoHeaderLaboratoryLocationRef" xml:space="preserve">
+    <value>No location reference is defined for the laboratory.</value>
+  </data>
+  <data name="valNoHeaderSamplesOwner" xml:space="preserve">
+    <value>No samples owner section is defined in the ADX header.</value>
+  </data>
+  <data name="valNoHeaderSamplesOwnerLocationRef" xml:space="preserve">
+    <value>No location reference is defined for the samples owner.</value>
+  </data>
+  <data name="valNoHeaderSamplesOwnerProject" xml:space="preserve">
+    <value>No project is defined for the samples owner.</value>
+  </data>
+  <data name="valNoIdForProcessingGroup" xml:space="preserve">
+    <value>A processing group has an invalid, missing or empty identifier.</value>
+  </data>
+  <data name="valNoMeasurementNumberValue" xml:space="preserve">
+    <value>Measurement [{0} does not have a numeric value [{1}] in an analysis for result [{2}].</value>
+  </data>
+  <data name="valNoMeasurementProcedureRef" xml:space="preserve">
+    <value>Measurement [{0}] does not have a procedure reference specified in an analysis for result [{1}].</value>
+  </data>
+  <data name="valNoMeasurementValue" xml:space="preserve">
+    <value>Measurement [{0}] does not have a value in an analysis for result [{1}].</value>
+  </data>
+  <data name="valNoMeasurementValueUOM" xml:space="preserve">
+    <value>Measurement [{0}] does not have a units of measure (UOM) specified in an analysis for result [{1}].</value>
+  </data>
+  <data name="valNoResultProcessingHistory" xml:space="preserve">
+    <value>No processing history is defined for result [{0}].</value>
+  </data>
+  <data name="valNoResults" xml:space="preserve">
+    <value>No results section is defined in the ADX document.</value>
+  </data>
+  <data name="valNoResultsProcessingGroups" xml:space="preserve">
+    <value>No processing groups are defined in the results section.</value>
+  </data>
+  <data name="valNoResultsResult" xml:space="preserve">
+    <value>No results are defined in the processing group [{0}].</value>
+  </data>
+  <data name="valNoSampleRefDefinedForResult" xml:space="preserve">
+    <value>There is a result with no sample references defined.</value>
+  </data>
+  <data name="valNoSamples" xml:space="preserve">
+    <value>No samples section is defined in the ADX document.</value>
+  </data>
+  <data name="valNoSamplesListed" xml:space="preserve">
+    <value>No samples are listed in the ADX document.</value>
+  </data>
+  <data name="valNoStrictAnalyteSpecified" xml:space="preserve">
+    <value>The analyte [{0}] is not recommended. Review the list of recommended analytes for a possible alternative.</value>
+  </data>
+  <data name="valNoStrictUOMSpecified" xml:space="preserve">
+    <value>The unit of measure [{0}] is not recommended. Review the list of recommended units of measure for a possible alternative.</value>
+  </data>
+  <data name="valRefMatHasAnUnspecifiedCategory" xml:space="preserve">
+    <value>Reference material [{0}] has an unspecified category.</value>
+  </data>
+  <data name="valResultInvalidMaterialTarget" xml:space="preserve">
+    <value>Invalid material target [{0}].</value>
+  </data>
+  <data name="valResultNoParentProcessingPath" xml:space="preserve">
+    <value>Multiple processing groups are included, however no parent processing path is defined on a result for sample [{0}] in processing group [{1}].</value>
+  </data>
+  <data name="valResultNoProcessingHistoryDefined" xml:space="preserve">
+    <value>No processing history is defined on a result for sample [{0}].</value>
+  </data>
+  <data name="valResultPathNotFoundInProcessingHistory" xml:space="preserve">
+    <value>The Processing Path [{0}] is invalid since it was not found in the associated Processing History for sample {1}.</value>
+  </data>
+  <data name="valSampleExistsWithNoId" xml:space="preserve">
+    <value>There is a sample with an invalid, missing or empty identifier.</value>
+  </data>
+  <data name="valSampleExistsWithNoType" xml:space="preserve">
+    <value>Sample [{0}] has an invalid, missing or empty type.</value>
+  </data>
+  <data name="valSampleHasAnUnspecifiedStatus" xml:space="preserve">
+    <value>Sample [{0}] has an unspecified status.</value>
+  </data>
+  <data name="valSampleNotReceivedByLaboratory" xml:space="preserve">
+    <value>According to the Chain Of Custody, Sample [{0}] was not received by the laboratory. </value>
+  </data>
+  <data name="valSamplePotentialQAQCListedAsSample" xml:space="preserve">
+    <value>A QA/QC sample [{0}] is potentially listed as a normal sample. If so then this should be listed as either Reference Material or derived from another sample via a Processing Path.</value>
+  </data>
+  <data name="valUnknownResultSampleRef" xml:space="preserve">
+    <value>Result sample reference, [{0}], is not listed in the Samples section.</value>
+  </data>
+</root>

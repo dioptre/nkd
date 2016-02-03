@@ -1,0 +1,7 @@
+Name: Metro
+Author: BIND
+Description: Custom Theme by BIND
+Version: 2.0.9.0
+Tags: business, cms, modern, bindtuning
+Website: http://www.bind.pt
+Zones: Header, Navigation, Featured, BeforeMain, AsideFirst, Messages, BeforeContent, Content, AfterContent, AsideSecond, AfterMain, TripelFirst, TripelSecond, TripelThird, FooterQuadFirst, FooterQuadSecond, FooterQuadThird, FooterQuadFourth, Footer

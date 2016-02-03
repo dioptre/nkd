@@ -1,0 +1,50 @@
+﻿@model M33.Layout.ViewModels.FileViewModel
+@using Orchard.Utility.Extensions;
+@using M33.Layout.ViewModels;
+
+@{ 
+    Layout.Title = T("Razor view Editor").ToString();
+
+    Style.Include("orchard-css-editor-admin.css");
+    Style.Include("CodeMirror/codemirror.css");
+    Style.Include("CodeMirror/default.css");
+    
+    Script.Require("jQuery");
+    Script.Include("CodeMirror/codemirror.js");
+    Style.Include("CodeMirror/codemirror.css");
+    Script.Include("CodeMirror/razor.js");
+    Style.Include("CodeMirror/razor.css");
+    Script.Include("CodeMirror/javascript.js");
+    Style.Include("CodeMirror/javascript.css");
+    Script.Include("CodeMirror/css.js");
+    Style.Include("CodeMirror/css.css");
+    Script.Include("CodeMirror/htmlmixed.js");
+    
+    Script.Include("StateHandler.js");
+    
+    string FileName = string.Empty;
+}
+
+@using (Html.BeginFormAntiForgeryPost())
+{
+    @Html.ValidationSummary()
+    <fieldset>
+        <legend>@T("Select view")</legend>
+        <select id="FileName" name="FileName" onchange="LoadFile('razor');" size="1" style="width: 300px">
+            @foreach (var layer in Model.Files)            {
+                @Html.SelectOption(layer.Path, layer.Current, layer.Name)
+            }
+        </select> @Html.ActionLink("Create new", "Add")
+    </fieldset>
+
+    <fieldset>
+        <div> 
+            <span class="hint">@T("Content")</span>
+            @Html.TextArea("Content", Model.Content, new { style = "height: 500px;" })
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <button class="primaryAction" id="smb" name="submit" value="@T("Save")" onclick="Save('razor');" type="button">@T("Save")</button>
+    </fieldset>    
+}

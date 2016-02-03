@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Orchard.Gallery.Models.ViewModels.SimplePackage>
+
+@{
+    Style.Require("jQueryUI_Orchard");
+    WorkContext.Layout.AfterContent.Add(New.Partial(TemplateName: "ConfirmPackageDelete"));
+    WorkContext.Layout.AsideFirst.Add(New.UnfinishedPackagesSidebar());
+}
+
+<section>
+    <header>
+        <h2>Manage My Unfinished Submissions</h2>
+        <p>There was a problem during the submission process that prevented the contribution(s) below from being finished. <br />
+        <strong>Simply edit and save each one</strong> to fix and finish them.</p>
+    </header>
+    @if (Model.Any()) {
+        <div id="versionHistory">
+        <table cellpadding="0" cellspacing="0">
+            <thead class="header">
+                <tr>
+                    <th>Title</th>
+                    <th>Package ID</th>
+                    <th>Version</th>
+                    <th class="ownerActions">Actions</th>
+                </tr>
+            </thead>
+        @foreach (var package in Model) {
+            <tr class="current">
+                <td class="warning"><a href="@Url.Action("Edit", "Package", new { packageId = @package.PackageId, packageVersion = @package.PackageVersion })"
+                        title="Edit">@package.Title</a></td>
+                <td><a href="@Url.Action("Edit", "Package", new { packageId = @package.PackageId, packageVersion = @package.PackageVersion })"
+                        title="Edit">@package.PackageId</a></td>
+                <td><a href="@Url.Action("Edit", "Package", new { packageId = @package.PackageId, packageVersion = @package.PackageVersion })"
+                        title="Edit">@package.PackageVersion</a></td>
+                <td class="ownerActions">
+                    <ul>
+                        <li>
+                            <a href="@Url.Action("Edit", "Package", new { packageId = @package.PackageId, packageVersion = @package.PackageVersion })"
+                                title="Edit">
+                                <img src="@Href("../../../Content/Images/editIcon.png")" alt="Edit" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Delete" class="deletePackageLink" data-package-id="@package.PackageId"
+                                data-package-version="@package.PackageVersion" data-should-redirect="@true">
+                                <img src="@Href("../../../Content/Images/trash.png")" alt="Delete" />
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        }
+    </table>
+    </div>
+    } else {
+    <p>You do not currently own any unfinished packages.</p>
+    }
+</section>

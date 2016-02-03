@@ -1,0 +1,18 @@
+﻿@if (Model.AllowOwnerActions) {
+    <ul>
+        <li>@Html.ActionLink("Edit", "Edit", "Package", new { packageId = @Model.PackageID, packageVersion = @Model.PackageVersion }, new { @class = "edit" })</li>
+        <li>@Html.ActionLink("Manage Owners", "Index", "ManagePackageOwners", new { packageId = @Model.PackageID }, new { @class = "manage-owners" })</li>
+        <li><a href="#" onclick="DeletePackage('@Model.PackageID', '@Model.PackageVersion'); return false;" class="delete">Delete</a></li>
+        <li>
+            @if (Model.IsPublished) {
+                <a href="#" title="Unpublish" class="unpublishPackageLink" data-package-id="@Model.PackageID" data-package-version="@Model.PackageVersion">
+                    Unpublish
+                </a>
+            }
+            else
+            {
+                @Html.ActionLink("Publish", "Publish", new { area = "Orchard.Gallery", packageId = Model.PackageID, packageVersion = Model.PackageVersion }, new { @class = "publishPackageLink" })
+            }
+        </li>
+    </ul>
+}

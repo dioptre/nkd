@@ -1,0 +1,22 @@
+<appSettings>
+  <add key="RelativePackageDirectory" value="App_Data\Packages" />
+  <add key="RelativeTemporaryDirectory" value="App_Data\Packages\Temp" />
+  <add key="RelativeAssemblyDirectory" value="bin" />
+  <add key="RelativePluginAssemblyDirectory" value="bin" />
+  <add key="FrontEndWebSiteRoot" value="http://localhost:30320" />
+  <add key="ValidatePackageKeyUri" value="OrchardLocal/PackageAuthentication/ValidatePackageKey" />
+  <add key="AuthorizePackageIdsUri" value="OrchardLocal/PackageAuthentication/AuthorizePackageIds" />
+  <add key="AuthorizeRatingsUri" value="OrchardLocal/Ratings/AuthorizeUpdate" />
+  <add key="ReportAbuseUriTemplate" value="OrchardLocal/Package/ReportAbuse/{PackageId}/{PackageVersion}" />
+  <add key="HashAlgorithm" value="SHA512" />
+  <add key="AuthenticatePackageRequests" value="true" />
+  <add key="ExternalPackageRequestTimeout" value="10000" /> <!-- Milliseconds -->
+  <add key="HashEncodingType" value="Base64" />
+  <add key="MigratorProvider" value="SqlServerCe" /> <!-- Values: SqlServerCe, SqlServer -->
+
+  <add key="GalleryDetailsUriTemplate" value="OrchardLocal/List/{PackageTypeSlug}/{PackageId}/{PackageVersion}" />
+  <add key="GalleryModuleSlug" value="Modules" />
+  <add key="GalleryThemeSlug" value="Themes" />
+  <add key="MaxPackageLogEntryRecordCount" value="50" />
+  <!--<add key="GalleryPackageSlug" value ="Packages" />-->
+</appSettings>

@@ -1,0 +1,13 @@
+﻿@{
+    string numberOfReviews = string.Format("{0} {1}", Model.TotalNumberOfReviews, LocalizerExtensions.Plural(T, "Review", "Reviews", Model.TotalNumberOfReviews));
+
+    string reviewsLink = Url.Action("DetailsForId", "Package", new { area="Orchard.Gallery", packageType = Model.PackageType, packageId = Model.PackageID });
+}
+@if (Model.TotalNumberOfReviews > 0)
+{
+<a href="@reviewsLink#Reviews">@numberOfReviews</a>
+}
+else
+{
+    @numberOfReviews
+}

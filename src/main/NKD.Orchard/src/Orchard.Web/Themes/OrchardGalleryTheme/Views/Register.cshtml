@@ -1,0 +1,84 @@
+﻿@using Orchard.Gallery.HtmlHelpers;
+@{
+    Script.Include("jquery.validate.min.js");
+    Script.Include("jquery.validate.unobtrusive.min.js");
+}
+
+@{ WorkContext.Layout.AsideFirst.Add(New.RegisterSidebar()); }
+
+<section>
+    <header>
+        <span class="right"><img src="@Href("../Content/Images/required.png")"/></span>
+        <h2>Create A New Account</h2>
+    </header>
+    @{
+        HtmlHelper.UnobtrusiveJavaScriptEnabled = true;
+        Html.EnableClientValidation();
+    }
+    @if (!string.IsNullOrWhiteSpace(Html.ValidationMessage("userExists") == null ? null as string : Html.ValidationMessage("userExists").ToString()))
+    {
+        <div class="validation-summary-errors">@Html.ValidationMessage("userExists")</div>
+    }
+    @using (Html.BeginFormAntiForgeryPost(Html.ViewContext.HttpContext.Request.Url.PathAndQuery, FormMethod.Post, new { id = "form" }))
+    {
+        <div class="@Html.InvalidClass("username")">
+            <label for="username">@T("Username")</label>
+            <aside>
+                <p>@Html.ValidationMessage("username") Choose something unique so others will know which contributions are yours.</p>
+            </aside>
+            @Html.TextBox("username", "", new Dictionary<string, object>{
+                {"class", "required"}, {"data-val-required", T("You must specify a username.")}, {"data-val", "true"}
+            })
+        </div>
+        <div class="@Html.InvalidClass("email")">
+            <label for="email">@T("Email")</label>
+            <aside>
+                <p>@Html.ValidationMessage("email") Your email will not be public. It is required to verify your registration and for password retrieval, important notifications, etc.</p>
+            </aside>
+            @Html.TextBox("email", "", new Dictionary<string, object>{
+                {"class", "required"}, {"data-val", "true"},
+                {"data-val-required", T("You must specify an email address.")}
+            })
+        </div>
+       var passwordAttributes = new Dictionary<string, object> {
+            {"class", "required"},
+            {"data-val-length", T("This password is not long enough.")},
+            {"data-val-length-max", 64},
+            {"data-val-length-min", 6},
+            {"data-val-required", T("You must specify a password.")},
+            {"data-val", "true"}
+        };
+        <div class="@Html.InvalidClass("password")">
+            <label for="password">@T("Password")</label>
+            <aside>
+                <p>@Html.ValidationMessage("password")  Passwords must be at least 7 characters long.</p>
+            </aside>
+            @{
+              var passwordValidation = new Dictionary<string, object>{
+                    { "class", "required" },
+                    { "data-val", true },
+                    { "data-val-required", T("This field is required.") },
+                    { "data-val-length", T("You must specify a password of 7 or more characters.") },
+                    { "data-val-length-min", 7 },
+                    { "data-val-length-max", 64 }
+                };
+            }
+            @Html.Password("password", "", passwordValidation)
+        </div>
+        <div class="@Html.InvalidClass("confirmPassword")">
+            <label for="confirmPassword">@T("Confirm password")</label>
+            <aside>
+                <p>@Html.ValidationMessage("confirmPassword") Please reenter your password and ensure that it matches the one above.</p>
+            </aside>
+            @Html.Password("confirmPassword", "", passwordValidation)
+        </div>
+        <div>
+            <button type="submit" name="Register">@T("Register")</button>
+        </div>
+    }
+</section>
+
+@using (Script.Foot())
+{
+    Script.Include("gallery.form.js");
+}

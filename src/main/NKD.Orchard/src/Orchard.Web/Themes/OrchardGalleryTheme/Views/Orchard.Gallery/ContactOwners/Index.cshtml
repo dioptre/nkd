@@ -1,0 +1,54 @@
+﻿@using Orchard.Gallery.HtmlHelpers;
+@model Orchard.Gallery.ViewModels.ContactOwnersViewModel
+
+@{
+    Script.Include("jquery.validate.min.js");
+    Script.Include("jquery.validate.unobtrusive.min.js");
+}
+@{ WorkContext.Layout.AsideFirst.Add(New.SendMessageSidebar()); }
+
+<section>
+ @if (Model.IsEnabled)
+ {
+    string ownerList = "";
+    HtmlHelper.UnobtrusiveJavaScriptEnabled = true;
+    Html.EnableClientValidation();
+    <header>
+        <h2>Contact Owners</h2>
+    </header>
+        <p>Use this form to contact the owners of <strong>"@Model.PackageId"</strong>. By submitting this form, you agree to disclose your email address to the package owners listed below.</p>
+        foreach (var owner in Model.Owners) {
+            ownerList += string.Format("<strong>{0}</strong>, ", owner);
+        }
+        ownerList = ownerList.Trim().TrimEnd(',');
+        <div id="form">
+             @using (Html.BeginFormAntiForgeryPost(Url.Action("ContactOwners"), FormMethod.Post, new { id = "contactOwnersForm" }))
+             {
+            <label style="padding-left:20px;">To: @Html.Raw(ownerList)</label>
+            <div class="@Html.InvalidClass("reportBody")">
+                <label for="reportBody">Message:</label>
+                @Html.HiddenFor(m => m.PackageId)
+                @Html.HiddenFor(m => m.UrlReferrer)
+                <aside style="width: 160px;">
+                    <p>@Html.ValidationMessage("reportBody") Send a message to the owners of this package.</p>
+                </aside>
+                @{
+                  string reportBody = TempData["ReportBody"] != null ? TempData["ReportBody"].ToString() : "";
+                }
+                @Html.TextArea("reportBody", reportBody, new Dictionary<string, object>{
+                    {"class", "long required"}, {"data-val-required", T("You must enter a message to send to the owners.")},
+                    {"data-val-length-max", 4000}, {"data-val-length", T("Your message must be no longer than 4,000 characters.")},
+                    {"data-val", "true"}, {"rows","5"}
+                })
+            </div>
+            <br />
+            <input id="contactOwnersButton" type="button" value="@T("Submit")" singleClickButton="true" />
+             }
+    </div>
+ }
+</section>
+
+ @using (Script.Foot()) {
+    Script.Include("gallery.form.js");
+    Script.Include("singleClickButton.js");
+}

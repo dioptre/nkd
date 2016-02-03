@@ -1,0 +1,19 @@
+syntax: glob
+bin
+Bin
+obj
+Obj
+ClientBin
+_ReSharper.*
+*.suo
+*.user
+*.pptx
+App_Data
+Packages
+glob:*TestResults.xml
+glob:*.sdf
+glob:*.orig
+glob:GalleryServer/src/Gallery.Server/*s.config
+glob:GalleryServer/src/Gallery.IntegrationTests/*s.config
+glob:Logs
+glob:TestResults

@@ -1,0 +1,15 @@
+publish
+*.licx
+backup
+Thumbs.db
+UnusableNodes*.xml
+*Andrew*
+*.user*
+*bin/
+*obj/
+*.suo
+*.dll
+*.exe
+*.user
+packages/
+temp/

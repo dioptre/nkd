@@ -1,0 +1,119 @@
+﻿@using Orchard.Mvc.Html;
+@model Orchard.Gallery.ViewModels.SearchViewModel
+
+@using (Script.Foot())
+{
+    <script type="text/javascript">
+    //<![CDATA[
+        // http://www.west-wind.com/Weblog/posts/517320.aspx
+        $.fn.makeAbsolute = function (rebase) {
+            return this.each(function () {
+                var el = $(this);
+                var pos = el.position();
+                el.css({ position: "absolute",
+                    marginLeft: 0, marginTop: 0,
+                    top: pos.top, left: pos.left
+                });
+                if (rebase)
+                    el.remove().appendTo("body");
+            });
+        }
+        $(document).ready(function () {
+            var packageType = "@Model.PackageType";
+            var searchPlaceholder = "Search " + packageType;
+            $("#searchTerm").focus(function () {
+                if (this.value === searchPlaceholder) {
+                    this.value = '';
+                };
+            });
+            $("#searchTerm").blur(function () {
+                if (this.value === '') {
+                    this.value = searchPlaceholder;
+                };
+            });
+            $("#search").closest("form").submit(function () {
+                var searchTerm = $("#searchTerm").val();
+                if (searchTerm === searchPlaceholder) {
+                    $("#searchTerm").val("");
+                }
+                return true;
+            });
+
+            function hideDropDown() {
+                $(document).unbind(".dropdown");
+                $(".search-category").unbind(".dropdown");
+
+                $("#drop-down").slideUp();
+                $(".search-category").bind("click.dropdown", showDropDown);
+
+                return false;
+            }
+
+            function showDropDown() {
+                $(document).unbind(".dropdown");
+                $(".search-category").unbind(".dropdown");
+
+                $("#drop-down").slideDown();
+                $(document).bind("click.dropdown", hideDropDown);
+
+                return false;
+            }
+
+            $("#sortOrder").change(function () { $(this).closest("form").submit(); });
+            $("#pageSize").change(function () { $(this).closest("form").submit(); });
+
+            $(".search-category").bind("click.dropdown", showDropDown);
+            $("#drop-down a").bind("click.dropdown", function (e) {
+                e.stopPropagation();
+                $(this).closest("ul").find("li").removeClass("current");
+                $(this).closest("li").addClass("current");
+                var value = $(this).text();
+                $("#searchCategory").val(value);
+                $("a.search-category span").text(value);
+                hideDropDown();
+                return false;
+            });
+        });
+    //]]>
+    </script>
+}
+
+@using (Html.BeginForm("Search", "Packages", new { area = "Orchard.Gallery" }, FormMethod.Get))
+{
+    <input type="hidden" name="packageType" id="packageType" value="@Model.PackageType" />
+    <div id="search">
+        <div>
+            <input type="hidden" name="searchCategory" id="searchCategory" value="@Model.SelectedCategory" />
+            <input type="text" name="searchTerm" id="searchTerm" value="@Model.SearchTerm" />
+            <a href="" class="search-category"><span>@Model.SelectedCategory</span></a>
+            <ul id="drop-down">
+                @foreach (var category in Model.Categories)
+                {
+                    string itemClass = category == Model.SelectedCategory ? "current" : "";
+                    <li class="@itemClass"><a href="">@category</a></li>
+                }
+            </ul>
+        </div>
+        <input type="submit" value=" "/>
+    </div>
+    <div id="sort">
+        <label>Sort</label>
+        <select name="sortOrder" id="sortOrder">
+            @{ string sortOrder = (TempData["SortOrder"] ?? "").ToString(); }
+            @Html.SelectOption("package-title", sortOrder == "package-title", "A-Z")
+            @Html.SelectOption("package-rating", sortOrder == "package-rating", "Highest Rated")
+            @Html.SelectOption("package-download-count", sortOrder == "package-download-count", "Most Popular")
+            @Html.SelectOption("package-created", sortOrder == "package-created", "Newest")
+            @Html.SelectOption("sort-by-relevance", sortOrder == "sort-by-relevance", "Relevance")
+        </select>
+        <label>Show</label>
+        <select name="pageSize" id="pageSize">
+            @{ string pageSize = (TempData["PageSize"] ?? "").ToString(); int all = int.MaxValue; }
+            @Html.SelectOption("5", pageSize == "5", "5 per page")
+            @Html.SelectOption("10", pageSize == "10", "10 per page")
+            @Html.SelectOption("15", pageSize == "15", "15 per page")
+            @Html.SelectOption("25", pageSize == "25", "25 per page")
+            @Html.SelectOption("50", pageSize == "50", "50 per page")
+        </select>
+    </div>
+}

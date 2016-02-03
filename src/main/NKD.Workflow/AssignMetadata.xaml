@@ -1,0 +1,191 @@
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="NKD.Workflow.AssignMetadata" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="NKD.Workflow.UpdateMetadata_1"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:local="clr-namespace:NKD.Workflow"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Text</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Activities.Presentation</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.DurableInstancing</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NKD.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <StateMachine sap2010:WorkflowViewState.IdRef="StateMachine_1">
+    <StateMachine.InitialState>
+      <State x:Name="__ReferenceID0" DisplayName="UpdateMetadata" sap2010:WorkflowViewState.IdRef="State_2">
+        <State.Transitions>
+          <Transition DisplayName="T1" sap2010:WorkflowViewState.IdRef="Transition_1">
+            <Transition.Trigger>
+              <local:SubmitMetadata BookmarkName="SubmitMetadata" sap2010:WorkflowViewState.IdRef="SubmitMetadata_1">
+                <local:SubmitMetadata.SubmittedCompanyID>
+                  <OutArgument x:TypeArguments="x:String">
+                    <mca:CSharpReference x:TypeArguments="x:String">ResponsibleCompanyID</mca:CSharpReference>
+                  </OutArgument>
+                </local:SubmitMetadata.SubmittedCompanyID>
+                <local:SubmitMetadata.SubmittedContactID>
+                  <OutArgument x:TypeArguments="x:String">
+                    <mca:CSharpReference x:TypeArguments="x:String">ResponsibleContactID</mca:CSharpReference>
+                  </OutArgument>
+                </local:SubmitMetadata.SubmittedContactID>
+                <local:SubmitMetadata.SubmittedIsCompleted>
+                  <OutArgument x:TypeArguments="x:String">
+                    <mca:CSharpReference x:TypeArguments="x:String">IsCompleted</mca:CSharpReference>
+                  </OutArgument>
+                </local:SubmitMetadata.SubmittedIsCompleted>
+                <local:SubmitMetadata.SubmittedRecordState>
+                  <OutArgument x:TypeArguments="x:String">
+                    <mca:CSharpReference x:TypeArguments="x:String">RecordState</mca:CSharpReference>
+                  </OutArgument>
+                </local:SubmitMetadata.SubmittedRecordState>
+                <local:SubmitMetadata.SubmittedReferenceClass>
+                  <OutArgument x:TypeArguments="x:String">
+                    <mca:CSharpReference x:TypeArguments="x:String">ReferenceClass</mca:CSharpReference>
+                  </OutArgument>
+                </local:SubmitMetadata.SubmittedReferenceClass>
+                <local:SubmitMetadata.SubmittedReferenceID>
+                  <OutArgument x:TypeArguments="x:String">
+                    <mca:CSharpReference x:TypeArguments="x:String">ReferenceID</mca:CSharpReference>
+                  </OutArgument>
+                </local:SubmitMetadata.SubmittedReferenceID>
+                <local:SubmitMetadata.SubmittedReferenceTable>
+                  <OutArgument x:TypeArguments="x:String">
+                    <mca:CSharpReference x:TypeArguments="x:String">ReferenceTable</mca:CSharpReference>
+                  </OutArgument>
+                </local:SubmitMetadata.SubmittedReferenceTable>
+              </local:SubmitMetadata>
+            </Transition.Trigger>
+            <Transition.To>
+              <x:Reference>__ReferenceID0</x:Reference>
+            </Transition.To>
+            <Transition.Action>
+              <Persist sap2010:WorkflowViewState.IdRef="Persist_1" />
+            </Transition.Action>
+          </Transition>
+          <Transition DisplayName="T2" sap2010:WorkflowViewState.IdRef="Transition_2">
+            <Transition.Trigger>
+              <local:SubmitMetadata SubmittedIsCompleted="{x:Null}" SubmittedRecordState="{x:Null}" SubmittedReferenceClass="{x:Null}" SubmittedReferenceID="{x:Null}" SubmittedReferenceTable="{x:Null}" BookmarkName="SignOff" sap2010:WorkflowViewState.IdRef="SubmitMetadata_2">
+                <local:SubmitMetadata.SubmittedCompanyID>
+                  <OutArgument x:TypeArguments="x:String">
+                    <mca:CSharpReference x:TypeArguments="x:String">ResponsibleCompanyID</mca:CSharpReference>
+                  </OutArgument>
+                </local:SubmitMetadata.SubmittedCompanyID>
+                <local:SubmitMetadata.SubmittedContactID>
+                  <OutArgument x:TypeArguments="x:String">
+                    <mca:CSharpReference x:TypeArguments="x:String">ResponsibleContactID</mca:CSharpReference>
+                  </OutArgument>
+                </local:SubmitMetadata.SubmittedContactID>
+              </local:SubmitMetadata>
+            </Transition.Trigger>
+            <Transition.To>
+              <State x:Name="__ReferenceID1" DisplayName="FinalState" sap2010:WorkflowViewState.IdRef="State_1" IsFinal="True" />
+            </Transition.To>
+            <Transition.Action>
+              <Persist sap2010:WorkflowViewState.IdRef="Persist_2" />
+            </Transition.Action>
+          </Transition>
+        </State.Transitions>
+      </State>
+    </StateMachine.InitialState>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
+    <StateMachine.Variables>
+      <Variable x:TypeArguments="x:String" Name="IsCompleted" />
+      <Variable x:TypeArguments="x:String" Name="ReferenceID" />
+      <Variable x:TypeArguments="x:String" Name="ReferenceClass" />
+      <Variable x:TypeArguments="x:String" Name="ReferenceTable" />
+      <Variable x:TypeArguments="x:String" Name="ResponsibleContactID" />
+      <Variable x:TypeArguments="x:String" Name="ResponsibleCompanyID" />
+      <Variable x:TypeArguments="x:String" Name="RecordState" />
+    </StateMachine.Variables>
+    <sads:DebugSymbol.Symbol>d0FDOlxleHBlZGl0XHByb2plY3RzXG5rZFxzcmNcbWFpblxOS0QuV29ya2Zsb3dcQXNzaWduTWV0YWRhdGEueGFtbBIsA4QBEgIBAS4Hdg8CAQRvD2+CAQIBAjIPViYCARpcD1xGAgEZYQ9sJgIBB3IPckYCAQYyMjJCAgFTUxVTaQIBSz8VP2YCAUNOFU5mAgE7OhU6bwIBMzUVNW8CAStEFURmAgEjSRVJaQIBG2HYAWHhAQIBGGkVaW8CARBkFWRvAgEI</sads:DebugSymbol.Symbol>
+  </StateMachine>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="SubmitMetadata_1" sap:VirtualizedContainerService.HintSize="200,22" />
+      <sap2010:ViewStateData Id="Persist_1" sap:VirtualizedContainerService.HintSize="200,22" />
+      <sap2010:ViewStateData Id="Transition_1" sap:VirtualizedContainerService.HintSize="430,507">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:PointCollection x:Key="ConnectorLocation">286.5,293.5 286.5,323.5 183,323.5 183,242.2 213,242.2</av:PointCollection>
+            <x:Int32 x:Key="SrcConnectionPointIndex">39</x:Int32>
+            <x:Int32 x:Key="DestConnectionPointIndex">41</x:Int32>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="SubmitMetadata_2" sap:VirtualizedContainerService.HintSize="200,22" />
+      <sap2010:ViewStateData Id="State_1" sap:VirtualizedContainerService.HintSize="114,61">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">223,419.5</av:Point>
+            <av:Size x:Key="ShapeSize">114,61</av:Size>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Persist_2" sap:VirtualizedContainerService.HintSize="200,22" />
+      <sap2010:ViewStateData Id="Transition_2" sap:VirtualizedContainerService.HintSize="430,507">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:PointCollection x:Key="ConnectorLocation">308.55,293.5 308.55,323.5 285.7,323.5 285.7,419.5</av:PointCollection>
+            <x:Int32 x:Key="SrcConnectionPointIndex">51</x:Int32>
+            <x:Int32 x:Key="DestConnectionPointIndex">42</x:Int32>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="State_2" sap:VirtualizedContainerService.HintSize="147,115">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">213,179.5</av:Point>
+            <av:Size x:Key="ShapeSize">147,115</av:Size>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Double x:Key="StateContainerWidth">133</x:Double>
+            <x:Double x:Key="StateContainerHeight">79.080000000000041</x:Double>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="StateMachine_1" sap:VirtualizedContainerService.HintSize="614,636">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+            <x:Double x:Key="StateContainerWidth">600</x:Double>
+            <x:Double x:Key="StateContainerHeight">600</x:Double>
+            <av:PointCollection x:Key="ConnectorLocation">282,77.5 282,107.5 301.2,107.5 301.2,179.5</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="NKD.Workflow.UpdateMetadata_1" sap:VirtualizedContainerService.HintSize="654,716" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>

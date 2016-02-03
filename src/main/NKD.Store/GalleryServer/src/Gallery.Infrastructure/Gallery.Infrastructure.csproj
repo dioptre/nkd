@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F23A69BE-2DC9-4608-9413-989437FFFAA8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gallery.Infrastructure</RootNamespace>
+    <AssemblyName>Gallery.Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=1.1.0.188, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.1.1.0.118\lib\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.1.10311.0\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Http">
+      <HintPath>..\..\lib\Microsoft.Http\Microsoft.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Http.Extensions">
+      <HintPath>..\..\lib\Microsoft.Http\Microsoft.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Migrator">
+      <HintPath>..\..\lib\MigratorDotNet\Migrator.dll</HintPath>
+    </Reference>
+    <Reference Include="Migrator.Framework">
+      <HintPath>..\..\lib\MigratorDotNet\Migrator.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Extensions.Logging">
+      <HintPath>..\..\lib\NinjectExtensions\Ninject.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\SqlServerCompact.4.0.8482.1\lib\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.SqlServerCompact.4.1.8482.1\lib\System.Data.SqlServerCe.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebActivator">
+      <HintPath>..\packages\WebActivator.1.0.0.0\lib\WebActivator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FeedModels\PublishedScreenshot.cs" />
+    <Compile Include="Impl\AutoMapper.cs" />
+    <Compile Include="Impl\AutoMapperBootstrapper.cs" />
+    <Compile Include="Impl\CodeFirstDatabaseBootstrapper.cs" />
+    <Compile Include="FeedModels\PublishedPackage.cs" />
+    <Compile Include="FeedModels\GalleryFeedContext.cs" />
+    <Compile Include="Impl\GalleryDetailsUriCreator.cs" />
+    <Compile Include="Impl\GalleryFeedEntities.cs" />
+    <Compile Include="Impl\HttpClientAdapter.cs" />
+    <Compile Include="Impl\MigrationBootstrapper.cs" />
+    <Compile Include="Impl\PackageAuthenticatorService.cs" />
+    <Compile Include="Impl\PackageDataAggregateUpdater.cs" />
+    <Compile Include="Impl\PackageDownloadCountIncrementer.cs" />
+    <Compile Include="Impl\PackageGetter.cs" />
+    <Compile Include="Impl\PackagePublisher.cs" />
+    <Compile Include="Impl\PackageReportAbuseUriCreator.cs" />
+    <Compile Include="Impl\NoOpPackageAuthenticator.cs" />
+    <Compile Include="Impl\PackageUnpublisher.cs" />
+    <Compile Include="Impl\RatingAuthorizer.cs" />
+    <Compile Include="Impl\ServiceInputValidator.cs" />
+    <Compile Include="Impl\SystemHttpClient.cs" />
+    <Compile Include="Impl\SystemHttpRuntime.cs" />
+    <Compile Include="Impl\UnfinishedPackageGetter.cs" />
+    <Compile Include="Impl\UserKeyValidator.cs" />
+    <Compile Include="Impl\WebFaultExceptionCreator.cs" />
+    <Compile Include="Interfaces\IGalleryDetailsUriCreator.cs" />
+    <Compile Include="Interfaces\IHttpClientAdapter.cs" />
+    <Compile Include="Impl\PackageAuthenticator.cs" />
+    <Compile Include="Impl\ScreenshotDeleter.cs" />
+    <Compile Include="Interfaces\IDatabaseContext.cs" />
+    <Compile Include="Impl\PackageDeleter.cs" />
+    <Compile Include="Interfaces\IHttpClient.cs" />
+    <Compile Include="Interfaces\IPackageReportAbuseUriCreator.cs" />
+    <Compile Include="Interfaces\IServiceInputValidator.cs" />
+    <Compile Include="Interfaces\IUserKeyValidator.cs" />
+    <Compile Include="Interfaces\IWebFaultExceptionCreator.cs" />
+    <Compile Include="PackageDataStreamProvider.cs" />
+    <Compile Include="Repositories\DependencyRepository.cs" />
+    <Compile Include="Repositories\PackageDataAggregateRepository.cs" />
+    <Compile Include="Repositories\PackageLogEntryRepository.cs" />
+    <Compile Include="Repositories\PackageRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\PublishedPackageRepository.cs" />
+    <Compile Include="Repositories\PublishedScreenshotRepository.cs" />
+    <Compile Include="Repositories\RepositoryBase.cs" />
+    <Compile Include="Repositories\ScreenshotRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gallery.Core\Gallery.Core.csproj">
+      <Project>{0DA50B7F-F0F6-4B7F-884E-939D4DD3EE0A}</Project>
+      <Name>Gallery.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gallery.Migrations\Gallery.Migrations.csproj">
+      <Project>{691CD001-7DA1-4F03-B77A-1BCB30CB1D66}</Project>
+      <Name>Gallery.Migrations</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"$(SolutionDir)..\CopySQLCEBinariesPostBuild.bat" "$(SolutionDir)" "$(TargetDir)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

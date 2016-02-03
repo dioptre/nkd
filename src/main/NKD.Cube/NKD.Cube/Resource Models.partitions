@@ -1,0 +1,85 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="aa85fa0b-8c0a-425c-9b2d-1b1c93c98e9e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>NKD</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>X Block Model</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9bcc210a-f171-489f-9849-75214a953aaa">
+          <ID>X Block Model</ID>
+          <Name>X Block Model</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5245699c-370f-426c-82e4-e1e9daa3e208">
+            <DataSourceViewID>NKD</DataSourceViewID>
+            <TableID>dbo_X_BlockModel</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>X Block Model Block</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5776c57e-f85a-46f4-b453-c48bcbcaa4e4">
+          <ID>X Block Model Block</ID>
+          <Name>X Block Model Block</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f2a7556c-0aa7-4adc-ae45-3e103c69e6c6">
+            <DataSourceViewID>NKD</DataSourceViewID>
+            <TableID>dbo_X_BlockModelBlock</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>X Block Model Block Data</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="7fcac257-3109-4640-8025-3188dbaf9503">
+          <ID>X Block Model Block Data</ID>
+          <Name>X Block Model Block Data</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1ad1a369-0213-4943-918c-15a29c8bdf28">
+            <DataSourceViewID>NKD</DataSourceViewID>
+            <TableID>dbo_X_BlockModelBlockData</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>X Block Model Metadata</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="7601fe11-2227-48a9-ad74-741003dd7769">
+          <ID>X Block Model Metadata</ID>
+          <Name>X Block Model Metadata</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="972ef0b3-ee29-46ac-adb1-406c32277e28">
+            <DataSourceViewID>NKD</DataSourceViewID>
+            <TableID>dbo_X_BlockModelMetadata</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

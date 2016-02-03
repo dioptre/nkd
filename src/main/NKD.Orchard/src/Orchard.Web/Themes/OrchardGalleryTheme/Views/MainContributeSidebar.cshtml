@@ -1,0 +1,14 @@
+﻿<nav id="leftNav">
+    <img src="@Href("../Content/Images/communityGraphic.png")" style="padding-left:10px"/>
+    <p>Is your module the best thing since sliced bread? Is your theme going to start a revolution?
+    @if (Request.IsAuthenticated) {
+        @Html.ActionLink("Submit and show it off.", "Index", "UploadPackage", new { area = "Orchard.Gallery" }, null)
+    }
+    else
+    {
+        @Html.ActionLink("Create an account and contribute.", "Register", "Account", new { area = "Orchard.Users" }, null)
+
+        <p>Already have an account? @Html.ActionLink("Sign in and contribute.", "LogOn", "Account", new { area = "Orchard.Users" }, null)</p>
+    }
+    </p>
+</nav>

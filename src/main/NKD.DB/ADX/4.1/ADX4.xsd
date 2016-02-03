@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ADX" targetNamespace="http://www.adx4.org/ADX/4" xmlns="http://www.adx4.org/ADX/4" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:adxdict="http://www.adx4.org/ADX/4/Dictionary" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:adx="http://www.adx4.org/ADX/4" xmlns:fn="http://www.w3.org/2005/02/xpath-functions" version="4.1">
+  <xs:import namespace="http://www.adx4.org/ADX/4/Dictionary" schemaLocation="ADX4Dictionary.xsd" />
+  <xs:element name="ADX">
+	  <xs:complexType>
+      <xs:sequence>
+		  <xs:element name="Header" type="Header" minOccurs="0" maxOccurs="1" />
+        <xs:element name="Protocols" type="Protocols" minOccurs="0" maxOccurs="1" />
+        <xs:element name="AddressBook" type="AddressBook" minOccurs="0" maxOccurs="1" />
+        <xs:element name="ChainOfCustody" type="ChainOfCustody" minOccurs="0" maxOccurs="1" />
+        <xs:element name="Samples" type="Samples" minOccurs="0" maxOccurs="1" />
+        <xs:element name="ReferenceMaterials" type="ReferenceMaterials" minOccurs="0" maxOccurs="1" />
+        <xs:element name="Results" type="Results" minOccurs="0" maxOccurs="1" />
+      </xs:sequence>
+      <xs:attribute name="version" fixed="4.1" type="xs:string" use="required" />
+    </xs:complexType>
+    <xs:unique name="keySampleId">
+      <xs:selector xpath="./adx:Samples/adx:Sample" />
+      <xs:field xpath="@Id" />
+    </xs:unique>
+    <xs:unique name="keyProtocolId">
+      <xs:selector xpath="./adx:Protocols/adx:Protocol" />
+      <xs:field xpath="@Id" />
+    </xs:unique>
+    <xs:unique name="keyProcessId">
+      <xs:selector xpath="./adx:Protocols/adx:Protocol/adx:Process" />
+      <xs:field xpath="@Id" />
+    </xs:unique>
+    <xs:unique name="keyResultsProcessingGroupId">
+      <xs:selector xpath="./adx:Results/adx:ProcessingGroup" />
+      <xs:field xpath="@Id" />
+    </xs:unique>
+    <xs:unique name="keyReferenceMaterialsProcessingGroupId">
+      <xs:selector xpath="./adx:ReferenceMaterials/adx:ProcessingGroup" />
+      <xs:field xpath="@Id" />
+    </xs:unique>
+    <xs:unique name="keyLocationId">
+      <xs:selector xpath="./adx:AddressBook/adx:Location" />
+      <xs:field xpath="@Id" />
+    </xs:unique>
+    <xs:unique name="keyContactId">
+      <xs:selector xpath="./adx:AddressBook/adx:Contact" />
+      <xs:field xpath="@Id" />
+    </xs:unique>
+    <xs:keyref name="keyrefMaterialTargetProcessRef" refer="keyProcessId">
+      <xs:selector xpath=".//adx:Target"/>
+      <xs:field xpath="@ProcessRef" />
+    </xs:keyref>
+    <xs:keyref name="keyrefMaterialTargetProtocolRef" refer="keyProtocolId">
+      <xs:selector xpath=".//adx:Target"/>
+      <xs:field xpath="@ProtocolRef" />
+    </xs:keyref>
+  </xs:element>
+  <xs:element name="ADXDictionaryStrict">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PropertyTypeExample" type="adxdict:PropertyTypeStrict"/>
+        <xs:element name="UOMExample" type="adxdict:UOMStrict"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Process">
+    <xs:sequence>
+      <xs:element name="Destination" type="MaterialDestination" minOccurs="0" maxOccurs="1" block="" />
+      <xs:element name="Description" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Comments" type="xs:string"  minOccurs="0"  maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:string" use="required" />
+    <xs:attribute name="Code" type="xs:string" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="Procedure" block="" abstract="true">
+    <xs:sequence>
+      <xs:element name="Description" type="xs:string" maxOccurs="1" minOccurs="0" />
+      <xs:element name="Comments" type="xs:string" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:string" use="optional" />
+    <xs:attribute name="Code" type="xs:string" use="optional" />
+    <xs:attribute name="LocationRef" type="xs:string" use="optional" />
+    <xs:attribute name="ContactRef" type="xs:string" use="optional" />
+    <xs:attribute name="TimeStamp" type="xs:dateTime" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="Protocol">
+    <xs:sequence>
+      <xs:element name="Process" type="Process" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Description" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Comments" type="xs:string"  minOccurs="0"  maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="Sample">
+    <xs:sequence>
+      <xs:element name="Comments" type="xs:string" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:string" use="required" />
+    <xs:attribute name="Type" type="adxdict:SampleType" use="optional" />
+    <xs:attribute name="Status" type="adxdict:SampleStatus" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="Quantity">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="UOM" type="adxdict:UOM" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="Measurement">
+    <xs:sequence>
+      <xs:element name="Value" type="Quantity" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Comments" type="xs:string" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute name="Property" type="adxdict:PropertyType" use="required" />
+    <xs:attribute name="Status" type="adxdict:MeasurementStatus" use="optional" />
+    <xs:attribute name="ProcedureRef" type="xs:string" use="optional" />
+    <xs:attribute name="LocationRef" type="xs:string" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="AddressBook">
+    <xs:sequence>
+      <xs:element name="Contact" type="ContactDetails" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Location" minOccurs="0" maxOccurs="unbounded" type="LocationDetails" />
+      <xs:element name="Comments" type="xs:string"  minOccurs="0"  maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProcessingTag">
+    <xs:sequence />
+    <xs:attribute name="Name" type="xs:string" use="optional" />
+    <xs:attribute name="Type" type="adxdict:ProcessingTagType" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="AnalysisRecord">
+    <xs:sequence>
+      <xs:element name="FullProcessingPath" type="ProcessingPath" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Measurement" type="Measurement" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Comments" type="xs:string" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:string" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="AnalysisProcedure">
+    <xs:complexContent>
+      <xs:extension base="Procedure">
+        <xs:sequence>
+          <xs:element name="Property" type="adxdict:PropertyType" maxOccurs="1" minOccurs="1" />
+          <xs:element name="UOM" type="adxdict:UOM" maxOccurs="1" minOccurs="1" />
+          <xs:element name="BelowDetectionLimit" type="Quantity" minOccurs="0" maxOccurs="1" />
+          <xs:element name="OverRangeLimit" type="Quantity" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Method" type="AnalysisMethod" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Destination" type="MaterialDestination" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="DryingProcedure">
+    <xs:complexContent>
+      <xs:extension base="Procedure">
+        <xs:sequence>
+          <xs:element name="Method" type="adxdict:DryingMethodType" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Temperature" type="Quantity" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Duration" type="xs:string" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Equipment" type="xs:string" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Destination" type="MaterialDestination" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ScreeningProcedure">
+    <xs:complexContent>
+      <xs:extension base="Procedure">
+        <xs:sequence>
+          <xs:element name="Screen" type="Screen" maxOccurs="1" minOccurs="1" />
+          <xs:element name="AboveScreen" type="MaterialDestination" minOccurs="1" maxOccurs="1" />
+          <xs:element name="BelowScreen" type="MaterialDestination" minOccurs="1" maxOccurs="1" />
+          <xs:element name="Condition" type="adxdict:ScreenCondition" maxOccurs="1" minOccurs="0" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ParticleSizeReductionProcedure">
+    <xs:complexContent>
+      <xs:extension base="Procedure">
+        <xs:sequence>
+          <xs:element name="Method" type="adxdict:ParticleSizeReductionMethodType" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Screen" type="Screen" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Equipment" type="xs:string" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Percent" type="xs:decimal" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Destination" type="MaterialDestination" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StorageProcedure">
+    <xs:complexContent>
+      <xs:extension base="Procedure">
+        <xs:sequence>
+          <xs:element name="Destination" type="MaterialDestination" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SplittingProcedure">
+    <xs:complexContent>
+      <xs:extension base="Procedure">
+        <xs:sequence>
+          <xs:element name="Method" type="adxdict:SplittingMethodType" maxOccurs="1" minOccurs="0" />
+          <xs:element name="Equipment" type="xs:string" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Destination" type="MaterialDestination" minOccurs="2" maxOccurs="unbounded" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="MaterialDestination">
+    <xs:sequence>
+      <xs:element name="Mass" type="Quantity" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Target" type="MaterialTarget" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Comments" type="xs:string"  minOccurs="0"  maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="xs:string" use="optional" />
+    <xs:attribute name="Type" type="xs:string" use="optional" />
+    <xs:attribute name="Description" type="xs:string" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="Screen">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="UOM" type="adxdict:UOM" use="optional" />
+        <xs:attribute name="Series" type="adxdict:ScreenSeriesType" use="optional" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DecompositionProcedure">
+    <xs:complexContent>
+      <xs:extension base="Procedure">
+        <xs:sequence>
+          <xs:element name="Method" type="adxdict:DecompositionMethodType" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Weight" type="Quantity" maxOccurs="1" minOccurs="0" />
+          <xs:element name="Temperature" type="Quantity" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Duration" type="xs:string" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Agitation" type="xs:string" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Destination" type="MaterialDestination" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Chemicals" type="xs:string" maxOccurs="1" minOccurs="0" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="MaterialTarget">
+    <xs:sequence>
+      <xs:element name="Procedure" type="Procedure" maxOccurs="unbounded" minOccurs="0" />
+    </xs:sequence>
+    <xs:attribute name="ProtocolRef" type="xs:string" use="optional" />
+    <xs:attribute name="ProcessRef" type="xs:string" use="optional" />
+    <xs:attribute name="ProcedureRef" type="xs:string" use="optional" />
+    <xs:attribute name="MaterialSourceRef" type="xs:string" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="Header">
+    <xs:sequence>
+      <xs:element name="SamplesOwner" type="SamplesOwnerDetails" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Laboratory" type="LaboratoryDetails" minOccurs="0" maxOccurs="1" />
+      <xs:element name="AnalyticalReport" type="AnalyticalReportDetails" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Despatch" type="DespatchDetails"  minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Billing" type="BillingDetails"  minOccurs="0" maxOccurs="1" />
+      <xs:element name="DocumentAuthor" type="DocumentAuthorDetails" minOccurs="0"  maxOccurs="1" />
+      <xs:element name="Comments" type="xs:string"  minOccurs="0"  maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SamplesOwnerDetails">
+    <xs:sequence>
+      <xs:element name="Project" type="ProjectDetails" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Comments" type="xs:string" maxOccurs="1" minOccurs="0" />
+    </xs:sequence>
+    <xs:attribute name="LocationRef" type="xs:string" use="required" />
+    <xs:attribute name="ContactRef" type="xs:string" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="GenericProcedure">
+    <xs:complexContent>
+      <xs:extension base="Procedure">
+        <xs:sequence>
+          <xs:element name="Destination" type="MaterialDestination" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="WeighingProcedure">
+    <xs:complexContent>
+      <xs:extension base="Procedure">
+        <xs:sequence>
+          <xs:element name="Method" type="adxdict:WeighingMethodType" maxOccurs="1" minOccurs="0" />
+          <xs:element name="Equipment" type="xs:string" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Mass" type="Quantity" maxOccurs="1" minOccurs="1" />
+          <xs:element name="Destination" type="MaterialDestination" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Result">
+    <xs:sequence>
+      <xs:element name="ParentProcessingPath" type="ProcessingPath" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Sample" type="SampleReference" minOccurs="1" maxOccurs="unbounded" />
+      <xs:element name="ProcessingHistory" type="Process" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Analysis" type="AnalysisRecord" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Comments" type="xs:string"  minOccurs="0"  maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SampleReference">
+    <xs:sequence>
+    </xs:sequence>
+    <xs:attribute name="IdRef" type="xs:string" use="required" />
+  </xs:complexType>
+	<xs:complexType name="AnalysisReference">
+		<xs:sequence>
+		</xs:sequence>
+		<xs:attribute name="IdRef" type="xs:string" use="required" />
+	</xs:complexType>
+	<xs:complexType name="MaterialSource">
+    <xs:sequence>
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:string" use="optional" />
+    <xs:attribute name="Type" type="adxdict:MaterialSourceType" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="CompositingProcedure">
+    <xs:complexContent>
+      <xs:extension base="Procedure">
+        <xs:sequence>
+          <xs:element name="Method" type="adxdict:CompositingMethodType" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Equipment" type="xs:string" minOccurs="0" maxOccurs="1" />
+          <xs:element name="Source" type="MaterialSource" minOccurs="2" maxOccurs="unbounded" />
+          <xs:element name="Destination" type="MaterialDestination" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ReferenceMaterials">
+    <xs:sequence>
+      <xs:element name="ProcessingGroup" type="ProcessingGroup" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Comments" type="xs:string"  minOccurs="0"  maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:string" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="Results">
+    <xs:sequence>
+      <xs:element name="ProcessingGroup" type="ProcessingGroup" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Comments" type="xs:string"  minOccurs="0"  maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:string" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="Samples">
+    <xs:sequence>
+      <xs:element name="Sample" type="Sample" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Comments" type="xs:string"  minOccurs="0"  maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:string" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="LaboratoryDetails">
+    <xs:sequence>
+      <xs:element name="Comments" type="xs:string" maxOccurs="1" minOccurs="0" />
+    </xs:sequence>
+    <xs:attribute name="LocationRef" type="xs:string" use="required" />
+    <xs:attribute name="ContactRef" type="xs:string" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="AnalyticalReportDetails">
+    <xs:sequence>
+      <xs:element name="LabJob" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Status" type="adxdict:AnalyticalReportStatus" minOccurs="1" maxOccurs="1" />
+      <xs:element name="StatusDate" type="xs:dateTime" maxOccurs="1" minOccurs="1" />
+      <xs:element name="LabInvoiceNo" type="xs:string" maxOccurs="1" minOccurs="0" />
+      <xs:element name="ReferenceLabJob" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Comments" type="xs:string" maxOccurs="1" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ContactDetails">
+    <xs:sequence>
+      <xs:element name="ContactName" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Role" type="xs:string" maxOccurs="1" minOccurs="0" />
+      <xs:element name="Telephone" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Email" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Comments" type="xs:string"  minOccurs="0"  maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:string" use="required" />
+    <xs:attribute name="LocationRef" type="xs:string" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="ProjectDetails">
+    <xs:sequence>
+      <xs:element name="Comments" type="xs:string"  minOccurs="0"  maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:string" use="optional" />
+    <xs:attribute name="Description" type="xs:string" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="Protocols">
+    <xs:sequence>
+      <xs:element name="Protocol" type="Protocol" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Comments" type="xs:string"  minOccurs="0"  maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:string" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="DespatchDetails">
+    <xs:sequence>
+      <xs:element name="DespatchNo" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="ProcessingInstructions" type="Process" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Comments" type="xs:string" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BillingDetails">
+    <xs:sequence>
+      <xs:element name="Comments" type="xs:string" maxOccurs="1" minOccurs="0" />
+    </xs:sequence>
+    <xs:attribute name="Code" type="xs:string" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="AnalysisMethod">
+    <xs:sequence>
+      <xs:element name="Technique" type="adxdict:AnalysisMethodTechnique" maxOccurs="1" minOccurs="0" />
+      <xs:element name="Equipment" type="adxdict:AnalysisMethodEquipment" maxOccurs="1" minOccurs="0" />
+      <xs:element name="Comments" type="xs:string"  minOccurs="0"  maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DocumentAuthorDetails">
+    <xs:sequence>
+      <xs:element name="AuthorRef" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="CreatedOn" type="xs:dateTime" />
+      <xs:element name="Comments" type="xs:string" maxOccurs="1" minOccurs="0" />
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:string" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="SendProcedure">
+    <xs:complexContent>
+      <xs:extension base="Procedure">
+        <xs:sequence>
+          <xs:element name="Destination" type="MaterialDestination" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ReceiveProcedure">
+    <xs:complexContent>
+      <xs:extension base="Procedure">
+        <xs:sequence>
+          <xs:element name="Destination" type="MaterialDestination" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ReferenceMaterial">
+    <xs:complexContent>
+      <xs:extension base="Sample">
+        <xs:sequence>
+          <xs:element name="Category" type="adxdict:ReferenceMaterialCategory" minOccurs="1" maxOccurs="1" />
+          <xs:element name="KnownAnalysis" type="AnalysisReference" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProcessingGroup">
+    <xs:sequence>
+      <xs:element name="Result" type="Result" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Comments" type="xs:string" maxOccurs="1" minOccurs="0" />
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:string" use="optional" />
+    <xs:attribute name="Type" type="adxdict:ProcessingGroupType" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="DisposeProcedure">
+    <xs:complexContent>
+      <xs:extension base="Procedure">
+        <xs:sequence>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="LocationDetails">
+    <xs:sequence>
+      <xs:element name="Company" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Office" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Description" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Telephone" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Email" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Address" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="City" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="State" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Country" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="PostalCode" type="xs:string" maxOccurs="1" minOccurs="0" />
+      <xs:element name="Comments" type="xs:string" maxOccurs="1" minOccurs="0" />
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:string" use="required" />
+    <xs:attribute name="ContactRef" type="xs:string" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="ChainOfCustody">
+    <xs:sequence>
+      <xs:element name="Batch" type="ChainOfCustodyBatch" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Comments" type="xs:string" maxOccurs="1" minOccurs="0" />
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:string" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="ProcessingPath">
+    <xs:sequence>
+      <xs:element name="Tag" type="ProcessingTag" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:string" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="ChainOfCustodySample">
+    <xs:sequence>
+      <xs:element name="Sample" type="SampleReference" minOccurs="1" maxOccurs="unbounded" />
+      <xs:element name="ProcessingPath" type="ProcessingPath" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Comments" type="xs:string" maxOccurs="1" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ChainOfCustodyBatch">
+    <xs:sequence>
+      <xs:element name="History" type="Process" minOccurs="1" maxOccurs="1" />
+      <xs:element name="SampleMaterial" type="ChainOfCustodySample" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element name="Comments" type="xs:string" maxOccurs="1" minOccurs="0" />
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:string" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="RackPlacementProcedure">
+    <xs:complexContent>
+      <xs:extension base="Procedure">
+        <xs:sequence0
+          <xs:element name="Block" type="xs:string" maxOccurs="1" minOccurs="0" />
+          <xs:element name="Position" type="xs:string" maxOccurs="1" minOccurs="0" />
+          <xs:element name="Destination" type="MaterialDestination" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,34 @@
+﻿<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'search',
+  search: '@Model.SearchQuery',
+  interval: @(Model.Interval < 2 ? 2000 : (Model.Interval > 20 ? 20000 : (Model.Interval * 1000))),
+  title: '@Model.WidgetTitle',
+  subject: '@Model.Caption',
+  width: @(new HtmlString(Model.Width <= 0 ? "323" : Model.Width.ToString())),
+  height: @(Model.Height < 0 ? "0" : Model.Height.ToString()),
+  theme: {
+    shell: {
+      background: '@(String.IsNullOrEmpty((string)Model.BackgroundShellColor) ? "#FCFDF7" : Model.BackgroundShellColor)',
+      color: '@(String.IsNullOrEmpty((string)Model.ShellColor) ? "#3E483C" : Model.ShellColor)'
+    },
+    tweets: {
+      background: '@(String.IsNullOrEmpty((string)Model.TeetsBackgroundColor) ? "#FCFDF7" : Model.TweetsBackgroundColor)',
+      color: '@(String.IsNullOrEmpty((string)Model.TweetsColor) ? "#444444" : Model.TweetsColor)',
+      links: '@(String.IsNullOrEmpty((string)Model.TweetsLinksColor) ? "#0071BC" : Model.TweetsLinksColor)'
+    }
+  },
+  features: {
+    scrollbar: @Model.ScrollBar.ToString().ToLower(),
+    loop: @Model.Loop.ToString().ToLower(),
+    live: @Model.Live.ToString().ToLower(),
+    hashtags: @Model.HashTags.ToString().ToLower(),
+    timestamp: @Model.Timestamp.ToString().ToLower(),
+    avatars: @Model.Avatars.ToString().ToLower(),
+    toptweets: @Model.TopTweets.ToString().ToLower(),
+    behavior: '@Model.Behavior.ToString().ToLower()'
+  }
+}).render().start();
+</script>

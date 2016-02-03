@@ -1,0 +1,51 @@
+﻿@model M33.Layout.ViewModels.FileViewModel
+@using Orchard.Utility.Extensions;
+@using M33.Layout.ViewModels;
+
+@{ 
+    Layout.Title = T("Css Editor").ToString();
+    
+    Style.Include("orchard-css-editor-admin.css");
+    Style.Include("CodeMirror/codemirror.css");
+    Style.Include("CodeMirror/default.css");
+    Style.Include("CodeMirror/css.css");
+   
+    Script.Require("jQuery").AtHead();
+    Script.Include("CodeMirror/codemirror.js").AtFoot();
+    Script.Include("CodeMirror/css.js").AtFoot();
+    Script.Include("StateHandler.js").AtFoot();  
+    
+   
+    string FileName = string.Empty;
+}
+
+@using (Html.BeginFormAntiForgeryPost())
+{
+    @Html.ValidationSummary()
+
+    <fieldset>
+        <legend>@T("Edit theme styles")</legend>
+        <span class="hint">@T("Edit all stylesheet for this theme.")</span>
+    </fieldset>
+    
+    <fieldset>
+        <legend>@T("Select css file")</legend>
+        <select id="FileName" name="FileName" onchange="LoadFile('css');" size="1" style="width: 300px">
+            @foreach (var layer in Model.Files)            {
+                @Html.SelectOption(layer.Path, layer.Current, layer.Name)
+            }
+        </select> @Html.ActionLink("Create new", "Add")
+    </fieldset>
+
+    <fieldset>
+        <div> 
+            <span class="hint">@T("Content")</span>
+            @Html.TextArea("Content", Model.Content, new { style = "height: 500px;" })
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <button class="primaryAction" id="smb" name="submit" value="@T("Save")" onclick="Save('css');" type="button">@T("Save")</button>
+    </fieldset>
+      
+}

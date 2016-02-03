@@ -1,0 +1,75 @@
+﻿.breadCrumbs {
+    float:left;
+    margin:0 0 16px 0;
+}
+.generalButton {
+    float: none;
+    padding: 5px;
+}
+.submitButton {
+    float: right;
+    padding: 5px;
+}
+.submitButtonLeft {
+    text-wrap:none;
+    float:left;
+    padding: 12px;
+}
+.editor-label {
+    clear:both;
+    display:block;
+    float:none;
+}
+.dynamicInput {
+    float:none;
+    text-wrap: normal;
+    width:150px;
+}
+.folderProperties {
+    float:right;
+    margin:0 0 16px 0;
+}
+.previewImage {
+    max-height:640px;
+    max-width:640px;
+}
+.smallPreviewImage {
+    max-height:64px;
+    max-width:128px;
+    float: left;
+    margin-right: 16px;
+}
+.divider {
+    border-left: 1px solid #AAAAAA;
+    padding-left: 15px;
+}
+.padded {
+    padding: 5px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.bordered {
+    border: 1px solid #AAAAAA;
+    padding: 5px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.grid {
+}
+    .grid .col { float: left; }
+
+    .grid .col.s1of1 { width: 100%; }
+    .grid .col.s1of2 { width: 50%; }
+    .grid .col.s1of3 { width: 33.33333333%; }
+    .grid .col.s2of3 { width: 66.66666666%; }
+    .grid .col.s1of4 { width: 25%; }
+    .grid .col.s3of4 { width: 75%; }
+    .grid .col.s1of5 { width: 20%; }
+    .grid .col.s2of5 { width: 40%; }
+    .grid .col.s3of5 { width: 60%; }
+    .grid .col.s4of5 { width: 80%; }
+
+.rightButton {
+    float:left;
+    margin:0px 0px 0px 0px;
+}

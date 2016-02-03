@@ -1,0 +1,70 @@
+﻿@using Orchard.Gallery.Models;
+@using Orchard.ContentManagement;
+@{
+    PackagePart package = ((IContent)Model.ContentItem).As<PackagePart>();
+    Version packageVersion = new Version(package.PackageVersion);
+    bool isCurrentlySelectedPackage = package.PackageID == Model.CurrentPackageId && packageVersion == Model.CurrentPackageVersion;
+    bool isRecommendedVersion = package.IsRecommendedVersion;
+    var rowClass = "versionTableRow" + (isCurrentlySelectedPackage ? " current" : "") + (isRecommendedVersion ? " recommended" : "");
+    string packageText = string.Format("{0} {1}", package.Title, package.PackageVersion);
+
+    if (!Model.IsPublished) {
+        rowClass += " unpublished";
+    }
+}
+<tr class="@rowClass">
+    <td class="version">
+        @if (!isCurrentlySelectedPackage && Model.IsPublished) {
+            if (isRecommendedVersion) {
+                @LinkExtensions.ActionLink(Html, packageText, "DetailsForId", "Package",
+                     new { area = "Orchard.Gallery", packageType = Model.PackageTypeSlug, packageId = package.PackageID }, null);
+            } else {
+                @LinkExtensions.ActionLink(Html, packageText, "DetailsForIdAndVersion", "Package",
+                          new { area = "Orchard.Gallery", packageType = Model.PackageTypeSlug, packageId = package.PackageID, packageVersion = package.PackageVersion }, null);
+            }
+        } else {
+            @packageText
+        }
+    </td>
+    <td class="downloads">@package.DownloadCount</td>
+    <td class="lastUpdated">@(((DateTime)(package.LastUpdated)).ToString("d MMM yyyy"))</td>
+    <td class="rating">@Display(Model.Rating)</td>
+     @if (Model.AllowOwnerActions) {
+        <td class="ownerActions">
+            <ul>
+                <li>
+                    <a href="@Url.Action("Edit", "Package", new { packageId = package.PackageID, packageVersion = package.PackageVersion })" title="Edit">
+                        <img src="@Href("../../Content/Images/editIcon.png")" alt="Edit" />
+                    </a>
+                </li>
+                <li>
+                    @{
+                        bool shouldRedirect = false;
+                        if (isCurrentlySelectedPackage)
+                        {
+                            shouldRedirect = true;
+                        }
+                    }
+                    <a href="#" title="Delete" class="deletePackageLink" data-package-id="@package.PackageID"
+                        data-package-version="@package.PackageVersion" data-should-redirect="@shouldRedirect">
+                        <img src="@Href("../../Content/Images/trash.png")" alt="Delete" />
+                    </a>
+                </li>
+                @if (Model.IsPublished) {
+                <li>
+                    <a href="#" title="Unpublish" class="unpublishPackageLink" data-package-id="@package.PackageID"
+                        data-package-version="@package.PackageVersion">
+                        <img src="@Href("../../Content/Images/redArrow.png")" alt="Unpublish" />
+                    </a>
+                </li>
+                } else {
+                <li>
+                    <a href="@Url.Action("Publish", "Package", new { packageId = package.PackageID, packageVersion = package.PackageVersion })" title="Publish">
+                        <img src="@Href("../../Content/Images/greenArrow.png")" alt="Publish" />
+                    </a>
+                </li>
+                }
+            </ul>
+        </td>
+     }
+</tr>

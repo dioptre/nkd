@@ -1,0 +1,7 @@
+﻿<p class="author">By
+@{
+    string authors = Model.Authors.ToString();
+}
+@Html.ActionLink(authors, "Search", "Packages",
+    new { area = "Orchard.Gallery", searchTerm = string.Format("author: {0}", authors), sortOrder=TempData["SortOrder"], pageSize=TempData["PageSize"] }, null)
+</p>

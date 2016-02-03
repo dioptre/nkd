@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A4676063-6330-485F-B9B2-615B17743E38}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OrchardGallery</RootNamespace>
+    <AssemblyName>OrchardGallery</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\aspnetmvc\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Images\backButtonBG.png" />
+    <Content Include="Content\Images\blueStar.png" />
+    <Content Include="Content\Images\branchesBottom.png" />
+    <Content Include="Content\Images\branchesTop.png" />
+    <Content Include="Content\Images\browseButton.png" />
+    <Content Include="Content\Images\checkmark.png" />
+    <Content Include="Content\Images\commentsIcon.png" />
+    <Content Include="Content\Images\communityGraphic.png" />
+    <Content Include="Content\Images\contribGraphic.png" />
+    <Content Include="Content\Images\editIcon.png" />
+    <Content Include="Content\Images\grayStar.png" />
+    <Content Include="Content\Images\gridButton.png" />
+    <Content Include="Content\Images\imagePlaceholder.png" />
+    <Content Include="Content\Images\inputBackground.png" />
+    <Content Include="Content\Images\leafCurrent.png" />
+    <Content Include="Content\Images\leafFuture.png" />
+    <Content Include="Content\Images\leafVisited.png" />
+    <Content Include="Content\Images\listButton.png" />
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\logoFooter.png" />
+    <Content Include="Content\Images\mainNav_CurrentBorder.png" />
+    <Content Include="Content\Images\moduleDefaultIcon.png" />
+    <Content Include="Content\Images\newAccountGraphic.png" />
+    <Content Include="Content\Images\packageDefaultIcon.png" />
+    <Content Include="Content\Images\rating.png" />
+    <Content Include="Content\Images\required.png" />
+    <Content Include="Content\Images\nimbleproswhite.png" />
+    <Content Include="Content\Images\searchButton.png" />
+    <Content Include="Content\Images\socialIcons\Facebook.png" />
+    <Content Include="Content\Images\socialIcons\RSS.png" />
+    <Content Include="Content\Images\socialIcons\Twitter.png" />
+    <Content Include="Content\Images\socialIcons\YouTube.png" />
+    <Content Include="Content\Images\subButtonBG.png" />
+    <Content Include="Content\Images\themeDefaultIcon.png" />
+    <Content Include="Content\Images\userGraphic.png" />
+    <Content Include="Content\Images\userIcon.png" />
+    <Content Include="Content\Images\violator.png" />
+    <Content Include="Content\Images\world.png" />
+    <Content Include="Content\Images\xmark.png" />
+    <Content Include="Content\Images\yellowStar.png" />
+    <Content Include="NotFound.html" />
+    <Content Include="Error.html" />
+    <Content Include="Scripts\gallery.form.js" />
+    <Content Include="Scripts\global.js" />
+    <Content Include="Scripts\jquery.lightbox-0.5.js" />
+    <Content Include="Scripts\jquery.lightbox-0.5.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\singleClickButton.js" />
+    <Content Include="Styles\Buttons.css" />
+    <Content Include="Styles\Comments.css" />
+    <Content Include="Styles\Confirmations.css" />
+    <Content Include="Styles\Home.css" />
+    <Content Include="Styles\jquery.lightbox-0.5.css" />
+    <Content Include="Styles\Ratings.css" />
+    <Content Include="Styles\Footer.css" />
+    <Content Include="Styles\Forms.css" />
+    <Content Include="Styles\Header.css" />
+    <Content Include="Styles\ie-mac.css" />
+    <Content Include="Styles\MainNav.css" />
+    <Content Include="Styles\Packages.css" />
+    <Content Include="Styles\PageToolbar.css" />
+    <Content Include="Styles\Pagination.css" />
+    <Content Include="Styles\Reset.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\Widgets.css" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Theme.txt" />
+    <Content Include="Theme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
+      <Project>{2D1D92BB-4555-4CBE-8D0E-63563D6CE4C6}</Project>
+      <Name>Orchard.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\Orchard.Core.csproj">
+      <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
+      <Name>Orchard.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Modules\Contrib.Taxonomies\Contrib.Taxonomies.csproj">
+      <Project>{E649EA64-D213-461B-87F7-D67035801443}</Project>
+      <Name>Contrib.Taxonomies</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\BadgeOfHonor.cshtml" />
+    <Content Include="Views\Branding.cshtml" />
+    <Content Include="Views\CategoriesSidebar.cshtml" />
+    <Content Include="Views\ContributeSidebar.cshtml" />
+    <Content Include="Views\FollowLinks.cshtml" />
+    <Content Include="Views\Helpers.cshtml" />
+    <Content Include="Views\Layout.cshtml" />
+    <Content Include="Views\LearnMoreLinks.cshtml" />
+    <Content Include="Views\LogonSidebar.cshtml" />
+    <Content Include="Views\Items\Content-Package.Details.cshtml" />
+    <Content Include="Views\Items\Content-Package.Summary.cshtml" />
+    <Content Include="Views\Items\Content-Package.SummaryOwner.cshtml" />
+    <Content Include="Views\MainContributeSidebar.cshtml" />
+    <Content Include="Views\MenuItem.cshtml" />
+    <Content Include="Views\MyAccountSidebar.cshtml" />
+    <Content Include="Views\OrchardGalleryLinks.cshtml" />
+    <Content Include="Views\OrchardLinks.cshtml" />
+    <Content Include="Views\Pager.cshtml" />
+    <Content Include="Views\RegisterSidebar.cshtml" />
+    <Content Include="Views\SocialMediaNav.cshtml" />
+    <Content Include="Views\User.cshtml" />
+    <Content Include="Views\Parts\GalleryUserLinks.cshtml" />
+    <Content Include="Views\Parts\PackageActions.cshtml" />
+    <Content Include="Views\Parts\PackageAuthor.cshtml" />
+    <Content Include="Views\Parts\PackageDetails.cshtml" />
+    <Content Include="Views\Parts\PackageDetailsActions.cshtml" />
+    <Content Include="Views\Parts\PackageDetailsHeader.cshtml" />
+    <Content Include="Views\Parts\PackageDownloads.cshtml" />
+    <Content Include="Views\Parts\PackageIcon.cshtml" />
+    <Content Include="Views\Parts\PackageImages.cshtml" />
+    <Content Include="Views\Parts\PackageLink.cshtml" />
+    <Content Include="Views\Parts\PackageOwnerActions.cshtml" />
+    <Content Include="Views\Parts\PackageOwnerSummary.cshtml" />
+    <Content Include="Views\PackageSearch.cshtml" />
+    <Content Include="Views\Parts\PackageSummary.cshtml" />
+    <Content Include="Views\Orchard.Users\Account\ChallengeEmailSent.cshtml" />
+    <Content Include="Views\Orchard.Users\Account\ChallengeEmailSuccess.cshtml" />
+    <Content Include="Views\LogOn.cshtml" />
+    <Content Include="Views\Orchard.Gallery\Contribute\Index.cshtml" />
+    <Content Include="Views\Orchard.Gallery\Contribute\MyAccount.cshtml" />
+    <Content Include="Views\Orchard.Gallery\PackageRegistration\Index.cshtml" />
+    <Content Include="Views\Orchard.Gallery\Package\Details.cshtml" />
+    <Content Include="Views\Orchard.Gallery\Package\Edit.cshtml" />
+    <Content Include="Views\Orchard.Gallery\UploadPackageLogoAndScreenshots\Index.cshtml" />
+    <Content Include="Views\Orchard.Gallery\UploadPackage\Index.cshtml" />
+    <Content Include="Views\Parts\Tags.ShowTags.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts\PackageTypeName.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Handlers\GalleryFeatureHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Placement.info" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Users\Account\RequestLostPassword.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Gallery\ReportAbuse\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Gallery\ManagePackageOwners\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Users\Account\ChangePassword.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Users\Account\ChangePasswordSuccess.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Users\Account\LostPassword.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Gallery\Contribute\MyUnfinishedPackages.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\UnfinishedPackagesSidebar.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Items\Content-Package.VersionHistory.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts\PackageReviews.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts\PackageIsOwner.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Gallery\ContactOwners\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Gallery\ManagePackageIds\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ManagePackageIDSidebar.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Orchard.Gallery\Contribute\MyPackages.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts\GallerySearchWidget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts\GallerySummaryWidget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts.Search.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Register.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SendMessageSidebar.cshtml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" DependsOnTargets="AfterBuildCompiler">
+    <PropertyGroup>
+      <AreasManifestDir>$(ProjectDir)\..\Manifests</AreasManifestDir>
+    </PropertyGroup>
+    <!-- If this is an area child project, uncomment the following line:
+    <CreateAreaManifest AreaName="$(AssemblyName)" AreaType="Child" AreaPath="$(ProjectDir)" ManifestPath="$(AreasManifestDir)" ContentFiles="@(Content)" />
+    -->
+    <!-- If this is an area parent project, uncomment the following lines:
+    <CreateAreaManifest AreaName="$(AssemblyName)" AreaType="Parent" AreaPath="$(ProjectDir)" ManifestPath="$(AreasManifestDir)" ContentFiles="@(Content)" />
+    <CopyAreaManifests ManifestPath="$(AreasManifestDir)" CrossCopy="false" RenameViews="true" />
+    -->
+  </Target>
+  <Target Name="AfterBuildCompiler" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)\..\$(ProjectName)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>45979</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://orchard.codeplex.com</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

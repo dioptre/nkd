@@ -1,0 +1,70 @@
+﻿@model Orchard.Gallery.Models.ViewModels.MyPackagesViewModel
+
+@{
+    Style.Require("jQueryUI_Orchard");
+
+    WorkContext.Layout.AfterContent.Add(New.Partial(TemplateName: "ConfirmPackageDelete"));
+}
+<section>
+    @if (Model.UnpublishedPackages.Any())
+    {
+        <header>
+            <h2>Unpublished Packages</h2>
+            <span class="displayResults">The following packages are not published in the gallery.</span>
+        </header>
+        <table id="unpublishedPackages" cellpadding="0" cellspacing="0">
+            <thead class="header">
+                <tr>
+                    <th>Title</th>
+                    <th>Package ID</th>
+                    <th>Version</th>
+                    <th class="ownerActions">Actions</th>
+                </tr>
+            </thead>
+        @foreach (var package in Model.UnpublishedPackages)
+        {
+            <tr class="current">
+                <td class="warning">@package.Title</td>
+                <td>@package.PackageID</td>
+                <td>@package.PackageVersion</td>
+                <td class="ownerActions">
+                    <ul>
+                        <li>
+                            <a href="@Url.Action("Publish", "Package", new { packageId = @package.PackageID, packageVersion = @package.PackageVersion })"
+                                title="Publish">
+                                <img src="@Href("../../../Content/Images/greenArrow.png")" alt="Publish" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Edit", "Package", new { packageId = @package.PackageID, packageVersion = @package.PackageVersion })"
+                                title="Edit">
+                                <img src="@Href("../../../Content/Images/editIcon.png")" alt="Edit" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Delete" class="deletePackageLink" data-package-id="@package.PackageID"
+                                data-package-version="@package.PackageVersion" data-should-redirect="@true">
+                                <img src="@Href("../../../Content/Images/trash.png")" alt="Delete" />
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        }
+         </table>
+    }
+    <header>
+        <h2>Manage My Submissions</h2>
+        <span class="displayResults">Displaying results @Model.StartingNumber - @Model.EndingNumber of @Model.TotalNumberOfPackages.</span>
+    </header>
+    @if (((IEnumerable<object>)Model.Packages).Count() > 0)
+    {
+
+    @Display(Model.Packages)
+    @Display(Model.Pager)
+    }
+    else
+    {
+    <p>You do not currently own any published packages.</p>
+    }
+</section>

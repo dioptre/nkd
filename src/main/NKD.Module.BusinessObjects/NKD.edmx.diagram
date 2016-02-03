@@ -1,0 +1,1334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3cf498aeaaa142e3b452c3cdd48bf54f" Name="Diagram1" ZoomLevel="10">
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Applications" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Membership" Width="1.5" PointX="6" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Paths" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.PersonalizationAllUsers" Width="1.5" PointX="5.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.PersonalizationPerUser" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Profile" Width="1.5" PointX="10.5" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Roles" Width="1.5" PointX="3" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.SchemaVersions" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Users" Width="1.5" PointX="8.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.WebEvent_Events" Width="1.5" PointX="8.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Credit" Width="1.5" PointX="36.75" PointY="457.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Currency" Width="1.5" PointX="24" PointY="341.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryTax" Width="1.5" PointX="27" PointY="341.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Invoice" Width="1.5" PointX="11.25" PointY="462.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.InvoiceLine" Width="1.5" PointX="42" PointY="404.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Journal" Width="1.5" PointX="28.5" PointY="464.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Payment" Width="1.5" PointX="28.5" PointY="458.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.PurchaseOrder" Width="1.5" PointX="3" PointY="474.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Supply" Width="1.5" PointX="22.5" PointY="469.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.SupplyItem" Width="1.5" PointX="39.75" PointY="462.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.SupplyItemTax" Width="1.5" PointX="45" PointY="405.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Account" Width="1.5" PointX="14.25" PointY="464.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AccountDiscount" Width="1.5" PointX="28.5" PointY="476.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Asset" Width="1.5" PointX="25.5" PointY="468.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssetAlias" Width="1.5" PointX="27.75" PointY="471.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssetMaintenance" Width="1.5" PointX="33.75" PointY="478.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssetWarranty" Width="1.5" PointX="36.75" PointY="470.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.CompanyAccount" Width="1.5" PointX="22.5" PointY="465.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ContractAsset" Width="1.5" PointX="36.75" PointY="477.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DeliveryAdvice" Width="1.5" PointX="31.5" PointY="466" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DeliveryAdviceItem" Width="1.5" PointX="36.75" PointY="464.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryDecontaminationStatus" Width="1.5" PointX="34.5" PointY="440.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryDeliveryAdviceReason" Width="1.5" PointX="29.25" PointY="435.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryDeviceType" Width="1.5" PointX="43.75" PointY="509.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryEventType" Width="1.5" PointX="44.5" PointY="515" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryPart" Width="1.5" PointX="17.25" PointY="464.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryPartCategory" Width="1.5" PointX="25.5" PointY="465.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryPartKit" Width="1.5" PointX="34.5" PointY="444.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryPartKitItem" Width="1.5" PointX="31.5" PointY="461.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryProcedure" Width="1.5" PointX="24.75" PointY="448.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryWarrantyType" Width="1.5" PointX="32.25" PointY="433.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ModelPart" Width="1.5" PointX="31.5" PointY="457.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ModelPartKit" Width="1.5" PointX="36.75" PointY="452.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ModelProcedure" Width="1.5" PointX="31" PointY="449.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ModelProcedureTask" Width="1.5" PointX="36.25" PointY="495.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ModelProcedureTaskPart" Width="1.5" PointX="41.5" PointY="480.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ModelScheduleCycle" Width="1.5" PointX="33.25" PointY="502.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ModelWarranty" Width="1.5" PointX="34.5" PointY="471.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProjectPlanTaskModel" Width="1.5" PointX="22.5" PointY="457.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProjectPlanTaskPart" Width="1.5" PointX="33.75" PointY="494.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Recall" Width="1.5" PointX="6" PointY="475" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.RecallModel" Width="1.5" PointX="8.25" PointY="482" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.RecallModelAsset" Width="1.5" PointX="33.75" PointY="483.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.SupplierModel" Width="1.5" PointX="14.25" PointY="456.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.SupplierPart" Width="1.5" PointX="28.5" PointY="450.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Warehouse" Width="1.5" PointX="17.25" PointY="457.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.WarehouseModel" Width="1.5" PointX="25.5" PointY="457.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.WarehouseModelSupplier" Width="1.5" PointX="16.5" PointY="451.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.WarehousePart" Width="1.5" PointX="22.5" PointY="450.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.WarehousePartSupplier" Width="1.5" PointX="30.75" PointY="501.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.WorkflowSchedule" Width="1.5" PointX="46.75" PointY="509.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.sysdiagram" Width="1.5" PointX="2.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Address" Width="1.5" PointX="28.5" PointY="428.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayGroup" Width="1.5" PointX="9" PointY="475.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayGroupStandardTestResult" Width="1.5" PointX="31.5" PointY="484" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayGroupTest" Width="1.5" PointX="20.25" PointY="481.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayGroupTestResult" Width="1.5" PointX="28.5" PointY="490.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayGroupTestResultComment" Width="1.5" PointX="30.75" PointY="491.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayGroupTestResultDuplicate" Width="1.5" PointX="30.75" PointY="496.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.BlockModel" Width="1.5" PointX="12" PointY="472.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.BlockModelBlock" Width="1.5" PointX="14.25" PointY="475.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.BlockModelBlockData" Width="1.5" PointX="22.5" PointY="480.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.BlockModelMetadata" Width="1.5" PointX="17.25" PointY="485" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Casing" Width="1.5" PointX="42.75" PointY="473" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Cementing" Width="1.5" PointX="30.75" PointY="509.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Company" Width="1.5" PointX="9" PointY="462.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.CompanyAddress" Width="1.5" PointX="17.25" PointY="473" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.CompanyRelation" Width="1.5" PointX="11.25" PointY="511.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.CompanyServer" Width="1.5" PointX="10.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Compliance" Width="1.5" PointX="17.25" PointY="478.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ComplianceTask" Width="1.5" PointX="22.5" PointY="486.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ComplianceWorkType" Width="1.5" PointX="19.5" PointY="488.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Contact" Width="1.5" PointX="0.75" PointY="470" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ContactAddress" Width="1.5" PointX="33.75" PointY="447.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Contract" Width="1.5" PointX="20.25" PointY="468.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ContractCondition" Width="1.5" PointX="28.5" PointY="483.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ContractConditionModel" Width="1.5" PointX="38.75" PointY="493.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ContractConditionPart" Width="1.5" PointX="31.5" PointY="474.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.CostEstimateModel" Width="1.5" PointX="34.5" PointY="464" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Defect" Width="1.5" PointX="36" PointY="482.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Desurvey" Width="1.5" PointX="50.5" PointY="426.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryAdjective" Width="1.5" PointX="21.75" PointY="287.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryAlteration" Width="1.5" PointX="21.75" PointY="291.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryAssayMethod" Width="1.5" PointX="21.75" PointY="295.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryAssayStandard" Width="1.5" PointX="21.75" PointY="299.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryAssayTest" Width="1.5" PointX="21.75" PointY="303.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryAssayType" Width="1.5" PointX="21.75" PointY="306.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryBasalContact" Width="1.5" PointX="21.75" PointY="310.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryBedSpacing" Width="1.5" PointX="21.75" PointY="314.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryCharacteristic" Width="1.5" PointX="24" PointY="393.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryCharacteristicType" Width="1.5" PointX="21.75" PointY="323" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryColour" Width="1.5" PointX="21.75" PointY="326.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryCommodity" Width="1.5" PointX="21.75" PointY="330.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryContractConditionType" Width="1.5" PointX="21.75" PointY="334.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryCoreState" Width="1.5" PointX="21.75" PointY="338" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryCostType" Width="1.5" PointX="32.25" PointY="437" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryCountry" Width="1.5" PointX="21.75" PointY="341.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryCountryState" Width="1.5" PointX="24" PointY="402.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryDataStatus" Width="1.5" PointX="21.75" PointY="348" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryDefectCompleteness" Width="1.5" PointX="21.75" PointY="352" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryDefectContinuity" Width="1.5" PointX="21.75" PointY="355.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryDefectSpacing" Width="1.5" PointX="21.75" PointY="359.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryDefectType" Width="1.5" PointX="21.75" PointY="363.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryDesurveyAlgorithmType" Width="1.5" PointX="21.75" PointY="367.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryDimension" Width="1.5" PointX="21.75" PointY="371.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryDipOrientationMethod" Width="1.5" PointX="21.75" PointY="375.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryDomain" Width="1.5" PointX="21.75" PointY="379.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryDomainAlias" Width="1.5" PointX="24" PointY="422" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryDrillBitType" Width="1.5" PointX="21.75" PointY="382.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryDrillCasingType" Width="1.5" PointX="21.75" PointY="386.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryDrillFluid" Width="1.5" PointX="21.75" PointY="390.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryDrillRigType" Width="1.5" PointX="21.75" PointY="394.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryDrillSize" Width="1.5" PointX="21.75" PointY="398.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryEstimatedStrength" Width="1.5" PointX="21.75" PointY="402.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryFailureMode" Width="1.5" PointX="21.75" PointY="406.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryFileType" Width="1.5" PointX="11.25" PointY="456.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryFlowTestType" Width="1.5" PointX="21.75" PointY="410.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryGasDetected" Width="1.5" PointX="21.75" PointY="414.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryGeodeticDatum" Width="1.5" PointX="21.75" PointY="418.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryGeophysicalLogType" Width="1.5" PointX="21.75" PointY="422.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryGroup" Width="1.5" PointX="21.75" PointY="426.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryGroupMembership" Width="1.5" PointX="24" PointY="445.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryHeightDatum" Width="1.5" PointX="21.75" PointY="430.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryHolePurpose" Width="1.5" PointX="21.75" PointY="434.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryHoleStatus" Width="1.5" PointX="21.75" PointY="438.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryHoleType" Width="1.5" PointX="21.75" PointY="442.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryHorizon" Width="1.5" PointX="21.75" PointY="446.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryHue" Width="1.5" PointX="21.75" PointY="491" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryInfillMode" Width="1.5" PointX="21.75" PointY="494.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryInfillType" Width="1.5" PointX="21.75" PointY="498.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryIntervalStatus" Width="1.5" PointX="21.75" PointY="502.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryLeaseApplicationType" Width="1.5" PointX="21.75" PointY="506.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryLicenseType" Width="1.5" PointX="21.75" PointY="510.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryLithologyInterrelation" Width="1.5" PointX="19.125" PointY="515.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryLithologyQualifier" Width="1.5" PointX="21.75" PointY="519.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryLithologyType" Width="1.5" PointX="21.75" PointY="523.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryLocationType" Width="1.5" PointX="21.75" PointY="527.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryMechanicalState" Width="1.5" PointX="21.75" PointY="531.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryMineralAbundance" Width="1.5" PointX="21.75" PointY="535.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryMineralAndFossilAbundance" Width="1.5" PointX="21.75" PointY="539" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryMineralAndFossilAssociation" Width="1.5" PointX="21.75" PointY="542.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryMineralAndFossilType" Width="1.5" PointX="21.75" PointY="546.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryMineralForm" Width="1.5" PointX="21.75" PointY="550.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryMineralStyle" Width="1.5" PointX="21.75" PointY="554.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryMineralType" Width="1.5" PointX="21.75" PointY="558.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryModel" Width="1.5" PointX="46" PointY="497.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryModelCategory" Width="1.5" PointX="48.25" PointY="504.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryModelRelation" Width="1.5" PointX="24" PointY="597.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryModelStatus" Width="1.5" PointX="21.75" PointY="562.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryMoistureSensitivity" Width="1.5" PointX="21.75" PointY="565.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryPartStatus" Width="1.5" PointX="21.75" PointY="569.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryPlasticity" Width="1.5" PointX="21.75" PointY="573.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryPly" Width="1.5" PointX="21.75" PointY="577.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryPlyAlias" Width="1.5" PointX="24" PointY="509.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryPointLoadTestType" Width="1.5" PointX="21.75" PointY="580.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryPosition" Width="1.5" PointX="21.75" PointY="584.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryProfession" Width="1.5" PointX="21.75" PointY="588.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryProvinceGroup" Width="1.5" PointX="27" PointY="520" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryProvinceType" Width="1.5" PointX="21.75" PointY="593" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryRelationType" Width="1.5" PointX="21.75" PointY="597.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryRockMassUnitType" Width="1.5" PointX="21.75" PointY="601.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionarySampleCategory" Width="1.5" PointX="21.75" PointY="605.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionarySampleState" Width="1.5" PointX="21.75" PointY="609.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionarySampleType" Width="1.5" PointX="21.75" PointY="613.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionarySeam" Width="1.5" PointX="21.75" PointY="618.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionarySeamAlias" Width="1.5" PointX="24" PointY="530" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionarySedimentaryFeature" Width="1.5" PointX="21.75" PointY="622.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryShade" Width="1.5" PointX="21.75" PointY="626.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryShape" Width="1.5" PointX="21.75" PointY="630.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryStratigraphy" Width="1.5" PointX="21.75" PointY="634" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionarySurfaceRoughness" Width="1.5" PointX="21.75" PointY="637.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionarySurveyAccuracy" Width="1.5" PointX="21.75" PointY="641.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryTexture" Width="1.5" PointX="21.75" PointY="645.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryUnit" Width="1.5" PointX="24" PointY="541.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryUnitType" Width="1.5" PointX="21.75" PointY="649.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryWeathering" Width="1.5" PointX="21.75" PointY="657.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryWorkType" Width="1.5" PointX="24" PointY="513.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryWorkTypeClass" Width="1.5" PointX="21.75" PointY="662" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryWorkTypeRelation" Width="1.5" PointX="26.25" PointY="514.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Drilling" Width="1.5" PointX="30.75" PointY="440.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Experience" Width="1.5" PointX="41.5" PointY="506.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.FileData" Width="1.5" PointX="19.5" PointY="441.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Geology" Width="1.5" PointX="38.75" PointY="498.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Geophysics" Width="1.5" PointX="35.75" PointY="502.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.GeophysicsData" Width="1.5" PointX="40.25" PointY="519.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.GeophysicsMetadata" Width="1.5" PointX="38" PointY="523.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Header" Width="1.5" PointX="28.5" PointY="497.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.HeaderGeophysicalLog" Width="1.5" PointX="42.75" PointY="464.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.HeaderRelation" Width="1.5" PointX="30.75" PointY="546.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Interpretation" Width="1.5" PointX="25.5" PointY="478.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.InterpretationData" Width="1.5" PointX="33.75" PointY="489.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Lease" Width="1.5" PointX="43.75" PointY="446.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.LeaseApplication" Width="1.5" PointX="43.75" PointY="457.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.License" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.LicenseAsset" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.LicenseAssetModelPart" Width="1.5" PointX="14.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.LicenseHistory" Width="1.5" PointX="14.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Lithology" Width="1.5" PointX="39" PointY="474.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Location" Width="1.5" PointX="26.25" PointY="432" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.LocationAlias" Width="1.5" PointX="28.5" PointY="444.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.LocationData" Width="1.5" PointX="28.5" PointY="439.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.LocationTrace" Width="1.5" PointX="36.5" PointY="447.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.MetaData" Width="1.5" PointX="7.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.MetaDataRelation" Width="1.5" PointX="10" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Mineralogy" Width="1.5" PointX="30.75" PointY="526.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ModelCharacteristic" Width="1.5" PointX="26.25" PointY="393.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Opportunity" Width="1.5" PointX="45.75" PointY="478.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Parameter" Width="1.5" PointX="26.25" PointY="543.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ParameterDuplicate" Width="1.5" PointX="28.5" PointY="544.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ParameterGroup" Width="1.5" PointX="24" PointY="426" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.PartCharacteristic" Width="1.5" PointX="31.5" PointY="479.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.PointLoad" Width="1.5" PointX="33.75" PointY="511.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.PrivateData" Width="1.5" PointX="5.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Project" Width="1.5" PointX="46.75" PointY="438.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProjectDeliverable" Width="1.5" PointX="34.5" PointY="452.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProjectPlan" Width="1.5" PointX="49" PointY="460.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProjectPlanTask" Width="1.5" PointX="46" PointY="520" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProjectPlanTaskComplianceResponse" Width="1.5" PointX="24.75" PointY="491.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProjectPlanTaskData" Width="1.5" PointX="48.25" PointY="526.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProjectPlanTaskResponse" Width="1.5" PointX="49.25" PointY="508.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProjectPlanTaskResponseData" Width="1.5" PointX="51.5" PointY="510" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProjectPlanTaskWorker" Width="1.5" PointX="46.75" PointY="515" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProspectusProject" Width="1.5" PointX="26.25" PointY="410.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProspectusProjectCommodity" Width="1.5" PointX="24" PointY="330.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Province" Width="1.5" PointX="39.25" PointY="452.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProvinceAlias" Width="1.5" PointX="41.5" PointY="452.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProvinceData" Width="1.5" PointX="41.5" PointY="457.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProvinceRelation" Width="1.5" PointX="41.5" PointY="524.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Recovery" Width="1.5" PointX="38.75" PointY="445.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Sample" Width="1.5" PointX="30.75" PointY="554.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.SecurityBlacklist" Width="1.5" PointX="52" PointY="459" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.SecurityWhitelist" Width="1.5" PointX="55" PointY="459" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Server" Width="1.5" PointX="7.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ServerApplication" Width="1.5" PointX="9.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Survey" Width="1.5" PointX="48.25" PointY="483.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Task" Width="1.5" PointX="43.75" PointY="525.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.TaskData" Width="1.5" PointX="46" PointY="535.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.TaskRelation" Width="1.5" PointX="46" PointY="561" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Tenement" Width="1.5" PointX="41.5" PointY="411.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.TenementCommodity" Width="1.5" PointX="27" PointY="330.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.TenementProvince" Width="1.5" PointX="43.75" PointY="433.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.TenementRelation" Width="1.5" PointX="43.75" PointY="438.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Usage" Width="1.5" PointX="11.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.UsageAuditView" Width="1.5" PointX="24" PointY="653" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.UserData" Width="1.5" PointX="13.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.WaterFlow" Width="1.5" PointX="30.75" PointY="515" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DefinitionIdentityTable" Width="1.5" PointX="15.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.IdentityOwnerTable" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.InstanceMetadataChangesTable" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.InstancePromotedPropertiesTable" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.InstancesTable" Width="1.5" PointX="17.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.KeysTable" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.LockOwnersTable" Width="1.5" PointX="17.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.RunnableInstancesTable" Width="1.5" PointX="2.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ServiceDeploymentsTable" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ApplicationsView" Width="1.5" PointX="18.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.MembershipUsersView" Width="1.5" PointX="0.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProfilesView" Width="1.5" PointX="2.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.RolesView" Width="1.5" PointX="19.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.UsersView" Width="1.5" PointX="19.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.UsersInRolesView" Width="1.5" PointX="19.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.WebPartState_PathsView" Width="1.5" PointX="19.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.WebPartState_SharedView" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.WebPartState_UserView" Width="1.5" PointX="20.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.CompanyView" Width="1.5" PointX="19.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryHeaderView" Width="1.5" PointX="4.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ExperienceBasicView" Width="1.5" PointX="21.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.LicenseView" Width="1.5" PointX="6.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ModelsCurrentView" Width="1.5" PointX="8.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ModelStatusView" Width="1.5" PointX="10.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProjectModelsAwaitingAuthorisationView" Width="1.5" PointX="21.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProjectStatusView" Width="1.5" PointX="15.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.SurveyViewsView" Width="1.5" PointX="21.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.WorkTypeView" Width="1.5" PointX="22.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.InstancePromotedProperty" Width="1.5" PointX="21.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Instance" Width="1.5" PointX="26.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ServiceDeployment" Width="1.5" PointX="23.75" PointY="10.75" IsExpanded="true" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK__aspnet_Me__Appli__03DB89B3" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK__aspnet_Pa__Appli__31A25463" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK__aspnet_Ro__Appli__2077C861" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK__aspnet_Us__Appli__758D6A5C" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK__aspnet_Me__UserI__04CFADEC" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK__aspnet_Pe__PathI__375B2DB9" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK__aspnet_Pe__PathI__3B2BBE9D" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK__aspnet_Pe__UserI__3C1FE2D6" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK__aspnet_Pr__UserI__17E28260" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Credit_E_Currency" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Credit_E_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Credit_E_InvoiceLine" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Credit_E_Supply" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Currency_X_DictionaryCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Invoice_E_Currency" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_InvoiceLine_E_Currency" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Journal_E_Currency" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Payment_E_Currency" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_PurchaseOrder_E_Currency" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItem_E_Currency" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProspectusProject_E_Currency" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_DictionaryTax_X_DictionaryCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_DictionaryTax_X_DictionaryCountryState" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_DictionaryTax_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_DictionaryTax_X_Province" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_InvoiceLine_E_DictionaryTax" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItemTax_E_DictionaryTax" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Invoice_Q_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Invoice_Q_Account1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Invoice_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Invoice_X_Company1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_InvoiceLine_E_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_InvoiceLine_E_SupplyItem" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Journal_Q_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Payment_E_Payment" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Payment_Q_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Payment_Q_Account1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_PurchaseOrder_Q_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_PurchaseOrder_Q_Account1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_PurchaseOrder_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_PurchaseOrder_X_Company1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_PurchaseOrder_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_PurchaseOrder_X_Contact1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_PurchaseOrder_X_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Supply_E_PurchaseOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Supply_E_PurchaseOrder1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Asset_E_PurchaseOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Supply_E_Supply" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Supply_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Supply_X_Contact1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Supply_X_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Supply_X_ProjectDeliverable" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Supply_X_ProjectDeliverable1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItem_E_Supply" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItem_Q_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItem_Q_ProjectPlanTaskModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItem_Q_ProjectPlanTaskPart" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItem_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItem_X_DictionaryUnit1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItem_X_DictionaryUnit2" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItem_X_ProjectPlanTaskResponse" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItemTax_E_SupplyItem" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Account_Q_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Account_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Account_X_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_AccountProductDiscount_Q_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Asset_Q_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Asset_Q_Account1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Asset_Q_Account2" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_CompanyAccount_Q_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DeliveryAdvice_Q_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_AccountDiscount_Q_DictionaryDeviceType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_AccountDiscount_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_AccountProductDiscount_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_AccountProductDiscount_X_Experience" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Asset_Q_Asset" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Asset_X_DictionaryModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Asset_X_Experience" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Asset_X_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_AssetAlias_Q_Asset" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_AssetMaintenance_Q_Asset" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_AssetWarranty_Q_Asset" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ContractAsset_Q_Asset" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DeliveryAdviceItems_Q_Asset" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_RecallModelAssets_Q_Asset" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_AssetMaintenance_Q_ModelProcedure" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_AssetWarranty_Q_DictionaryWarrantyType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_AssetWarranty_Q_ModelWarranty" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_AssetWarranty_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_CompanyAccount_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ContractAsset_X_Contract" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DeliveryAdvice_Q_DictionaryDeliveryAdvice" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DeliveryAdvice_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DeliveryAdvice_X_CompanyAddress" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DeliveryAdvice_X_CompanyAddress1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DeliveryAdvice_X_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DeliveryAdvice_X_ProjectDeliverable" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DeliveryAdviceItems_Q_DeliveryAdvice" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DeliveryAdviceItem_Q_DictionaryDecontaminationStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DeliveryAdviceItems_Q_DictionaryPart" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryDeviceType_Q_DictionaryDeviceType1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryDeviceType_X_Experience" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryPart_Q_DictionaryDeviceType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryPartCategory_Q_DictionaryDeviceType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryModel_Q_DictionaryDeviceType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryModelCategory_Q_DictionaryDeviceType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_WorkflowSchedule_Q_DictionaryEventType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryPart_Q_DictionaryPart" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryPart_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryPart_X_DictionaryPartStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryPart_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryPart_X_FileData" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryPartCategory_Q_DictionaryPart" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryProcedure_Q_DictionaryPart" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelPart_Q_DictionaryPart" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelProcedureTaskPart_Q_DictionaryPart" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_PartKitItems_Q_DictionaryPart" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_PartSupplier_Q_DictionaryPart" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_PartWarehouseStockControl_Q_DictionaryPart" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ProjectPlanTaskPart_Q_DictionaryPart" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ContractConditionPart_X_DictionaryPart" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_PartCharacteristic_Q_DictionaryPart" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelPartKit_Q_DictionaryPartKit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_PartKitItems_Q_DictionaryPartKit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryPartKitItem_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryProcedure_X_DictionaryCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryProcedure_X_DictionaryCountryState" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryProcedure_X_DictionaryModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryProcedure_X_FileData" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryProcedure_X_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryProcedure_X_Province" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_DictionaryProcedure_X_Task" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelProcedure_Q_DictionaryProcedure" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelWarranty_Q_DictionaryWarrantyType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelPart_X_DictionaryModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelPartKit_Q_ModelPart" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelProcedure_Q_ModelProcedure" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelProcedure_X_DictionaryModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelProcedureTask_Q_ModelProcedure" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelScheduleCycle_Q_ModelProcedure" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelProcedureTask_Q_ModelProcedureTask" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelProcedureTask_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelProcedureTask_X_FileData" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelProcedureTask_X_Task" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelProcedureTaskPart_Q_ModelProcedureTask" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelScheduleCycle_X_DictionaryModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelScheduleCycle_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelWarranty_X_Contract" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelWarranty_X_DictionaryModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelWarranty_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ProjectPlanTaskModel_Q_DictionaryModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ProjectPlanTaskModel_Q_SupplierModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ProjectPlanTaskModel_Q_WarehouseModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ProjectPlanTaskModel_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ProjectPlanTaskModel_X_ProjectPlanTask" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ProjectPlanTaskPart_Q_SupplierPart" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ProjectPlanTaskPart_Q_WarehousePart" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ProjectPlanTaskPart_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ProjectPlanTaskPart_X_ProjectPlanTask" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Recall_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Recall_X_Contact1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Recall_X_Contact2" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Recall_X_Contact3" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Recall_X_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_RecallModel_Q_Recall" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_RecallsModel_Q_Recalls" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_RecallModel_X_DictionaryModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_RecallModelAssets_Q_RecallModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_RecallModelAssets_X_ProjectPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelSupplier_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelSupplier_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelSupplier_X_DictionaryUnit1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelSupplier_X_FileData" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_SupplierModel_X_Contract" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_SupplierModel_X_DictionaryModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_WarehouseModelSupplier_Q_SupplierModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_PartSupplier_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_PartSupplier_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_PartSupplier_X_DictionaryUnit1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_PartSupplier_X_FileData" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_SupplierPart_X_Contract" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_WarehousePartSupplier_Q_SupplierPart" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelWarehouseStockControl_Q_ModelWarehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_PartWarehouse_Q_" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_PartWarehouseStockControl_Q_PartWarehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Warehouse_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Warehouse_X_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_ModelWarehouseStockControl_Q_DictionaryModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_WarehouseModelSupplier_Q_WarehouseModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_WarehouseModelSupplier_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_WarehousePartSupplier_Q_WarehousePart" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_WarehousePartSupplier_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_WorkflowSchedule_X_Experience" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Address_X_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_CompanyAddress_X_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ContactAddress_X_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroup_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroup_X_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroup_X_Person1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroup_X_Person2" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroup_X_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupTest_X_AssayGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupStandardTestResult_X_AssayGroupTest" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupStandardTestResult_X_AssayGroupTestSample" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupStandardTestResult_X_DictionaryAssayStandard" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupStandardTestResult_X_DictionarySample_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupStandardTestResult_X_DictionarySampleState" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupStandardTestResult_X_DictionarySampleType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupTest_X_DictionaryAssayMethod" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupTest_X_DictionaryAssayType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupTest_X_Parameter" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupTestResult_X_AssayGroupTest" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupTestResult_X_AssayGroupTestSample" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupTestResultComment_X_AssayGroupTestResult" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupTestResultDuplicate_X_AssayGroupTestResult" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_BlockModel_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_BlockModel_X_Contact2" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_BlockModel_X_Contact3" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_BlockModel_X_Contact4" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_BlockModel_X_DictionaryDimension" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_BlockModel_X_DictionaryDimension1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_BlockModel_X_DictionaryDimension2" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_BlockModel_X_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_BlockModelBlock_X_BlockModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_BlockModelBlockData_X_BlockModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_BlockModelMetadata_X_BlockModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_BlockModelBlockData_X_BlockModelBlock" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Composite_X_BlockModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_BlockModelBlockData_X_Parameter" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_BlockModelMetadata_X_Parameter" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Casing_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Casing_X_DictionaryUnit1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Casing_X_DictionaryUnit2" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_CasingData_X_DictionaryCasing_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_CasingData_X_Header" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DesurveyResult_X_Casing" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_CementingData_X_Header" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DesurveyResult_X_Cementing" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Company_X_DictionaryCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Company_X_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_CompanyAddress_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_CompanyRelation_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_CompanyRelation_X_Company1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Compliance_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Contract_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Contract_X_Company1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Contract_X_Company2" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Contract_X_Company3" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryFileType_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryModel_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Drilling_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Experience_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Header_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Header_X_Company1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_HeaderGeophysicalLog_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Lease_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LeaseApplication_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Location_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Opportunity_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Project_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProspectusProject_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProspectusProject_X_Company1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Province_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_SecurityBlacklist_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_SecurityBlacklist_X_Company1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_SecurityWhitelist_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_SecurityWhitelist_X_Company1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Survey_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Tenement_X_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Compliance_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Compliance_X_DictionaryCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Compliance_X_Province" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ComplianceTask_X_Compliance" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ComplianceWorkType_X_Compliance" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ComplianceTask_X_Task" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ComplianceWorkType_X_DictionaryWorkType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskComplianceResponse_X_ComplianceWorkType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ContactAddress_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Contract_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Contract_X_Contact1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Contract_X_Contact2" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Contract_X_Contact3" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DrillingData_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Experience_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_GeologistData_X_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Header_X_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_HeaderGeophysicalLog_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Lease_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LeaseApplication_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Location_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LocationHistory_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Opportunity_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Opportunity_X_Contact1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Opportunity_X_Contact2" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Opportunity_X_Contact3" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Opportunity_X_Contact4" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Opportunity_X_Contact5" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Person_X_DictionaryCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectDeliverable_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectDeliverable_X_Contact1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectDeliverable_X_Contact2" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlan_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskComplianceResponse_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskComplianceResponse_X_Contact1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskResponse_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskResponse_X_Contact1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProspectusProject_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Province_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_SecurityBlacklist_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_SecurityWhitelist_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_SecurityWhitelist_X_Contact1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Survey_X_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Tenement_X_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Contract_X_Contract" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Contract_X_FileData" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Contract_X_ProjectDeliverable" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Contract_X_ProjectDeliverable1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ContractCondition_X_Contract" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_CostEstimateModel_X_Contract" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Drill_Company_Contract_X_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectDeliverable_X_Contract" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ContractCondition_X_DictionaryContractConditionType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ContractCondition_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ContractConditionModel_X_ContractCondition" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ContractConditionPart_X_ContractCondition" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ContractConditionModel_X_DictionaryModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_CostEstimateModel_X_CostEstimateModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_CostEstimateModel_X_DictionaryCostType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_CostEstimateModel_X_DictionaryModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_CostEstimateModel_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_CostEstimateModel_X_DictionaryUnit1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Defect_X_DictionaryRockMassUnitType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DefectData_X_DictionaryAlteration" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DefectData_X_DictionaryDip_Orient_Meth" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DefectData_X_DictionaryEst_Strength" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DefectData_X_DictionaryEst_Strength1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DefectData_X_DictionaryInfill_Mode" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DefectData_X_DictionaryInfill_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DefectData_X_DictionaryInfill_Type1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DefectData_X_DictionaryMoist_Sensitive" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DefectData_X_DictionaryPlasticity" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DefectData_X_DictionaryPlasticity1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DefectData_X_DictionaryRoughness" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DefectData_X_DictionaryShape" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DefectData_X_DictionaryWeathering" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DesurveyResult_X_Defect" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Desurvey_X_DictionaryDesurveyAlgorithmType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Desurvey_X_Survey" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DesurveyResult_X_Desurvey" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryAdjective_X_FileData" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryAlteration_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryAssayMethod_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryAssayStandard_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryAssayTest_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryAssayType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryBasal_Contact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryBasalContact_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryBed_Spacing" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryBedSpacing_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryCharacteristic_X_DictionaryCharacteristicType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryCharacteristic_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ModelCharacteristic_X_DictionaryCharacteristic" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_PartCharacteristic_X_DictionaryCharacteristic" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryCharacteristic_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryCharacteristicType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryColour" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryColour_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProspectusProjectCommodityID_X_DictionaryCommodity" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_TenementCommodityID_X_Commodity" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryCommodity_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryContractCondition_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryCore_State" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryCoreState_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryCountryState_X_DictionaryCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Location_X_DictionaryCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProspectusProject_X_DictionaryCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Province_X_DictionaryCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Tenement_X_DictionaryCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryCountry_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Location_X_DictionaryCountryState" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProspectusProject_X_DictionaryCountryState" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Province_X_DictionaryCountryState" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryCountryState_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Header_X_DictionaryData_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryDataStatus_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryDefect_Intact" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryDefectCompleteness_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryDefectContinuity_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryDefect_Spacing" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryDefectSpacing_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryDefect_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryDefectType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryDesurveyAlgorithmType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryDimension_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryDipOrientationMethod_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryDomainRelations_X_DictionaryDomainRelations" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Lithology_X_DictionaryDomain" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryDomain_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryDomainAlias_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DrillingData_X_DictionaryDrillBitType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryDrillBitType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryDrillCasingType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DrillingData_X_DictionaryDrill_Fluid" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryDrillFluid_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DrillingData_X_DictionaryRig_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryDrillRigType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DrillingData_X_DictionaryDrill_Size_Name" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_RecoveryData_X_DictionaryDrill_Size_Name" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryDrillSize_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryEst_Strength" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryEstimatedStrength_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_PointLoadData_X_DictionaryFailure_Mode" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryFailureMode_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryFileType_X_DictionaryFileType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_FileData_X_DictionaryFileType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryFileType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_WaterFlowData_X_DictionaryFlow_Test_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryFlowTestType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryGas" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryGasDetected_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Header_X_DictionaryGeodetic_Datum" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryGeodeticDatum_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_HeaderGeophysicalLog_X_DictionaryGeophysicalLogType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryGeophysicalLogType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryGroupMembership_X_DictionaryGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryGroupMembership_X_DictionaryGroupMembership" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ParameterGroup_X_DictionaryGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryGroup_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryGroupMembership_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Header_X_DictionaryHeight_Datum" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryHeightDatum_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Header_X_DictionaryHole_Purpose" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryHolePurpose_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Header_X_DictionaryHole_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryHoleStatus_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Header_X_DictionaryHole_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryHoleType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Lithology_X_DictionaryHorizon" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryHorizon_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryHue" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryHue_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryInfillMode_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryInfillType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryInterval_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryIntervalStatus_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LeaseApplication_X_DictionaryLeaseApplicationType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryLeaseApplicationType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryLicenseType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryLitho_Qual" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryLithologyType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Location_X_DictionaryLocationType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryLocationType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryMech_State" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryMechanicalState_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Mineralogy_X_DictionaryMin_Abundance" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryMineralAbundance_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryMin_Fos_Abund" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryMineralAndFossilAbundance_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryMin_Fos_Assoc" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryMineralAndFossilAssociation_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryMin_Fos_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryMineralAndFossilType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Mineralogy_X_DictionaryMin_Form" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryMineralForm_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Mineralogy_X_DictionaryMin_Style" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryMineralStyle_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Mineralogy_X_DictionaryMin_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryMineralType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryModel_X_DictionaryModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryModel_X_DictionaryModel1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryModel_X_DictionaryModelStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryModel_X_DictionaryUnit1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryModelCategory_X_DictionaryModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ModelCharacteristic_X_DictionaryModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Survey_X_DictionaryModel" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryModel_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryModelRelation_X_DictionaryRelationType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryModelStatus_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryMoistureSensitivity_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryPartStatus_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryPlasticity_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryPlyAlias_X_DictionaryPlyAlias" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Interpretation_X_DictionaryPly" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Lithology_X_DictionaryPly" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryPly_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryPlyAlias_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_PointLoadData_X_DictionaryPL_Test_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryPointLoadTestType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Experience_X_DictionaryPosition" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryPosition_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryWorkType_X_DictionaryProfession" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Experience_X_DictionaryProfession" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryProfession_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryProvinceGroup_X_DictionaryProvinceType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Province_X_DictionaryProvinceGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryProvinceGroup_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Province_X_DictionaryProvinceType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryProvinceType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_HeaderRelation_X_DictionaryRelationType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProvinceRelation_X_DictionaryRelationType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_TaskRelation_X_DictionaryRelationType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryRelationType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryRockMassUnitType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupTestSample_X_DictionarySampleCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionarySampleCategory_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupTestSample_X_DictionarySampleState" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_PointLoadData_X_DictionarySample_State" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionarySampleState_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupTestSample_X_DictionarySampleType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionarySample_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_PointLoadData_X_DictionarySample_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_WaterFlowData_X_DictionarySample_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionarySampleType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Composite_X_DictionarySeam" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionarySeamAlias_X_DictionarySeam" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Lithology_X_DictionarySeam" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionarySeam_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionarySeamAlias_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionarySedimentaryFeature_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryShade" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryShade_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryShape_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Lithology_X_DictionaryStratigraphy" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryStratigraphy_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionarySurfaceRoughness_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Header_X_DictionarySurvey_Accuracy" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionarySurveyAccuracy_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryTexture" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryTexture_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_CompositeData_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryUnit_X_DictionaryUnitType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Geophysics_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectDeliverable_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Task_X_DictionaryUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryUnit_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryUnitType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryWeathering" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryWeathering_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryWorkType_X_DictionaryWorkType1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryWorkTypeRelation_X_DictionaryWorkType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryWorkTypeRelation_X_DictionaryWorkType1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Experience_X_DictionaryWorkType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Opportunity_X_DictionaryWorkType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Opportunity_X_DictionaryWorkType1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectDeliverable_X_DictionaryWorkType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTask_X_DictionaryWorkType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskResponse_X_DictionaryWorkType" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryWorkType_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryWorkTypeClass_X_FileData_OriginalFile" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DesurveyResult_X_Drilling" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DrillingData_X_Header" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Experience_X_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Experience_X_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Experience_X_Province" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_FileData_X_Experience" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Opportunity_X_Experience" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Task_X_Experience" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_FileID_X_FileID" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Geophysics_X_FileData" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Opportunity_X_FileData" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectDeliverable_X_FileData" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DesurveyResult_X_Geology" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_GeologistData_X_Header" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Geophysics_X_Header" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_GeophysicsMetadata_X_Geophysics" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DesurveyResult_X_GeophyicsData" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_GeophyicsData_X_GeophysicsMetadata" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_GeophysicsMetadata_X_Parameter" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupTestSample_X_Header" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DesurveyResult_X_Header" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Header_X_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Header_X_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_HeaderGeophysicalLog_X_Header" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_HeaderRelation_X_Header" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_HeaderRelation_X_Header1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_Header" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Mineralogy_X_Header" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_PointLoadData_X_Header" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_RecoveryData_X_Header1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Survey_X_Header" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_WaterFlowData_X_Header" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DesurveyResult_X_AssayGroupTestSample" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DesurveyResult_X_Lithology" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DesurveyResult_X_Mineralogy" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DesurveyResult_X_PointLoad" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DesurveyResult_X_Recovery" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_InterpretationData_X_Interpretation" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_CompositeCustomData_X_Parameter" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Lease_X_Tenement" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LeaseApplication_X_Tenement" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LocationAlias_X_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LocationHistory_X_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LocationID_X_LocationID" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_MetaDataRelation_X_MetaData" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Opportunity_X_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ParameterDuplicate_X_Parameter" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ParameterDuplicate_X_Parameter1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ParameterGroup_X_ParameterGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskResponse_X_Parameter" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Task_X_Parameter" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Project_X_Project1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Project_X_Tenement" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectDeliverable_X_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlan_X_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProspectusProject_X_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_SecurityBlacklist_X_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_SecurityBlacklist_X_Project1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_SecurityWhitelist_X_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_SecurityWhitelist_X_Project1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectDeliverable_X_ProjectPlanTask" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlan_X_ProjectPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTask_X_ProjectPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTask_X_Task" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskComplianceResponse_X_ProjectPlanTask" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskID_X_ProjectPlanTaskID" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskResponse_X_ProjectPlanTask" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskWorker_X_ProjectPlanTask" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskComplianceResponse_X_ProjectPlanTaskResponse" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskResponseID_X_ProjectPlanTaskResponseID" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Prospectus_X_Tenement" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProspectusProject_X_Province" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProspectusProjectCommodity_X_ProspectusProject" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProvinceAlias_X_Province" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProvinceID_X_ProvinceID" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProvinceRelation_X_Province" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProvinceRelation_X_Province1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Tenement_X_Province" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_TenementProvince_X_Province" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_TaskID_X_TaskID" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_TaskRelation_X_Task" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_TaskRelation_X_Task1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_TenementCommodityID_X_Tenement" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_TenementProvince_X_Tenement" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_x_TenementRelation_X_Tenement" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_x_TenementRelation_X_Tenement1" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.aspnet_UsersInRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_SecurityBlacklist_X_Contact1" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_SecurityWhitelist_X_Contact2" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Lithology_X_DictionaryAdjective1" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionarySed_Feature2" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.LithologyAdjective" Width="1.5" PointX="1.2001801231876854" PointY="1.0173229579894445" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.LithologySedimentaryFeature" Width="1.5" PointX="2.1443313649596329" PointY="5.4122211213280549" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyAdjective_X_DictionaryAdjective" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologySedimentaryFeature_X_DictionarySedimentaryFeature" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyAdjective_X_Lithology" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologySedimentaryFeature_X_Lithology" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.HeaderHolePurpose" Width="1.5" PointX="4.8301341388514887" PointY="31.404552191218617" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_HeaderHolePurpose_X_DictionaryHolePurpose" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_HeaderHolePurpose_X_Header" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryCompositeCoalView" Width="1.5" PointX="2.0431549931146" PointY="29.27367928497199" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryCompositeStandardView" Width="1.5" PointX="2.7310236947289779" PointY="16.420589916603916" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.LithologyRelation" Width="1.5" PointX="10.609847606443729" PointY="26.063437041856087" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryLitho_Interrel1" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyRelation_X_DictionaryRelationType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyRelation_X_Lithology" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyRelation_X_Lithology1" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskData_X_ProjectPlanTaskData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryLithologyInterrelation_X_FileData_OriginalFile" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryLithologyQualifier_X_FileData_OriginalFile" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_LithologyData_X_DictionaryLitho_Type" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.FileDataWorkType" Width="1.5" PointX="10.195848588922921" PointY="7.64067696390705" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_FileDataWorkType_X_DictionaryWorkType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_FileDataWorkType_X_FileData" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryWorkflowType" Width="1.5" PointX="11.771305203331311" PointY="20.67408847281434" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Workflow" Width="1.5" PointX="2.7038520736172105" PointY="1.671995640579609" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayGroupSubsample" Width="1.5" PointX="3.9964906629158605" PointY="7.2256083224087995" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayGroupSubsampleChemical" Width="1.5" PointX="7.49165690852872" PointY="24.044999893775675" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayGroupSubsampleEquipment" Width="1.5" PointX="4.0372056625956692" PointY="5.696962999970169" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayGroupSubsamplePrecondition" Width="1.5" PointX="9.5409390505128258" PointY="6.2553774594587166" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayGroupSubsampleRelation" Width="1.5" PointX="8.989758128761201" PointY="23.833976637494739" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayGroupTestEquipment" Width="1.5" PointX="8.31156434505785" PointY="10.81728990879715" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayGroupWorkflow" Width="1.5" PointX="2.2996508359441772" PointY="13.332929319391459" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayGroupWorkflowProcedure" Width="1.5" PointX="4.1792318374753146" PointY="4.528838800512645" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayProcedure" Width="1.5" PointX="2.388091542938767" PointY="16.053235910857673" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayProcedureProtocol" Width="1.5" PointX="5.3621611322100087" PointY="18.173160606144538" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayProcedureProtocolEquipment" Width="1.5" PointX="5.3886223590879805" PointY="21.642994175498838" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryAgitationMethod" Width="1.5" PointX="9.00663833739545" PointY="23.732979666317338" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryAssayProcedureMethod" Width="1.5" PointX="7.3763579294906734" PointY="10.777897541773458" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryAssayProcedureTechnique" Width="1.5" PointX="5.9187667434656834" PointY="17.91627780437296" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryAssayProcedureType" Width="1.5" PointX="11.262024873523984" PointY="11.656291490260648" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryAssayTechnique" Width="1.5" PointX="0.47782550588148903" PointY="20.344052264627095" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryChemical" Width="1.5" PointX="0.16573963508277184" PointY="18.877347031085449" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ModelPartInfoView" Width="1.5" PointX="11.615803962394505" PointY="23.733584564055121" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupWorkflow_E_Workflow" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupSubsampleEquipment_Q_Asset" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupTestEquipment_Q_Asset" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupSubsample_X_AssayGroup" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupWorkflow_X_AssayGroup" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupSubsample_X_AssayGroupWorkflowProcedure" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupSubsample_X_DictionaryAgitationMethod" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupSubsample_X_Sample" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupSubsampleChemical_X_AssayGroupSubsample" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupSubsampleEquipment_X_AssayGroupSubsample" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupSubsampleRelation_X_AssayGroupSubsample_Destination" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupSubsampleRelation_X_AssayGroupSubsample_Source" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupTestResult_X_AssayGroupSubsample" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupSubsampleChemical_X_DictionaryChemicalType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupTest_X_Compliance" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupTest_X_DictionaryAssayTechnique" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupTestEquipment_X_AssayGroupTest" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupWorkflowProcedure_X_AssayGroupWorkflow" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupWorkflowProcedure_X_AssayProcedureProtocol" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayProcedure_X_DictionaryAssayProcedureType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayProcedureProtocol_X_AssayProcedure" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayProcedureProtocol_X_Compliance" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayProcedureProtocol_X_DictionaryAssayProcedureMethodType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayProcedureProtocol_X_DictionaryAssayProcedureTechniqueType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayProcedureProtocolEquipment_X_AssayProcedureProtocol" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayProcedureProtocolEquipment_X_DictionaryModel" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryAgitationMethodType_X_DictionaryUnit" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryAgitationMethodType_X_FileData_OriginalFile" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryAssayProcedureMethodType_X_FileData_OriginalFile" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryAssayProcedureTechniqueType_X_FileData_OriginalFile" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryAssayProcedureType_X_FileData_OriginalFile" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryAssayTechnique_X_FileData_OriginalFile" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryChemicalType_X_FileData_OriginalFile" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Sample_X_Location" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayProcedureProtocolPrecondition" Width="1.5" PointX="1.3078713795672503" PointY="0.12508411711318609" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayWorkflowProcedureProtocol" Width="1.5" PointX="0.43234367316232236" PointY="30.952062800038636" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryAssayPreconditionType" Width="1.5" PointX="11.441236372776906" PointY="15.001242763829065" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayWorkflowProcedureProtocol_E_Workflow" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupSubsamplePrecondition_X_DictionaryAssayPreconditionType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupSubsamplePrecondition_X_Parameter" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayProcedureProtocolPrecondition_X_AssayProcedureProtocol" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayWorkflowProcedureProtocol_X_AssayProcedureProtocol" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayProcedureProtocolPrecondition_X_DictionaryAssayPreconditionType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayProcedureProtocolPrecondition_X_DictionaryUnit" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryAssayPreconditionTypeType_X_FileData_OriginalFile" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Workflow_E_DictionaryWorkflowType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_AssayGroupSubsamplePrecondition_X_AssayGroupSubsample" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ApplicationPaymentProvider" Width="1.5" PointX="6.2871135409395738" PointY="1.2804313158990961" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ApplicationPaymentProviderCurrency" Width="1.5" PointX="4.2361058444884172" PointY="11.070400958447904" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ApplicationPaymentProviderProduct" Width="1.5" PointX="3.9326622076019" PointY="7.0387152317160346" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ApplicationPaymentProviderProductModel" Width="1.5" PointX="3.2176726624451915" PointY="8.8257865499825154" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ApplicationPaymentProviderProductPart" Width="1.5" PointX="3.3668045901538823" PointY="24.71704104203593" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ApplicationRoute" Width="1.5" PointX="9.0608207364849846" PointY="6.5810153962024556" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ApplicationRouteData" Width="1.5" PointX="11.999829109758059" PointY="28.278356282170098" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ApplicationRouteParameter" Width="1.5" PointX="9.54540051964363" PointY="17.317729287463113" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssetData" Width="1.5" PointX="4.6930300577976887" PointY="29.0744940326896" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssetProduction" Width="1.5" PointX="8.93750528848614" PointY="27.719753024969133" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ContactCreditCard" Width="1.5" PointX="4.5296659881852879" PointY="21.2758968720566" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryAccountType" Width="1.5" PointX="6.2647941924001991" PointY="0.725769222120647" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryOrderStatus" Width="1.5" PointX="10.022112551155551" PointY="28.10837432560901" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryRouteType" Width="1.5" PointX="10.909901668741322" PointY="25.168699350752263" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Download" Width="1.5" PointX="0.90328998905759772" PointY="11.139307206095806" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Problem" Width="1.5" PointX="4.3293795680298377" PointY="2.8859914703695062" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProblemAssetData" Width="1.5" PointX="4.2173703742294437" PointY="25.889200177923403" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProblemRequirement" Width="1.5" PointX="5.6154736679119406" PointY="4.0807423759627817" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProblemRequirementAssetData" Width="1.5" PointX="3.0006135678852974" PointY="6.7319687189217507" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProblemSolution" Width="1.5" PointX="0.77894979751619975" PointY="30.851761072339379" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProblemSolutionAssetDataAllocation" Width="1.5" PointX="1.3668394262748023" PointY="31.044628977330696" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.StatisticData" Width="1.5" PointX="2.2834046344661174" PointY="7.4839230363648026" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.SupplierModelContract" Width="1.5" PointX="11.460329945879211" PointY="20.797120685129016" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.SupplierPartContract" Width="1.5" PointX="3.6635928450448407" PointY="23.668446104819164" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.SupplyContractCondition" Width="1.5" PointX="10.333671423761953" PointY="23.161810692009428" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.XML" Width="1.5" PointX="3.8746243621570171" PointY="13.924012086318811" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Communication" Width="1.5" PointX="0.31372691891795346" PointY="19.66637798569462" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.PaymentProviderProductDetailsView" Width="1.5" PointX="8.08273358833172" PointY="27.489739237115597" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.AssayGroupSampleView" Width="1.5" PointX="6.215367551061961" PointY="10.570513029848465" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ApplicationPaymentProvider_aspnet_Applications" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Download_aspnet_Applications" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Route_aspnet_Applications" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ApplicationPaymentProvider_X_Company" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ApplicationPaymentProvider_X_Contact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ApplicationPaymentProviderCurrency_E_ApplicationPaymentProvider" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ApplicationPaymentProviderProduct_E_ApplicationPaymentProvider" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ApplicationPaymentProviderCurrency_E_Currency" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ApplicationPaymentProviderProduct_X_DictionaryUnit" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ApplicationPaymentProviderProductModel_E_ApplicationPaymentProviderProduct" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ApplicationPaymentProviderProductPart_E_ApplicationPaymentProviderProduct" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ApplicationPaymentProviderProductModel_X_DictionaryModel" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItem_E_ApplicationPaymentProviderProductModel" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ApplicationPaymentProviderProductPart_Q_DictionaryPart" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItem_E_ApplicationPaymentProviderProductPart" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Route_E_DictionaryRouteType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_RouteData_E_Route" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_RouteParameter_E_Route" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_AssetData_Q_Asset" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_AssetData_X_DictionaryUnit" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_AssetData_X_FileData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_AssetData_X_Location" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_AssetData_X_Province" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProblemAssetData_E_AssetData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProblemRequirementAssetData_E_AssetData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProblemSolutionAssetDataAllocation_E_AssetData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_AssetProduction_Q_Asset" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_AssetProduction_X_Parameter" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ContactCreditCard_X_Contact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_SupplierModel_E_Currency" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_SupplierPart_E_Currency" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Account_E_DictionaryAccountType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_E_DictionaryOrderStatus_E_FileData_OriginalFile" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_PurchaseOrder_E_DictionaryOrderStatus" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_E_DictionaryRouteType_E_FileData_OriginalFile" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Download_X_Company" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Download_X_Contact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Download_X_FileData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Download_X_License" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Download_X_LicenseAsset" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Download_X_Server" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Problem_X_DictionaryUnit" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Problem_X_Location" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Problem_X_Parameter" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Problem_X_Parameter1" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Problem_X_Server" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProblemAssetData_E_Problem" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProblemSolution_E_Problem" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Requirement_E_Problem" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProblemRequirementAssetData_E_ProblemRequirement" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProblemRequirementAssetData_X_DictionaryUnit" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProblemRequirementAssetData_X_FileData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProblemRequirementAssetData_X_Location" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProblemRequirementAssetData_X_Province" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProblemSolutionAssetDataAllocation_E_ProblemSolution" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProblemSolutionAssetDataAllocation_X_FileData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplierModelContract_Q_SupplierModel" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplierModelContract_X_Contract" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplierPartContract_Q_SupplierPart" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplierPartContract_X_Contract" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyContractCondition_X_Company" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyContractCondition_X_Contact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyContractCondition_X_Contract" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyContractCondition_X_ContractCondition" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItem_Q_DictionaryPart" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItem_Q_SupplierModel" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItem_Q_SupplierPart" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItem_Q_Warehouse" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItem_X_DictionaryModel" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Asset_X_DictionaryUnit" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Communication_X_Company" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Communication_X_Company1" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Communication_X_Contact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Communication_X_Contact1" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Communication_X_Contact2" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Communication_X_Contact3" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Communication_X_Contact4" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Communication_X_Contact5" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Communication_X_DictionaryWorkType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Communication_X_DictionaryWorkType1" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Communication_X_Experience" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Communication_X_FileData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Communication_X_Project" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Company_X_FileData" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryAddressType" Width="1.5" PointX="4.5646918046123774" PointY="1.5833395428877974" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_DictionaryAddressType_X_FileData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Address_E_DictionaryAddressType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyContractCondition_E_Supply" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ApplicationPaymentProviderContact" Width="1.5" PointX="10.75" PointY="14.875" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ApplicationPaymentProviderContact_E_ApplicationPaymentProvider" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ApplicationPaymentProviderContact_X_Contact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplyItem_E_ApplicationPaymentProviderProduct" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ContactCreditCard_E_ApplicationPaymentProviderContact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ContactCreditCard_E_Currency" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Invoice_X_CustomerContact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Invoice_X_SupplierContact" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ApplicationUserRoles" Width="1.5" PointX="6.6334293999864862" PointY="22.288642744668127" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_PurchaseOrder_E_ParentPurchaseOrder" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.PaymentInvoice" Width="1.5" PointX="6.2776682592358757" PointY="30.924429699277706" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Invoice_E_Supply" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_PaymentInvoice_E_Invoice" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Payment_X_Contact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Payment_X_SupplierContact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_PaymentInvoice_E_Payment" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Asset_X_Company" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Asset_X_Contact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryUnit_X_DictionaryUnit" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Invoice_X_CustomerAddress" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Invoice_X_SupplierAddress" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryModel_X_DictionaryLicenseType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryModel_X_FileData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryModel_X_SecureFileData" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.TwoStepAuthenticationData" Width="1.5" PointX="5.0543306810103035" PointY="9.01759417774975" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_TwoStepAuthenticationData_X_Contact" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Affiliate" Width="1.5" PointX="4.8456141952637655" PointY="10.492391859410514" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Affiliate_X_ContactParent" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryAffiliateType" Width="1.5" PointX="0.547683410601543" PointY="16.014984004206482" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Affiliate_X_ContactChild1" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Affiliate_E_DictionaryAffiliateType" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ContactEmailsView" Width="1.5" PointX="6.5603048552574155" PointY="18.302669757186749" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.CommunicationEmails" Width="1.5" PointX="6.380006256690252" PointY="6.1473475872293806" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.CommunicationRegardingData" Width="1.5" PointX="1.7810403359034286" PointY="21.150427068188055" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_CommunicationRegardingData_X_Communication" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_CommunicationEmail_E_CommunicationEmail" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_CommunicationEmail_X_Contact" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ModuleInfo" Width="1.5" PointX="5.2084203982764947" PointY="29.505905910165005" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ReportData" Width="1.5" PointX="11.146642701302955" PointY="24.57092326533558" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.X_DrillingProjectPlanTask" Width="1.5" PointX="9.0320868683197" PointY="12.955214074326314" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.XPObjectType" Width="1.5" PointX="11.252789061168576" PointY="3.9640781897884225" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ApplicationPaymentProviderProductModel_Q_SupplierModel" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DrillingProjectPlanTask_X_Drilling" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DrillingProjectPlanTask_X_ProjectPlanTask" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryAssetStatus" Width="1.5" PointX="9.18338323812158" PointY="13.303410431977087" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Dictionary" Width="1.5" PointX="5.5636887389997431" PointY="13.18384704607718" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryUsageAuditType" Width="1.5" PointX="2.9306464749065446" PointY="6.4725095361808824" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ApplicationContactsView" Width="1.5" PointX="8.3512929623719732" PointY="18.225001924776006" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_Q_Asset_Q_DicitonaryAssetStatus1" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_UsageAudit_X_DictionaryUsageAuditType1" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryUsageAuditType_X_FileData_OriginalFile1" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.SupplyItemDetailView" Width="1.5" PointX="2.9570178198427977" PointY="18.020550140189265" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.GraphData" Width="1.5" PointX="7.5824997460388115" PointY="18.02674514894688" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.GraphDataRelation" Width="1.5" PointX="2.315692345758757" PointY="6.6964526207635426" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_GraphDataRelation_E_GraphDataOriginal" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_GraphDataRelation_E_GraphDataRelated" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_GraphDataRelation_X_DictionaryRelationType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_DictionaryWorkType_X_DictionaryWorkTypeClass" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryLinestringType" Width="1.5" PointX="1.2282453278211156" PointY="28.719510151408386" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryProjectType" Width="1.5" PointX="7.6167506275776535" PointY="8.6149513910594173" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Linestring" Width="1.5" PointX="9.0634210598950364" PointY="3.7889527994156595" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProjectOffer" Width="1.5" PointX="8.581886589798092" PointY="29.803420736362888" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProjectPledge" Width="1.5" PointX="1.8180832405658829" PointY="28.161919204593598" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProjectPledgeAddendum" Width="1.5" PointX="6.1453504348850583" PointY="5.1940532052861776" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectPledge_E_Currency" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_E_DictionaryLinestringType_X_FileData_OriginalFile" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Linestring_E_DictionaryLinestringType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_E_DictionaryProjectType_X_FileData_OriginalFile" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Project_E_DictionaryProjectType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_GraphData_E_DictionaryWorkflowType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_GraphData_X_ContactCreator" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Linestring_X_Company" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Linestring_X_ContactResponsible" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectOffer_X_Contact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectOffer_X_Contact1" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectOffer_X_Project" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectPledge_E_ProjectOffer" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectPledge_E_ProjectPledge" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectPledge_X_Contact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectPledge_X_Contact1" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectPledge_X_ContactOverseer" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectPledge_X_Project" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectPledgeAddendum_E_ProjectPledge" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectPledgeAddendum_X_Contact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectPledgeAddendum_X_ContactReviewer" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Defect_X_DictionaryDefectCompleteness" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Defect_X_DictionaryDefectContinuity" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Defect_X_DictionaryDefectSpacing" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Defect_X_DictionaryDefectType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Defect_X_Header" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DataData" Width="1.5" PointX="11.613754939108041" PointY="6.8446351917668409" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_DataData_X_Contact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Experience_E_Linestring" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.GraphDataFileData" Width="1.5" PointX="0.23276021528651947" PointY="6.9850913169724365" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.GraphDataLocation" Width="1.5" PointX="3.8108193091167228" PointY="27.709712741761333" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_GraphDataFileData_E_GraphData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_GraphDataLocation_E_GraphData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_GraphDataFileData_X_FileData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_GraphDataLocation_X_Location" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.GraphDataGroup" Width="1.5" PointX="8.1364263892809046" PointY="27.538758409926089" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_GraphDataGroup_X_ContactCreator" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_GraphDataRelation_E_GraphDataGroup" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryAlterationJointType" Width="1.5" PointX="3.1137033957586171" PointY="13.183840519368575" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryBedDevelopment" Width="1.5" PointX="1.1730898400643328" PointY="6.3426072030992282" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryFriabilityType" Width="1.5" PointX="10.585488896158287" PointY="25.342282053708232" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Defect_X_DictionaryAlterationJointType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Defect_X_DictionaryBedDevelopment" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Defect_X_DictionaryColour" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Defect_X_DictionaryFriabilityType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Defect_X_DictionaryFriabilityType1" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Defect_X_DictionaryLithologyQualifier" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Defect_X_DictionaryLithologyType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Defect_X_DictionaryWeatheringSurface" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryAlterationJointType_X_FileData_OriginalFile" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryBedDevelopmentType_X_FileData_OriginalFile" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryFriabilityType_X_FileData_OriginalFile" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryStructureSet" Width="1.5" PointX="11.432914288450458" PointY="28.577854929760964" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Defect_X_DictionaryStructureSet" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_X_DictionaryStructureSet_X_FileData_OriginalFile" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Form" Width="1.5" PointX="3.8349900524294886" PointY="8.8632709425237355" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.FormData" Width="1.5" PointX="10.032319675214737" PointY="12.884216508308526" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.GraphDataHistory" Width="1.5" PointX="0.32785354942449069" PointY="28.12542572437107" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_FormData_E_Form" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_GraphDataHistory_E_GraphData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_GraphDataHistory_X_Contact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Defect_X_DictionaryBedSpacing" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.TranslationData" Width="1.5" PointX="8.9027143609257013" PointY="30.047686948463173" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Precondition" Width="1.5" PointX="6.375" PointY="42.25" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryTriggerType" Width="1.5" PointX="21.75" PointY="286" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.GraphDataRelationCondition" Width="1.5" PointX="8.625" PointY="0.75" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProjectData" Width="1.5" PointX="51.5" PointY="480.25" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProjectDataTemplate" Width="1.5" PointX="49.25" PointY="479.5" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.ProjectPlanTaskResponseEvent" Width="1.5" PointX="51.5" PointY="277" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Trigger" Width="1.5" PointX="12.625" PointY="39.125" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_GraphDataRelationCondition_E_Condition" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Trigger_E_Condition" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_DictionaryTriggerType_X_FileData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskResponse_E_GraphData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Task_E_GraphData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_GraphDataRelationCondition_E_GraphDataRelation" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectData_E_ProjectDataTemplate" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectData_X_Project" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectData_X_ProjectPlanTaskResponse" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectPlanTaskResponseEvent_E_TriggerDestination" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectPlanTaskResponseEvent_E_TriggerOrigin" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectPlanTaskResponseEvent_X_Project" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectPlanTaskResponseEvent_X_ProjectPlanTaskResponse" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectPlanTaskResponseEvent_X_Task" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskResponse_X_Company" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Task_X_Company" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Task_X_Contact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskWorker_X_Worker1" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskResponse_X_Project" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskResponse_X_TaskActual" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTask_X_ProjectPlanTask" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_ProjectPlanTaskResponse_E_GraphDataGroup" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Task_E_GraphDataGroup" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Trigger_X_CompanyProxy" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Trigger_X_ContactAuthorizedBy" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Trigger_X_ContactProxy" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Project_X_Contact" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.DictionaryRunStateType" Width="1.5" PointX="3" PointY="45.625" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.WorkflowInstance" Width="1.5" PointX="5.25" PointY="0.75" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.WorkflowInstanceData" Width="1.5" PointX="7.5" PointY="44.75" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_WorkflowInstance_E_DictionaryRunStateType" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_WorkflowInstance_E_Workflow" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_WorkflowInstanceData_E_WorkflowInstance" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectDataTemplate_E_Form" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_GraphDataGroup_E_GraphData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Trigger_E_DictionaryTriggerType" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.TriggerGraph" Width="1.5" PointX="14.875" PointY="29.875" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_TriggerGraph_E_GraphData" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_TriggerGraph_E_GraphDataGroup" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_TriggerGraph_E_Trigger" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_ProjectPlanTaskResponseEvent_E_TriggerGraph" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.SupplierDiscount" Width="1.5" PointX="51.25" PointY="487.5" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplierDiscount_Q_DictionaryPart" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplierDiscount_X_Company" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplierDiscount_X_Company1" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplierDiscount_X_Contact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_SupplierDiscount_X_DictionaryModel" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.CustomerSubscriptions" Width="1.5" PointX="18.625" PointY="23.75" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.Notification" Width="1.5" PointX="3" PointY="487.125" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.NotificationData" Width="1.5" PointX="5.25" PointY="489.5" />
+        <EntityTypeShape EntityType="NKD.Module.BusinessObjects.NotificationDevice" Width="1.5" PointX="5.25" PointY="484.875" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_Notification_X_Contact" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_NotificationDevice_E_Notification" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_E_NotificationHistory_E_NotificationHistory" />
+        <AssociationConnector Association="NKD.Module.BusinessObjects.FK_X_Task_X_DictionaryUnitCompletion" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

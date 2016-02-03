@@ -1,0 +1,5 @@
+<connectionStrings>
+  <add name="GalleryFeedEntities" connectionString="Data Source=|DataDirectory|GalleryFeed.sdf" providerName="System.Data.SqlServerCe.4.0" />
+  <!--<add name="GalleryFeedEntities" connectionString="Data Source=.\sqlexpress;Initial Catalog=GalleryFeed;Integrated Security=SSPI"
+    providerName="System.Data.SqlClient" />-->
+</connectionStrings>

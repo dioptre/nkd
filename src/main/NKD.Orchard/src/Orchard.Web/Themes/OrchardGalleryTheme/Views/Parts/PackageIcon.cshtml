@@ -1,0 +1,29 @@
+﻿@{
+    var packageUrl = Url.Action("DetailsForId","Package", new { area="Orchard.Gallery", packageType=Model.PackageTypeSlug, packageId=Model.PackageID});
+    }
+    <a href="@packageUrl">
+    @{
+        string packageType = Model.PackageType.ToLower();
+        string iconUrl = Model.IconUrl.ToString();
+        string defaultIcon = Href(String.Format("../../Content/Images/{0}DefaultIcon.png", packageType));
+        string firstScreenShot = Model.FirstScreenshot()();
+
+        switch (packageType)
+        {
+            case "theme":
+                if (!String.IsNullOrWhiteSpace(firstScreenShot)) {
+                    iconUrl = firstScreenShot;
+                }
+                else if (String.IsNullOrWhiteSpace(iconUrl)) {
+                    iconUrl = Href("../../Content/Images/imagePlaceholder.png");
+                }
+                break;
+            default:
+                if (String.IsNullOrWhiteSpace(iconUrl)) {
+                    iconUrl = defaultIcon;
+                }
+                break;
+        }
+    }
+    <img src="@iconUrl" class="thumbnail"/>
+</a>

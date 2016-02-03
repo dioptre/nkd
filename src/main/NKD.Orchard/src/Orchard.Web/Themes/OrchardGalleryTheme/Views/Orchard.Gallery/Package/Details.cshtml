@@ -1,0 +1,7 @@
+﻿ @{
+    Style.Require("jQueryUI_Orchard");
+
+    WorkContext.Layout.AfterContent.Add(New.Partial(TemplateName: "ConfirmPackageDelete"));
+    WorkContext.Layout.AfterContent.Add(New.Partial(TemplateName: "ConfirmPackageUnpublish"));
+}
+@Display(@Model)

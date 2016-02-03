@@ -1,0 +1,7 @@
+﻿@model M33.Layout.Models.LayoutSelectorPart
+
+<fieldset>
+    <legend>Location</legend>
+    <div>@Html.LabelFor(o => o.LayoutName, @T("Layout"))</div>
+    <div>@Html.DropDownListFor(o => o.LayoutName, Model.AvailableLayouts.Select(c => new SelectListItem() { Text = c, Value = (c=="Default")?"":c }))</div>
+</fieldset>

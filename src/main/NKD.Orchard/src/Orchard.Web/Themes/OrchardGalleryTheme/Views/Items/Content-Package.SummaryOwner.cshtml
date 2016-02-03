@@ -1,0 +1,37 @@
+﻿@using Orchard.Utility.Extensions;
+@using System.Linq;
+@using Orchard.Tags.Models;
+@using Orchard.ContentManagement;
+
+@{
+    var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
+}
+
+<div class="content-item @contentTypeClassName">
+    <div class="packageItem module">
+        @Display(Model.PackageIcon)
+        <header>
+            @Display(Model.PackageLink)
+            <div class="package-actions">
+                <span class="rating">
+                    @Display(Model.Rating)
+                </span>
+                @Display(Model.PackageActions)
+            </div>
+            <div class="package-owner-actions">
+                @Display(Model.PackageAuthor)
+            </div>
+        </header>
+      <div class="detail">
+        @Display(Model.PackageSummary)
+        <ul class="packageMeta">
+            <li class="comments">@Display(Model.Reviews)</li>
+           @if (((IContent)Model.ContentItem).As<TagsPart>().CurrentTags.Any())
+            {
+                <li><span>@T("Tags:")</span>@Display(Model.Tags)</li>
+            }
+            <li>@Display(Model.Downloads)</li>
+        </ul>
+      </div>
+    </div>
+</div>

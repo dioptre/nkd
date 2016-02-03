@@ -1,0 +1,29 @@
+﻿@model Orchard.Gallery.Models.ViewModels.PackageRegistrationRequest
+
+@{
+    Script.Include("jquery.validate.min.js");
+    Script.Include("jquery.validate.unobtrusive.min.js");
+}
+
+<section>
+    <header>
+        <h2>Register A Package ID</h2>
+    </header>
+    @using (Html.BeginFormAntiForgeryPost(null, FormMethod.Post, new { id = "form" }))
+    {
+        <div>
+            <label for="packageId">@T("Package Id")</label>
+            <aside>
+                <p>@T("Use this to register a package ID before you have your package ready. You may want to do this to ensure you can get the package name that you really want. Please restrict your package ID to fewer than 150 characters. Use only letters, numbers and the following 3 special characters: hypens (-), underscores (_) and periods (.). We'll hold the package ID for you for 30 days.")</p>
+            </aside>
+            @Html.TextBoxFor(m => m.PackageId)
+        </div>
+        <div class="buttons"><input type="button" value="Register Package" id="registerPackageButton" singleClickButton="true" /></div>
+    }
+</section>
+
+@using (Script.Foot())
+{
+    Script.Include("gallery.form.js");
+    Script.Include("singleClickButton.js");
+}

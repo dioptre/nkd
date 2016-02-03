@@ -1,0 +1,139 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="634c0b6c-f2cc-4073-949d-91b59437e705" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>X Block Model Block Data</ID>
+  <Name>X Block Model Block Data</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="fc58b55c-db1b-41c9-8b21-bc4dee5b76eb">
+    <DataSourceViewID>NKD</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="c3624672-16ef-4c4e-b720-45a920ed58aa">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="1f589c07-ab50-4590-9d90-18a4ffaa5497">
+      <ID>Block Model Block Data ID</ID>
+      <Name>Block Model Block Data ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c81124b6-47d2-4f94-8443-c879e5d37be7">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a422a50d-8085-4c2c-bda5-3b83d1ce62d4">
+            <TableID>dbo_X_BlockModelBlockData</TableID>
+            <ColumnID>BlockModelBlockDataID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="41fcfd52-b9cf-4efa-9a9f-2c26ed62fd0d">
+          <AttributeID>Parameter ID</AttributeID>
+          <Name>Parameter ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a8e4cd69-c3ac-460f-bb53-b6d31cde8374">
+          <AttributeID>Block Model ID</AttributeID>
+          <Name>Block Model ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4b6a997d-8a58-4139-9dee-1331f207eac0">
+          <AttributeID>Block Model Block ID</AttributeID>
+          <Name>Block Model Block ID</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a7eae142-b0e2-43c5-a40a-4ceba0fcdec2">
+      <ID>Parameter ID</ID>
+      <Name>Parameter ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0508f5db-f2e9-4741-9e52-cea682a18b4d">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="38c20ad7-c4c9-4396-aeb3-90c08d3126af">
+            <TableID>dbo_X_BlockModelBlockData</TableID>
+            <ColumnID>ParameterID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="37124f3d-31c5-426b-9bc4-0d2cf9b25709">
+      <ID>Block Model ID</ID>
+      <Name>Block Model ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="28a33701-7feb-42ba-86dd-c570753e58d7">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1c80abc2-c4ec-412a-88c7-ab80c0e2b8c5">
+            <TableID>dbo_X_BlockModelBlockData</TableID>
+            <ColumnID>BlockModelID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="aa0d2e5c-8c49-45a6-bf7a-3fd7fe27ef29">
+      <ID>Block Model Block ID</ID>
+      <Name>Block Model Block ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c8c09b2d-ce62-4283-9ba3-c52faa470ac6">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b8ba07f2-b0c7-422d-bad6-dd1f0bb8a6b2">
+            <TableID>dbo_X_BlockModelBlockData</TableID>
+            <ColumnID>BlockModelBlockID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

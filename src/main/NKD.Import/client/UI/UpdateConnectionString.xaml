@@ -1,0 +1,18 @@
+﻿<Window x:Class="NKD.Import.Client.UI.UpdateConnectionString"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Update Connection String" Height="114" Width="663">
+    <Grid Margin="0,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" MinHeight="40"/>
+            <RowDefinition Height="44"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="109"/>
+            <ColumnDefinition Name="Container" Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="CurConStrLabel" Content="Current String:" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Margin="12,10,0,0" Width="87" />
+        <TextBox x:Name="txtXString" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="1" Margin="10,10,10,0"/>
+        <Button x:Name="btnUpdate" HorizontalAlignment="Right" Height="22" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="147" Content="Update" Click="btnUpdate_Click" Grid.Column="1" Grid.Row="1"/>
+    </Grid>
+</Window>

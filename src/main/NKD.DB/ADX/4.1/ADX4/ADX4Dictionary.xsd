@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ADX4Dictionary" targetNamespace="http://www.adx4.org/ADX/4/Dictionary" xmlns="http://www.adx4.org/ADX/4/Dictionary" elementFormDefault="qualified"  xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified">
+  <xs:simpleType name="MeasurementStatus">
+	  <xs:annotation>
+		  <xs:documentation>
+			  Each measurement has a status associated with its value. This status can be:
+			  
+			  Unspecified - There is no information available to determine the status of the measurement.
+			  Calculated - The value is calculated from other measurements.
+			  Detected - The value indicates a value detected during the measurement.
+			  BelowDetection - The value was undetectable but known to be below the detection limit of the measurement apparatus.
+			  OverRange - The value exceeded the maximum detection capability of the measurement apparatus.
+			  Insufficient - No value is provided as there was insufficient sample material to perform a measurement.
+			  NotAnalysed - No value is provided as the measurement was not performed.
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string">
+	  <xs:enumeration value="Unspecified" />
+      <xs:enumeration value="Calculated" />
+      <xs:enumeration value="Detected" />
+      <xs:enumeration value="BelowDetection" />
+      <xs:enumeration value="OverRange" />
+      <xs:enumeration value="Insufficient" />
+      <xs:enumeration value="NotAnalysed" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SampleStatus">
+	  <xs:annotation>
+		  <xs:documentation>
+			  Each sample has a status. This status can be:
+
+			  Unspecified - There is no information available to determine the status of the sample.
+			  Available - The sample is available for processing.
+			  Destroyed - The sample material was destroyed (possibly in transit or during processing).
+			  Missing - The sample material was missing (possibly lost or never received).
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string">
+      <xs:enumeration value="Unspecified" />
+      <xs:enumeration value="Available" />
+      <xs:enumeration value="Destroyed" />
+      <xs:enumeration value="Missing" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ReferenceMaterialCategory">
+	  <xs:annotation>
+		  <xs:documentation>
+			  Each sample can be categorised as reference material if required. This category can be:
+
+			  Unspecified - There is no information available to determine the category of the sample.
+			  Standard - The sample is a standard.
+			  Blank - The sample is a blank.
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string">
+      <xs:enumeration value="Unspecified" />
+      <xs:enumeration value="Standard" />
+      <xs:enumeration value="Blank" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="AnalyticalReportStatus">
+	  <xs:annotation>
+		  <xs:documentation>
+			  Each analytical report status determines the official state of the measurements. This status can be:
+
+			  Unspecified - There is no information available to determine the category of the sample.
+			  Preliminary - The measurements are preliminary results (i.e. not official).
+			  Certified - The measurements are certified and provided as official results.
+			  CertificateCorrection - These measurements are provided as corrections to previously certified results.
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string">
+      <xs:enumeration value="Unspecified" />
+      <xs:enumeration value="Preliminary" />
+      <xs:enumeration value="Certified" />
+      <xs:enumeration value="CertificateCorrection" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ScreenCondition">
+	  <xs:annotation>
+		  <xs:documentation>
+			  Each screen procedure can describe the condition of the screen used to seperate the sample material. This condition can be:
+
+			  Unspecified - There is no information available to determine the condition of the screen.
+			  Wet - The screen was wet.
+			  Dry - The screen was dry.
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string">
+      <xs:enumeration value="Unspecified" />
+      <xs:enumeration value="Wet" />
+      <xs:enumeration value="Dry" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PropertyType">
+	  <xs:annotation>
+		  <xs:documentation>
+			  A Property describes the target of an analysis's measurement and is usually the analyte i.e. Au, Ag. However, a property can
+			  also describe other characteristics such as the Analytical Weight, Sample Weight, LOI, Specific Gravity, etc...
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="PropertyTypeStrict">
+	  <xs:annotation>
+		  <xs:documentation>
+			  This is the list of recommended Properties to use in an ADX document.
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string">
+      <xs:enumeration value="Unspecified"/>
+      <xs:enumeration value="Ag"/>
+      <xs:enumeration value="Al"/>
+      <xs:enumeration value="Al2O3"/>
+      <xs:enumeration value="Ar"/>
+      <xs:enumeration value="As"/>
+      <xs:enumeration value="Au"/>
+      <xs:enumeration value="B"/>
+      <xs:enumeration value="Ba"/>
+      <xs:enumeration value="BaO"/>
+      <xs:enumeration value="Be"/>
+      <xs:enumeration value="Bi"/>
+      <xs:enumeration value="BO3"/>
+      <xs:enumeration value="Br"/>
+      <xs:enumeration value="C"/>
+      <xs:enumeration value="Ca"/>
+      <xs:enumeration value="CaO"/>
+      <xs:enumeration value="Cd"/>
+      <xs:enumeration value="Ce"/>
+      <xs:enumeration value="Cl"/>
+      <xs:enumeration value="Co"/>
+      <xs:enumeration value="CO2"/>
+      <xs:enumeration value="Cr"/>
+      <xs:enumeration value="Cr2O3"/>
+      <xs:enumeration value="Cs"/>
+      <xs:enumeration value="Cu"/>
+      <xs:enumeration value="TCu"/>
+      <xs:enumeration value="SCu"/>
+      <xs:enumeration value="Dy"/>
+      <xs:enumeration value="Er"/>
+      <xs:enumeration value="Eu"/>
+      <xs:enumeration value="F"/>
+      <xs:enumeration value="Fe"/>
+      <xs:enumeration value="Fe2O3"/>
+      <xs:enumeration value="FeO"/>
+      <xs:enumeration value="Ga"/>
+      <xs:enumeration value="Gd"/>
+      <xs:enumeration value="Ge"/>
+      <xs:enumeration value="H2O"/>
+      <xs:enumeration value="He"/>
+      <xs:enumeration value="Hf"/>
+      <xs:enumeration value="Hg"/>
+      <xs:enumeration value="Ho"/>
+      <xs:enumeration value="I"/>
+      <xs:enumeration value="In"/>
+      <xs:enumeration value="Ir"/>
+      <xs:enumeration value="K"/>
+      <xs:enumeration value="K2O"/>
+      <xs:enumeration value="Kr"/>
+      <xs:enumeration value="La"/>
+      <xs:enumeration value="Li"/>
+      <xs:enumeration value="LOI"/>
+      <xs:enumeration value="Lu"/>
+      <xs:enumeration value="Mg"/>
+      <xs:enumeration value="MgO"/>
+      <xs:enumeration value="Mn"/>
+      <xs:enumeration value="MnO"/>
+      <xs:enumeration value="Mo"/>
+      <xs:enumeration value="N"/>
+      <xs:enumeration value="Na"/>
+      <xs:enumeration value="Na2O"/>
+      <xs:enumeration value="Nb"/>
+      <xs:enumeration value="Nd"/>
+      <xs:enumeration value="Ne"/>
+      <xs:enumeration value="Ni"/>
+      <xs:enumeration value="NiO"/>
+      <xs:enumeration value="OH-"/>
+      <xs:enumeration value="OH+"/>
+      <xs:enumeration value="Os"/>
+      <xs:enumeration value="P"/>
+      <xs:enumeration value="P2O5"/>
+      <xs:enumeration value="Pb"/>
+      <xs:enumeration value="Pd"/>
+      <xs:enumeration value="Pm"/>
+      <xs:enumeration value="Pr"/>
+      <xs:enumeration value="Pt"/>
+      <xs:enumeration value="Ra"/>
+      <xs:enumeration value="Rb"/>
+      <xs:enumeration value="Re"/>
+      <xs:enumeration value="Rh"/>
+      <xs:enumeration value="Rn"/>
+      <xs:enumeration value="Ru"/>
+      <xs:enumeration value="S"/>
+      <xs:enumeration value="S2"/>
+      <xs:enumeration value="Sb"/>
+		  <xs:enumeration value="Sc"/>
+		  <xs:enumeration value="SCu"/>
+		  <xs:enumeration value="Se"/>
+      <xs:enumeration value="Si"/>
+      <xs:enumeration value="SiO2"/>
+      <xs:enumeration value="Sm"/>
+      <xs:enumeration value="Sn"/>
+      <xs:enumeration value="SO3"/>
+      <xs:enumeration value="SO4"/>
+      <xs:enumeration value="Sr"/>
+      <xs:enumeration value="Ta"/>
+      <xs:enumeration value="Tb"/>
+      <xs:enumeration value="Tc"/>
+		  <xs:enumeration value="TCu"/>
+		  <xs:enumeration value="Te"/>
+      <xs:enumeration value="Th"/>
+      <xs:enumeration value="Ti"/>
+      <xs:enumeration value="TiO2"/>
+      <xs:enumeration value="Tl"/>
+      <xs:enumeration value="Tm"/>
+      <xs:enumeration value="U"/>
+      <xs:enumeration value="V"/>
+      <xs:enumeration value="V2O5"/>
+      <xs:enumeration value="W"/>
+      <xs:enumeration value="Y"/>
+      <xs:enumeration value="Yb"/>
+      <xs:enumeration value="Zn"/>
+      <xs:enumeration value="Zr"/>
+      <xs:enumeration value="ZrO2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="UOM">
+	  <xs:annotation>
+		  <xs:documentation>
+			  The UOM is the unit of measure for a measurement's value.
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="UOMStrict">
+	  <xs:annotation>
+		  <xs:documentation>
+			  This is the list of recommended UOM to use in an ADX document.
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string">
+		  <xs:enumeration id="Unspecified" value="Unspecified"/>
+
+		  <!-- Base SI Units -->
+		  <xs:enumeration id="metre" value="m"/>
+		  <xs:enumeration id="kilogram" value="kg"/>
+		  <xs:enumeration id="second" value="s"/>
+		  <xs:enumeration id="ampere" value="A"/>
+		  <xs:enumeration id="kelvin" value="K"/>
+		  <xs:enumeration id="mole" value="mol"/>
+		  <xs:enumeration id="candela" value="cd"/>
+
+		  <!-- Derived SI Units -->
+
+		  <xs:enumeration id="radian" value="rad"/>
+		  <xs:enumeration id="steradian" value="sr"/>
+		  <xs:enumeration id="degreeCelsius" value="degC"/>
+		  <xs:enumeration id="farad" value="f"/>
+		  <xs:enumeration id="coulomb" value="C"/>
+		  <xs:enumeration id="siemens" value="S"/>
+		  <xs:enumeration id="henry" value="kg/m3"/>
+		  <xs:enumeration id="volt" value="V"/>
+		  <xs:enumeration id="ohm" value="ohm"/>
+		  <xs:enumeration id="joule" value="J"/>
+		  <xs:enumeration id="newton" value="N"/>
+		  <xs:enumeration id="hertz" value="Hz"/>
+		  <xs:enumeration id="lux" value="lx"/>
+		  <xs:enumeration id="lumen" value="lm"/>
+		  <xs:enumeration id="weber" value="Wb"/>
+		  <xs:enumeration id="tesla" value="T"/>
+		  <xs:enumeration id="watt" value="W"/>
+		  <xs:enumeration id="pascal" value="P"/>
+		  <xs:enumeration id="becquerel" value="Bq"/>
+		  <xs:enumeration id="gray" value="Gy"/>
+		  <xs:enumeration id="sievert" value="Sv"/>
+		  <xs:enumeration id="katal" value="kat"/>
+
+		  <!-- Base SI Units with prefix modifications -->
+		  <xs:enumeration id="gram" value="g"/>
+
+		  <!-- Units outside but in use with SI -->
+		  <xs:enumeration id="minute" value="min"/>
+		  <xs:enumeration id="hour" value="h"/>
+		  <xs:enumeration id="day" value="d"/>
+		  <xs:enumeration id="hectare" value="ha"/>
+		  <xs:enumeration id="litre" value="l"/>
+		  <xs:enumeration id="metricTon" value="t"/>
+		  <xs:enumeration id="neper" value="Np"/>
+		  <xs:enumeration id="bel" value="B"/>
+		  <xs:enumeration id="electronvolt" value="eV"/>
+		  <xs:enumeration id="unifiedAtomicMassUnit" value="u"/>
+		  <xs:enumeration id="astronomicalUnit" value="ua"/>
+		  <xs:enumeration id="nauticalMile " value="nautical mile"/>
+		  <xs:enumeration id="knot" value="knot"/>
+		  <xs:enumeration id="are" value="a"/>
+		  <xs:enumeration id="bar" value="bar"/>
+		  <xs:enumeration id="ångström" value="Å"/>
+		  <xs:enumeration id="curie" value="Ci"/>
+		  <xs:enumeration id="roentgen" value="R"/>
+		  <xs:enumeration id="rad" value="rd"/>
+		  <xs:enumeration id="rem" value="rem"/>
+
+		  <!-- Common industry units -->
+		  <xs:enumeration id="PartsPerMillion" value="ppm"/>
+		  <xs:enumeration id="PartsPerBillion" value="ppb"/>
+		  <xs:enumeration id="Percentage" value="%"/>
+	      
+		  <!-- Common division and multiplication combinations -->
+		  <xs:enumeration id="GramPerLitre" value="g/l"/>
+		  <xs:enumeration id="KilogramPerCubicMetre" value="kg/m3"/>
+		  <xs:enumeration id="GramPerMeticTonne" value="g/t"/>
+		  <xs:enumeration id="GramPerCubicCentimetre" value="g/cm3"/>
+		  <xs:enumeration id="MilligramPerLitre" value="mg/l"/>
+	  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SampleType">
+	  <xs:annotation>
+		  <xs:documentation>
+			  This describes the type of a sample e.g. rock, soil, chips. There is no recommended list of sample types (yet).
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="ProcessingTagType">
+	  <xs:annotation>
+		  <xs:documentation>
+			  This describes a processing tag type. There is no recommended list of processing tag types (yet).
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="DryingMethodType">
+	  <xs:annotation>
+		  <xs:documentation>
+			  This describes the method used to dry a sample during a Drying Procedure. There is no recommended list of drying methods (yet).
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="ParticleSizeReductionMethodType">
+	  <xs:annotation>
+		  <xs:documentation>
+			  This describes the method used to reduce (i.e. crush or pulverise) a sample during a ParticleSizeReduction Procedure. There is no recommended list of particle size reduction methods (yet).
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="SplittingMethodType">
+	  <xs:annotation>
+		  <xs:documentation>
+			  This describes the method used to split a sample into parts during a SplittingProcedure. There is no recommended list of splitting methods (yet).
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="ScreenSeriesType">
+	  <xs:annotation>
+		  <xs:documentation>
+			  This describes the series of the screen used to split a sample into parts during a ScreenProcedure. There is no recommended list of screen series (yet).
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="DecompositionMethodType">
+	  <xs:annotation>
+		  <xs:documentation>
+			  This describes the method used to decompose (or digest) a sample during a DecompositionProcedure. There is no recommended list of decomposition methods (yet).
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string" />
+  </xs:simpleType>
+	<xs:simpleType name="WeighingMethodType">
+		<xs:annotation>
+			<xs:documentation>
+				This describes the method used to weigh a sample during a WeighProcedure. There is no recommended list of weighing methods (yet).
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="MaterialSourceType">
+	  <xs:annotation>
+		  <xs:documentation>
+			  This describes the type for an material source on a procedure.
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="CompositingMethodType">
+	  <xs:annotation>
+		  <xs:documentation>
+			  This describes the method used to composite a sample during a CompositingProcedure. There is no recommended list of compositing methods (yet).
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="AnalysisMethodEquipment">
+	  <xs:annotation>
+		  <xs:documentation>
+			  This describes the equipment used to analyse a sample during an AnalysisProcedure. There is no recommended list of analysis equipment (yet).
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="AnalysisMethodTechnique">
+	  <xs:annotation>
+		  <xs:documentation>
+			  This describes the analyise technique used to analyse a sample during an AnalysisProcedure. There is no recommended list of analysis techniques (yet).
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="ProcessingGroupType">
+	  <xs:annotation>
+		  <xs:documentation>
+			  This describes the processing group associated with a sample's processing or analysis.
+		  </xs:documentation>
+	  </xs:annotation>
+	  <xs:restriction base="xs:string" />
+  </xs:simpleType>
+</xs:schema>

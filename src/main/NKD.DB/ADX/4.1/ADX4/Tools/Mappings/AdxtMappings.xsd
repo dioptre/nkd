@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AdxMappings" targetNamespace="http://www.adx4.org/ADX/4/Mappings" elementFormDefault="qualified" xmlns="http://www.adx4.org/ADX/4/Mappings" xmlns:mstns="http://tempuri.org/AdxMappings.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Mappings" type="Mappings"></xs:element>
+	<xs:complexType name="Mappings">
+		<xs:sequence>
+			<xs:element name="Analyte" type="Substitutions" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="UOM" type="Substitutions"  minOccurs="0" maxOccurs="1"/>
+      <xs:element name="ProcessingPath" type="Substitutions"  minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Assays" type="AssayIdentifications"  minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Substitution">
+		<xs:sequence>
+		</xs:sequence>
+		<xs:attribute name="Name" type="xs:string" use="required"/>
+		<xs:attribute name="With" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="Substitutions">
+		<xs:sequence>
+			<xs:element name="Substitute" type="Substitution" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+  <xs:complexType name="AssayIdentifications">
+    <xs:sequence>
+      <xs:element name="Assay" type="AssayIdentification" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AssayIdentification">
+    <xs:attribute name="AssayType" type="xs:string" use="required"/>
+    <xs:attribute name="ProcedureCode" type="xs:string" use="optional"/>
+    <xs:attribute name="UOM" type="xs:string" use="required"/>
+    <xs:attribute name="Analyte" type="xs:string" use="required"/>
+    <xs:attribute name="Id" type="xs:string" use="optional"/>
+  </xs:complexType>
+</xs:schema>

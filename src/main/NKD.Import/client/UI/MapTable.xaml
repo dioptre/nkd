@@ -1,0 +1,101 @@
+﻿<UserControl x:Class="NKD.Import.Client.UI.MapTable"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             xmlns:v="clr-namespace:NKD.Import.Client.UI"
+             d:DesignHeight="300" d:DesignWidth="500">
+    <UserControl.Resources>
+        <v:SourceConv x:Key="sourceConv" />
+        <v:TargetConv x:Key="targetConv" />
+        <v:DataTypeConv x:Key="dataTypeConv" />
+        <v:UnitTypeConv x:Key="unitTypeConv" />
+        
+        <Style TargetType="DataGridCell">
+            <EventSetter Event="PreviewMouseLeftButtonDown" Handler="DataGridCell_PreviewMouseLeftButtonDown"/>
+        </Style>
+
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"></RowDefinition>           
+        </Grid.RowDefinitions>
+
+        <DataGrid Grid.Row="0" Name="DataGridColumnMap" AutoGenerateColumns="False"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" SelectionUnit="Cell" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Souce" Binding="{Binding Path=sourceColumnName}"></DataGridTextColumn>
+
+                <DataGridTextColumn Header="Target" Binding="{Binding Path=targetColumnName}"></DataGridTextColumn>
+                
+                <DataGridComboBoxColumn Header="Target" Width="120" CanUserSort="False"  
+                                  SelectedValueBinding="{Binding targetColumnName}" Visibility="Hidden">
+
+                    <DataGridComboBoxColumn.ElementStyle>
+                        <Style TargetType="ComboBox">
+                            <Setter Property="ItemsSource" Value="{Binding  Path=targetColumnName,Converter={StaticResource targetConv}}"/>
+                            <Setter Property="SelectedValue" Value="{Binding Path=targetColumnName}"/>
+                        </Style>
+                    </DataGridComboBoxColumn.ElementStyle>
+
+                    <DataGridComboBoxColumn.EditingElementStyle>
+                        <Style TargetType="ComboBox">
+                            <Setter Property="ItemsSource" Value="{Binding  Path=targetColumnName,Converter={StaticResource targetConv}}" />
+                            <Setter Property="SelectedValue" Value="{Binding Path=targetColumnName}"/>
+                        </Style>
+                    </DataGridComboBoxColumn.EditingElementStyle>
+
+                </DataGridComboBoxColumn>
+
+               <!--- //-->
+
+                <DataGridComboBoxColumn Header="Data type" Width="120" CanUserSort="False"  
+                                  SelectedValueBinding="{Binding importDataType}" Visibility="Collapsed">
+
+                    <DataGridComboBoxColumn.ElementStyle>
+                        <Style TargetType="ComboBox">
+                            <Setter Property="ItemsSource" Value="{Binding  Path=importDataType,Converter={StaticResource dataTypeConv}}"/>
+                            <Setter Property="SelectedValue" Value="{Binding Path=importDataType}"/>
+                        </Style>
+                    </DataGridComboBoxColumn.ElementStyle>
+
+                    <DataGridComboBoxColumn.EditingElementStyle >
+                        <Style TargetType="ComboBox">
+                            <Setter Property="ItemsSource" Value="{Binding  Path=importDataType,Converter={StaticResource dataTypeConv}}" />
+                            <Setter Property="SelectedValue" Value="{Binding Path=importDataType}"/>
+                        </Style>
+                    </DataGridComboBoxColumn.EditingElementStyle>
+
+                </DataGridComboBoxColumn>
+
+
+                <!-- //-->
+                
+                <DataGridTextColumn Header="Default" Binding="{Binding Path=defaultValue}"/>
+
+                <DataGridComboBoxColumn Header="Units" Width="120" CanUserSort="False"  Visibility="Collapsed"
+                                  SelectedValueBinding="{Binding targetUnits}">
+
+                    <DataGridComboBoxColumn.ElementStyle>
+                        <Style TargetType="ComboBox">
+                            <Setter Property="ItemsSource" Value="{Binding  Path=targetUnits,Converter={StaticResource unitTypeConv}}"/>
+                            <Setter Property="SelectedValue" Value="{Binding Path=targetUnits}"/>
+                        </Style>
+                    </DataGridComboBoxColumn.ElementStyle>
+
+                    <DataGridComboBoxColumn.EditingElementStyle>
+                        <Style TargetType="ComboBox">
+                            <Setter Property="ItemsSource" Value="{Binding  Path=targetUnits,Converter={StaticResource unitTypeConv}}" />
+                            <Setter Property="SelectedValue" Value="{Binding Path=targetUnits}"/>
+                        </Style>
+                    </DataGridComboBoxColumn.EditingElementStyle>
+
+                </DataGridComboBoxColumn>
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+
+    </Grid>
+</UserControl>

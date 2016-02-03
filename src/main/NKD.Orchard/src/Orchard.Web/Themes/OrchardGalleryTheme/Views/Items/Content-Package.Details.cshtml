@@ -1,0 +1,92 @@
+﻿@using Orchard.ContentManagement;
+@{
+    Style.Include("jquery.lightbox-0.5.css");
+    Script.Include("jquery.lightbox-0.5.min.js");
+}
+<section class="packageItemDetail icon">
+    <div id="thumbnails">
+        @Display(Model.PackageImages)
+    </div>
+    @{
+        var detailsDivClass = Model.HasScreenshots ? "has-screenshot-margin" : "";
+    }
+    <div class="@detailsDivClass">
+        @{
+            Layout.Authors.Add(Model.PackageAuthor);
+            Layout.Tags.Add(Model.Tags);
+            Layout.Actions.Add(Model.PackageOwnerActions);
+            if (ContentExtensions.IsPublished(Model.ContentItem)) {
+                Layout.Rating.Add(Model.Rating);
+            }
+            else {
+                Layout.Rating.Add(Model.RatingReadOnly);
+            }
+        }
+        @Display(Model.PackageDetailsHeader)
+        @if (ContentExtensions.IsPublished(Model.ContentItem)) {
+            @Display(Model.PackageActions)
+        }
+        @Display(Model.PackageDetails)
+
+        <h4 class="packageDetailsTableHeader">Version history</h4>
+        <div id="versionHistory">
+            <table id="versionHistoryTable" cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr class="header">
+                        <th class="version">Version</th>
+                        <th class="downloads">Downloads</th>
+                        <th class="lastUpdated">Last updated</th>
+                        <th class="rating">Rating</th>
+                        @if (Model.AllowOwnerActions) {
+                        <th class="ownerActions">Actions</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var packageVersion in Model.AllVersionsOfPackage) {
+                        @Display(packageVersion)
+                    }
+                </tbody>
+            </table>
+            <a href="#" class="versionHistoryShowMore">Show More</a>
+        </div>
+
+        @Display(Model.Reviews)
+    </div>
+</section>
+@using (Script.Foot())
+{
+    <script type="text/javascript">
+        var numberOfRowsToShowByDefault = 5;
+        var $showMoreVersionsLink = $('.versionHistoryShowMore');
+        $(function () {
+            var rowCount = $('#versionHistoryTable tr.versionTableRow').length;
+            if (rowCount > numberOfRowsToShowByDefault) {
+                SetupTableToggle();
+            }
+        });
+
+        function SetupTableToggle() {
+            var rowsToHide = $('#versionHistoryTable tr.versionTableRow').slice(numberOfRowsToShowByDefault);
+            $.each(rowsToHide, function (index, value) {
+                $(this).removeClass('versionTableRow').addClass('versionTableRowHidden').hide();
+            });
+            $('.versionHistoryShowMore').css('display', 'block');
+            $showMoreVersionsLink.click(ToggleExtraVersionRows);
+            if ($('#versionHistoryTable tr.versionTableRowHidden').hasClass('current')) {
+                ToggleExtraVersionRows();
+            }
+        }
+
+        function ToggleExtraVersionRows() {
+            $newText = 'Show More';
+            $showMoreVersionsLink.toggleClass('less');
+            if ($showMoreVersionsLink.text() == $newText) {
+                $newText = 'Show Less';
+            }
+            $showMoreVersionsLink.text($newText);
+            $('#versionHistoryTable tr.versionTableRowHidden').toggle();
+            return false;
+        }
+    </script>
+}

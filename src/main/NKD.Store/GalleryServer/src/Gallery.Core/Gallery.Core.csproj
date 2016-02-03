@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0DA50B7F-F0F6-4B7F-884E-939D4DD3EE0A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gallery.Core</RootNamespace>
+    <AssemblyName>Gallery.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ninject.Extensions.Logging">
+      <HintPath>..\..\lib\NinjectExtensions\Ninject.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contants\Constants.cs" />
+    <Compile Include="Domain\PackageDataAggregate.cs" />
+    <Compile Include="Domain\PackageLogEntry.cs" />
+    <Compile Include="Domain\Dependency.cs" />
+    <Compile Include="Domain\Package.cs" />
+    <Compile Include="Domain\PackageVersionRatings.cs" />
+    <Compile Include="Domain\Screenshot.cs" />
+    <Compile Include="Enums\PackageLogAction.cs" />
+    <Compile Include="Exceptions\ControllerNotFoundException.cs" />
+    <Compile Include="Exceptions\IntegrationTesterBaseSetupFailedException.cs" />
+    <Compile Include="Exceptions\InvalidPackageVersionException.cs" />
+    <Compile Include="Exceptions\InvalidUserKeyException.cs" />
+    <Compile Include="Exceptions\IoCAlreadyInitializedException.cs" />
+    <Compile Include="Exceptions\IoCNotInitializedException.cs" />
+    <Compile Include="Exceptions\IoCResolutionFailedException.cs" />
+    <Compile Include="Exceptions\MissingAppSettingException.cs" />
+    <Compile Include="Exceptions\MissingConnectionStringSettingsException.cs" />
+    <Compile Include="Exceptions\ObjectDoesNotExistException.cs" />
+    <Compile Include="Enums\HashingAlgorithm.cs" />
+    <Compile Include="ComputedHash.cs" />
+    <Compile Include="Exceptions\PackageAuthorizationException.cs" />
+    <Compile Include="Exceptions\PackageDoesNotExistException.cs" />
+    <Compile Include="Exceptions\PackageTooBigException.cs" />
+    <Compile Include="Exceptions\PluginImplementationNotFoundException.cs" />
+    <Compile Include="Extensions\FileNameHelpers.cs" />
+    <Compile Include="Exceptions\PackageFileDoesNotExistException.cs" />
+    <Compile Include="Enums\HashEncodingType.cs" />
+    <Compile Include="Extensions\LinqExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Exceptions\InvalidPackageIdException.cs" />
+    <Compile Include="Impl\ConfigSettings.cs" />
+    <Compile Include="Exceptions\InvalidAppSettingException.cs" />
+    <Compile Include="Impl\LatestVersionUpdater.cs" />
+    <Compile Include="Impl\PackageRatingUpdater.cs" />
+    <Compile Include="Impl\RecommendedVersionManager.cs" />
+    <Compile Include="Impl\RecommendedVersionSetter.cs" />
+    <Compile Include="Interfaces\ILatestVersionGetter.cs" />
+    <Compile Include="Interfaces\IPackageRatingUpdater.cs" />
+    <Compile Include="Interfaces\IPackageUnpublisher.cs" />
+    <Compile Include="Interfaces\IRatingAuthorizer.cs" />
+    <Compile Include="Interfaces\IRecommendedVersionManager.cs" />
+    <Compile Include="Interfaces\IRecommendedVersionSetter.cs" />
+    <Compile Include="Interfaces\IUnfinishedPackageGetter.cs" />
+    <Compile Include="Interfaces\IVersionable.cs" />
+    <Compile Include="Interfaces\ILatestVersionUpdater.cs" />
+    <Compile Include="Impl\LatestVersionChecker.cs" />
+    <Compile Include="Interfaces\ILatestVersionChecker.cs" />
+    <Compile Include="Impl\PackageSlugCreator.cs" />
+    <Compile Include="Impl\GalleryUriValidator.cs" />
+    <Compile Include="Impl\PackageUriValidator.cs" />
+    <Compile Include="Impl\SystemConfigurationManager.cs" />
+    <Compile Include="Interfaces\IConfigurationManager.cs" />
+    <Compile Include="Impl\PackageIdValidator.cs" />
+    <Compile Include="Impl\PackageLogEntryCreator.cs" />
+    <Compile Include="Impl\DependencyStringFactory.cs" />
+    <Compile Include="Impl\PackageVersionValidator.cs" />
+    <Compile Include="Impl\SequentialTaskScheduler.cs" />
+    <Compile Include="Interfaces\IPackageDataAggregateUpdater.cs" />
+    <Compile Include="Interfaces\IPackageGetter.cs" />
+    <Compile Include="Interfaces\IPackageIdValidator.cs" />
+    <Compile Include="Interfaces\IPackagePublisher.cs" />
+    <Compile Include="Interfaces\IPackageSlugCreator.cs" />
+    <Compile Include="Interfaces\IPackageUpdater.cs" />
+    <Compile Include="Impl\PackageUpdater.cs" />
+    <Compile Include="Interfaces\IPackageCreator.cs" />
+    <Compile Include="Impl\PackageCreator.cs" />
+    <Compile Include="Impl\Sha1HashingServiceProvider.cs" />
+    <Compile Include="Interfaces\IPackageLogEntryCreator.cs" />
+    <Compile Include="Interfaces\IDependencyStringFactory.cs" />
+    <Compile Include="Interfaces\IHttpRuntime.cs" />
+    <Compile Include="Interfaces\IPackageAuthenticatorService.cs" />
+    <Compile Include="Interfaces\IPackageRatingCalculator.cs" />
+    <Compile Include="Impl\PackageRatingCalculator.cs" />
+    <Compile Include="Impl\Md5CryptoServiceProvider.cs" />
+    <Compile Include="Impl\HashGetter.cs" />
+    <Compile Include="Impl\PackageFileGetter.cs" />
+    <Compile Include="Impl\Sha512HashingServiceProvider.cs" />
+    <Compile Include="Impl\SystemDateTime.cs" />
+    <Compile Include="Impl\SystemGuid.cs" />
+    <Compile Include="Impl\WindowsFileSystem.cs" />
+    <Compile Include="Interfaces\IConfigSettings.cs" />
+    <Compile Include="Interfaces\IDatabaseBootstrapper.cs" />
+    <Compile Include="Interfaces\IDateTime.cs" />
+    <Compile Include="Interfaces\IFileSystem.cs" />
+    <Compile Include="Interfaces\IGuid.cs" />
+    <Compile Include="Interfaces\IMapper.cs" />
+    <Compile Include="Interfaces\IDependencyResolver.cs" />
+    <Compile Include="Interfaces\IMapperBootstrapper.cs" />
+    <Compile Include="Interfaces\IHashingServiceProvider.cs" />
+    <Compile Include="Interfaces\IHashGetter.cs" />
+    <Compile Include="Interfaces\IPackageAuthenticator.cs" />
+    <Compile Include="Interfaces\IPackageDeleter.cs" />
+    <Compile Include="Interfaces\IPackageDownloadCountIncrementer.cs" />
+    <Compile Include="Interfaces\IPackageFactory.cs" />
+    <Compile Include="Interfaces\IPackageFileGetter.cs" />
+    <Compile Include="Interfaces\IPackageMapper.cs" />
+    <Compile Include="Interfaces\IGalleryUriValidator.cs" />
+    <Compile Include="Interfaces\IPackageUriValidator.cs" />
+    <Compile Include="Interfaces\IPackageVersionValidator.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Interfaces\IScreenshotDeleter.cs" />
+    <Compile Include="Interfaces\ITaskScheduler.cs" />
+    <Compile Include="Impl\LatestVersionGetter.cs" />
+    <Compile Include="IoC.cs" />
+    <Compile Include="Enums\PackageUriTemplateToken.cs" />
+    <Compile Include="LambdaComparer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

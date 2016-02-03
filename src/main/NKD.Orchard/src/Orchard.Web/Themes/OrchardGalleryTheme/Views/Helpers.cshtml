@@ -1,0 +1,4 @@
+﻿@helper InvalidClass(string name)
+{
+    @*@(ViewData.ModelState[name] == null || !ViewData.ModelState[name].Errors.Any() ? "" : "invalid")*@
+}

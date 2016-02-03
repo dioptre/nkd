@@ -1,0 +1,36 @@
+@{
+    var customView = !WorkContext.CurrentTheme.Id.ToLower().Equals("theadmin") && Request.Url.ToString().ToLower().Contains("contents/item/display");
+    var baseUrl = "http://" + Request.Url.Host + (Request.Url.IsDefaultPort ? "" : ":" + Request.Url.Port) +"/";
+}
+
+@{
+    Style.Include("Belitsoft.Orchard.Faq.css");
+}
+
+@if (!customView)
+{
+    
+    @(T("FaqType") + ": ")
+    <b>@Model.FaqType</b>
+    <br />
+    @(T("Question") + ": ")
+    <b>@Model.Question</b>
+    <br />
+}
+else
+{
+    <div class="list_docs">
+        <li class="list_docs_item">
+            <ul class="list_docs_item_info">
+                <li>Раздел: <a href="@baseUrl@Model.UrlToType">@Model.FaqType</a></li>
+            </ul>
+            <div class="faq-question">
+                <a class="list_docs_item_title faq-title">@Model.Question</a>
+            </div>
+        </li>
+    </div>
+}
+
+
+
+

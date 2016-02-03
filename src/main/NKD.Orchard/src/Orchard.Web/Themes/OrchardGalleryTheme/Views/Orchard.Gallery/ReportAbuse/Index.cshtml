@@ -1,0 +1,41 @@
+﻿@model Orchard.Gallery.ViewModels.ReportAbuseViewModel
+@using Orchard.Gallery.HtmlHelpers;
+@{
+    Script.Include("jquery.validate.min.js");
+    Script.Include("jquery.validate.unobtrusive.min.js");
+}
+@{ WorkContext.Layout.AsideFirst.Add(New.SendMessageSidebar()); }
+
+<section>
+    @if (Model.IsEnabled) {
+        HtmlHelper.UnobtrusiveJavaScriptEnabled = true;
+        Html.EnableClientValidation();
+        <header>
+            <h2>Report Abuse</h2>
+        </header>
+        <div id="form">
+            @using (Html.BeginFormAntiForgeryPost(Url.Action("SendAbuseReport"), FormMethod.Post, new { id = "reportAbuseForm" })) {
+                <div class="@Html.InvalidClass("reportBody")">
+                    <label for="reportBody">Submit an abuse report for Package "@Model.PackageId", version "@Model.PackageVersion"</label>
+                    @Html.HiddenFor(m => m.PackageId)
+                    @Html.HiddenFor(m => m.PackageVersion)
+                    @Html.HiddenFor(m => m.UrlReferrer)
+                    <aside>
+                        <p>@Html.ValidationMessage("reportBody") Enter a detailed abuse report.</p>
+                    </aside>
+                    @Html.TextArea("reportBody", "", new Dictionary<string, object>{
+                        {"class", "long required"}, {"data-val-required", T("You must enter a report.")}, {"data-val", "true"}, {"rows","5"}
+                    })
+                </div>
+                <br />
+                <input id="sendReportButton" type="button" name="Send Report" value="@T("Send Report")" singleClickButton="true" />
+            }
+        </div>
+    }
+</section>
+
+@using (Script.Foot())
+{
+    Script.Include("gallery.form.js");
+    Script.Include("singleClickButton.js");
+}

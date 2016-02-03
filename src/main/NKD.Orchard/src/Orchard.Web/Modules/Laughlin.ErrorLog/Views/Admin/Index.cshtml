@@ -1,0 +1,56 @@
+﻿@model Laughlin.ErrorLog.ViewModels.IndexViewModel
+
+@{
+     Script.Require("jQuery");
+
+     using (Script.Foot()) { 
+        <script type="text/javascript">
+            $(function () {
+                $('#DateList').change(function () {
+                    var selectedItem = $(this).val();
+                    if (selectedItem) {
+                        var pathArray = window.location.pathname.split('/');
+                        var host = pathArray[2];
+                        var url = host + '?SelectedLogFileName=' + selectedItem;
+                        $(window.location).attr('href', url);
+                    }
+                });
+            });
+     </script>
+     }
+}
+
+
+<style>
+  li.error-item div.error { border-bottom:1px solid #CECECE; }
+  li.error-item { padding-bottom:15px; }
+</style>
+
+@using (Html.BeginFormAntiForgeryPost())
+{
+    <span>View:</span>
+    @Html.DropDownList("SelectedLogFileName", Model.Dates, new { id = "DateList" }) 
+    <br /><br />
+}
+
+@using (Script.Foot())
+{
+    <script type="text/javascript">
+        $(function () {
+            $("div.error").click(function (e) {
+                $(this).next().slideToggle();
+                e.preventDefault();
+            });
+        });
+    </script>
+}
+
+<ul>
+@foreach (var item in Model.LogItems)
+{ 
+    <li class='error-item'>
+        <div class='error'><a href='#' class='error'>@item.Date - @item.Preview</a></div>
+        <div style='display:none;'>@item.Text</div>
+    </li>
+}
+</ul>

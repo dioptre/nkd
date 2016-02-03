@@ -1,0 +1,2743 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4a669877-dea4-426f-b1c1-555655c12c7f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>NKD</ID>
+  <Name>Resource Models</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="62" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1403" scrolltop="1787" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="24553" y="19711" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="X_DictionaryCountry" left="25262" top="15356" logicalid="31" controlid="1" masterid="0" hint1="0" hint2="0" width="4048" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000d00f0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_X_DictionaryCountry" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="X_BlockModelBlock" left="20" top="0" logicalid="32" controlid="2" masterid="0" hint1="0" hint2="0" width="4710" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800006612000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_X_BlockModelBlock" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="X_Tenement" left="21257" top="22042" logicalid="33" controlid="3" masterid="0" hint1="0" hint2="0" width="4948" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800005413000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_X_Tenement" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="X_Parameter" left="14266" top="0" logicalid="34" controlid="4" masterid="0" hint1="0" hint2="0" width="4710" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800006612000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_X_Parameter" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="X_DictionaryUnit" left="14808" top="7400" logicalid="35" controlid="5" masterid="0" hint1="0" hint2="0" width="3625" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000290e0000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_X_DictionaryUnit" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="X_BlockModelMetadata" left="21376" top="0" logicalid="36" controlid="6" masterid="0" hint1="0" hint2="0" width="4710" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800006612000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_X_BlockModelMetadata" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="X_BlockModel" left="10354" top="22042" logicalid="37" controlid="7" masterid="0" hint1="0" hint2="0" width="5398" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800001615000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_X_BlockModel" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="X_Contact" left="18152" top="14642" logicalid="38" controlid="8" masterid="0" hint1="0" hint2="0" width="4710" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800006612000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_X_Contact" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="X_Project" left="21376" top="29442" logicalid="39" controlid="9" masterid="0" hint1="0" hint2="0" width="4710" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800006612000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_X_Project" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="X_BlockModelBlockData" left="7130" top="0" logicalid="40" controlid="10" masterid="0" hint1="0" hint2="0" width="4736" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800008012000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_X_BlockModelBlockData" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="X_DictionaryDimension" left="10857" top="29442" logicalid="41" controlid="11" masterid="0" hint1="0" hint2="0" width="4392" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="0008000028110000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_X_DictionaryDimension" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="22562" top="16743" logicalid="42" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_Person_X_DictionaryCountry]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="8" sourceattachpoint="20" destattachpoint="27" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="25262" y="17142" />
+              <point x="22862" y="17142" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="23981" top="18429" logicalid="43" controlid="13" masterid="0" hint1="0" hint2="0" width="3705" height="3913" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_Tenement_X_DictionaryCountry]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="7" destattachpoint="10" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="27286" y="18928" />
+              <point x="27286" y="20485" />
+              <point x="24281" y="20485" />
+              <point x="24281" y="22042" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2075" top="4700" logicalid="44" controlid="14" masterid="0" hint1="0" hint2="0" width="9728" height="17842" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_BlockModelBlock_X_BlockModel]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="2" sourceattachpoint="2" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11403" y="22042" />
+              <point x="11403" y="13521" />
+              <point x="2375" y="13521" />
+              <point x="2375" y="5000" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4430" top="2101" logicalid="45" controlid="15" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_BlockModelBlockData_X_BlockModelBlock]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="10" sourceattachpoint="27" destattachpoint="26" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4730" y="2500" />
+              <point x="7130" y="2500" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="20108" top="19143" logicalid="46" controlid="16" masterid="0" hint1="0" hint2="0" width="2823" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_Tenement_X_Contact]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="3" sourceattachpoint="9" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="20507" y="19642" />
+              <point x="20507" y="20842" />
+              <point x="22631" y="20842" />
+              <point x="22631" y="22042" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="23332" top="26543" logicalid="47" controlid="17" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_Project_X_Tenement]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="9" sourceattachpoint="9" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="23731" y="27042" />
+              <point x="23731" y="29442" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="16221" top="4700" logicalid="48" controlid="18" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_CompositeData_X_DictionaryUnit]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="4" sourceattachpoint="6" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="16620" y="7400" />
+              <point x="16620" y="6200" />
+              <point x="16621" y="6200" />
+              <point x="16621" y="5000" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="11566" top="2101" logicalid="49" controlid="19" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_BlockModelBlockData_X_Parameter]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="10" sourceattachpoint="26" destattachpoint="27" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="14266" y="2500" />
+              <point x="11866" y="2500" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="18676" top="2101" logicalid="50" controlid="20" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_BlockModelMetadata_X_Parameter]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="6" sourceattachpoint="27" destattachpoint="26" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18976" y="2500" />
+              <point x="21376" y="2500" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="14304" top="4700" logicalid="51" controlid="21" masterid="0" hint1="0" hint2="0" width="9727" height="17842" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_BlockModelMetadata_X_BlockModel]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="6" sourceattachpoint="14" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="14703" y="22042" />
+              <point x="14703" y="13521" />
+              <point x="23731" y="13521" />
+              <point x="23731" y="5000" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="15452" top="16193" logicalid="52" controlid="22" masterid="0" hint1="0" hint2="0" width="3000" height="8099" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_BlockModel_X_Contact3]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="7" sourceattachpoint="24" destattachpoint="25" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18152" y="16592" />
+              <point x="16952" y="16592" />
+              <point x="16952" y="23992" />
+              <point x="15752" y="23992" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="12104" top="26742" logicalid="53" controlid="23" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_BlockModel_X_DictionaryDimension1]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="11" destid="7" sourceattachpoint="4" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12503" y="29442" />
+              <point x="12503" y="27042" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="15452" top="25342" logicalid="54" controlid="24" masterid="0" hint1="0" hint2="0" width="6224" height="7000" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_BlockModel_X_Project]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="7" sourceattachpoint="26" destattachpoint="31" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="21376" y="31942" />
+              <point x="18564" y="31942" />
+              <point x="18564" y="25642" />
+              <point x="15752" y="25642" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13204" top="26742" logicalid="55" controlid="25" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_BlockModel_X_DictionaryDimension]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="11" destid="7" sourceattachpoint="8" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13603" y="29442" />
+              <point x="13603" y="27042" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="12654" top="26742" logicalid="56" controlid="26" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_BlockModel_X_DictionaryDimension2]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="11" destid="7" sourceattachpoint="6" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13053" y="29442" />
+              <point x="13053" y="27042" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="15452" top="16743" logicalid="57" controlid="27" masterid="0" hint1="0" hint2="0" width="3000" height="8099" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_BlockModel_X_Contact2]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="7" sourceattachpoint="26" destattachpoint="27" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18152" y="17142" />
+              <point x="16952" y="17142" />
+              <point x="16952" y="24542" />
+              <point x="15752" y="24542" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="15452" top="17293" logicalid="58" controlid="28" masterid="0" hint1="0" hint2="0" width="3000" height="8099" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_BlockModel_X_Contact]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="7" sourceattachpoint="28" destattachpoint="29" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18152" y="17692" />
+              <point x="16952" y="17692" />
+              <point x="16952" y="25092" />
+              <point x="15752" y="25092" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="15452" top="15643" logicalid="59" controlid="29" masterid="0" hint1="0" hint2="0" width="3000" height="8099" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_BlockModel_X_Contact4]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="7" sourceattachpoint="22" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18152" y="16042" />
+              <point x="16952" y="16042" />
+              <point x="16952" y="23442" />
+              <point x="15752" y="23442" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9198" top="4700" logicalid="60" controlid="30" masterid="0" hint1="0" hint2="0" width="4255" height="17842" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_X_BlockModelBlockData_X_BlockModel]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="10" sourceattachpoint="8" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13053" y="22042" />
+              <point x="13053" y="13521" />
+              <point x="9498" y="13521" />
+              <point x="9498" y="5000" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1403</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>1787</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="da6012c2-7eeb-4dc0-a3d0-7eb83ebb3dbb">
+      <ID>X Block Model</ID>
+      <Name>X Block Model</Name>
+      <DimensionID>X Block Model</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1fbdfced-458e-4a5f-ac20-58758ec58693">
+          <AttributeID>Block Model ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4a646484-6c6f-46d7-be2c-5a79cb66ddd2">
+          <AttributeID>Approver Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5d121ca4-4e78-4579-bdf5-b4437ae3e680">
+          <AttributeID>Dimension Elevation</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d37f6d03-9104-4e72-b9c9-7ba3f90ab1ba">
+          <AttributeID>Project ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ee06ab00-0f91-42a1-a015-14148640355f">
+          <AttributeID>Dimension Easting</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="56e3f133-28a8-4b90-ba5f-01e5d70a1274">
+          <AttributeID>Dimension Northing</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1086805f-c471-4dd8-8f71-f465106d62ac">
+          <AttributeID>Responsible Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="07954f39-4bc9-45fc-a838-d366916c2f06">
+          <AttributeID>Author Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ce9d04cf-5059-407b-a69f-1b0b09306db7">
+          <AttributeID>External Reviewer Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b67e99f5-7092-4c8a-87dc-b73d8383f0e6">
+          <AttributeID>Alias</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="68746b9f-aa91-4c66-993f-80554d27f2aa">
+      <ID>Approver Contact</ID>
+      <Name>Approver Contact</Name>
+      <DimensionID>X Contact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6791bf3e-a769-40e2-8ed5-9469f397d0b7">
+          <AttributeID>Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c9df5d24-242e-4260-8fa2-c9e0981f2fb6">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a387a1d5-807b-4a9d-9bf8-4af3f0953ab0">
+      <ID>Dimension Elevation</ID>
+      <Name>Dimension Elevation</Name>
+      <DimensionID>X Dictionary Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c9a6da21-49d8-496a-869b-841d6c2270e9">
+          <AttributeID>Dimension ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ce6c95ee-9971-4e73-887c-d666dfa8fcc4">
+      <ID>X Project</ID>
+      <Name>X Project</Name>
+      <DimensionID>X Project</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c4b848fa-d328-4e74-b48f-18a76608ac04">
+          <AttributeID>Project ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cbcfa726-e8cb-4dc8-b6c0-4d3387090e24">
+          <AttributeID>Tenement ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0249aafa-6fcf-4893-a51c-1d08e3d6a82b">
+          <AttributeID>Project Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3812c9c7-28a9-4e10-820b-0b4f8f8adf62">
+          <AttributeID>Project Code</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="445782f8-e4d4-4383-83bb-da6f7557f19d">
+      <ID>Dimension Easting</ID>
+      <Name>Dimension Easting</Name>
+      <DimensionID>X Dictionary Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="525315a8-e706-4b24-8397-112d8c35fa12">
+          <AttributeID>Dimension ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="f2017d46-1e8e-432c-b99f-7db25d581621">
+      <ID>Dimension Northing</ID>
+      <Name>Dimension Northing</Name>
+      <DimensionID>X Dictionary Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c15a8fe8-5193-4519-8dae-800ffb7b6146">
+          <AttributeID>Dimension ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="fca8ce28-4031-485c-80a4-380cedf6c192">
+      <ID>Responsible Contact</ID>
+      <Name>Responsible Contact</Name>
+      <DimensionID>X Contact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="57efa883-dc59-4d48-84ec-b0e27354508c">
+          <AttributeID>Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="383ff409-fe88-41b8-ba07-26fa179be7f0">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="86625e87-0e9b-482a-a9a0-52c0b312e637">
+      <ID>Author Contact</ID>
+      <Name>Author Contact</Name>
+      <DimensionID>X Contact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8733e46b-60ee-471e-af8f-2f5d652fe5c4">
+          <AttributeID>Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3008ab96-041d-4363-987f-d29a7362b13d">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b8432115-6a69-4963-8291-525da9f7fd1e">
+      <ID>External Reviewer Contact</ID>
+      <Name>External Reviewer Contact</Name>
+      <DimensionID>X Contact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="66dd28c0-8a80-41ab-8f14-ea9524288430">
+          <AttributeID>Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f849bbeb-94c8-4c61-b4d7-c311551fbf1f">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e156adc0-5904-47fc-bcce-4d88fd460e37">
+      <ID>X Block Model Block</ID>
+      <Name>X Block Model Block</Name>
+      <DimensionID>X Block Model Block</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="33ccaa45-ef66-44bd-ac1d-ad4ed4702847">
+          <AttributeID>Block Model Block ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9317d60c-dba1-4f8e-8c88-d0f897ab17b6">
+          <AttributeID>Block Model ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ea80e852-aee7-499c-8059-5ea48d909f4d">
+      <ID>X Block Model Block Data</ID>
+      <Name>X Block Model Block Data</Name>
+      <DimensionID>X Block Model Block Data</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e02acc68-c00d-4e67-84ee-8145a752acf0">
+          <AttributeID>Block Model Block Data ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e011b44a-1b6d-4c0e-bdca-ef69be92d5fb">
+          <AttributeID>Parameter ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e20b8c3c-da68-4ebe-812b-a2d15d2c3457">
+          <AttributeID>Block Model ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e9273243-2c5f-4935-9894-28701a42f851">
+          <AttributeID>Block Model Block ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9c1616ee-877f-4e34-98f4-a3ecf6b5df41">
+      <ID>X Parameter</ID>
+      <Name>X Parameter</Name>
+      <DimensionID>X Parameter</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="821cbd53-1fcf-4e49-a507-95a0bd45d8cb">
+          <AttributeID>Parameter ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="551046cf-9de7-4ca4-adc8-284cc2923afa">
+          <AttributeID>Unit ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="0fe8f544-bb8b-411a-883a-4447fe3ba89a">
+      <ID>X Block Model Metadata</ID>
+      <Name>X Block Model Metadata</Name>
+      <DimensionID>X Block Model Metadata</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f218ce4d-f6dd-4152-beae-eb3c11877dea">
+          <AttributeID>Block Model Metadata ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="255b5da5-1216-4685-a5fc-47d721411c4a">
+          <AttributeID>Block Model ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="55d015da-821c-4823-8fbb-2a3bbdfb46cf">
+          <AttributeID>Parameter ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="20961362-710f-4414-b6a2-bb9fb20e0de2">
+      <ID>X Project - Approved By Contact</ID>
+      <Name>X Project - Approved By Contact</Name>
+      <DimensionID>X Contact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ad59072f-1b75-44f7-b7f8-399c2685ba9f">
+          <AttributeID>Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c611af5c-cacf-43f1-8973-af261d033dff">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a9ee7f68-1a62-476f-beca-b810ebc40bd4">
+      <ID>X Block Model - Approver Contact</ID>
+      <Name>X Block Model - Approver Contact</Name>
+      <DimensionID>X Contact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ad2cb5d9-846c-4fb2-9b52-caac73d2931d">
+          <AttributeID>Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="33d39697-798e-4b22-9a94-b775d784e6a9">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e12c06d1-65d4-44c7-af7a-86420c246c4d">
+      <ID>X Block Model - Dimension Elevation</ID>
+      <Name>X Block Model - Dimension Elevation</Name>
+      <DimensionID>X Dictionary Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2dc9050a-2de0-45fa-b268-ac8cb528ec80">
+          <AttributeID>Dimension ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6594febb-3e39-429a-80a7-127c034fb786">
+      <ID>X Block Model - Project</ID>
+      <Name>X Block Model - Project</Name>
+      <DimensionID>X Project</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d56ecd70-b257-4d08-8dd9-ceead4415f2f">
+          <AttributeID>Project ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="df89271b-ef69-4e7a-90d2-bd0ffca9f200">
+          <AttributeID>Tenement ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="233c8d93-e532-4482-a806-9d6e5c4ed094">
+          <AttributeID>Project Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ba51d6ac-6544-4a63-8735-001e8d618db0">
+          <AttributeID>Project Code</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="bc9bb2d7-6dea-42f7-9c41-2bd8f6dce351">
+      <ID>X Block Model - Project - Approved By Contact</ID>
+      <Name>X Block Model - Project - Approved By Contact</Name>
+      <DimensionID>X Contact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c50a9001-915d-42d6-8298-2ea3723039a1">
+          <AttributeID>Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="16c1d570-b5f4-4abc-8c9b-79a8e7e8a451">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="bc087346-7816-4709-a38d-a00a1076132e">
+      <ID>X Block Model - Dimension Easting</ID>
+      <Name>X Block Model - Dimension Easting</Name>
+      <DimensionID>X Dictionary Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2d797538-72e5-42ed-a418-20b73ce8b4f7">
+          <AttributeID>Dimension ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="cf91f27a-ef87-4c7b-bf04-18c5194f5169">
+      <ID>X Block Model - Dimension Northing</ID>
+      <Name>X Block Model - Dimension Northing</Name>
+      <DimensionID>X Dictionary Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="020f65eb-566b-4490-86b2-0b0c58c685ef">
+          <AttributeID>Dimension ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5067c8d3-e067-422d-a180-1084cfa741c9">
+      <ID>X Block Model - Responsible Contact</ID>
+      <Name>X Block Model - Responsible Contact</Name>
+      <DimensionID>X Contact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="df4952f5-dc64-4684-8d5e-20835a44ed30">
+          <AttributeID>Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="46b0eff9-7ec5-4250-8b5b-a049b4b62fdc">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="61336bf9-6d22-4d11-bb89-5b307693c0a6">
+      <ID>X Block Model - Author Contact</ID>
+      <Name>X Block Model - Author Contact</Name>
+      <DimensionID>X Contact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="25efba27-50f8-41ea-bbd8-9cffba6e2681">
+          <AttributeID>Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="706b901e-2125-4bb6-b274-5fad087a0987">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="24b8757e-6df7-483e-9b7a-d889daaa74f0">
+      <ID>X Block Model - External Reviewer Contact</ID>
+      <Name>X Block Model - External Reviewer Contact</Name>
+      <DimensionID>X Contact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4d4142bd-c3b7-4fbe-b466-8ff480e66f62">
+          <AttributeID>Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0006418a-7281-4c06-8aad-69601a538a68">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="02276b0a-de24-480f-ab05-8d594e8e1b7b">
+      <ID>X Block Model Block - Block Model</ID>
+      <Name>X Block Model Block - Block Model</Name>
+      <DimensionID>X Block Model</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0899cc62-4859-46c9-9424-4619dd034f73">
+          <AttributeID>Block Model ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="32e168bf-16e3-4939-a83c-a55c2d12b554">
+          <AttributeID>Approver Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="db7eba68-eb82-4161-a2c0-4e48922e2ed3">
+          <AttributeID>Dimension Elevation</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9c56fe4c-0c42-4cd6-9c55-da22448b4aa9">
+          <AttributeID>Project ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="942b5c12-1621-4e2d-828a-02ccb3e6f6f3">
+          <AttributeID>Dimension Easting</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="51096c3c-8404-4fd0-84e4-f9380f84b339">
+          <AttributeID>Dimension Northing</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8461adee-a41b-4d31-990d-834502e83dde">
+          <AttributeID>Responsible Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2f90f467-3514-4ffd-9ebd-09e79534c366">
+          <AttributeID>Author Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4b4ee0c0-fb9f-4298-b677-385f0c001d2a">
+          <AttributeID>External Reviewer Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c0e39f83-9872-4bb5-8359-fbf33c06fdd3">
+          <AttributeID>Alias</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="23bee5f6-fc47-481a-912a-3e148bd14f0c">
+      <ID>X Block Model Block - Block Model - Approver Contact</ID>
+      <Name>X Block Model Block - Block Model - Approver Contact</Name>
+      <DimensionID>X Contact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f4ca49d6-c5b7-4669-894b-9eadb8da88c2">
+          <AttributeID>Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="35a8fef3-e350-48f9-abc9-05270168c994">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d268e5ef-1003-4477-a051-dcb99bd5578b">
+      <ID>X Block Model Block - Block Model - Dimension Elevation</ID>
+      <Name>X Block Model Block - Block Model - Dimension Elevation</Name>
+      <DimensionID>X Dictionary Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5bd55c51-096f-4083-b2b5-94ffe5145114">
+          <AttributeID>Dimension ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1e3ddabb-a281-4bf9-b405-51bd945cc7db">
+      <ID>X Block Model Block - Block Model - Project</ID>
+      <Name>X Block Model Block - Block Model - Project</Name>
+      <DimensionID>X Project</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="cc5d3bf3-16cc-424b-888d-842ef2d521d8">
+          <AttributeID>Project ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1ea57998-0de5-4321-94a8-13e04731dc68">
+          <AttributeID>Tenement ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f479431c-f97d-4e4d-b47e-8cfa2db5407c">
+          <AttributeID>Project Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="afbe33b3-c1ea-4243-9630-de7be7ae3c4b">
+          <AttributeID>Project Code</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="290088f3-e6c8-451c-a984-3aa26ba773c8">
+      <ID>X Block Model Block - Block Model - Project - Approved By Contact</ID>
+      <Name>X Block Model Block - Block Model - Project - Approved By Contact</Name>
+      <DimensionID>X Contact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="bf5bfdfb-62c3-4fdd-bcde-97c378490fb2">
+          <AttributeID>Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5ff53e2a-c954-419e-8232-b3b7048f3f26">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7fad93aa-fa43-49a6-b7f6-7742f69bcaf0">
+      <ID>X Block Model Block - Block Model - Dimension Easting</ID>
+      <Name>X Block Model Block - Block Model - Dimension Easting</Name>
+      <DimensionID>X Dictionary Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="887b646a-479c-40f5-bd64-c879b820d1d5">
+          <AttributeID>Dimension ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3cfaaa70-8c5a-493e-ada9-e6d36ac3792e">
+      <ID>X Block Model Block - Block Model - Dimension Northing</ID>
+      <Name>X Block Model Block - Block Model - Dimension Northing</Name>
+      <DimensionID>X Dictionary Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="39303df0-c01a-45d9-bc90-3ad8b83f2b89">
+          <AttributeID>Dimension ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="f43aceb0-c60e-4719-8adb-9228bdae849c">
+      <ID>X Block Model Block - Block Model - Responsible Contact</ID>
+      <Name>X Block Model Block - Block Model - Responsible Contact</Name>
+      <DimensionID>X Contact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f4f3ee9c-3d89-4579-88d4-94dd160fccf3">
+          <AttributeID>Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="caa67231-9525-4481-9f64-8c7f971c57b1">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="c19a1971-55cb-46ae-bce6-259264f2cdd6">
+      <ID>X Block Model Block - Block Model - Author Contact</ID>
+      <Name>X Block Model Block - Block Model - Author Contact</Name>
+      <DimensionID>X Contact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="65aefe88-6b22-4500-ae9a-b644b161ab3d">
+          <AttributeID>Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="635aca41-8142-4155-9626-89b427d91a21">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6398cbe8-5fd2-4408-b32b-5b3f0cc0b25c">
+      <ID>X Block Model Block - Block Model - External Reviewer Contact</ID>
+      <Name>X Block Model Block - Block Model - External Reviewer Contact</Name>
+      <DimensionID>X Contact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="80653c48-38e4-4517-9c08-cc7d1cc66f0a">
+          <AttributeID>Contact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b21373a1-c862-4ad2-8372-edb7e8f50db5">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="16152195-cc6c-49a1-a921-25041ad017e8">
+      <ID>X Block Model</ID>
+      <Name>X Block Model</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="b8e1bd47-444a-4d54-8372-f3f4e62a87ab">
+          <ID>Origin X</ID>
+          <Name>Origin X</Name>
+          <Source dwd:design-time-name="969239c0-e77b-4dfb-aebf-1394f45a15aa">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="06f61463-025f-4b67-8234-9345a5bee99f">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>OriginX</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1ac3375c-34b3-431c-a542-4cf2f9d0dc48">
+          <ID>Origin Y</ID>
+          <Name>Origin Y</Name>
+          <Source dwd:design-time-name="d55b0e75-6ea4-4074-9e86-32de9a766cf2">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1ca5e669-97a2-4278-ab4e-6a139fd812eb">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>OriginY</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a5dbeaae-e739-4fe4-8b9a-e262677fae44">
+          <ID>Origin Z</ID>
+          <Name>Origin Z</Name>
+          <Source dwd:design-time-name="bcdb60ec-c0e1-48d8-aad5-b1f34e9e2708">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b375ce71-59f0-4241-a8b7-3334181b7695">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>OriginZ</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="dd98cf51-c85e-4fbb-833c-428e8f0c0dbd">
+          <ID>Origin I</ID>
+          <Name>Origin I</Name>
+          <Source dwd:design-time-name="195d93a6-6b5b-4d69-be60-1ac6bb23bacb">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="50659619-1857-4607-bbc8-d41285d51a09">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>OriginI</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9f104a96-e588-4cb7-9caf-68dee031bb23">
+          <ID>Origin J</ID>
+          <Name>Origin J</Name>
+          <Source dwd:design-time-name="011c658c-c8df-4736-baee-0171d4107670">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="42bcc303-f664-452c-958d-a4499d90e584">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>OriginJ</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e8e18ec3-0bdc-4275-861b-b13a75243956">
+          <ID>Origin K</ID>
+          <Name>Origin K</Name>
+          <Source dwd:design-time-name="4261be86-498f-4864-86cc-6091fd9e8839">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d74760e8-0da1-4c93-8c20-7e50339d1607">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>OriginK</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="013d1698-af1a-4be1-b92f-1488d6a31fe9">
+          <ID>Maximum I</ID>
+          <Name>Maximum I</Name>
+          <Source dwd:design-time-name="39f4f37c-6fd9-4b0a-bb87-fb025aa0a23f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9cbe865f-cb8e-4f78-a2ca-0eebfb023003">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>MaximumI</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1546ba30-dc4f-4205-926f-f7bcbbda26e6">
+          <ID>Maximum J</ID>
+          <Name>Maximum J</Name>
+          <Source dwd:design-time-name="eb98256d-3538-4cbc-9055-af95d2da4e8c">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b5ea35b4-4be2-481f-bde9-eed1fdc7c773">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>MaximumJ</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fbc1ad4f-9ca5-4718-9b90-0783dbb01bb9">
+          <ID>Maximum K</ID>
+          <Name>Maximum K</Name>
+          <Source dwd:design-time-name="f1549f86-2145-433c-9440-36fc79c4642b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cdf050bb-883c-4bfa-8e5e-7d49b6d7bccd">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>MaximumK</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="eaf355d7-bc33-4d57-bb37-ee24a109eb1f">
+          <ID>Minimum I</ID>
+          <Name>Minimum I</Name>
+          <Source dwd:design-time-name="cd2d2b7c-39da-41a9-9e5c-3084871def84">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f454634a-e17b-4436-ae89-8f02321de690">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>MinimumI</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="cdef60d6-5e82-4267-8a9b-be97a7b5299b">
+          <ID>Minimum J</ID>
+          <Name>Minimum J</Name>
+          <Source dwd:design-time-name="26889468-3b44-420d-85d2-57b1c66708d3">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ceda4329-0f14-4e27-bf22-a1b69f579157">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>MinimumJ</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="943ee08c-771e-4f45-84ba-f252fd39efe2">
+          <ID>Minimum K</ID>
+          <Name>Minimum K</Name>
+          <Source dwd:design-time-name="35527c3d-b6ed-4fbb-8c4f-8163ec7d9e91">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0ec4ca09-b9e6-4fcb-bd5c-774a656d7921">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>MinimumK</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3b8db184-df79-438b-944b-f46d1cb57124">
+          <ID>Cube Centroid0 Origin Offset X</ID>
+          <Name>Cube Centroid0 Origin Offset X</Name>
+          <Source dwd:design-time-name="24c9c7e0-bdde-446d-a364-9903add94a58">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8d7902c0-b3e4-4c23-b455-ebeccb395173">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>CubeCentroid0OriginOffsetX</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c83bf03e-0fce-4cf4-b1b9-baa3c94cdc1a">
+          <ID>Cube Centroid0 Origin Offset Y</ID>
+          <Name>Cube Centroid0 Origin Offset Y</Name>
+          <Source dwd:design-time-name="875aa84c-61cc-4e75-a5ed-6123274c523d">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7445176d-4769-4aa0-b413-5643d1f6c17b">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>CubeCentroid0OriginOffsetY</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e08c7889-2b39-4b24-a3c0-a12a83cf97a1">
+          <ID>Cube Centroid0 Origin Offset Z</ID>
+          <Name>Cube Centroid0 Origin Offset Z</Name>
+          <Source dwd:design-time-name="a54f6086-b47a-4b12-83ba-8c3f2fb13e78">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="973aa6cd-7ded-4a05-82bc-5f4014c07963">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>CubeCentroid0OriginOffsetZ</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ecc1ba46-a689-4944-8fd8-04712577d121">
+          <ID>Default I Size</ID>
+          <Name>Default I Size</Name>
+          <Source dwd:design-time-name="8e288c0b-6d9f-4c2e-b3e6-102adcf2c5fb">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d6d62ed5-c3fc-4312-be59-70de4629e479">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>DefaultISize</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="da7042ec-bcb2-4014-a3dc-9eacb940de52">
+          <ID>Default J Size</ID>
+          <Name>Default J Size</Name>
+          <Source dwd:design-time-name="7bbd4a7a-1c84-46d6-be48-d724219d7723">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="81aa0276-4e55-48b7-bce0-4e68912852d1">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>DefaultJSize</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c65e9336-5e82-41bc-bb66-639d911cb90e">
+          <ID>Default K Size</ID>
+          <Name>Default K Size</Name>
+          <Source dwd:design-time-name="824f0a00-75a6-4f1a-a513-5efeaf75e2b4">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="10f200a7-acc9-4982-8f9e-5bcf43ea9209">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>DefaultKSize</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e58ddcf5-7b0c-48e5-b1d9-ffdc4dfef447">
+          <ID>Version</ID>
+          <Name>Version</Name>
+          <Source dwd:design-time-name="7fea8491-9720-4072-bb61-2f69da7e97a6">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f9f591f0-8d9c-4845-93f2-9450b47551e1">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>Version</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7518ee77-71fe-46c8-824c-37629f7b286f">
+          <ID>Version Certainty</ID>
+          <Name>Version Certainty</Name>
+          <Source dwd:design-time-name="e8e5eefa-1285-40df-9072-715a15cd5754">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ed213856-0fc6-42ec-84dd-7853cde73d73">
+              <TableID>dbo_X_BlockModel</TableID>
+              <ColumnID>VersionCertainty</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0a6274ff-ace5-4119-ad04-7ca5f8696237">
+          <ID>X Block Model Count</ID>
+          <Name>X Block Model Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="9951382d-9966-4d53-a82f-26512483944c">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="d7540946-fa38-462f-9c4d-ff5021c47a9f">
+              <TableID>dbo_X_BlockModel</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="3f5953e0-657d-44ec-8b6c-79d2b6079741">
+          <CubeDimensionID>X Block Model</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f8bcb034-02e4-4ce6-8539-49ed10991a41">
+              <AttributeID>Block Model ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f52b2f3b-5810-4455-8028-df521a8edeb8">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="66a40493-a271-42bf-97a0-1e6d160253b2">
+                    <TableID>dbo_X_BlockModel</TableID>
+                    <ColumnID>BlockModelID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="756026a0-fe45-46f5-ae19-9d4a2c8a8714">
+          <CubeDimensionID>Approver Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="305f6cfa-b2b7-451c-8da8-3e7a3deb87e4">
+              <AttributeID>Contact ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8c8b3ea6-6061-45a2-9a84-d5df73a06704">
+                  <DataType>WChar</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="95641e3c-e130-46ca-88e5-97fc5be6722e">
+                    <TableID>dbo_X_BlockModel</TableID>
+                    <ColumnID>ApproverContactID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3d4e50f3-2d3d-49f3-a110-32c88cad81df">
+          <CubeDimensionID>Dimension Elevation</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="db681947-a822-4ee4-9b5d-66a21eeed69c">
+              <AttributeID>Dimension ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6b88f0ae-92a5-4dd5-b322-4fe67ca18e81">
+                  <DataType>WChar</DataType>
+                  <DataSize>1</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0fd7f2da-96d4-46d0-a9ab-55694de9f6b0">
+                    <TableID>dbo_X_BlockModel</TableID>
+                    <ColumnID>DimensionElevation</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1d56f0cb-12e4-401a-833b-f66048e8bf6a">
+          <CubeDimensionID>X Project</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e1ff193f-92d0-4f0a-ab82-b6611320e27d">
+              <AttributeID>Project ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="096571e7-e35b-4feb-8c56-154d197712a6">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b424d4ed-d1dc-4f7b-8251-5b78e5e702e2">
+                    <TableID>dbo_X_BlockModel</TableID>
+                    <ColumnID>ProjectID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="01ef7a98-5b19-44f3-a58d-fc5e7d910d09">
+          <CubeDimensionID>Dimension Easting</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="55a67f7a-28d7-49a9-88e8-18730d49a7db">
+              <AttributeID>Dimension ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5885ff24-8659-4b53-abb3-fa209c4b631e">
+                  <DataType>WChar</DataType>
+                  <DataSize>1</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2d8a13f1-1c5b-451f-9692-c2b988ed84e3">
+                    <TableID>dbo_X_BlockModel</TableID>
+                    <ColumnID>DimensionEasting</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3a6802e0-f3ed-41b3-92df-257c67a41c9b">
+          <CubeDimensionID>Dimension Northing</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2415da08-8c64-4058-ad1f-94cb15806c9a">
+              <AttributeID>Dimension ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a2c8ca89-436d-4ecb-8516-630495358b97">
+                  <DataType>WChar</DataType>
+                  <DataSize>1</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6687ab5d-5b46-4fc8-8d54-6c4f752defa7">
+                    <TableID>dbo_X_BlockModel</TableID>
+                    <ColumnID>DimensionNorthing</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6d1f81e0-f2f0-443a-9a45-028130311e78">
+          <CubeDimensionID>Responsible Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="45056fbd-465c-483f-a862-e8333ea84f6a">
+              <AttributeID>Contact ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cdbce7b4-405f-448a-be41-077b49ff9e54">
+                  <DataType>WChar</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d0109220-189c-4fec-8596-c839bcf3b21f">
+                    <TableID>dbo_X_BlockModel</TableID>
+                    <ColumnID>ResponsibleContactID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5b7968f8-1992-4d41-a041-adc27c7bcac9">
+          <CubeDimensionID>Author Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="beadc7b9-001d-4017-b69b-707572fdeeed">
+              <AttributeID>Contact ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ed860b30-794e-4e83-8fab-d4dc9a5830d7">
+                  <DataType>WChar</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d50dac82-5aa2-4053-bf93-187dd92b8886">
+                    <TableID>dbo_X_BlockModel</TableID>
+                    <ColumnID>AuthorContactID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3c287133-e5fa-4745-ae1c-a8bdd1984fc2">
+          <CubeDimensionID>External Reviewer Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1fda524d-fbe8-4e6d-9dfe-95a30e223029">
+              <AttributeID>Contact ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e737cc1d-0455-4c21-8469-66ce4df5c371">
+                  <DataType>WChar</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="298c099a-ce2d-4b82-8ace-1f9f499b0da8">
+                    <TableID>dbo_X_BlockModel</TableID>
+                    <ColumnID>ExternalReviewerContactID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="55e99150-567b-473d-a95b-3ca869a6dd22">
+          <CubeDimensionID>X Block Model Block - Block Model</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0b60cb98-a43e-4fd7-aec8-1c9f02f46139">
+              <AttributeID>Block Model ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1e749739-6f59-4e17-ac13-ade887b4374c">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="736faff2-b7c9-4d16-8fed-fba960a28ab0">
+                    <TableID>dbo_X_BlockModel</TableID>
+                    <ColumnID>BlockModelID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="9e91bd33-a6cd-40c0-ae1c-0b0c30338d05">
+      <ID>X Block Model Block</ID>
+      <Name>X Block Model Block</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="7f4e3414-06f4-4b36-ae30-ec4264ccd83c">
+          <ID>I</ID>
+          <Name>I</Name>
+          <Source dwd:design-time-name="717af82f-5762-49c2-8df5-6757267d2b87">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7602d27c-e65b-4665-8284-3908d0788ba4">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>I</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="76998c77-8399-4f54-82d4-57366d63f588">
+          <ID>J</ID>
+          <Name>J</Name>
+          <Source dwd:design-time-name="7c371e90-9953-4e3a-8e94-91be9aa4ce2f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1708150a-752e-4e94-a77d-83170c4f1f98">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>J</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c5486628-98d6-4f2c-bf32-38c60de25634">
+          <ID>K</ID>
+          <Name>K</Name>
+          <Source dwd:design-time-name="c00f10c5-d50d-4dd5-899b-6fed6b965250">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ef34a5ed-cd9b-4c39-90bd-520ba916e0bd">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>K</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="469d190f-500e-46f2-9b3f-6a369215c2b7">
+          <ID>Centroid X</ID>
+          <Name>Centroid X</Name>
+          <Source dwd:design-time-name="2b3fa078-407f-400d-b98f-418fb147131a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8dc699fc-5e1f-4e8c-b4ca-a162c157ecbf">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>CentroidX</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="24e36c75-5170-4efb-808e-3ee80660ba1c">
+          <ID>Centroid Y</ID>
+          <Name>Centroid Y</Name>
+          <Source dwd:design-time-name="c70b9762-e1df-4178-a8ec-76cbc2fd81a7">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f3595dba-6659-4368-91a6-f324ca57da68">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>CentroidY</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b9f1665a-90bf-428c-8cb5-d5d500f2b131">
+          <ID>Centroid Z</ID>
+          <Name>Centroid Z</Name>
+          <Source dwd:design-time-name="3985c8d1-3fc2-4a3e-bea6-7d5836ad0230">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1d717822-4c1e-4213-816a-8fcf2d466a86">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>CentroidZ</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a26f755c-36c9-4a75-9424-dee523c0a9be">
+          <ID>Length X</ID>
+          <Name>Length X</Name>
+          <Source dwd:design-time-name="3fe63219-efb5-40f0-bb8f-27f08f47aebf">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="16c1ae1d-7bc9-41ed-8446-c83459d90a4a">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>LengthX</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1287c5ac-f457-458e-b35b-333282577e50">
+          <ID>Length Y</ID>
+          <Name>Length Y</Name>
+          <Source dwd:design-time-name="1f988977-fbb5-4a6e-93fc-b9305da1bc92">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="333012ce-ee18-4723-84da-163b87af6c60">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>LengthY</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="828ef47f-e705-4293-9c02-ed4191ed16b4">
+          <ID>Length Z</ID>
+          <Name>Length Z</Name>
+          <Source dwd:design-time-name="3fde3a5f-378c-4e28-b89b-2b25f0b32995">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="816594de-6433-47e5-b2d7-1e60276472bf">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>LengthZ</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e1b2a728-6883-4bed-afdf-109b0912276a">
+          <ID>Minimum Samples</ID>
+          <Name>Minimum Samples</Name>
+          <Source dwd:design-time-name="2433a2b8-7307-4dac-ada5-8f1096fe8544">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="39162a16-c2ca-4e88-b3e3-bb7a258cffd8">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>MinimumSamples</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5f63db85-bd65-470a-a16b-95726a2c133d">
+          <ID>Maximum Samples</ID>
+          <Name>Maximum Samples</Name>
+          <Source dwd:design-time-name="9d2119e1-941b-4528-b58b-c73c3e585f3d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c86d7673-39b4-4558-939f-e5e96663fd3f">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>MaximumSamples</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4948c17c-5b9b-4881-93ce-bb60b86e0bff">
+          <ID>Kriging Efficiency</ID>
+          <Name>Kriging Efficiency</Name>
+          <Source dwd:design-time-name="34bffb4f-a883-4aba-99d6-66c1e43e68c2">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e0fb491b-10d0-41e0-97dc-3867f7d53695">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>KrigingEfficiency</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e64d0d64-c675-401f-96e9-d2ff2ef4fc92">
+          <ID>Kriging Error</ID>
+          <Name>Kriging Error</Name>
+          <Source dwd:design-time-name="35008b6e-3622-40a3-91a4-867ef140532f">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="13970d48-15a6-41e5-8415-0144c98b9c9b">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>KrigingError</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4d346907-608a-4fc9-9839-43c5ecc29518">
+          <ID>Kriging Variance</ID>
+          <Name>Kriging Variance</Name>
+          <Source dwd:design-time-name="0dbe47ae-bbb7-4bed-83cd-3202c07590e2">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4e151c0a-c899-4d63-a20d-2f02b3e9ad07">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>KrigingVariance</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5bdc563c-a306-4983-aece-3b62e95293a1">
+          <ID>Slope Of Regression</ID>
+          <Name>Slope Of Regression</Name>
+          <Source dwd:design-time-name="8a92174d-d211-447d-a9cc-a4b12afcf8cf">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="07e2fd5b-4ef5-4bbe-ba4e-70d3a8566554">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>SlopeOfRegression</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9f58b619-7ddf-4873-b6d9-eac96a0e4fcf">
+          <ID>Density</ID>
+          <Name>Density</Name>
+          <Source dwd:design-time-name="5538c8be-d40d-42bd-8dab-491aab0d9074">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="419a1b8b-48e2-43d2-b2c9-91a3ded95073">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Density</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7a39ceb8-055d-4e38-b66c-88b398eb97c9">
+          <ID>Numeric1</ID>
+          <Name>Numeric1</Name>
+          <Source dwd:design-time-name="ec7f6778-6565-47ba-8dab-d74e9ef7caa2">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bd420941-9986-4eca-8c18-4e4364351df5">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric1</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="59de9d5a-c0bf-4429-b7af-a7a26d88392e">
+          <ID>Numeric2</ID>
+          <Name>Numeric2</Name>
+          <Source dwd:design-time-name="1880f5f6-0c87-4156-b7e5-addf20811217">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="48a66a90-d455-4783-875b-11cc100296f3">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric2</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="aadbbf93-2fae-44cc-81f8-6dec148cf2b9">
+          <ID>Numeric3</ID>
+          <Name>Numeric3</Name>
+          <Source dwd:design-time-name="80dd8fdd-4cad-4db4-9de3-4be5ba6604ab">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d9a60ac8-6543-444c-8d54-5eecd1b4175c">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric3</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8bfeae59-cf6a-4cb0-b6de-c74cd2d6c50f">
+          <ID>Numeric4</ID>
+          <Name>Numeric4</Name>
+          <Source dwd:design-time-name="5aa3fa0b-ede7-4ca7-a301-6632ad484a19">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5107e035-8ce6-43d7-841c-4712c9c99689">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric4</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f453f188-2fbd-437e-aa30-5fd753f0fcd1">
+          <ID>Numeric5</ID>
+          <Name>Numeric5</Name>
+          <Source dwd:design-time-name="1d6aa46f-5d09-409d-be13-660ab578ccbb">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="496173f7-26ff-4ddc-89cb-9af1697e2407">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric5</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0756122a-6264-419f-8843-fa65bc337afb">
+          <ID>Numeric6</ID>
+          <Name>Numeric6</Name>
+          <Source dwd:design-time-name="f91a182a-a6b5-4fcd-a160-f9826183054a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cffe783c-87ca-4def-bfb3-2c6ab01f95f8">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric6</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c886bbaa-f6d7-4448-be4b-108ae86d3f1a">
+          <ID>Numeric7</ID>
+          <Name>Numeric7</Name>
+          <Source dwd:design-time-name="f46ded20-17a1-4de2-8721-bd6059687d40">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b519256d-005b-47ea-8df7-6e3180958874">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric7</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c2ec2a80-3562-4c0a-aaa3-4edf9afc3b9f">
+          <ID>Numeric8</ID>
+          <Name>Numeric8</Name>
+          <Source dwd:design-time-name="ed3467f5-ceac-43f1-9070-84720d83687f">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="52c8c780-d85b-4907-a10b-2e1618c32a4d">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric8</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f0d37a77-28c5-4b6a-afa8-98c51899d6c3">
+          <ID>Numeric9</ID>
+          <Name>Numeric9</Name>
+          <Source dwd:design-time-name="c6c8657f-d0c6-48b7-8276-70e0047a2964">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1ea2b8b8-653c-4876-b43b-64095601ba00">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric9</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="45148f68-d80a-4f03-b371-950691a0248c">
+          <ID>Numeric10</ID>
+          <Name>Numeric10</Name>
+          <Source dwd:design-time-name="f8543e3d-6976-456c-8cdb-4094a3ec8150">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3a254b7a-472e-4307-9e34-3d94e876b13a">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric10</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ba0433de-3b2f-490c-a952-90dc22ce7804">
+          <ID>Numeric11</ID>
+          <Name>Numeric11</Name>
+          <Source dwd:design-time-name="62f1ca55-bee9-4d32-834b-1b109a70c1ba">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2a042c70-d1a7-4f65-a99f-e33b0b107142">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric11</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="793c7a4b-20ab-499d-a503-120410d91865">
+          <ID>Numeric12</ID>
+          <Name>Numeric12</Name>
+          <Source dwd:design-time-name="1ed4acc5-c65a-499b-b8e8-9674177c337f">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f6354b26-0c50-4342-82b7-e4e8ba68f4c4">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric12</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="504515d9-7044-4cdb-984c-f30aa1f7795d">
+          <ID>Numeric13</ID>
+          <Name>Numeric13</Name>
+          <Source dwd:design-time-name="4af377d7-e94b-4002-806b-fcb8a5da0a5d">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0acd143a-7811-4344-a94c-442b3c4319db">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric13</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="aef8214e-e213-4694-8412-df7fb461fff8">
+          <ID>Numeric14</ID>
+          <Name>Numeric14</Name>
+          <Source dwd:design-time-name="ff0d9831-9d95-445f-b102-9782a113d892">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="026f7d37-6832-44a8-914e-3edd798c5035">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric14</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="aee7407f-1009-4d87-b3ef-9045484a6945">
+          <ID>Numeric15</ID>
+          <Name>Numeric15</Name>
+          <Source dwd:design-time-name="dc6605c5-7e6f-4e16-94ee-af3df9ade38d">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ff232215-7972-4bb8-bb04-020ddb4e1503">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric15</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e676f8bd-090c-4be3-8d57-3dad6bd4565e">
+          <ID>Numeric16</ID>
+          <Name>Numeric16</Name>
+          <Source dwd:design-time-name="13342e43-c930-41be-9efa-15ad0c66fde4">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ba81c9a4-aeb0-4c2f-b63e-8885c166eaa9">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric16</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="122e053e-dd4a-4fa2-8f66-50f70cebced5">
+          <ID>Numeric17</ID>
+          <Name>Numeric17</Name>
+          <Source dwd:design-time-name="4026afc3-d3f3-42f7-9894-68e0f27b25b4">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0a06b75e-1927-446a-91f7-509af05dcb96">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric17</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="871fde4a-60f9-438b-9a9c-3a20f093fc01">
+          <ID>Numeric18</ID>
+          <Name>Numeric18</Name>
+          <Source dwd:design-time-name="4bdee8cf-90e8-43f6-a42e-9ee1a7e417f0">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9b6d48e7-ef8b-4a2f-992b-949693ce3270">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric18</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="073256a7-2f02-4d05-865b-66e58c39ffe8">
+          <ID>Numeric19</ID>
+          <Name>Numeric19</Name>
+          <Source dwd:design-time-name="b81cf09b-1cec-4780-8059-9fe9cbb81775">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f9c54600-999a-4d1e-8929-4fb5f544c735">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric19</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="debfed9c-f530-40d0-b974-77e72c51d5a4">
+          <ID>Numeric20</ID>
+          <Name>Numeric20</Name>
+          <Source dwd:design-time-name="63fd5093-7793-4100-b4a6-4d22c4e61b74">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="31ee96d7-57f8-475d-b395-245df89f81ad">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric20</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ec1243f2-f94e-48d7-9ac6-632b14a7ec55">
+          <ID>Numeric21</ID>
+          <Name>Numeric21</Name>
+          <Source dwd:design-time-name="4213bc97-3cce-4b3d-961b-28b7f1624c09">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2d037baf-ba4e-4bbd-a9ef-6a0eadf73881">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric21</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="74b074d7-6c9d-4e23-9721-4e351448f57f">
+          <ID>Numeric22</ID>
+          <Name>Numeric22</Name>
+          <Source dwd:design-time-name="cdd93b21-f9f9-4cdd-bf32-207f1acf802b">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9ecb068d-4fd5-475c-9a09-d6a9241294bb">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric22</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2f5cba02-e198-4c48-9adc-77df6821f513">
+          <ID>Numeric23</ID>
+          <Name>Numeric23</Name>
+          <Source dwd:design-time-name="34127f24-0eb2-4df9-b9f6-732f4dbeb113">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2044811b-86dd-489d-a8e2-84979c3a7162">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric23</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4b54f1be-e437-4a58-a277-8cd997fcf87a">
+          <ID>Numeric24</ID>
+          <Name>Numeric24</Name>
+          <Source dwd:design-time-name="6770cec4-3261-4ad7-96ce-59989bcef7b8">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9c6a9e1a-cbb8-4d5c-8697-d8bba0800c49">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric24</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="917efc51-4162-460c-9805-72a34ebef1c1">
+          <ID>Numeric25</ID>
+          <Name>Numeric25</Name>
+          <Source dwd:design-time-name="59001038-d374-40ed-8e71-20b4036a849b">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3ce5a66e-627a-47f8-b121-2013f1073377">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric25</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3ecd91e1-33ed-4ea2-a993-3f272fc96d1c">
+          <ID>Numeric26</ID>
+          <Name>Numeric26</Name>
+          <Source dwd:design-time-name="ee2c5192-c3c1-4242-ae40-4c5889a2b4ec">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="97a8c3e4-bd8b-4f8a-9bf6-50035112103c">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric26</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="45ea3621-2169-463c-8d6c-77f2f9b02cd8">
+          <ID>Numeric27</ID>
+          <Name>Numeric27</Name>
+          <Source dwd:design-time-name="122ec986-bf11-4f93-82da-c5a097e5a59c">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a9e92bf2-4836-476e-8d47-b92bf9b8f619">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric27</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a5e2d63a-ba7c-4a76-9344-70916cce14bd">
+          <ID>Numeric28</ID>
+          <Name>Numeric28</Name>
+          <Source dwd:design-time-name="21e5dc88-9262-47ee-9ed7-386734af2cad">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="355a7e90-06a3-4df2-a38c-a06ff86a01a8">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric28</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="43f05b7a-87df-4ef4-927b-d3f6536026fe">
+          <ID>Numeric29</ID>
+          <Name>Numeric29</Name>
+          <Source dwd:design-time-name="ae28dd4d-28cb-4c74-bb19-43b7f61052af">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="23b82565-8c41-4354-8caa-d13b84ef96f4">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric29</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e1b3bee4-9629-4f2e-b53f-fa76fec72941">
+          <ID>Numeric30</ID>
+          <Name>Numeric30</Name>
+          <Source dwd:design-time-name="204b8c6e-eb0e-4d7a-bc7d-5c3ce7e0805f">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8012b9b8-126c-44ba-90b1-d95adff73b1e">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric30</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f8895778-4adf-46e6-b887-9f1bc6425df0">
+          <ID>Numeric31</ID>
+          <Name>Numeric31</Name>
+          <Source dwd:design-time-name="82804abc-5fab-4b45-8fec-8f2b64cc5c84">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a5db21a8-1394-4c44-bec4-85a41246a685">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Numeric31</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="adf6cc2a-6cab-4f62-83dd-c38a25267e8e">
+          <ID>Version - X Block Model Block</ID>
+          <Name>Version - X Block Model Block</Name>
+          <Source dwd:design-time-name="5b810bd2-1198-493f-96bd-c839d6584161">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ac62b5e7-ab79-40c1-abff-4db581557cdc">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>Version</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2811ccb7-a843-4a96-9fa6-50551f1da716">
+          <ID>Version Certainty - X Block Model Block</ID>
+          <Name>Version Certainty - X Block Model Block</Name>
+          <Source dwd:design-time-name="8fa63980-5e2a-4b64-aa67-1653b10d0038">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="08ce4c9d-ad7f-4ea6-a276-28b5ce5f31d8">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+              <ColumnID>VersionCertainty</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="06be40d0-e529-4373-b52a-c01fb71b8dca">
+          <ID>X Block Model Block Count</ID>
+          <Name>X Block Model Block Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="4f3d9717-2e8b-44c2-aa72-c7229b2e3679">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="0c1cc540-b456-4590-aa3d-d0a4143d84fb">
+              <TableID>dbo_X_BlockModelBlock</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="19c8204b-17d4-4c14-a423-94f1beaf3e3b">
+          <CubeDimensionID>X Block Model Block</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a53553d8-4d85-4654-bc4a-988486d0a18c">
+              <AttributeID>Block Model Block ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1a99025f-c43c-411a-93ab-357281e2392d">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0dee93e2-5a36-4d92-81a6-10b213593623">
+                    <TableID>dbo_X_BlockModelBlock</TableID>
+                    <ColumnID>BlockModelBlockID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e05bff58-2f23-494a-8db8-94b1b2a5b5b1">
+          <CubeDimensionID>X Block Model</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="45087dfa-042d-4529-8b57-3a7a5b62e94c">
+              <AttributeID>Block Model ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ac6b7ede-8f75-4217-b411-9844e745cc6f">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8d13230d-ada4-4865-b0e6-d20ebc182c70">
+                    <TableID>dbo_X_BlockModelBlock</TableID>
+                    <ColumnID>BlockModelID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="82da699a-0b0a-497e-bbc4-70a8948e52e1">
+          <CubeDimensionID>X Block Model - Approver Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="83d64f4c-9e14-4b68-afc6-729ab4553620">
+              <AttributeID>Contact ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Approver Contact ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="94c510f3-863f-4aa0-80e4-793cef8a91a8">
+          <CubeDimensionID>X Block Model - Dimension Elevation</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="84566373-168e-4428-932a-19138a45d0b5">
+              <AttributeID>Dimension ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Dimension Elevation</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="e2290585-d637-44b7-aaba-b23afb38d783">
+          <CubeDimensionID>X Block Model - Project</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f23d5573-5e66-4bd9-878e-63e1ec592806">
+              <AttributeID>Project ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Project ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="593dbd75-4501-4273-89fe-012ae7fb6981">
+          <CubeDimensionID>X Block Model - Dimension Easting</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3603c70c-0787-41cd-a6f7-6be1045197aa">
+              <AttributeID>Dimension ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Dimension Easting</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="d35b2cec-0b3f-409d-b857-4923bdbda09e">
+          <CubeDimensionID>X Block Model - Dimension Northing</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c8301a65-74a1-401a-8955-f6bfecbd5610">
+              <AttributeID>Dimension ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Dimension Northing</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="fa298c52-979b-4fa5-a6b5-c26816c696ba">
+          <CubeDimensionID>X Block Model - Responsible Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b227c2d6-2783-4ec9-9204-977075c2ac47">
+              <AttributeID>Contact ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Responsible Contact ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a494ea6b-9a9c-4931-bcdd-fb235d799d27">
+          <CubeDimensionID>X Block Model - Author Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1881494a-ea28-4c39-ab72-e8231cab1cc4">
+              <AttributeID>Contact ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Author Contact ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="51674c54-882a-45d5-9bb4-74dec3d9c4d8">
+          <CubeDimensionID>X Block Model - External Reviewer Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="48413d0f-51f2-4e43-bf19-792cd0ae85f6">
+              <AttributeID>Contact ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>External Reviewer Contact ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="d044493b-cae6-4b5b-8fad-12a73ca3409d">
+      <ID>X Block Model Block Data</ID>
+      <Name>X Block Model Block Data</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="5ade41fb-1728-4d7f-88e0-bdbe20e39426">
+          <ID>Block Model Block Data Value</ID>
+          <Name>Block Model Block Data Value</Name>
+          <Source dwd:design-time-name="955a631b-e4aa-43c5-9074-7e13ad335112">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9afcca4f-89eb-48ac-ae23-aac39e36ae4d">
+              <TableID>dbo_X_BlockModelBlockData</TableID>
+              <ColumnID>BlockModelBlockDataValue</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="23101956-e659-4eb7-9905-5f699dff003d">
+          <ID>Version - X Block Model Block Data</ID>
+          <Name>Version - X Block Model Block Data</Name>
+          <Source dwd:design-time-name="b348ddba-84f0-4e57-9117-3f3285782724">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2cac014f-2a55-41f0-a3b9-0cc156136bcd">
+              <TableID>dbo_X_BlockModelBlockData</TableID>
+              <ColumnID>Version</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4e4ccc38-d508-4512-8ff5-41bd0d2d4580">
+          <ID>Version Certainty - X Block Model Block Data</ID>
+          <Name>Version Certainty - X Block Model Block Data</Name>
+          <Source dwd:design-time-name="e6da4032-6e67-41eb-9f0a-bf31e82742f0">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5d54fd6a-bf87-41ca-b6bd-034cb40ef2be">
+              <TableID>dbo_X_BlockModelBlockData</TableID>
+              <ColumnID>VersionCertainty</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d5c4176c-01fa-4a07-b59d-51b0ce879417">
+          <ID>X Block Model Block Data Count</ID>
+          <Name>X Block Model Block Data Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="970876d8-4c0b-4942-86c9-e771e439017e">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="6353df4f-5263-4d15-85e9-ba289b8d36e2">
+              <TableID>dbo_X_BlockModelBlockData</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="70840549-60d7-40b6-9fed-b4b24a4c6233">
+          <CubeDimensionID>X Block Model Block Data</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7c0a9c8c-303e-4f15-b7c0-333b23d6e88f">
+              <AttributeID>Block Model Block Data ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="aa77b33d-6e7a-41d1-891b-310e5cb72f11">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a12681dd-cbc7-41ba-b732-50c038ad554d">
+                    <TableID>dbo_X_BlockModelBlockData</TableID>
+                    <ColumnID>BlockModelBlockDataID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3de51c89-a087-447b-8ab9-aa5bf6a93f0c">
+          <CubeDimensionID>X Parameter</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7bb90c97-f62c-407d-a88d-180cbbb39f51">
+              <AttributeID>Parameter ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fb838d91-754a-494e-b826-addedc377ca0">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="908beae0-c792-4db5-8091-7475c7ecff78">
+                    <TableID>dbo_X_BlockModelBlockData</TableID>
+                    <ColumnID>ParameterID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="32ae4878-ece4-4eb4-950e-b595625cc060">
+          <CubeDimensionID>X Block Model</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9c41257c-e363-414c-8368-068b2554f24d">
+              <AttributeID>Block Model ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7e1b6590-a3be-421a-9f64-853460deb9f9">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2dbd97ec-e20e-45be-99f0-3884fdac33ac">
+                    <TableID>dbo_X_BlockModelBlockData</TableID>
+                    <ColumnID>BlockModelID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="10d1a454-8e48-4c8c-8aad-78bd685985ae">
+          <CubeDimensionID>X Block Model Block</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f8438937-1548-4061-88fe-53e811dc3f11">
+              <AttributeID>Block Model Block ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f982c318-f001-4d1f-98c6-4766f910147c">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="408fc422-9bcc-4dbe-b52d-44dc43034fe1">
+                    <TableID>dbo_X_BlockModelBlockData</TableID>
+                    <ColumnID>BlockModelBlockID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="550fbad6-5e46-4e52-9f7d-3b772019cdcd">
+          <CubeDimensionID>X Block Model - Approver Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="acf3db0e-b48c-4ae5-9409-848bb439200d">
+              <AttributeID>Contact ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Approver Contact ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="0373d9ca-6855-4d16-8e69-37e0d44c2f7f">
+          <CubeDimensionID>X Block Model - Dimension Elevation</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4679a322-20e0-4a19-b3ed-5c83c18ae92a">
+              <AttributeID>Dimension ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Dimension Elevation</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="d8b58cc8-b478-4740-ba12-c6cbd8816bc7">
+          <CubeDimensionID>X Block Model - Project</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="325f1c1e-415b-4db8-9009-2b8e090260ab">
+              <AttributeID>Project ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Project ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="8f73c8a2-c989-4621-b304-5c162f0c449b">
+          <CubeDimensionID>X Block Model - Dimension Easting</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b0d8b32e-0722-4fe8-98d2-8a1a98363ffc">
+              <AttributeID>Dimension ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Dimension Easting</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="efc0d6fa-8dc8-491b-a06b-2955803bb830">
+          <CubeDimensionID>X Block Model - Dimension Northing</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a0c544f2-7122-4c6e-8f37-4a0d5a2ade43">
+              <AttributeID>Dimension ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Dimension Northing</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="b8f246e0-ca63-4413-a04a-ffe234da1bb5">
+          <CubeDimensionID>X Block Model - Responsible Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d0a452ea-c803-4ad0-962f-fe8add3b27a7">
+              <AttributeID>Contact ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Responsible Contact ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="fa2de54e-8de0-43f9-b2e0-a46a05eec986">
+          <CubeDimensionID>X Block Model - Author Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bde3993d-5cad-44f7-a3c7-ad6f292eacc5">
+              <AttributeID>Contact ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Author Contact ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="5977f804-d83c-466e-a452-0486c0df4c72">
+          <CubeDimensionID>X Block Model - External Reviewer Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6e76eefd-d5d1-4196-932b-692277940de1">
+              <AttributeID>Contact ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>External Reviewer Contact ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="557a4386-5672-4cd8-8b8f-a75bf373755c">
+          <CubeDimensionID>X Block Model Block - Block Model</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f2285502-70f1-4607-985b-103e54067921">
+              <AttributeID>Block Model ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model Block</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Block Model ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="e88d953d-c8cd-47c8-b2e4-77987e06ab7d">
+          <CubeDimensionID>X Block Model Block - Block Model - Approver Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f639d3b7-595d-4faa-a833-9fb7ccbd1d55">
+              <AttributeID>Contact ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model Block - Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Approver Contact ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="94838eee-3f7a-48cf-9e1e-9c56c8f25cbc">
+          <CubeDimensionID>X Block Model Block - Block Model - Dimension Elevation</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fb6a93d9-5767-4712-85f0-82a64d968566">
+              <AttributeID>Dimension ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model Block - Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Dimension Elevation</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="00d61b54-98fe-41da-b627-9955f555739f">
+          <CubeDimensionID>X Block Model Block - Block Model - Project</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d0d54260-cf1c-4d68-a422-cacdaeff3eaf">
+              <AttributeID>Project ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model Block - Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Project ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="49a2b401-8df0-4203-b33b-7eb2b38d4d5f">
+          <CubeDimensionID>X Block Model Block - Block Model - Dimension Easting</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="822c7bfc-e9da-4da8-9f5a-f237aa796b7c">
+              <AttributeID>Dimension ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model Block - Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Dimension Easting</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="5c3f55fc-5419-4dee-af31-b3a962e281b7">
+          <CubeDimensionID>X Block Model Block - Block Model - Dimension Northing</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="30d146de-8e54-4115-897c-f07a29c7b485">
+              <AttributeID>Dimension ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model Block - Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Dimension Northing</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="45ebb647-662b-41e9-94c6-70e084410c4b">
+          <CubeDimensionID>X Block Model Block - Block Model - Responsible Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f49b0e72-13fd-422f-89af-3fe1fd923362">
+              <AttributeID>Contact ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model Block - Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Responsible Contact ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="acbedf85-d97f-44b2-be00-be92f450f221">
+          <CubeDimensionID>X Block Model Block - Block Model - Author Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d3768f4d-d84c-4691-be37-376d3d0bdef2">
+              <AttributeID>Contact ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model Block - Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Author Contact ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="ad1d2e0b-f16f-47a6-a4b7-a8fb90f39c78">
+          <CubeDimensionID>X Block Model Block - Block Model - External Reviewer Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="92952d08-97c8-4c50-86ec-edf05355ebc8">
+              <AttributeID>Contact ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model Block - Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>External Reviewer Contact ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="f56c3fdb-e481-444d-8fdc-bbcf964f5299">
+      <ID>X Block Model Metadata</ID>
+      <Name>X Block Model Metadata</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="6b7474ca-6225-46b7-a0b1-6a0276bdae26">
+          <ID>Block Model Metadata Value</ID>
+          <Name>Block Model Metadata Value</Name>
+          <Source dwd:design-time-name="2c1a1f0d-7ab1-4479-b8ff-ccf2b3e83d7e">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d5115b2c-d65d-490b-8287-25f52648f638">
+              <TableID>dbo_X_BlockModelMetadata</TableID>
+              <ColumnID>BlockModelMetadataValue</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="32700bed-a7d4-4f82-aa22-cbd4d6ff9c27">
+          <ID>Version - X Block Model Metadata</ID>
+          <Name>Version - X Block Model Metadata</Name>
+          <Source dwd:design-time-name="bd3c9c8a-a9bc-43cf-b55f-415a13bb7e5f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4acbd5e2-7872-4201-a339-f546dde430bf">
+              <TableID>dbo_X_BlockModelMetadata</TableID>
+              <ColumnID>Version</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="645caa2e-23d1-4d9d-ad0d-e29e959020a0">
+          <ID>Version Certainty - X Block Model Metadata</ID>
+          <Name>Version Certainty - X Block Model Metadata</Name>
+          <Source dwd:design-time-name="d9c77d46-cefa-48c0-a4a3-c410d185d204">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="11b558e5-70cb-43e7-ae66-db8fa4f93e06">
+              <TableID>dbo_X_BlockModelMetadata</TableID>
+              <ColumnID>VersionCertainty</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b74ac8e3-26ff-4bda-9cdf-b15ed12c2341">
+          <ID>X Block Model Metadata Count</ID>
+          <Name>X Block Model Metadata Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="e092d896-0acd-4bac-9b43-eb902d36ca21">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="cccaad7a-f715-4512-bfb9-1f99ec9d54df">
+              <TableID>dbo_X_BlockModelMetadata</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="bca47c01-7888-4913-b634-9bc41ccaf132">
+          <CubeDimensionID>X Block Model Metadata</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="95189416-45f8-47dd-b377-5addeedaecfa">
+              <AttributeID>Block Model Metadata ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e1d37d71-a0a9-4a45-9eb4-8ab50540885d">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="71b976e5-9395-48ab-a6bc-d48c46f14022">
+                    <TableID>dbo_X_BlockModelMetadata</TableID>
+                    <ColumnID>BlockModelMetadataID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="34446beb-1f6f-442e-982f-892da51fe1eb">
+          <CubeDimensionID>X Block Model</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f1d42837-d531-4c15-b284-3840f55aa072">
+              <AttributeID>Block Model ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0b61c4aa-cbbf-4b90-be84-856b1c63f446">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fbd35206-3dce-4e7b-9553-0989bc03e669">
+                    <TableID>dbo_X_BlockModelMetadata</TableID>
+                    <ColumnID>BlockModelID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="452b38ed-d123-4b87-9fe5-83447f5898ab">
+          <CubeDimensionID>X Parameter</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="14eafe13-f5db-4390-a640-f314a2dba8cd">
+              <AttributeID>Parameter ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="051f3e0e-7e45-4d97-8f76-c3d2e11b2611">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9263dcaa-4b42-40f2-8216-be58f6c1c86c">
+                    <TableID>dbo_X_BlockModelMetadata</TableID>
+                    <ColumnID>ParameterID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="ee8c0f48-10f9-4b82-8482-a4957cd222c8">
+          <CubeDimensionID>X Block Model - Approver Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="80bc54ed-f8bd-45a2-b6ac-04e753745786">
+              <AttributeID>Contact ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Approver Contact ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="50b319ca-b564-46f0-b70d-e4f1cde482d9">
+          <CubeDimensionID>X Block Model - Dimension Elevation</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="74022fdc-b564-484c-ab67-e733da6e88ed">
+              <AttributeID>Dimension ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Dimension Elevation</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="10395001-0f06-4bc3-88c8-26b50938f42c">
+          <CubeDimensionID>X Block Model - Project</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9e4023ba-3309-4bd7-bc77-fef7c66b911d">
+              <AttributeID>Project ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Project ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="5e140cdb-132a-40fb-b900-da4c2f8bbb11">
+          <CubeDimensionID>X Block Model - Dimension Easting</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bcffc4fa-d7d2-43b9-b884-90efdcaba4b1">
+              <AttributeID>Dimension ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Dimension Easting</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="132f0b9b-5d07-4ccd-9e77-0f527825151a">
+          <CubeDimensionID>X Block Model - Dimension Northing</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4d733b6d-e472-47b5-9e21-3497a9f6e35e">
+              <AttributeID>Dimension ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Dimension Northing</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="4a24e862-975f-4696-89ce-0549f71d6bcc">
+          <CubeDimensionID>X Block Model - Responsible Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1e45071a-63ea-45a8-bd24-b30e750625cd">
+              <AttributeID>Contact ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Responsible Contact ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="1fef6ce3-62ac-4927-adbf-b0bc4dafd875">
+          <CubeDimensionID>X Block Model - Author Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="456d55ba-92f3-4746-883b-5350e1592b3f">
+              <AttributeID>Contact ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Author Contact ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="05a896a7-dd8f-4fb8-a4bc-8f88170a32e2">
+          <CubeDimensionID>X Block Model - External Reviewer Contact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="854e9c38-e5c4-4916-8d6a-343debd26103">
+              <AttributeID>Contact ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>X Block Model</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>External Reviewer Contact ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="34d7fcc3-699d-458b-9957-d620a917a5c1">
+    <DataSourceViewID>NKD</DataSourceViewID>
+  </Source>
+</Cube>

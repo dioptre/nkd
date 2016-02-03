@@ -1,0 +1,5 @@
+repo: dc68d0c9863a02239cd2293b94cb6bc7268ada45
+node: c8d46d3f34f3d6b721d79bf16d37ea2b695519c1
+branch: default
+latesttag: Release-24Jan2011
+latesttagdistance: 177

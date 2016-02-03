@@ -1,0 +1,9 @@
+﻿<p>
+    @Model.Summary
+    @LinkExtensions.ActionLink(Html, T("More information").Text,
+        "DetailsForId",
+        "Package",
+        new { area = "Orchard.Gallery", packageType = Model.PackageTypeSlug, packageId = Model.PackageID },
+        null
+    )
+</p>

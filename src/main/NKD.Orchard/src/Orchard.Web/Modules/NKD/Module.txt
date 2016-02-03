@@ -1,0 +1,13 @@
+Name: NKD
+AntiForgery: disabled
+Author: NakedEnterprise.Org
+Website: http://nakedenterprise.org
+Version: 1.0
+OrchardVersion: 1.0
+Description: Naked Enterprise Master Module
+Features:
+    NKD:
+        Description: Required functionality to run NakedEnterprise software within OrchardCMS.
+		Category: Business
+		Dependencies: Orchard.Email, Laughlin.ErrorLog, Orchard.Users
+		Priority: -10

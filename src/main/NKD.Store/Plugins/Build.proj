@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectName>Plugins</ProjectName>
+  </PropertyGroup> 
+  <Target Name="DebugBuild">
+    <Message Text="Building $(ProjectName)" />
+    <MSBuild Projects="src\$(ProjectName).sln" Targets="Clean" Properties="Configuration=Debug"/>
+    <MSBuild Projects="src\$(ProjectName).sln" Targets="Build" Properties="Configuration=Debug"/>
+  </Target>
+
+  <Target Name="ReleaseBuild">
+    <Message Text="Building $(ProjectName) Release Build" />
+    <MSBuild Projects="src\$(ProjectName).sln" Targets="Clean" Properties="Configuration=Release" />
+    <MSBuild Projects="src\$(ProjectName).sln" Targets="Build" Properties="Configuration=Release" />
+    <Message Text="$(ProjectName) Release Build Complete!" />
+	<Message Text="Running $(ProjectName) Unit Tests" />
+    <Exec Command="src\packages\NUnit.2.5.7.10213\Tools\nunit-console.exe src\UnitTests\bin\Release\Gallery.Plugins.UnitTests.dll /nologo /framework=4.0.30319 /xml:UnitTestResults.xml"/>
+	<Message Text="Running $(ProjectName) Integration Tests" />
+    <Exec Command="src\packages\NUnit.2.5.7.10213\Tools\nunit-console.exe src\IntegrationTests\bin\Release\Gallery.Plugins.IntegrationTests.dll /nologo /framework=4.0.30319 /xml:IntegrationTestResults.xml"/>
+  </Target>
+  
+  <Target Name="UnitTests" DependsOnTargets="DebugBuild">
+      <Message Text="Running $(ProjectName) Unit Tests" />
+      <Exec Command="src\packages\NUnit.2.5.7.10213\Tools\nunit-console.exe src\UnitTests\bin\debug\Gallery.Plugins.UnitTests.dll /nologo /framework=4.0.30319 /xml:UnitTestResults.xml"/>
+  </Target>
+  
+  <Target Name="IntegrationTests" DependsOnTargets="UnitTests">
+      <Message Text="Running $(ProjectName) Integration Tests" />
+      <Exec Command="src\packages\NUnit.2.5.7.10213\Tools\nunit-console.exe src\IntegrationTests\bin\debug\Gallery.Plugins.IntegrationTests.dll /nologo /framework=4.0.30319 /xml:IntegrationTestResults.xml"/>
+  </Target>
+    
+</Project>

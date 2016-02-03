@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    Note: As an alternative to hand editing this file you can use the 
+    web admin tool to configure settings for your application. Use
+    the Website->Asp.Net Configuration option in Visual Studio.
+    A full list of settings and comments can be found in 
+    machine.config.comments usually located in 
+    \Windows\Microsoft.Net\Framework\v2.x\Config 
+-->
+<configuration>
+  <configSections>
+    <sectionGroup name="system.web.webPages.razor" type="System.Web.WebPages.Razor.Configuration.RazorWebSectionGroup, System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35">
+      <remove name="host" />
+      <remove name="pages" />
+      <section name="host" type="System.Web.WebPages.Razor.Configuration.HostSection, System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" />
+      <section name="pages" type="System.Web.WebPages.Razor.Configuration.RazorPagesSection, System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" />
+    </sectionGroup>
+    <section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net" requirePermission="false" />
+    <sectionGroup name="devExpress">
+      <section name="themes" type="DevExpress.Web.ASPxClasses.ThemesConfigurationSection, DevExpress.Web.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false" />
+      <section name="compression" type="DevExpress.Web.ASPxClasses.CompressionConfigurationSection, DevExpress.Web.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false" />
+      <section name="settings" type="DevExpress.Web.ASPxClasses.SettingsConfigurationSection, DevExpress.Web.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false" />
+      <section name="errors" type="DevExpress.Web.ASPxClasses.ErrorsConfigurationSection, DevExpress.Web.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false" />
+    </sectionGroup>
+    <!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 -->
+    <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+  </configSections>
+  <appSettings>
+    <!--<add key="webpages:Enabled" value="false" />-->
+    <add key="log4net.Config" value="Config\log4net.config" />
+    <add key="webpages:Version" value="2.0.0.0" />
+    <add key="ClientValidationEnabled" value="true" />
+    <add key="UnobtrusiveJavaScriptEnabled" value="false" />
+    <add key="SiteMode" value="false" />
+    <add key="PreserveLoginUrl" value="true" />
+    <add key="SqlCommandTimeOut" value="10000000" />
+    <add key="CacheTimeOut" value="1800" />
+  </appSettings>
+  <system.web.webPages.razor>
+    <host factoryType="System.Web.Mvc.MvcWebRazorHostFactory, System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <pages pageBaseType="Orchard.Mvc.ViewEngines.Razor.WebViewPage">
+      <namespaces>
+        <add namespace="System.Web.Mvc" />
+        <add namespace="System.Web.Mvc.Ajax" />
+        <add namespace="System.Web.Mvc.Html" />
+        <add namespace="System.Web.Routing" />
+        <add namespace="System.Web.WebPages" />
+        <add namespace="System.Linq" />
+        <add namespace="System.Collections.Generic" />
+        <add namespace="Orchard.Mvc.Html" />
+      </namespaces>
+    </pages>
+  </system.web.webPages.razor>
+  <!-- 
+        Set default transaction timeout to 10 hours so that interactive debugging 
+        is easier (default timeout is less than one minute)
+  -->
+  <system.transactions>
+    <defaultSettings timeout="10:00:00" />
+  </system.transactions>
+  <!--
+    For a description of web.config changes for .NET 4.5 see http://go.microsoft.com/fwlink/?LinkId=235367.
+
+    The following attributes can be set on the <httpRuntime> tag.
+      <system.Web>
+        <httpRuntime targetFramework="4.5" />
+      </system.Web>
+  -->
+  <system.web>
+    <!--<trust level="Full" originUrl="" />-->
+    <!--<trust level="Medium" originUrl="" />-->
+    <globalization culture="en-AU" uiCulture="en-AU" />
+    <!--10 Hour timeout-->
+    <httpRuntime maxRequestLength="209715200" executionTimeout="36000" requestValidationMode="2.0" />
+    <sessionState mode="InProc" timeout="600" />
+    <!-- 
+            Set compilation debug="true" to insert debugging 
+            symbols into the compiled page. Because this 
+            affects performance, set this value to true only 
+            during development.
+    -->
+    <compilation debug="true" targetFramework="4.5" batch="true" numRecompilesBeforeAppRestart="250" optimizeCompilations="true">
+      <buildProviders>
+        <add extension=".csproj" type="Orchard.Environment.Extensions.Compilers.CSharpExtensionBuildProviderShim" />
+      </buildProviders>
+      <assemblies>
+        <add assembly="DevExpress.Data.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.CodeParser.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.Web.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.Web.ASPxHtmlEditor.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.Web.ASPxSpellChecker.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.Web.ASPxTreeList.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.Web.ASPxThemes.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.Web.ASPxPivotGrid.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.Utils.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.SpellChecker.v13.1.Core, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.Charts.v13.1.Core, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.XtraCharts.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.XtraCharts.v13.1.Web, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.Printing.v13.1.Core, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.XtraReports.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.XtraReports.v13.1.Web, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.XtraPivotGrid.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.PivotGrid.v13.1.Core, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.XtraScheduler.v13.1.Core, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.Web.ASPxScheduler.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.Web.Mvc.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+        <add assembly="System.Web.Abstractions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+        <add assembly="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+        <add assembly="System.Web.Routing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+        <add assembly="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+        <add assembly="System.Data.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+        <remove assembly="System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <remove assembly="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <remove assembly="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+        <remove assembly="System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <remove assembly="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+        <remove assembly="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <remove assembly="System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <remove assembly="System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+        <remove assembly="System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+        <remove assembly="System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+        <remove assembly="System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+        <remove assembly="System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+        <remove assembly="System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+        <remove assembly="System.ServiceModel.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+        <remove assembly="System.WorkflowServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+        <remove assembly="System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+        <remove assembly="System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+        <remove assembly="System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+      <add assembly="DevExpress.RichEdit.v13.1.Core, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" /></assemblies>
+    </compilation>
+    <!--
+            The <authentication> section enables configuration 
+            of the security authentication mode used by 
+            ASP.NET to identify an incoming user. 
+    -->
+    <machineKey decryption="AES" decryptionKey="107A0D0E93803FA23FE8270CA11D6FC932CEA744430A5D0B" validation="SHA1" validationKey="4316A025EB7C6E261BBD64E43334297D6A260F48EDE8AFF7CC59F33620DC7F93766722396FC52F0F7600098E488C13DE4ABE28D96BECBDEAA4E54B63B346C172" />
+    <authentication mode="Forms">
+      <forms loginUrl="~/Users/Account/AccessDenied" timeout="2880" />
+    </authentication>
+    <!--USE THIS FOR ACTIVE DIRECTORY INTEGRATION!!!!!-->
+    <!--<authentication mode="Windows"/>
+    <roleManager enabled="true" defaultProvider="AspNetWindowsTokenRoleProvider"/>-->
+    <!--
+            The <customErrors> section enables configuration 
+            of what to do if/when an unhandled error occurs 
+            during the execution of a request. Specifically, 
+            it enables developers to configure html error pages 
+            to be displayed in place of a error stack trace.
+    -->
+    <customErrors mode="RemoteOnly" />
+    <pages controlRenderingCompatibilityVersion="4.0" clientIDMode="AutoID">
+      <namespaces>
+        <add namespace="System.Web.Mvc" />
+        <add namespace="System.Web.Mvc.Ajax" />
+        <add namespace="System.Web.Mvc.Html" />
+        <add namespace="System.Web.Routing" />
+        <add namespace="System.Linq" />
+        <add namespace="System.Collections.Generic" />
+        <add namespace="Orchard.Mvc.Html" />
+        <add namespace="System.Web.Helpers" />
+        <add namespace="System.Web.WebPages" />
+        <add namespace="System.Collections" />
+        <add namespace="System.Drawing" />
+        <add namespace="System.Web.UI.WebControls" />
+        <add namespace="System.Text.RegularExpressions" />
+        <add namespace="DevExpress.Utils" />
+        <add namespace="DevExpress.Web.ASPxClasses" />
+        <add namespace="DevExpress.Web.ASPxGridView" />
+        <add namespace="DevExpress.Web.ASPxGridView.Export" />
+        <add namespace="DevExpress.Web.ASPxEditors" />
+        <add namespace="DevExpress.Web.ASPxCallbackPanel" />
+        <add namespace="DevExpress.Web.ASPxMenu" />
+        <add namespace="DevExpress.Web.ASPxNavBar" />
+        <add namespace="DevExpress.Web.ASPxPopupControl" />
+        <add namespace="DevExpress.Web.ASPxRoundPanel" />
+        <add namespace="DevExpress.Web.ASPxSplitter" />
+        <add namespace="DevExpress.Web.ASPxTabControl" />
+        <add namespace="DevExpress.Web.ASPxTreeView" />
+        <add namespace="DevExpress.Web.ASPxUploadControl" />
+        <add namespace="DevExpress.Web.ASPxHtmlEditor" />
+        <add namespace="DevExpress.Web.ASPxSpellChecker" />
+        <add namespace="DevExpress.XtraCharts" />
+        <add namespace="DevExpress.XtraCharts.Web" />
+        <add namespace="DevExpress.Web.Mvc" />
+        <add namespace="DevExpress.Web.Mvc.UI" />
+        <add namespace="DevExpress.XtraCharts" />
+        <add namespace="DevExpress.XtraCharts.Web" />
+        <add namespace="DevExpress.XtraReports" />
+        <add namespace="DevExpress.XtraReports.UI" />
+        <add namespace="DevExpress.XtraReports.Web" />
+        <add namespace="DevExpress.XtraPivotGrid" />
+        <add namespace="DevExpress.XtraPivotGrid.Customization" />
+        <add namespace="DevExpress.Data.PivotGrid" />
+        <add namespace="DevExpress.Web.ASPxPivotGrid" />
+        <add namespace="DevExpress.XtraScheduler" />
+        <add namespace="DevExpress.XtraScheduler.Native" />
+        <add namespace="DevExpress.Web.ASPxScheduler" />
+      </namespaces>
+    </pages>
+    <httpHandlers>
+      <!-- see below -->
+      <clear />
+      <add type="DevExpress.Web.ASPxClasses.ASPxHttpHandlerModule, DevExpress.Web.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" verb="GET,POST" path="DX.ashx" validate="false" />
+      <add type="DevExpress.Web.ASPxUploadControl.ASPxUploadProgressHttpHandler, DevExpress.Web.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" verb="GET,POST" path="ASPxUploadProgressHandlerPage.ashx" validate="false" />
+      <add path="*" verb="*" type="System.Web.HttpNotFoundHandler" />
+    </httpHandlers>
+    <httpModules>
+      <add type="DevExpress.Web.ASPxClasses.ASPxHttpHandlerModule, DevExpress.Web.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" name="ASPxHttpHandlerModule" />
+      <add name="WarmupHttpModule" type="Orchard.WarmupStarter.WarmupHttpModule, Orchard.WarmupStarter, Version=1.0.20, Culture=neutral" />
+    </httpModules>
+  </system.web>
+  <connectionStrings>
+    <add name="NKD" connectionString="Server=nkddb;Database=NKD;Timeout=60;Persist Security Info=True;User ID=nkd_user1;Password=password;Integrated Security=False;MultipleActiveResultSets=True" providerName="System.Data.SqlClient" />
+    <add name="ContactsContainer" connectionString="metadata=res://*/Models.Contacts.csdl|res://*/Models.Contacts.ssdl|res://*/Models.Contacts.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=nkddb;initial catalog=NKD;persist security info=True;user id=nkd_user1;password=password;multipleactiveresultsets=True;application name=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    <add name="SpaceInfoContainer" connectionString="metadata=res://*/Models.SpaceInfo.csdl|res://*/Models.SpaceInfo.ssdl|res://*/Models.SpaceInfo.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=nkddb;initial catalog=NKD;persist security info=True;user id=nkd_user1;password=password;multipleactiveresultsets=True;application name=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    <add name="SpatialContainer" connectionString="metadata=res://*/Models.Spatial.csdl|res://*/Models.Spatial.ssdl|res://*/Models.Spatial.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=nkddb;initial catalog=NKD;persist security info=True;user id=nkd_user1;password=password;multipleactiveresultsets=True;application name=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    <add name="NKDEntities" connectionString="provider=System.Data.SqlClient;provider connection string=&quot;Data Source=nkddb;Initial Catalog=NKD;Persist Security Info=True;User ID=nkd_user1;Password=password;MultipleActiveResultSets=True;Application Name=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    <add name="NKDConnectionString" connectionString="Data Source=nkddb;Initial Catalog=NKD;Persist Security Info=True;User ID=nkd_user1;Password=password;MultipleActiveResultSets=True;Application Name=EntityFramework" providerName="System.Data.SqlClient" />
+    <add name="NKDImportEntities" connectionString="metadata=res://*/DataModels.NKDImportModel.csdl|res://*/DataModels.NKDImportModel.ssdl|res://*/DataModels.NKDImportModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=nkddb;initial catalog=NKD;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    <add name="NKDOLAP_RM" connectionString="provider=MSOLAP;data source=nkddb;initial catalog=NKD Cube;cube name=Resource Models" />
+  </connectionStrings>
+  <!-- 
+        The system.webServer section is required for running ASP.NET AJAX under Internet
+        Information Services 7.0.  It is not necessary for previous version of IIS.
+  -->
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false" />
+    <modules runAllManagedModulesForAllRequests="true">
+      <add type="DevExpress.Web.ASPxClasses.ASPxHttpHandlerModule, DevExpress.Web.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" name="ASPxHttpHandlerModule" />
+      <remove name="WarmupHttpModule" />
+      <add name="WarmupHttpModule" type="Orchard.WarmupStarter.WarmupHttpModule, Orchard.WarmupStarter, Version=1.0.20, Culture=neutral" />
+    </modules>
+    <handlers>
+      <!--accessPolicy="Script">-->
+      <!-- clear all handlers, prevents executing code file extensions, prevents returning any file contents -->
+      <clear />
+      <add name="ASPxUploadProgressHandler" path="ASPxUploadProgressHandlerPage.ashx" verb="GET,POST" type="DevExpress.Web.ASPxUploadControl.ASPxUploadProgressHttpHandler, DevExpress.Web.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" resourceType="Unspecified" requireAccess="Script" preCondition="integratedMode" />
+      <add type="DevExpress.Web.ASPxClasses.ASPxHttpHandlerModule, DevExpress.Web.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" verb="GET,POST" name="ASPxHttpHandlerModule" path="DX.ashx" preCondition="integratedMode" />
+      <!-- Return 404 for all requests via managed handler. The url routing handler will substitute the mvc request handler when routes match. -->
+      <add name="NotFound" path="*" verb="*" type="System.Web.HttpNotFoundHandler" preCondition="integratedMode" requireAccess="Script" />
+      <!-- WebApi -->
+      <remove name="ExtensionlessUrlHandler-ISAPI-4.0_32bit" />
+      <remove name="ExtensionlessUrlHandler-ISAPI-4.0_64bit" />
+      <remove name="ExtensionlessUrlHandler-Integrated-4.0" />
+      <add name="ExtensionlessUrlHandler-ISAPI-4.0_32bit" path="*." verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS" modules="IsapiModule" scriptProcessor="%windir%\Microsoft.NET\Framework\v4.0.30319\aspnet_isapi.dll" preCondition="classicMode,runtimeVersionv4.0,bitness32" responseBufferLimit="0" />
+      <add name="ExtensionlessUrlHandler-ISAPI-4.0_64bit" path="*." verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS" modules="IsapiModule" scriptProcessor="%windir%\Microsoft.NET\Framework64\v4.0.30319\aspnet_isapi.dll" preCondition="classicMode,runtimeVersionv4.0,bitness64" responseBufferLimit="0" />
+      <add name="ExtensionlessUrlHandler-Integrated-4.0" path="*." verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS" type="System.Web.Handlers.TransferRequestHandler" preCondition="integratedMode,runtimeVersionv4.0" />
+    </handlers>
+    <!-- Prevent IIS 7.0 from returning a custom 404/500 error page of its own -->
+    <httpErrors existingResponse="PassThrough" />
+    <security>
+      <requestFiltering>
+        <requestLimits maxAllowedContentLength="209715200" />
+      </requestFiltering>
+    </security>
+    <httpProtocol>
+      <customHeaders>
+        <add name="X-UA-Compatible" value="IE=EDGE,IE=9,IE=8,chrome=1" />
+        <add name="xmlns" value="http://www.w3.org/1999/xhtml" />
+        <add name="xmlns:v" value="urn:schemas-microsoft-com:vml" />
+      </customHeaders>
+    </httpProtocol>
+  </system.webServer>
+  <devExpress>
+    <themes enableThemesAssembly="true" styleSheetTheme="" theme="" />
+    <compression enableHtmlCompression="false" enableCallbackCompression="true" enableResourceCompression="true" enableResourceMerging="true" />
+    <settings rightToLeft="false" />
+    <errors callbackErrorRedirectUrl="" />
+  </devExpress>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <probing privatePath="App_Data/Dependencies" />
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Mvc" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.0.0" newVersion="4.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.WebPages" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="0.0.0.0-2.0.0.0" newVersion="2.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Razor" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="0.0.0.0-2.0.0.0" newVersion="2.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Helpers" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="0.0.0.0-2.0.0.0" newVersion="2.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.WebPages.Deployment" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="0.0.0.0-2.0.0.0" newVersion="2.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.WebPages.Razor" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="0.0.0.0-2.0.0.0" newVersion="2.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Drawing" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.0.0" newVersion="4.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="NHibernate" publicKeyToken="aa95f207798dfdb4" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.3.1.4000" newVersion="3.3.1.4000" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Autofac" publicKeyToken="17863af14b0044da" />
+        <bindingRedirect oldVersion="2.2.0.0-2.6.3.862" newVersion="2.6.3.862" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="EntityFramework" publicKeyToken="b77a5c561934e089" />
+        <bindingRedirect oldVersion="0.0.0.0-5.0.0.0" newVersion="5.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Transactions" publicKeyToken="b77a5c561934e089" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.0.0" newVersion="4.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.SqlServer.Types" publicKeyToken="89845dcd8080cc91" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-11.0.0.0" newVersion="11.0.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <entityFramework>
+    <defaultConnectionFactory type="System.Data.Entity.Infrastructure.LocalDbConnectionFactory, EntityFramework">
+      <parameters>
+        <parameter value="v11.0" />
+      </parameters>
+    </defaultConnectionFactory>
+  </entityFramework>
+</configuration>

@@ -1,0 +1,11 @@
+﻿<ul id="categories">
+    @foreach (string category in Model.Categories) {
+        string itemClass = Model.SelectedCategory == category ? "current" : "";
+        if (category == "All Categories") {
+            <li>@Html.ActionLink(category, "List", "Packages", new { area = "Orchard.Gallery", packageType = Model.PackageType }, new { @class = itemClass })</li>
+        }
+        else {
+            <li>@Html.ActionLink(category, "ByCategory", "Packages", new { area = "Orchard.Gallery", packageType = Model.PackageType, categoryName = category }, new { @class = itemClass })</li>
+        }
+    }
+</ul>

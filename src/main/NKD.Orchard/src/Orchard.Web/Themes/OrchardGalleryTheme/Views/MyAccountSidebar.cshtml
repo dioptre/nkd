@@ -1,0 +1,11 @@
+﻿@using Orchard.ContentManagement;
+@{
+    var userCanRegister = @WorkContext.CurrentSite.As<Orchard.Users.Models.RegistrationSettingsPart>().UsersCanRegister;
+}
+
+<nav id="leftNav">
+    <img src="@Href("../Content/Images/userGraphic.png")" style="padding-left:60px"/>
+    <p>
+        @T("Manage your personal account information.") 
+    </p>
+</nav>

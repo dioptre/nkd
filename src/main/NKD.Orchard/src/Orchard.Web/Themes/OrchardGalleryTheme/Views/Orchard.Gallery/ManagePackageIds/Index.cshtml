@@ -1,0 +1,102 @@
+﻿@using Orchard.Gallery.ManagePackageIds
+@model Orchard.Gallery.ManagePackageIds.ManagePackageIdsViewModel
+@{
+    Script.Include("jquery.validate.min.js");
+    Script.Include("jquery.validate.unobtrusive.min.js");
+    WorkContext.Layout.AfterContent.Add(New.Partial(TemplateName: "ConfirmPackageIdDelete"));
+}
+@{
+    WorkContext.Layout.AsideFirst.Add(New.ManagePackageIDSidebar());
+}
+<section>
+    <header>
+        <h2>Manage Package IDs</h2>
+    </header>
+@if (Model == null || !Model.RegisteredPackageIdsForUser.Any()) {
+    <h4>You currently have no Package IDs.</h4>
+} else {
+<div id="managePackageID">
+    <table cellpadding="0" cellspacing="0">
+        <thead class="header">
+            <tr>
+                <th>Package ID</th>
+                <th>Status</th>
+                <th>Expires</th>
+                <th class="ownerActions">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var userkeyPackageViewModel in Model.RegisteredPackageIdsForUser.OrderBy(p => p.UserkeyPackage.PackageId)) {
+            string expirationDate = userkeyPackageViewModel.ExpirationDate.HasValue
+                ? userkeyPackageViewModel.ExpirationDate.Value.ToString("d MMM yyyy")
+                : "N/A";
+            string packageId = userkeyPackageViewModel.UserkeyPackage.PackageId;
+            string packageType = userkeyPackageViewModel.PackageType;
+            PackageIdStatus status = userkeyPackageViewModel.Status;
+            <tr>
+                @if (status == PackageIdStatus.InUse) {
+                    <td>@Html.ActionLink(packageId, "DetailsForId", "Package", new { area = "Orchard.Gallery", packageType = packageType, packageId = packageId }, null)</td>
+                }
+                else {
+                    <td>@userkeyPackageViewModel.UserkeyPackage.PackageId</td>
+                }
+                <td>
+                @if (status == PackageIdStatus.Unfinished) {
+                    <text>@Html.ActionLink(status.Name, "MyUnfinishedPackages", "Contribute", new { area = "Orchard.Gallery" }, null)</text>
+                }
+                else {
+                    <text>@status.Name</text>
+                }
+                </td>
+                <td>@expirationDate</td>
+                <td class="ownerActions">
+                    <ul>
+                        @if (status == PackageIdStatus.Registered) {
+                        <li>
+                            <a href="#" class="deletePackageIdLink" data-package-id="@packageId">
+                                <img src="@Href("../../../Content/Images/trash.png")" alt="Delete" title="Delete" />
+                            </a>
+                        </li>
+                        }
+                        <li>
+                            <a class="manage-owners"
+                                href="@Url.Action("Index", "ManagePackageOwners", new { packageId = packageId })">
+                                <img src="@Href("../../../Content/Images/userIcon.png")" alt="Manage Owners" title="Manage Owners" />
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+}
+<header class="registerPackageHeader">
+    <h2>Register A Package ID</h2>
+</header>
+@if (!Model.CanRegisterNewPackageIds)
+{
+    <h4>You are at the maximum number of preregistered package IDs.</h4>
+}
+else
+{
+    using (Html.BeginFormAntiForgeryPost(Url.Action("RegisterPackageId", "ManagePackageIds", new { area = "Orchard.Gallery" }), FormMethod.Post, new { id = "form" }))
+    {
+    <div>
+        <label for="packageId">@T("Package Id")</label>
+        <aside>
+            <p>@T("Use this to register a package ID before you have your package ready. You may want to do this to ensure you can get the package name that you really want. Please restrict your package ID to fewer than 150 characters. Use only letters, numbers and the following 3 special characters: hypens (-), underscores (_) and periods (.). We'll hold the package ID for you for 30 days.")</p>
+        </aside>
+        @Html.TextBox("PackageIdToRegister", TempData["PackageIdToRegister"])
+    </div>
+    <div class="buttons"><input type="button" value="Register Package" id="registerPackageButton" singleClickButton="true" /></div>
+    }
+}
+</section>
+
+@using (Script.Foot())
+{
+    Script.Include("gallery.form.js");
+    Script.Include("singleClickButton.js");
+}

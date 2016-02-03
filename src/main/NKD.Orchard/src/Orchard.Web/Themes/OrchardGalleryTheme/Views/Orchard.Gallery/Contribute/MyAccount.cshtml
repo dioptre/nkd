@@ -1,0 +1,39 @@
+﻿@model Orchard.Gallery.Models.Userkey
+
+@{
+    Style.Include("Gallery.css");
+    Script.Include("jquery.validate.min.js");
+    Script.Include("jquery.validate.unobtrusive.min.js");
+}
+@{
+    WorkContext.Layout.AsideFirst.Add(New.MyAccountSidebar());
+}
+<section>
+    <header>
+        <h2>My Account</h2>
+    </header>
+
+    <h3>Actions</h3>
+        <h5>@Html.ActionLink("Change Password", "ChangePassword", "Account", new { Area = "Orchard.Users" }, null)</h5>
+        <h5>@Html.ActionLink("Manage My Contributions", "MyPackages", "Contribute")</h5>
+        <h5>@Html.ActionLink("Manage My Package IDs", "Index", "ManagePackageIds")</h5>
+    <h3>Access Key</h3>
+    <p>Your access key provides you with a token that identifies you to the gallery. Keep this a secret. You can always regenerate your key at any time (invaldating previous keys) if your token is accidentally revealed. The <a href="http://nuget.codeplex.com/">NuGet</a> command-line utility allows you to submit a nuget package to the gallery, and you would pass you token like this:</p>
+    <p>nuget push -source http://packages.nuget.org/v1/ MyPackage.1.0.nupkg @Model.AccessKey</p>
+
+    <div style="border: 1px solid #ccc;padding:0 15px 15px;width:350px;margin-top:20px;">
+        @if (Model == null) {
+          @T("You have not yet generated an access key. Click the button below to generate a key.")
+        } else {
+        <h4>@T("Your access key is: ")</h4>
+        <p id="accessKey">@Model.AccessKey</p>
+        }
+        @using (Html.BeginFormAntiForgeryPost(Url.Action("Generate"), FormMethod.Post, new { Id = "generateKeyForm" })) {
+            <input id="generateKeyButton" type="button" value="Generate New Key" singleClickButton="true" />
+        }
+    </div>
+</section>
+
+@using (Script.Foot()) {
+    Script.Include("singleClickButton.js");
+}

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Logo="LogoCMYK">
+  <Options Skin="Office 2013 Light Gray" UIType="TabbedMDI" UseServerMode="True" />
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="13.1.7.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="13.1.7.0" IsNewNode="True" />
+  </SchemaModules>
+  <ViewItems>
+    <PropertyEditor Name="PropertyEditors">
+      <RegisteredPropertyEditor PropertyType="System.Decimal" EditorType="NKD.Module.Win.GeoDecimalEditor" DefaultDisplayFormat="{0:n}" DefaultEditMask="n" />
+    </PropertyEditor>
+  </ViewItems>
+</Application>

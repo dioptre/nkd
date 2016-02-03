@@ -1,0 +1,17 @@
+﻿@using System.Web.Mvc;
+@using Orchard.Security;
+
+<div class="user-display">
+    @if (Request.IsAuthenticated) {
+            <span class="welcome">@T(WorkContext.CurrentUser.UserName)</span>
+            <span class="user-actions">
+                @Html.ActionLink("My Account", "MyAccount", new { Area = "Orchard.Gallery", Controller = "Contribute" })
+                @Html.ActionLink(T("Sign Out").ToString(), "LogOff", new { Controller = "Account", Area = "Orchard.Users", ReturnUrl = Context.Request.RawUrl })
+                @if (AuthorizedFor(StandardPermissions.AccessAdminPanel)) {
+                    @Html.ActionLink("Dashboard", "Index", new { Area = "Dashboard", Controller = "Admin" })
+                }
+            </span>
+    } else {
+            <span class="welcome">@Html.ActionLink(T("Sign In").ToString(), "LogOn", new { Controller = "Account", Area = "Orchard.Users", ReturnUrl = Context.Request.RawUrl })</span>
+    }
+</div>

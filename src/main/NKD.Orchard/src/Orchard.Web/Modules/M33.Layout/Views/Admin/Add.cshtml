@@ -1,0 +1,38 @@
+﻿@model M33.Layout.ViewModels.AddFile
+@using Orchard.Utility.Extensions;
+
+
+@{ 
+    Layout.Title = T("Create file").ToString();
+    Style.Include("orchard-css-editor-admin.css");
+    Script.Require("jQuery");
+}
+
+@using (Html.BeginFormAntiForgeryPost()) {
+    @Html.ValidationSummary()
+
+    <fieldset>
+        @T("You can add a new file to this theme by select a type and enter a filename. If you create a new view that should be a page layout file and be visible in page layout selector, name the file 'Layout-YourThemeName', without extension.")
+    </fieldset>
+    
+    <fieldset>
+        <legend>@T("Select type of file to create")</legend>
+        <select id="TypeOfFile" name="TypeOfFile" size="1" style="width: 300px">
+          <option value="css">Css</option>
+          <option value="js">Javascript</option>
+          <option value="razor">Razor view</option>
+        </select> 
+    </fieldset>
+
+    <fieldset>
+        <legend>Type in the new filename</legend>
+        <div> 
+            <span class="hint">@T("Type the name of the file  without extension.")</span>
+             @Html.TextBoxFor(m => m.FileName, new { style = "width: 300px;" }) 
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <button class="primaryAction" name="submit" value="@T("Save")" type="submit">@T("Save")</button> <a class="button" onclick="history.go(-1)">@T("Cansel")</a>
+    </fieldset>    
+}

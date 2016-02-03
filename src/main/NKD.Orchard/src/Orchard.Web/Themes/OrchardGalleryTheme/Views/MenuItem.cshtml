@@ -1,0 +1,54 @@
+﻿@using System.Linq;
+@{
+    var items = (IEnumerable<dynamic>)Enumerable.Cast<dynamic>(Model);
+
+    string appPath = Request.ApplicationPath.TrimEnd('/');
+
+    string menuHref = Model.Href.ToString();
+    string requestPath = Request.Path;
+    if (!String.IsNullOrWhiteSpace(appPath)) {
+        menuHref = menuHref.Replace(appPath, "");
+        requestPath = requestPath.Replace(appPath, "");
+    }
+    menuHref = menuHref.TrimEnd('/');
+    requestPath = requestPath.TrimEnd('/');
+    
+    bool isHomePageMenu = menuHref == string.Empty;
+    bool isPackageTypeMenu = menuHref.StartsWith("/List");
+    bool isSearch = requestPath.StartsWith("/List/Search");
+}
+
+@{
+if (!HasText(Model.Text)) {
+    @DisplayChildren(Model)
+} else {
+    if ((menuHref == requestPath && isHomePageMenu) || (requestPath.StartsWith(menuHref) && !isHomePageMenu)) {
+        Model.Classes.Add("current");
+    }
+    //HACK for the Contribute menu since the paths are all over the place
+    else if (menuHref == "/Contribute/Index") {
+        if (requestPath.StartsWith("/Contribute") || requestPath.Contains("/Package/New") || requestPath.Contains("/Package/Edit") || requestPath.Contains("/UploadPackageLogoAndScreenshots")) {
+            Model.Classes.Add("current");
+        }
+    }
+    else if (isSearch && isPackageTypeMenu) {
+        string packageType = menuHref.Replace("/List/", "");
+        if (!String.IsNullOrWhiteSpace(Request.Url.Query)) {
+            var queryParams = Request.Url.Query.TrimStart('?').Split('&');
+            if (queryParams.Any(qp => qp == "packageType=" + packageType)) {
+                Model.Classes.Add("current");
+            }
+        }
+    }
+    
+    var tag = Tag(Model, "li");
+    @tag.StartElement
+    <a href="@Model.Href">@Model.Text</a>
+    if (items.Any()) {
+        <ul>
+        @DisplayChildren(Model)
+        </ul>
+    }
+    @tag.EndElement
+    }
+}

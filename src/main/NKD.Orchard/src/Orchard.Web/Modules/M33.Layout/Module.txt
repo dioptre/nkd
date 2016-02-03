@@ -1,0 +1,9 @@
+﻿Name: Theme Editor
+AntiForgery: enabled
+Author: Rickard Magnusson M33, Downplay Design
+Website: http://www.m33.se
+Version: 1.4.4
+OrchardVersion: 1.6.0
+Description: This module lets you create and edit javascript, css and Razor files and select a page template for a page.
+FeatureDescription: This module lets you create and edit javascript, css and Razor files and select a page template for each page.
+Category: Developer

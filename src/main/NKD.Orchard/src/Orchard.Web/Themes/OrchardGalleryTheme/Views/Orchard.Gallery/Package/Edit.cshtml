@@ -1,0 +1,235 @@
+﻿@using Orchard.Gallery.HtmlHelpers
+@using Orchard.Mvc.Html
+@model Orchard.Gallery.ViewModels.PackageViewModel
+@{
+    Script.Include("jquery.validate.min.js");
+    Script.Include("jquery.validate.unobtrusive.min.js");
+}
+
+@{
+    WorkContext.Layout.AsideFirst.Add(New.ContributeSidebar());
+}
+<section>
+    <header>
+        @{
+            if (Model.IsNewPackage)
+            {
+                <h2>New Contribution</h2>
+                <ul class="right" id="sequence">
+                    <li class="past"><span>1 </span>Submit</li>
+                    <li class="current"><a href="#"><span>2 </span>Verify Details</a></li>
+                    <li><span>3 </span>Add Visuals</li>
+                </ul>
+            }
+            else
+            {
+                <h2>Edit Contribution</h2>
+                <ul class="right" id="sequence">
+                    <li class="current"><a href="#"><span>1 </span>Verify Details</a></li>
+                    <li><span>2 </span>Add Visuals</li>
+                </ul>
+            }
+        }
+    </header>
+@using (Html.BeginFormAntiForgeryPost(Url.Action("Edit"), FormMethod.Post, new { id = "form" }))
+{
+        @Html.HiddenFor(m => m.IsNewPackage)
+
+        <span class="right requiredKey required">= Required</span>
+        <h3>Verify the details of your contribution</h3>
+    <div class="packageID">
+        @Html.LabelFor(m => m.PackageId, T("Package ID"))
+        @Html.TextBoxFor(m => m.PackageId, new { disabled = "", @class = "disabled" })
+    </div>
+    <div class="version">
+        @Html.LabelFor(m => m.PackageVersion, T("Version"))
+        @Html.TextBoxFor(m => m.PackageVersion, new { disabled = "", @class = "disabled" })
+        @Html.HiddenFor(m => m.PackageId)
+        @Html.HiddenFor(m => m.PackageVersion)
+        @Html.HiddenFor(m => m.IsExternalPackage)
+    </div>
+   if (Model.IsLatestVersion)
+   {
+        <span class="isRecommended edit" style="margin-top: 32px;cursor:help;">
+            <span>This will be the</span>
+            Recommended Version
+            <span class="isRecommendedHover" style="display: none;">To recommend a different version, edit that version’s details.</span>
+        </span>
+   }
+    <p style="clear:both;margin:0 0 20px 20px;color:#A8A8A8;" class="long">Only detail information can be edited on packages. If you have a newer version of your contribution that you’d like to submit in place of this one, @Html.ActionLink("click here to add a new contribution", "Index", "UploadPackage"). Ensure that the new version has the same Package ID, but a new Version number.</p>
+    <div>
+
+        @Html.HiddenFor(m => m.IsLatestVersion)
+        @if (!Model.IsLatestVersion)
+        {
+            <label>Should this be the recommended version?</label>
+            <div id="makeRecommendedDiv">
+                <a class="silverButtonBig" id="makeRecommendedLink">Make Recommended</a>
+                <span class="isNotRecommended edit">This is not the recommended version.
+                    @if (!string.IsNullOrWhiteSpace(Model.RecommendedVersion))
+                    {
+                        <br /><text>The current recommended version is</text>
+                        @Html.ActionLink(Model.RecommendedVersion, "DetailsForId",
+                            new { packageType = Model.RecommendedVersionPackageType, packageId = Model.PackageId });<text>.</text>
+                    }
+                </span>
+            </div>
+            <div id="undoRecommendedDiv" style="display:none"><a class="silverButtonBig" id="undoRecommendedLink">Undo Recommended</a><span class="isRecommended">Recommended Version</span></div>
+        }
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Title, T("Title"))
+        <aside>
+            <p>@Html.ValidationMessageFor(m => m.Title) Choose something unique and descriptive that will help others find and know whether your contribution is something they'd benefit from.</p>
+        </aside>
+        @Html.TextBoxFor(m => m.Title, new { @class = "longRequired" })
+
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Summary, T("Summary"))
+        <aside>
+            <p>@Html.ValidationMessageFor(m => m.Summary) 200 character limit. A short description of your package shown in search results.</p>
+        </aside>
+        @Html.TextBoxFor(m => m.Summary, new { @class = "longRequired" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Description, T("Description"))
+        <aside>
+            <p>@Html.ValidationMessageFor(m => m.Description) 4,000 character limit. A detailed description of your package.</p>
+        </aside>
+        @Html.TextAreaFor(m => m.Description, new { @class = "longRequired" })
+
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Authors, T("Authors"))
+        <aside>
+            <p>@Html.ValidationMessageFor(m => m.Authors) Who's responsible for this package? Give proper attribution.</p>
+        </aside>
+        @Html.TextBoxFor(m => m.Authors, new { @class = "longRequired" })
+    </div>
+@*    
+    <div>
+        <aside style="width:450px !important;">
+            <p>Check this box if your package requires that users accept a license agreement.</p>
+        </aside>
+        @Html.CheckBoxFor(m => m.RequireLicenseAcceptance) @Html.LabelFor(m => m.RequireLicenseAcceptance, T("Require License Acceptance"))
+    </div>
+*@
+
+    <div>
+        @Html.LabelFor(m => m.LicenseURL, T("License URL"))
+        <aside>
+            <p></p>
+        </aside>
+        @Html.TextBoxFor(m => m.LicenseURL, new { @class = "long" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Tags, T("Tags"))
+        <aside>
+            <p>Add multiple tags separated by spaces.</p>
+        </aside>
+        @Html.TextBoxFor(m => m.Tags, new { @class = "long" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.PackageTypes, T("Package Type"))
+        <aside>
+            <p>Select the type of package you're submitting.</p>
+        </aside>
+        @Html.DropDownList("PackageType", new SelectList(Model.PackageTypes, Model.PackageType))
+    </div>
+   if (Model.PackageCategories.Any())
+   {
+        <div id="PackageCategoryFieldset">
+            <label for="PrimaryCategory">@T("Primary Category")</label>
+            <aside>
+                <p>Select the primary category for your package.</p>
+            </aside>
+            @Html.DropDownList("PrimaryCategory", new SelectList(Model.PackageCategories, Model.PrimaryCategory))
+        </div>
+   }
+   if (Model.IsExternalPackage)
+   {
+     <div>
+        @Html.LabelFor(m => m.ExternalPackageUrl, T("External Package URL"))
+        <aside>
+            <p>@Html.ValidationMessageFor(m => m.ExternalPackageUrl) Where else can users download this package?</p>
+        </aside>
+        @Html.TextBoxFor(m => m.ExternalPackageUrl, new { type = "url", @class = "long" })
+    </div>
+   }
+   <div>
+        @Html.LabelFor(m => m.ProjectUrl, T("Project URL"))
+        <aside>
+            <p>Optional. Enter the home page URL for the package here.</p>
+        </aside>
+        @Html.TextBoxFor(m => m.ProjectUrl, new { type = "url", @class = "long" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Copyright, T("Copyright"))
+        <aside>
+            <p>If you would like to include copyright information, enter it here.</p>
+        </aside>
+        @Html.TextBoxFor(m => m.Copyright)
+    </div>
+    <div class="buttons"><input id="packageEditSubmitButton" type="button" value="Next »" singleClickButton="true" /></div>
+}
+
+
+</section>
+@using (Script.Foot())
+{
+        <script type="text/javascript">
+
+    //<![CDATA[
+        var $categoriesFieldset = $('#PackageCategoryFieldset');
+        var skipCategoryUpdate = true;
+        var $makeRecommendedDiv = $('#makeRecommendedDiv');
+        var $undoRecommendedDiv = $('#undoRecommendedDiv');
+        var $recommendedVersionInput = $('#@Html.FieldIdFor(m => m.IsLatestVersion)');
+
+        function ToggleRecommendedVersionStatus(isRecommended) {
+            $makeRecommendedDiv.toggle();
+            $undoRecommendedDiv.toggle();
+            $recommendedVersionInput.val(isRecommended);
+        }
+
+        $(function () {
+            $('.isRecommended').hoverIntent(
+                function() { $('.isRecommendedHover').fadeIn(); },
+                function() { $('.isRecommendedHover').fadeOut(); } );
+
+            $('#makeRecommendedLink').click(function() {ToggleRecommendedVersionStatus(true)});
+            $('#undoRecommendedLink').click(function() {ToggleRecommendedVersionStatus(false)});
+            var $packageTypeDDL = $('#PackageType');
+            $packageTypeDDL.change(function () {
+                updateCategories($(this).val());
+            });
+            $packageTypeDDL.trigger('change');
+        });
+
+        function updateCategories(selectedPackageType) {
+            if (!skipCategoryUpdate) {
+                $categoriesFieldset.hide();
+                var categoriesUrl = "@Url.Action("Categories", "PackageCategories", new { area = "Orchard.Gallery", packageType = "foo" })".replace("foo", selectedPackageType);
+                $.getJSON(categoriesUrl, null, populateCategoriesDDL);
+            }
+            skipCategoryUpdate = false;
+        }
+
+        function populateCategoriesDDL(categories) {
+            if (categories === null || categories.length === 0) {
+                return;
+            }
+            var $categoriesDDL = $('#PrimaryCategory');
+            $categoriesDDL.find('option').remove();
+            $.each(categories, function (index, value) {
+                $categoriesDDL.append('<option>' + value + '</option>');
+            });
+            $categoriesFieldset.show();
+        }
+    //]]>
+    </script>
+
+Script.Include("gallery.form.js");
+Script.Include("singleClickButton.js");
+}

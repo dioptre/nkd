@@ -1,0 +1,50 @@
+﻿<Placement>
+  <Match ContentType="Package">
+      <Match DisplayType="Details">
+        <Place Parts_PackageImages="PackageImages" />
+        <Place Parts_PackageDetailsHeader="PackageDetailsHeader" />
+        <Place Parts_PackageAuthor="PackageAuthor" />
+        <Place Parts_PackageDetailsActions="PackageActions" />
+        <Place Parts_PackageDetails="PackageDetails" />
+        <Place Parts_PackageOwnerActions="PackageOwnerActions" />
+        <Place Parts_Tags_ShowTags="Tags"/>
+        <Place Parts_Stars_Details="Rating" />
+        <Place Parts_Stars_Details_ReadOnly="RatingReadOnly" />
+        <Place Parts_Reviews="Reviews" />
+      </Match>
+      <Match DisplayType="Summary">
+        <Place Parts_RoutableTitle_Summary="-"/>
+        <Place Parts_Common_Metadata_Summary="-"/> <!-- This contains the published DateTime -->
+        <Place Fields_Contrib_TaxonomyField="-"/>
+        <Place Parts_PackageIsOwner="IsOwner"/>
+        <Place Parts_PackageTypeName="PackageTypeName" />
+        <Place Parts_PackageIcon="PackageIcon" />
+        <Place Parts_PackageLink="PackageLink" />
+        <Place Parts_PackageActions="PackageActions" />
+        <Place Parts_PackageAuthor="PackageAuthor" />
+        <Place Parts_PackageSummary="PackageSummary" />
+        <Place Parts_Tags_ShowTags="Tags"/>
+        <Place Parts_PackageDownloads="Downloads"/>
+        <Place Parts_PackageReviews="Reviews"/>
+        <Place Parts_Stars="Rating"/>
+      </Match>
+      <Match DisplayType="VersionHistory">
+        <Place Parts_Stars_AverageOnly="Rating"/>
+      </Match>
+      <Match DisplayType="SummaryOwner">
+        <Place Parts_RoutableTitle_Summary="-"/>
+        <Place Parts_Common_Metadata_Summary="-"/> <!--This contains the published DateTime-->
+        <Place Fields_Contrib_TaxonomyField="-"/>
+
+        <Place Parts_PackageIcon="PackageIcon" />
+        <Place Parts_PackageLink="PackageLink" />
+        <Place Parts_PackageActions="PackageActions" />
+        <Place Parts_PackageAuthor="PackageAuthor" />
+        <Place Parts_PackageOwnerSummary="PackageSummary" />
+        <Place Parts_Tags_ShowTags="Tags"/>
+        <Place Parts_PackageDownloads="Downloads"/>
+        <Place Parts_PackageReviews="Reviews"/>
+        <Place Parts_Stars_AverageOnly="Rating"/>
+      </Match>
+  </Match>
+</Placement>

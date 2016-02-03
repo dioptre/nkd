@@ -1,0 +1,6 @@
+﻿.navicon-nkd-projects {
+background-image:url('../Media/menu.nkd-projects.png') !important;
+}
+.navicon-nkd-projects:hover {
+background-position:0 -30px !important;
+}

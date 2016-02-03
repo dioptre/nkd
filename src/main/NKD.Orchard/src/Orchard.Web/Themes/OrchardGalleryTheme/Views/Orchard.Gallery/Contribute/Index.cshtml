@@ -1,0 +1,30 @@
+﻿@{
+    Style.Include("Gallery.css");
+}
+
+@{
+    WorkContext.Layout.AsideFirst.Add(New.MainContributeSidebar());
+}
+<section>
+    @if (Model.HasUnpublishedPackages) {
+    <div class="message message-Warning unfinishedPackage">
+        <header>You have an unfinished submission!</header>
+        <span>This is most likely caused by an error that occured while trying to submit or by failing to complete the submission process.
+            @Html.ActionLink("View your unfinished contributions", "MyUnfinishedPackages", "Contribute") and edit them to fill in any incomplete information and save it to ensure it is published.
+            </span>
+    </div>
+    }
+    <header>
+        <h2>Contribute to Orchard Gallery</h2>
+    </header>
+    <section class="add-new">
+        <h4>@Html.ActionLink("Add New Module or Theme", "Index", "UploadPackage")</h4>
+        @Html.ActionLink("Get Started", "Index", "UploadPackage", null, new { @class = "silverButtonBig" })
+        <p style="margin-right:20px;">Upload and publish your package for other Orchard users to download and enjoy. You can upload multiple revisions of the same package, as long as the version is different.</p>
+
+    </section>
+    <h5>@Html.ActionLink("Manage My Contributions", "MyPackages", "Contribute")</h5>
+    <p>Edit contribution details or Remove contributions that you have previously uploaded.</p>
+    <h5>@Html.ActionLink("Manage Package IDs", "Index", "ManagePackageIds")</h5>
+    <p>Manage Package IDs.</p>
+</section>

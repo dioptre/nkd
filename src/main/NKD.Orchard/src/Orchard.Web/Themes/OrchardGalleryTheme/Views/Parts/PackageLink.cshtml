@@ -1,0 +1,8 @@
+﻿<h3>
+    @LinkExtensions.ActionLink(Html, Model.PackageTitle,
+            "DetailsForId",
+            "Package",
+            new { area = "Orchard.Gallery", packageType = Model.PackageTypeSlug, packageId = Model.PackageID },
+            null
+        )
+</h3>

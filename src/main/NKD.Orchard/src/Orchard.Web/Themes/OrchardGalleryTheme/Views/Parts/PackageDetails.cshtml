@@ -1,0 +1,38 @@
+﻿@using Orchard.Utility.Extensions
+@using System.Linq
+@using Orchard.Tags.Models
+@using Orchard.ContentManagement
+
+<h4 class="packageDetailsTableHeader">@Model.PackageType.ToString() details</h4>
+<table id="packageDetails">
+    <tr>
+        <th>Rating:</th>
+        <td>
+        @Display(Layout.Rating)
+        </td>
+    </tr>
+    <tr>
+        @if (((IContent)Model.Package.ContentItem).As<TagsPart>().CurrentTags.Any()) {
+            <th>Tags:</th>
+            <td>
+                @Display(Layout.Tags)
+            </td>
+        }
+    </tr>
+    <tr>
+        <th>Category:</th>
+        <td>@Model.PackageCategory</td>
+    </tr>
+    <tr>
+        <th>Total Downloads:</th>
+        <td>@Model.Package.TotalDownloadCount</td>
+    </tr>
+    <tr>
+        <th>Last updated:</th>
+        <td>@Model.Package.LastUpdated.ToShortDateString()</td>
+    </tr>
+    <tr>
+        <th>Package ID:</th>
+        <td>@Model.Package.PackageID</td>
+    </tr>
+</table>

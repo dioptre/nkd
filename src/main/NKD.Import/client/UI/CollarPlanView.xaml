@@ -1,0 +1,41 @@
+﻿<Window x:Class="NKD.Import.Client.UI.CollarPlanView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:winformchart="clr-namespace:System.Windows.Forms.DataVisualization.Charting;assembly=System.Windows.Forms.DataVisualization"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CollarPlanView" Height="900" Width="700">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>            
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <WindowsFormsHost Grid.Row="1" Grid.Column="1" x:Name="host" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  >
+            
+            <winformchart:Chart  x:Name="MyWinformChart" Dock="Fill" >
+                <winformchart:Chart.Legends>
+                    <winformchart:Legend Title="Legend" />
+                </winformchart:Chart.Legends>
+
+                <winformchart:Chart.Series >
+                    
+                    <winformchart:Series Name="Collars" ChartType="Point"  MarkerBorderColor="Black" MarkerColor="Blue" MarkerStyle="Cross" BorderColor="Black" MarkerSize="10" />
+                    <winformchart:Series Name="Selected" ChartType="Point" MarkerBorderColor="Black" MarkerColor="Red" MarkerStyle="Cross" BorderColor="Black" MarkerSize="10" />
+
+                </winformchart:Chart.Series>
+
+                <winformchart:Chart.ChartAreas>
+                    <winformchart:ChartArea  BackColor="White" BackGradientStyle="None" ShadowOffset="5" x:Name="mainChartArea" AlignmentStyle="AxesView" />
+                </winformchart:Chart.ChartAreas>
+            </winformchart:Chart>
+        </WindowsFormsHost>
+        <Button x:Name="buttonDismiss" Content="Dismiss" Grid.Column="1" HorizontalAlignment="Right" Margin="0,5,7,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="buttonDismiss_Click"/>
+        <Button x:Name="buttonCopyImage" Content="Copy" Grid.Column="1" HorizontalAlignment="Right" Margin="0,5,87,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="buttonCopyImage_Click"/>
+        <Label Content="Collar summary" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ListBox x:Name="listCollars" Grid.Column="0" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" MouseDown="listCollars_MouseDown" SelectionMode="Multiple" SelectionChanged="listCollars_SelectionChanged" />
+
+    </Grid>
+</Window>

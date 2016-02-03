@@ -1,0 +1,126 @@
+﻿@using System.Collections.Generic;
+@using System.Linq;
+
+@{
+    Style.Include("Gallery.css");
+
+    IEnumerable<string> packageTypes = Model.PackageTypes;
+}
+
+@using (Script.Foot())
+{
+    <script type="text/javascript">
+    //<![CDATA[
+        // http://www.west-wind.com/Weblog/posts/517320.aspx
+        $.fn.makeAbsolute = function (rebase) {
+            return this.each(function () {
+                var el = $(this);
+                var pos = el.position();
+                el.css({ position: "absolute",
+                    marginLeft: 0, marginTop: 0,
+                    top: pos.top, left: pos.left
+                });
+                if (rebase)
+                    el.remove().appendTo("body");
+            });
+        }
+        $(document).ready(function () {
+            var searchPlaceholder = "Start your search here!";
+            $("#searchTerm").focus(function () {
+                if (this.value === searchPlaceholder) {
+                    this.value = '';
+                };
+            });
+            $("#searchTerm").blur(function () {
+                if (this.value === '') {
+                    this.value = searchPlaceholder;
+                };
+            });
+            $("#search").closest("form").submit(function () {
+                var searchTerm = $("#searchTerm").val();
+                if (searchTerm === searchPlaceholder) {
+                    $("#searchTerm").val("");
+                }
+                return true;
+            });
+
+            function hideDropDown() {
+                $(document).unbind(".dropdown");
+                $(".search-category").unbind(".dropdown");
+
+                $("#drop-down").slideUp();
+                $(".search-category").bind("click.dropdown", showDropDown);
+
+                return false;
+            }
+
+            function showDropDown() {
+                $(document).unbind(".dropdown");
+                $(".search-category").unbind(".dropdown");
+
+                $("#drop-down").slideDown();
+                $(document).bind("click.dropdown", hideDropDown);
+
+                return false;
+            }
+
+            $(".search-category").bind("click.dropdown", showDropDown);
+            $("#drop-down a").bind("click.dropdown", function (e) {
+                e.stopPropagation();
+                $(this).closest("ul").find("li").removeClass("current");
+                $(this).closest("li").addClass("current");
+                var value = $(this).text();
+                $("#packageType").val(value);
+                $("a.search-category span").text(value);
+                hideDropDown();
+                return false;
+            });
+        });
+    //]]>
+    </script>
+}
+
+<div id="hero">
+    <div class="left">
+        <header>Grow your Orchard site</header>
+        <p>Improve your site with free, community-submitted modules and themes designed to run on Orchard.</p>
+        @using (Html.BeginForm("Search", "Packages", new { area = "Orchard.Gallery" }, FormMethod.Get)) {
+            <input type="hidden" name="packageType" id="packageType" value="@packageTypes.FirstOrDefault()" />
+            <div id="search">
+                <div>
+                    <input type="text" name="searchTerm" id="searchTerm" value="Start your search here!" />
+                    <a href="" class="search-category"><span>@packageTypes.First()</span></a>
+                    <ul id="drop-down">
+                        @foreach (var packageType in packageTypes)
+                        {
+                            <li><a href="">@packageType</a></li>
+                        }
+                    </ul>
+                </div>
+                <input type="submit" value="Search"/>
+            </div>
+        }
+     </div>
+    <div class="right">
+        <div>
+            <header>New to Orchard?</header>
+            <p><a href="http://orchardproject.net">Get started</a> by reading our <a href="http://orchardproject.net/docs/Installing-Orchard.ashx">installation and setup guide</a>, then pick a few <a href="http://orchardproject.net/docs">walkthroughs</a> to try.</p>
+        </div>
+        <div>
+            <header>Submit Your Idea</header>
+            <p><a href="http://orchardproject.net/gallery/Contribute/Index">Contribute your own themes or modules</a> and share them with others.</p>
+            <ul>
+                <li><a href="http://orchardproject.net/gallery/Users/Account/Register">Create an account</a></li>
+                <li><a href="http://orchardproject.net/contribution">Contribute a module or theme</a></li>
+            </ul>
+        </div>
+        <div>
+            <header>Join the Community</header>
+            <ul>
+                <li><a href="http://orchardproject.net/discussions">Join our mailing list</a></li>
+                <li><a href="http://orchard.codeplex.com/discussions">Participate in discussion forums</a></li>
+                <li><a href="http://orchardproject.net/contribution">Contribute to Orchard</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

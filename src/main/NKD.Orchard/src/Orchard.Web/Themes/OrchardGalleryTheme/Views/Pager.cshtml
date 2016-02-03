@@ -1,0 +1,50 @@
+﻿@{
+    var nextText = HasText(Model.NextText) ? Model.NextText : T("Next").Text;
+    var previousText = HasText(Model.PreviousText) ? Model.PreviousText : T("Previous").Text;
+
+    var routeData = new RouteValueDictionary(ViewContext.RouteData.Values);
+    var queryString = ViewContext.HttpContext.Request.QueryString;
+    if (queryString != null) {
+        foreach (string key in queryString.Keys) {
+            if (key != null && !routeData.ContainsKey(key)) {
+                var value = queryString[key];
+                routeData[key] = queryString[key];
+            }
+        }
+    }
+
+    if (routeData.ContainsKey("id") && !HasText(routeData["id"])) {
+        routeData.Remove("id");
+    }
+
+    var hasNextPage = (Model.Page * Model.PageSize) < Model.TotalItemCount;
+
+    Model.Classes.Add("pager");
+    Model.Classes.Add("group");
+    var tag = Tag(Model, "ul");
+}
+<div id="pagination">
+@if (hasNextPage || Model.Page > 1) {
+
+        @tag.StartElement
+        
+        routeData["page"] = Model.Page - 1;
+        <li class="page-previous">
+        @if(Model.Page > 1) {
+            @Html.ActionLink((string)previousText, (string)routeData["action"], (string)routeData["controller"], routeData, null)
+        } else {
+            <span>@previousText</span>
+        }
+        </li>
+        
+        routeData["page"] = Model.Page + 1;
+        <li class="page-next">
+        @if(hasNextPage) {
+            @Html.ActionLink((string)nextText, (string)routeData["action"], (string)routeData["controller"], routeData, null)
+        } else {
+            <span>@nextText</span>
+        }
+        </li>
+        @tag.EndElement
+}
+</div>

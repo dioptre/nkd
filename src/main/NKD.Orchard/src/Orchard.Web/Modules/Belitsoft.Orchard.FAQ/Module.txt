@@ -1,0 +1,8 @@
+﻿Name: FAQ
+AntiForgery: enabled
+Author: Belitsoft © 2013
+Website: http://belitsoft.com
+Version: 1.0
+OrchardVersion: 1.6
+Description: Frequently asked questions are listed questions and answers, all supposed to be commonly asked in some context, and pertaining to a particular topic.
+Category: Content

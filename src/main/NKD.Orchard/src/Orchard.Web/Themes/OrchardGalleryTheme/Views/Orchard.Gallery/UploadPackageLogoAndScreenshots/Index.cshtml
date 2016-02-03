@@ -1,0 +1,146 @@
+@using Orchard.Gallery.HtmlHelpers
+@model Orchard.Gallery.ViewModels.PackageLogoAndScreenshotsViewModel
+@{
+    Style.Require("jQueryUI_Orchard");
+    Script.Include("jquery.validate.min.js");
+    Script.Include("jquery.validate.unobtrusive.min.js");
+}
+@{
+    WorkContext.Layout.AsideFirst.Add(New.ContributeSidebar());
+}
+<section>
+    <header>
+        @{
+            if (Model.IsNewPackage) {
+                <h2>My Contribution</h2>
+                <ul class="right" id="sequence">
+                    <li class="past"><span>1 </span>Submit</li>
+                    <li class="past"><span>2 </span>Verify Details</li>
+                    <li class="current"><a href="#"><span>3 </span>Add Visuals</a></li>
+                 </ul>
+            } else {
+                <h2>My Contribution</h2>
+                <ul class="right" id="sequence">
+                    <li class="past"><span>1 </span>Verify Details</li>
+                    <li class="current"><a href="#"><span>2 </span>Add Visuals</a></li>
+                </ul>
+            }
+        }
+    </header>
+    <section id="form">
+        <h3>Logo and Screenshots</h3>
+        @Html.ValidationSummary()
+        @{
+            var iconLinkText = string.Empty;
+        }
+        <ul class="@Model.PackageType.ToLower()">
+        @if (!string.IsNullOrWhiteSpace(Model.IconUrl)) {
+            <li class="logo"><img src="@Model.IconUrl" alt="Package Icon" /><span class="violator">Logo</span></li>
+                                  iconLinkText = "Change Icon";
+        } else {
+            var defaultIcon = Href(String.Format("../../../Content/Images/{0}DefaultIcon.png", Model.PackageType.ToLower()));
+            <li class="logo"><img src="@defaultIcon" alt="Package Icon" class="logo" /><span class="violator">Logo</span></li>
+                                  iconLinkText = "Add Icon";
+        }
+        @foreach (var screenshotViewModel in Model.Screenshots) {
+            <li>
+                <img src="@screenshotViewModel.Uri" /><a onclick="deleteScreenshot(@screenshotViewModel.Id, encodeURIComponent('@screenshotViewModel.Uri')); return false;" href="#" class="removeScreenshot">Remove</a>
+            </li>
+        }
+        </ul>
+        <br />
+        <div class="selected">
+            @using (Html.BeginFormAntiForgeryPost(Url.Action("AddImageForPackage"), FormMethod.Post, new { enctype = "multipart/form-data" })) {
+            <div>
+                <aside style="width:350px;">
+                    <p>A 100 x 100 pixel logo in PNG format is recommended.</p>
+                    <p>JPG Images in a 4x3 ratio (i.e. 640x480 or 1024x768 pixels) are best for screenshots. For uploading, you can select multiple photos in the dialog by holding the ‘ctrl’ key down while clicking on the images.</p>
+                </aside>
+                <p>
+                    <input id="UploadLocalRadioButton" type="radio" name="uploadType" checked="checked" value="local" />
+                    <label for="UploadLocalRadioButton">Upload from Computer</label>
+                </p>
+                <p>
+                    <input id="UploadExternalRadioButton" type="radio" name="uploadType" value="external" />
+                    <label for="UploadExternalRadioButton">Upload from external URL</label>
+                </p>
+            </div>
+                @Html.HiddenFor(m => m.PackageId)
+                @Html.HiddenFor(m => m.PackageVersion)
+                @Html.HiddenFor(m => m.IsNewPackage)
+                <p id="imageFileInputParagraph" style="display: none">@Html.File("imageFile")</p>
+                <p id="externalImageInputParagraph" style="display: none">@Html.TextBox("externalImageUrl")</p>
+
+            <div class="buttons">
+                <input type="submit" class="silver" name="addImageActionTaken" value="Update Logo" />
+                <input type="submit" class="silver" name="addImageActionTaken" value="Add Screenshot" />
+            </div>
+            }
+        </div>
+
+        <div>
+        @using (Html.BeginFormAntiForgeryPost(Url.Action("FinalizeSubmission", "NewSubmissionFinalizer"), FormMethod.Post, new { ID="FinalizeSubmissionForm" })) {
+            @Html.HiddenFor(m => m.PackageId)
+            @Html.HiddenFor(m => m.PackageVersion)
+            <input id="submissionFinalizeButton" type="button" value="Finish" singleClickButton="true" />
+        }
+        </div>
+
+        <div id="deleteScreenshotDialogDiv" title="Delete Screenshot" style="display: none">
+            <p>Are you sure that you want to delete the selected screenshot?</p>
+            @using (Html.BeginFormAntiForgeryPost(Url.Action("DeleteScreenshot"), FormMethod.Post)) {
+                @Html.HiddenFor(m => m.PackageId)
+                @Html.HiddenFor(m => m.PackageVersion)
+                @Html.HiddenFor(m => m.IsNewPackage)
+                <input type="hidden" id="idOfScreenshotToDelete" name="idOfScreenshotToDelete" />
+                <input type="hidden" id="urlOfScreenshotToDelete" name="urlOfScreenshotToDelete" />
+                <input type="submit" value="Yes" />
+                <a id="deleteScreenshotCancelLink" href="#">No</a>
+            }
+        </div>
+    </section>
+</section>
+@using (Script.Foot()) {
+    Script.Require("jQueryUI_Core");
+    <script type="text/javascript">
+    //<![CDATA[
+        var $uploadTypeRadioButtons = $("input[name='uploadType']");
+        var $imageFileInput = $('#imageFile');
+        var $externalImageInput = $('#externalImageUrl');
+        var $deleteScreenshotDialogDiv = $('#deleteScreenshotDialogDiv');
+
+        var $imageFileInputParagraph = $('#imageFileInputParagraph');
+        var $externalImageInputParagraph = $('#externalImageInputParagraph');
+
+        $(function () {
+            $('#deleteScreenshotCancelLink').click(closeDeleteScreenshotDialog);
+            $uploadTypeRadioButtons.click(ToggleImageFormDisplay);
+            $deleteScreenshotDialogDiv.dialog({ autoOpen: false, modal: true });
+            ToggleImageFormDisplay();
+        });
+
+        function deleteScreenshot(screenshotId, screenshotUrl) {
+            $('#idOfScreenshotToDelete').val(screenshotId);
+            $('#urlOfScreenshotToDelete').val(screenshotUrl);
+            $deleteScreenshotDialogDiv.dialog('open');
+            return false;
+        }
+
+        function closeDeleteScreenshotDialog() {
+            $deleteScreenshotDialogDiv.dialog('close');
+            return false;
+        }
+
+        function ToggleImageFormDisplay() {
+            $imageFileInputParagraph.hide();
+            $externalImageInputParagraph.hide();
+            if ($uploadTypeRadioButtons.filter(':checked').first().val() == 'local') {
+                $('#imageFileInputParagraph').show();
+            } else {
+                $('#externalImageInputParagraph').show();
+            }
+        }
+    //]]>
+    </script>
+    Script.Include("singleClickButton.js");
+}

@@ -1,0 +1,292 @@
+﻿<RibbonWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:local="clr-namespace:NKD.Import.Client.UICommands;assembly="
+        x:Name="myWin"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:UI="clr-namespace:NKD.Import.Client.UI" 
+        x:Class="NKD.Import.Client.MainWindow"
+        Title="NakedEnterprise Importer" Height="1000" Width="1000" Icon="/images/NKD.ico" Loaded="myWin_Loaded">
+
+    <Window.CommandBindings>
+
+        <CommandBinding Command="Help" CanExecute="HelpCanExecute" Executed="HelpExecuted" />
+    </Window.CommandBindings>
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="59*"/>
+            <ColumnDefinition Width="933*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+            <RowDefinition Height="300"/>
+
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+
+        <Ribbon Margin="0,0,0,0" IsDropDownOpen="False" WindowIconVisibility="Hidden" Name="AppRibbon" SelectionChanged="RibbonSelectionChanged" RequestBringIntoView="AppRibbon_RequestBringIntoView" MouseUp="AppRibbon_MouseUp" Grid.ColumnSpan="2" >
+            <Ribbon.ApplicationMenu>
+                <RibbonApplicationMenu SmallImageSource="/NKD Importer;component/images/copy_32.png">
+                    <RibbonApplicationMenuItem Header="Help"
+                                              x:Name="MenuItemHelp"
+                                              ImageSource="/NKD Importer;component/images/open_32.png" Click="MenuItemHelp_Click"/>
+                    <RibbonApplicationMenuItem Header="About"
+                                              x:Name="MenuItemAbout"
+                                              ImageSource="/NKD Importer;component/images/save_32.png" Click="MenuItemAbout_Click"/>
+
+                    <RibbonApplicationMenuItem Header="Clean"
+                                              x:Name="MenuItemClean"
+                                              ImageSource="/NKD Importer;component/images/save_32.png" Click="MenuItemClean_Click"/>
+                    <RibbonApplicationMenuItem Header="ResetMapping"
+                                              x:Name="MenuItemResetMapping"
+                                              ImageSource="/NKD Importer;component/images/save_32.png" Click="MenuItemResetMapping_Click"/>
+                    <RibbonApplicationMenuItem Header="UpdateConnection"
+                                              x:Name="MenuItemUpdateConStr"
+                                              ImageSource="/NKD Importer;component/images/save_32.png" Click="MenuItemUpdateConStr_Click"/>
+
+                </RibbonApplicationMenu>
+            </Ribbon.ApplicationMenu>
+
+
+            <RibbonTab Header="Collar" Name="RibbonTabCollarFile">
+                <RibbonGroup Header="Data file">
+                    <RibbonButton x:Name="ButtonOpenCollar" Label="Open" LargeImageSource="/NKD Importer;component/images/open_32.png"/>
+                </RibbonGroup>
+
+                <RibbonGroup Header="Format map">
+                    <RibbonButton x:Name="ButtonOpenCollarFormat" Label="Open" LargeImageSource="/NKD Importer;component/images/open_32.png"/>
+                    <RibbonButton x:Name="ButtonSaveCollarFormat"  Label="Save" LargeImageSource="/NKD Importer;component/images/save_32.png"/>
+                    <RibbonButton/>
+                </RibbonGroup>
+
+                <RibbonGroup Header="Tools">
+
+                    <RibbonButton x:Name="ButtonImportCollar" Label="Import" LargeImageSource="/NKD Importer;component/images/refresh_32.png"/>
+
+                </RibbonGroup>
+
+                <RibbonGroup Header="Viewer">
+                    <RibbonButton x:Name="ButtonCollarPreview" Label="Project holes" LargeImageSource="/NKD Importer;component/images/Search_32x32.png"/>
+                </RibbonGroup>
+
+            </RibbonTab>
+
+            <RibbonTab Header="Survey" Name="RibbonTabSurveyFile">
+                <RibbonGroup Header="Data file">
+                    <RibbonButton x:Name="ButtonOpenSurvey" Label="Open" LargeImageSource="/NKD Importer;component/images/open_32.png"/>
+                </RibbonGroup>
+
+                <RibbonGroup Header="Format map">
+                    <RibbonButton x:Name="ButtonOpenSurveyFormat" Label="Open" LargeImageSource="/NKD Importer;component/images/open_32.png"/>
+                    <RibbonButton x:Name="ButtonSaveSurveyFormat"  Label="Save" LargeImageSource="/NKD Importer;component/images/save_32.png"/>
+                    <RibbonButton/>
+                </RibbonGroup>
+
+                <RibbonGroup Header="Tools">
+
+                    <RibbonButton x:Name="ButtonImportSurvey" Label="Import" LargeImageSource="/NKD Importer;component/images/refresh_32.png"/>
+
+                </RibbonGroup>
+
+            </RibbonTab>
+
+            <RibbonTab Header="Assay" Name="RibbonTabAssayFile" Visibility="Visible">
+                <RibbonGroup Header="Data file">
+                    <RibbonButton x:Name="ButtonOpenAssay" Label="Open" LargeImageSource="/NKD Importer;component/images/open_32.png"/>
+                </RibbonGroup>
+
+                <RibbonGroup Header="Format map">
+                    <RibbonButton x:Name="ButtonOpenAssayFormat" Label="Open" LargeImageSource="/NKD Importer;component/images/open_32.png"/>
+                    <RibbonButton x:Name="ButtonSaveAssayFormat"  Label="Save" LargeImageSource="/NKD Importer;component/images/save_32.png"/>
+                    <RibbonButton/>
+                </RibbonGroup>
+
+                <RibbonGroup Header="Tools">
+
+                    <RibbonButton x:Name="ButtonImportAssay" Label="Import" LargeImageSource="/NKD Importer;component/images/refresh_32.png"/>
+
+                </RibbonGroup>
+
+            </RibbonTab>
+
+            <RibbonTab Header="Lithology" Name="RibbonTabLithoFile" Visibility="Visible">
+                <RibbonGroup Header="Data file">
+                    <RibbonButton x:Name="ButtonOpenLitho" Label="Open" LargeImageSource="/NKD Importer;component/images/open_32.png"/>
+                </RibbonGroup>
+
+                <RibbonGroup Header="Format map">
+                    <RibbonButton x:Name="ButtonOpenLithoFormat" Label="Open" LargeImageSource="/NKD Importer;component/images/open_32.png"/>
+                    <RibbonButton x:Name="ButtonSaveLithoFormat"  Label="Save" LargeImageSource="/NKD Importer;component/images/save_32.png"/>
+                    <RibbonButton/>
+                </RibbonGroup>
+
+                <RibbonGroup Header="Tools">
+
+                    <RibbonButton x:Name="ButtonImportLitho" Label="Import" LargeImageSource="/NKD Importer;component/images/refresh_32.png"/>
+
+                </RibbonGroup>
+
+            </RibbonTab>
+
+            <RibbonTab Header="Geophysics (LAS)" Name="RibbonTabLASFile" Visibility="Hidden">
+                <RibbonGroup Header="Data file">
+                    <RibbonButton x:Name="ButtonOpenLAS" Label="Open" LargeImageSource="/NKD Importer;component/images/open_32.png"/>
+                </RibbonGroup>
+
+                <RibbonGroup Header="Format map">
+                    <RibbonButton x:Name="ButtonOpenLASFormat" Label="Open" LargeImageSource="/NKD Importer;component/images/open_32.png"/>
+                    <RibbonButton x:Name="ButtonSaveLASFormat"  Label="Save" LargeImageSource="/NKD Importer;component/images/save_32.png"/>
+                    <RibbonButton/>
+                </RibbonGroup>
+
+                <RibbonGroup Header="Tools">
+
+                    <RibbonButton x:Name="ButtonImportLAS" Label="Import" LargeImageSource="/NKD Importer;component/images/refresh_32.png"/>
+
+                </RibbonGroup>
+
+            </RibbonTab>
+
+            <RibbonTab Header="LAS batch import" Name="RibbonTabMultiLAS" Visibility="Visible">
+
+                <RibbonGroup Header="Tools">
+
+                    <RibbonButton x:Name="ButtonImportBatchLAS" Label="Import" LargeImageSource="/NKD Importer;component/images/refresh_32.png"/>
+
+                </RibbonGroup>
+
+            </RibbonTab>
+
+            <RibbonTab Header="Block model" Name="RibbonTabBlockModel" RequestBringIntoView="RibbonTabBlockModel_RequestBringIntoView"  >
+                <RibbonGroup Header="Data file">
+                    <RibbonButton x:Name="ButtonOpenBM" Label="Open" LargeImageSource="/NKD Importer;component/images/open_32.png"/>
+                </RibbonGroup>
+
+                <RibbonGroup Header="Format map">
+                    <RibbonButton x:Name="ButtonOpenFormat" Label="Open" LargeImageSource="/NKD Importer;component/images/open_32.png"/>
+                    <RibbonButton x:Name="ButtonSaveFormat"  Label="Save" LargeImageSource="/NKD Importer;component/images/save_32.png"/>
+                    <RibbonButton/>
+                </RibbonGroup>
+
+                <RibbonGroup Header="Tools">
+
+                    <RibbonButton x:Name="ButtonImportBM" Label="Import" LargeImageSource="/NKD Importer;component/images/refresh_32.png"/>
+
+
+                </RibbonGroup>
+            </RibbonTab>
+
+            <RibbonTab Header="Coal quality" Name="RibbonTabCoalQualityFile" Visibility="Visible">
+                <RibbonGroup Header="Data file">
+                    <RibbonButton x:Name="ButtonOpenCoalQuality" Label="Open" LargeImageSource="/NKD Importer;component/images/open_32.png"/>
+                </RibbonGroup>
+
+                <RibbonGroup Header="Format map">
+                    <RibbonButton x:Name="ButtonOpenCoalQualityFormat" Label="Open" LargeImageSource="/NKD Importer;component/images/open_32.png"/>
+                    <RibbonButton x:Name="ButtonSaveCoalQualityFormat"  Label="Save" LargeImageSource="/NKD Importer;component/images/save_32.png"/>
+                    <RibbonButton/>
+                </RibbonGroup>
+
+                <RibbonGroup Header="Tools">
+
+                    <RibbonButton x:Name="ButtonImportCoalQuality" Label="Import" LargeImageSource="/NKD Importer;component/images/refresh_32.png"/>
+
+                </RibbonGroup>
+
+            </RibbonTab>
+
+
+
+        </Ribbon>
+        <GroupBox x:Name="groupBoxBatchLas" Header="LAS File selection" Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Visibility="Hidden" Grid.ColumnSpan="2">
+
+            <UI:FileListUIControl x:Name="fileListUIControlLAS"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+        </GroupBox>
+        <GroupBox x:Name="groupBoxInput" Header="Input" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="1" VerticalAlignment="Stretch" Grid.ColumnSpan="2" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+
+                </Grid.RowDefinitions>
+                <Label Grid.Row="1" Content="Loaded file: " HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                <Label x:Name="LabelLoadedFile" Content="-" Grid.Column="1" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                <Label Content="Project ID" Grid.Column="2" HorizontalAlignment="Left" Margin="64,6,0,8" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+                <ComboBox x:Name="ComboBoxProjectList" SelectedValuePath="Key" DisplayMemberPath="Value"  Grid.Column="3" HorizontalAlignment="Left" Margin="51,6,0,0" VerticalAlignment="Top" Width="189" Grid.ColumnSpan="2"/>
+
+
+            </Grid>
+
+        </GroupBox>
+
+
+
+
+        <UI:ImportPreview x:Name="ImportDataPreview" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="2" VerticalAlignment="Stretch" ColumnsMapped="BlockModelPreview_ColumnsMapped" Grid.ColumnSpan="2"/>
+        <Grid HorizontalAlignment="Stretch"  Grid.Row="4" VerticalAlignment="Stretch" Grid.ColumnSpan="2" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="206*"/>
+                <ColumnDefinition Width="581*"/>
+                <ColumnDefinition Width="205"/>
+            </Grid.ColumnDefinitions>
+            <ProgressBar x:Name="progressBar1"  HorizontalAlignment="Left" Height="26" Margin="5,12,0,12" VerticalAlignment="Center" Width="195" />
+            <Label Name="StatusLabel"  Content="Status" Grid.Column="1" HorizontalAlignment="Left" Margin="10,12,0,12" VerticalAlignment="Center" Height="26" Width="42"/>
+            <Label x:Name="LabelVersion" Content="-" Grid.Column="2" HorizontalAlignment="Left" Margin="15,12,0,12" VerticalAlignment="Center" Height="26" Width="65" RenderTransformOrigin="0.5,0.5"/>
+            <Label x:Name="LabelDB" Content="NKD-" Grid.Column="2" HorizontalAlignment="Right" Margin="0,12" VerticalAlignment="Center" Height="26" Width="120"/>
+        </Grid>
+
+        <Grid Grid.Row="3" Grid.ColumnSpan="2" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50*"></ColumnDefinition>
+                <ColumnDefinition Width="50*"></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <GroupBox x:Name="groupBoxMapConfigTable" Grid.Row="0"  Grid.RowSpan="2" Header="Mapped columns" HorizontalAlignment="Stretch" Grid.Column="0" Margin="10,10,0,0" VerticalAlignment="Stretch">
+                <UI:MapTable x:Name="MapConfigTable" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="0" Grid.Column="0" VerticalAlignment="Stretch"/>
+            </GroupBox>
+
+            <GroupBox Grid.Column="1" Grid.Row="1" Name="ModelDefGroupBox" Header="Model definitions" HorizontalAlignment="Stretch" Margin="10,10,0,0" VerticalAlignment="Stretch" >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="115*"/>
+                        <ColumnDefinition Width="359*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <UI:BlockDimensions Grid.Row="1"  Grid.ColumnSpan="2" x:Name="BlockDimensionsControl" HorizontalAlignment="Left"  VerticalAlignment="Stretch" Height="Auto" Margin="0,0,0,-28" />
+                    <Label Content="Model name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="95"/>
+                    <TextBox x:Name="textBoxModelName" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox  Grid.Row="0" Grid.Column="1" Name="CollarOptionsGroupBox" Header="Import options" HorizontalAlignment="Stretch" Margin="10,10,0,0" VerticalAlignment="Stretch" Visibility="Visible">
+                <Grid>
+                    <CheckBox x:Name="checkBoxOverwrite" Content="Overwite exiting records" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="200" Margin="0,35,0,0"/>
+                    <CheckBox x:Name="checkBoxDupeCheck"  Content="Check for duplicates" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" IsChecked="True"/>
+                </Grid>
+            </GroupBox>
+
+        </Grid>
+
+
+
+
+
+    </Grid>
+</RibbonWindow>

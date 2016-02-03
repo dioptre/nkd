@@ -1,0 +1,47 @@
+﻿@using Orchard.ContentManagement;
+
+@Html.Partial("Helpers")
+
+@{
+    var userCanRegister = @WorkContext.CurrentSite.As<Orchard.Users.Models.RegistrationSettingsPart>().UsersCanRegister;
+    var enableLostPassword = @WorkContext.CurrentSite.As<Orchard.Users.Models.RegistrationSettingsPart>().EnableLostPassword;
+}
+
+
+@{
+    WorkContext.Layout.AsideFirst.Add(New.LogonSidebar());
+}
+
+<section>
+    <header>
+        <h2>@Html.TitleForPage("Log On")</h2>
+    </header>
+@using (Html.BeginFormAntiForgeryPost(Url.Action("LogOn", new { ReturnUrl = Request.QueryString["ReturnUrl"] }), FormMethod.Post, new { id = "form" }))
+{
+    @Html.ValidationSummary(T("Login was unsuccessful. Please correct the errors and try again.").ToString())
+        <div>
+            <label for="username-email">@T("Username")</label>
+            <aside>
+                <p>@Html.ValidationMessage("userNameOrEmail") Enter either your username or email address.</p>
+            </aside>
+            @Html.TextBox("userNameOrEmail", "", new { id = "username-email", autofocus = "autofocus" })
+        </div>
+        <div>
+            <label for="password">@T("Password")</label>
+            <aside>
+                <p>@Html.ValidationMessage("password") Passwords must be at least 7 characters long.</p>
+            </aside>
+            @Html.Password("password")
+        </div>
+        <div>
+            <button class="primaryAction" type="submit" name=@T("Sign In")>@T("Sign In")</button>
+            @if (enableLostPassword)
+            { @Html.ActionLink(T("Lost your Password?").Text, "RequestLostPassword") }
+        </div>
+}
+</section>
+
+@using (Script.Foot())
+{
+    Script.Include("gallery.form.js");
+}

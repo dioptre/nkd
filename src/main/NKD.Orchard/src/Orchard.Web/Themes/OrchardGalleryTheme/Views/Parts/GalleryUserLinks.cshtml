@@ -1,0 +1,18 @@
+﻿@using System.Web.Mvc;
+
+<div class="user-display">
+    @if (Request.IsAuthenticated) {
+            <span class="welcome">@T(Model.UserName)</span>
+            <span class="user-actions">
+                @if (Request.IsAuthenticated) {
+                    @Html.ActionLink("My Account", "MyAccount", "Contribute")
+                }
+                @Html.ActionLink(T("Sign Out").ToString(), "LogOff", new { Controller = "Account", Area = "Orchard.Users", ReturnUrl = Context.Request.RawUrl })
+                @if (Model.CanAccessAdminPanel) {
+                    @Html.ActionLink("Dashboard", "Index", new { Area = "Dashboard", Controller = "Admin" })
+                }
+            </span>
+    } else {
+            <span class="welcome">@Html.ActionLink(T("Sign In").ToString(), "LogOn", new { Controller = "Account", Area = "Orchard.Users", ReturnUrl = Context.Request.RawUrl })</span>
+    }
+</div>
