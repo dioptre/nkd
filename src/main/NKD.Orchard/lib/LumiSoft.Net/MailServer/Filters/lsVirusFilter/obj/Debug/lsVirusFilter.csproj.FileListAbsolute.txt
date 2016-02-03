@@ -1,0 +1,6 @@
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Filters\lsVirusFilter\obj\Debug\lsVirusFilter.csprojResolveAssemblyReference.cache
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Debug\Filters\lsVirusFilter.exe.config
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Debug\Filters\lsVirusFilter.exe
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Debug\Filters\lsVirusFilter.pdb
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Filters\lsVirusFilter\obj\Debug\lsVirusFilter.exe
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Filters\lsVirusFilter\obj\Debug\lsVirusFilter.pdb

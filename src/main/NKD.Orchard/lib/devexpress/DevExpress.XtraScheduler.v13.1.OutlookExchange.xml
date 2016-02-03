@@ -1,0 +1,802 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.XtraScheduler.v13.1.OutlookExchange</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.XtraScheduler.Outlook.OutlookImportSynchronizer">
+
+            <summary>
+                <para>Represents an object implementing an appointment synchronization with an import scenario for MS Outlook.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookImportSynchronizer.#ctor(DevExpress.XtraScheduler.SchedulerStorageBase)">
+            <summary>
+                <para>Initializes a new instance of the OutlookImportSynchronizer class with the specified Scheduler storage.
+</para>
+            </summary>
+            <param name="storage">
+		A <see cref="T:DevExpress.XtraScheduler.SchedulerStorage"/> object representing a storage to which Outlook objects are imported.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.OutlookImportSynchronizer.CalendarFolderName">
+            <summary>
+                <para>Gets or sets the name of the calendar folder (MAPI) from which appointments are retrieved.
+</para>
+            </summary>
+            <value>A string representing the name of a calendar folder.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookImportSynchronizer.SetCalendarProvider(DevExpress.XtraScheduler.Outlook.IOutlookCalendarProvider)">
+            <summary>
+                <para>Specifies a custom provider to process a collection of Outlook objects, before they are imported to Scheduler Storage.
+</para>
+            </summary>
+            <param name="provider">
+		An object implementing the <see cref="T:DevExpress.XtraScheduler.Outlook.IOutlookCalendarProvider"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Outlook.OutlookExportSynchronizer">
+
+            <summary>
+                <para>Represents an object implementing an appointment synchronization with export scenario for MS Outlook.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookExportSynchronizer.#ctor(DevExpress.XtraScheduler.SchedulerStorageBase)">
+            <summary>
+                <para>Initializes a new instance of the OutlookExportSynchronizer class with the specified Scheduler storage.
+</para>
+            </summary>
+            <param name="storage">
+		A <see cref="T:DevExpress.XtraScheduler.SchedulerStorage"/> object representing a storage to which Outlook objects are imported.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.OutlookExportSynchronizer.CalendarFolderName">
+            <summary>
+                <para>Gets or sets the name of the calendar folder (MAPI) from which appointments are retrieved.
+</para>
+            </summary>
+            <value>A string representing the name of a calendar folder.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookExportSynchronizer.SetCalendarProvider(DevExpress.XtraScheduler.Outlook.IOutlookCalendarProvider)">
+            <summary>
+                <para>Specifies a custom provider to process a collection of Outlook objects, before they are exported to an MS Outlook calendar folder.
+</para>
+            </summary>
+            <param name="provider">
+		An object implementing the <see cref="T:DevExpress.XtraScheduler.Outlook.IOutlookCalendarProvider"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem">
+
+            <summary>
+                <para>Represents an MS Outlook appointment.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.AllDayEvent">
+            <summary>
+                <para>Gets or sets whether this appointment is an all-day or multiple-day event.
+</para>
+            </summary>
+            <value><b>true</b> if an appointment takes up one or more entire days; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.Body">
+            <summary>
+                <para>Gets or sets the text displayed in the appointment's body.
+</para>
+            </summary>
+            <value>A string containing the body text.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.BusyStatus">
+            <summary>
+                <para>Gets or sets the busy status of this messaging user for this appointment.
+</para>
+            </summary>
+            <value>An <b>DevExpress.XtraScheduler.Outlook.Interop.OlBusyStatus</b> enumeration member.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.ClearRecurrencePattern">
+            <summary>
+                <para>Removes any recurrence settings from this appointment.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.CreationTime">
+            <summary>
+                <para>Gets the creation time for the Outlook item.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.DateTime"/>, indicating the creation time for the event.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.Delete">
+            <summary>
+                <para>Removes the appointment item from the collection of Outlook messages.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.End">
+            <summary>
+                <para>Gets or sets the ending date/time of this appointment.
+</para>
+            </summary>
+            <value>A <see cref="T:System.DateTime"/> value representing the appointment's ending time.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.EndTimeZone">
+            <summary>
+                <para>Gets or sets the time zone for the end time of the appointment.
+</para>
+            </summary>
+            <value>A <b>DevExpress.XtraScheduler.Outlook.Interop._TimeZone</b> object that contains information for a time zone as supported by Microsoft Windows.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.EntryID">
+            <summary>
+                <para>Gets the unique Entry ID of the appointment.
+</para>
+            </summary>
+            <value>A string representing the unique identifier.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.GetRecurrencePattern">
+            <summary>
+                <para>Provides access to an object representing recurrence attributes of an appointment.
+</para>
+            </summary>
+            <returns>A <b>DevExpress.XtraScheduler.Outlook.Interop.RecurrencePattern</b> object representing a recurrence pattern.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.IsRecurring">
+            <summary>
+                <para>Indicates whether this appointment is a recurring appointment.
+</para>
+            </summary>
+            <value><b>true</b> if this appointment is recurring; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.LastModificationTime">
+            <summary>
+                <para>Gets the date and time that the Outlook item was last modified.
+</para>
+            </summary>
+            <value>A <see cref="T:System.DateTime"/> value representing the appointment's last modification time.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.Location">
+            <summary>
+                <para>Gets or sets the specific location for the appointment. 
+</para>
+            </summary>
+            <value>A string indicating the appointment location.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.ReminderMinutesBeforeStart">
+            <summary>
+                <para>Gets or sets the number of minutes the reminder should occur prior to the start of the appointment.
+</para>
+            </summary>
+            <value>An integer containing the number of minutes.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.ReminderSet">
+            <summary>
+                <para>Gets or sets whether a reminder has been set for this appointment.
+</para>
+            </summary>
+            <value><b>true</b> if a reminder is set; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.Save">
+            <summary>
+                <para>Saves the appointment to the current folder.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.Start">
+            <summary>
+                <para>Gets or sets the starting time for an appointment.
+</para>
+            </summary>
+            <value>A <see cref="T:System.DateTime"/> value representing the appointment's starting time.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.StartTimeZone">
+            <summary>
+                <para>Gets or sets the time zone for the start time of the appointment.
+</para>
+            </summary>
+            <value>A <b>DevExpress.XtraScheduler.Outlook.Interop._TimeZone</b> object that contains information for a time zone as supported by Microsoft Windows.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem.Subject">
+            <summary>
+                <para>Gets or sets the subject for the Outlook appointment.
+</para>
+            </summary>
+            <value>A string representing the subject of an appointment.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Outlook.OutlookAppointmentSynchronizingEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraScheduler.Exchange.AppointmentSynchronizer.AppointmentSynchronizing"/> event of the <see cref="T:DevExpress.XtraScheduler.Exchange.AppointmentSynchronizer"/> class.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookAppointmentSynchronizingEventArgs.#ctor(DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem)">
+            <summary>
+                <para>Initializes a new instance of the OutlookAppointmentSynchronizingEventArgs class with the specified settings.
+</para>
+            </summary>
+            <param name="olApt">
+		An <see cref="T:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem"/> object representing the MS Outlook appointment.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookAppointmentSynchronizingEventArgs.#ctor(DevExpress.XtraScheduler.Appointment,DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem)">
+            <summary>
+                <para>Initializes a new instance of the OutlookAppointmentSynchronizingEventArgs class with the specified settings.
+</para>
+            </summary>
+            <param name="apt">
+		An <see cref="T:DevExpress.XtraScheduler.Appointment"/> object representing the XtraScheduler appointment.
+
+            </param>
+            <param name="olApt">
+		An <see cref="T:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem"/> object representing the MS Outlook appointment.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.OutlookAppointmentSynchronizingEventArgs.OutlookAppointment">
+            <summary>
+                <para>Gets an MS Outlook appointment before synchronization.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem"/> object representing the MS Outlook appointment.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Outlook.OutlookAppointmentSynchronizedEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraScheduler.Exchange.AppointmentSynchronizer.AppointmentSynchronized"/> event of the <see cref="T:DevExpress.XtraScheduler.Exchange.AppointmentImportSynchronizer"/> class.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookAppointmentSynchronizedEventArgs.#ctor(DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem)">
+            <summary>
+                <para>Initializes a new instance of the OutlookAppointmentSynchronizedEventArgs class with the specified settings.
+</para>
+            </summary>
+            <param name="olApt">
+		An <see cref="T:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem"/> object representing the MS Outlook appointment.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookAppointmentSynchronizedEventArgs.#ctor(DevExpress.XtraScheduler.Appointment,DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem)">
+            <summary>
+                <para>Initializes a new instance of the OutlookAppointmentSynchronizedEventArgs class with the specified settings.
+</para>
+            </summary>
+            <param name="apt">
+		An <see cref="T:DevExpress.XtraScheduler.Appointment"/> object representing the XtraScheduler appointment.
+
+            </param>
+            <param name="olApt">
+		An <see cref="T:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem"/> object representing the MS Outlook appointment.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.OutlookAppointmentSynchronizedEventArgs.OutlookAppointment">
+            <summary>
+                <para>Gets an MS Outlook appointment after synchronization.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem"/> object representing the MS Outlook appointment.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Outlook.OutlookAppointmentImportingEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraScheduler.Exchange.AppointmentImporter.AppointmentImporting"/> event of the <see cref="T:DevExpress.XtraScheduler.Outlook.OutlookImport"/> class.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookAppointmentImportingEventArgs.#ctor(DevExpress.XtraScheduler.Appointment,DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem)">
+            <summary>
+                <para>Initializes a new instance of the OutlookAppointmentImportingEventArgs class with the specified settings.
+</para>
+            </summary>
+            <param name="apt">
+		An <see cref="T:DevExpress.XtraScheduler.Appointment"/> object representing the XtraScheduler appointment.
+
+            </param>
+            <param name="olApt">
+		An <see cref="T:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem"/> object representing the MS Outlook appointment.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.OutlookAppointmentImportingEventArgs.OutlookAppointment">
+            <summary>
+                <para>Gets an MS Outlook appointment before import.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem"/> object representing the MS Outlook appointment.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Outlook.OutlookAppointmentImportedEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraScheduler.Exchange.AppointmentImporter.AppointmentImported"/> event of the <see cref="T:DevExpress.XtraScheduler.Outlook.OutlookImport"/> class.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookAppointmentImportedEventArgs.#ctor(DevExpress.XtraScheduler.Appointment,DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem)">
+            <summary>
+                <para>Initializes a new instance of the OutlookAppointmentImportedEventArgs class with the specified settings.
+</para>
+            </summary>
+            <param name="apt">
+		An <see cref="T:DevExpress.XtraScheduler.Appointment"/> object representing the XtraScheduler appointment.
+
+            </param>
+            <param name="olApt">
+		An <see cref="T:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem"/> object representing the MS Outlook appointment.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.OutlookAppointmentImportedEventArgs.OutlookAppointment">
+            <summary>
+                <para>Gets an MS Outlook appointment after import.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem"/> object representing the MS Outlook appointment.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Outlook.OutlookAppointmentExportingEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraScheduler.Exchange.AppointmentExporter.AppointmentExporting"/> event of the <see cref="T:DevExpress.XtraScheduler.Outlook.OutlookExport"/> class.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookAppointmentExportingEventArgs.#ctor(DevExpress.XtraScheduler.Appointment,DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem)">
+            <summary>
+                <para>Initializes a new instance of the OutlookAppointmentExportingEventArgs class with the specified settings.
+</para>
+            </summary>
+            <param name="apt">
+		An <see cref="T:DevExpress.XtraScheduler.Appointment"/> object representing the XtraScheduler appointment.
+
+            </param>
+            <param name="olApt">
+		An <see cref="T:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem"/> object representing the MS Outlook appointment.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.OutlookAppointmentExportingEventArgs.OutlookAppointment">
+            <summary>
+                <para>Gets an MS Outlook appointment before export.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem"/> object representing the MS Outlook appointment.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Outlook.OutlookAppointmentExportedEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraScheduler.Exchange.AppointmentExporter.AppointmentExported"/> event of the <see cref="T:DevExpress.XtraScheduler.Outlook.OutlookExport"/> class.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookAppointmentExportedEventArgs.#ctor(DevExpress.XtraScheduler.Appointment,DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem)">
+            <summary>
+                <para>Initializes a new instance of the OutlookAppointmentExportedEventArgs class with the specified settings.
+</para>
+            </summary>
+            <param name="apt">
+		An <see cref="T:DevExpress.XtraScheduler.Appointment"/> object representing the XtraScheduler appointment.
+
+            </param>
+            <param name="olApt">
+		An <see cref="T:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem"/> object representing the MS Outlook appointment.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.OutlookAppointmentExportedEventArgs.OutlookAppointment">
+            <summary>
+                <para>Gets a MS Outlook appointment after export.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem"/> object representing the MS Outlook appointment.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Outlook.OutlookCalendarFolder">
+
+            <summary>
+                <para>Represents a folder containing calendar items in MS Outlook.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookCalendarFolder.#ctor(System.String,System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the OutlookCalendarFolder class with the specified settings.
+</para>
+            </summary>
+            <param name="name">
+		A string representing the name of the calendar folder
+
+            </param>
+            <param name="path">
+		A string representing the full path to the calendar folder
+
+            </param>
+            <param name="fullPath">
+		A string representing the full path to the calendar folder (corresponds to the MAPIFolder.FullFolderPath Property (Microsoft.Office.Interop.Outlook)), deprecated, not intended to be used.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.OutlookCalendarFolder.FullPath">
+            <summary>
+                <para>A string representing the full path to the calendar folder (corresponds to the MAPIFolder.FullFolderPath Property (Microsoft.Office.Interop.Outlook)), deprecated, not intended to be used.
+
+</para>
+            </summary>
+            <value>A string containing the path to the calendar folder.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.OutlookCalendarFolder.Name">
+            <summary>
+                <para>Gets the name of the calendar folder.
+</para>
+            </summary>
+            <value>A string containing the name of the folder.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.OutlookCalendarFolder.Path">
+            <summary>
+                <para>Gets the full path to the calendar folder.
+</para>
+            </summary>
+            <value>A string containing the path to the folder.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Outlook.OutlookImport">
+
+            <summary>
+                <para>Represents an object that imports MS Outlook calendar items into Scheduler appointments.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookImport.#ctor(DevExpress.XtraScheduler.SchedulerStorageBase)">
+            <summary>
+                <para>Initializes a new instance of the OutlookImport class with the specified Scheduler storage.
+</para>
+            </summary>
+            <param name="storage">
+		A <see cref="T:DevExpress.XtraScheduler.SchedulerStorage"/> object representing a storage to which Outlook objects are imported.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.OutlookImport.CalendarFolderName">
+            <summary>
+                <para>Gets or sets the name of the calendar folder (MAPI) from which appointments are retrieved.
+</para>
+            </summary>
+            <value>A string representing the name of a calendar folder.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookImport.Import(System.String)">
+            <summary>
+                <para>Imports appointments from the currently installed MS Outlook instance to the Scheduler.
+</para>
+            </summary>
+            <param name="path">
+		Always String.Empty. Otherwise an exception is thrown.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookImport.SetCalendarProvider(DevExpress.XtraScheduler.Outlook.IOutlookCalendarProvider)">
+            <summary>
+                <para>Specifies a custom provider to process a collection of Outlook objects, before they are loaded into the Scheduler storage.
+</para>
+            </summary>
+            <param name="provider">
+		An object implementing the <see cref="T:DevExpress.XtraScheduler.Outlook.IOutlookCalendarProvider"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Outlook.OutlookExchangeHelper">
+
+            <summary>
+                <para>Provides methods to get information on MS Outlook calendar folder names and paths. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookExchangeHelper.GetOutlookCalendarFolders">
+            <summary>
+                <para>Gets a list of calendar folders for MS Outlook application.
+</para>
+            </summary>
+            <returns>A list of <see cref="T:DevExpress.XtraScheduler.Outlook.OutlookCalendarFolder"/> objects, representing calendar folders accessible in MS Outlook.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookExchangeHelper.GetOutlookCalendarNames">
+            <summary>
+                <para>Gets names of all accessible MS Outlook calendars.
+</para>
+            </summary>
+            <returns>A string array containing calendar names.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookExchangeHelper.GetOutlookCalendarPaths">
+            <summary>
+                <para>Gets full paths of all accessible MS Outlook calendars.
+</para>
+            </summary>
+            <returns>An array of strings containing MS Outlook calendar paths.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Outlook.OutlookExport">
+
+            <summary>
+                <para>Represents an object that exports Scheduler appointments to MS Outlook calendar items.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookExport.#ctor(DevExpress.XtraScheduler.SchedulerStorageBase)">
+            <summary>
+                <para>Initializes a new instance of the OutlookExport class with the specified Scheduler storage.
+</para>
+            </summary>
+            <param name="storage">
+		A <see cref="T:DevExpress.XtraScheduler.SchedulerStorage"/> object representing a storage containing appointments for export.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.OutlookExport.CalendarFolderName">
+            <summary>
+                <para>Gets or sets the name of the calendar folder (MAPI) from which appointments are retrieved.
+</para>
+            </summary>
+            <value>A string representing the name of a calendar folder.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraScheduler.Outlook.OutlookExport.OutlookAppointmentItemAdded">
+            <summary>
+                <para>This member is obsolete. Use the <see cref="E:DevExpress.XtraScheduler.Exchange.AppointmentExporter.AppointmentExported"/> instead.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookExport.SetCalendarProvider(DevExpress.XtraScheduler.Outlook.IOutlookCalendarProvider)">
+            <summary>
+                <para>Specifies a custom provider to process a collection of Outlook objects, before they are loaded into the Scheduler storage.
+</para>
+            </summary>
+            <param name="provider">
+		An object implementing the <see cref="T:DevExpress.XtraScheduler.Outlook.IOutlookCalendarProvider"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Outlook.ISupportCalendarFolders">
+
+            <summary>
+                <para>Enables you to get or set a calendar folder name for different types of appointment exchangers.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Outlook.ISupportCalendarFolders.CalendarFolderName">
+            <summary>
+                <para>Gets or sets the name of the calendar folder in MS Outlook.
+</para>
+            </summary>
+            <value>A string containing the calendar name.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Outlook.OutlookCalendarProvider">
+
+            <summary>
+                <para>Implements the <see cref="T:DevExpress.XtraScheduler.Outlook.IOutlookCalendarProvider"/> interface, facilitating the creation of descendants.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.OutlookCalendarProvider.#ctor">
+            <summary>
+                <para>Initializes a new instance of the OutlookCalendarProvider class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Outlook.IOutlookCalendarProvider">
+
+            <summary>
+                <para>Defines methods for retrieving calendar items from an MS Outlook application.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.IOutlookCalendarProvider.GetCalendarItems(DevExpress.XtraScheduler.Outlook.Interop._Application,System.String)">
+            <summary>
+                <para>Override this method to retrieve calendar items by the specified path from the specified application.
+</para>
+            </summary>
+            <param name="app">
+		An object that implements the <b>DevExpress.XtraScheduler.Outlook.Interop._Application</b> interface (MS Outlook instance).
+
+            </param>
+            <param name="folderPath">
+		A string representing a path to a calendar folder.
+
+            </param>
+            <returns>An object implementing the <b>DevExpress.XtraScheduler.Outlook.Interop._Items</b> interface.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.IOutlookCalendarProvider.GetOutlookApplication">
+            <summary>
+                <para>Override this method to get a MS Outlook instance (or an application that can be used instead - it should implement the <b>DevExpress.XtraScheduler.Outlook.Interop._Application</b> interface).
+</para>
+            </summary>
+            <returns>An object that implements the <b>DevExpress.XtraScheduler.Outlook.Interop._Application</b> interface.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Outlook.IOutlookCalendarProvider.PrepareItemsForExchange(DevExpress.XtraScheduler.Outlook.Interop._Items)">
+            <summary>
+                <para>Override this method to create a list of items representing appointments in export/import processes.
+</para>
+            </summary>
+            <param name="items">
+		A list of objects implementing the <b>DevExpress.XtraScheduler.Outlook.Interop._AppointmentItem</b> interface.
+
+            </param>
+            <returns>An object implementing the <b>DevExpress.XtraScheduler.Outlook.Interop._Items</b> interface.
+</returns>
+
+
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,4 @@
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Release\Filters\EXPEDIT.MailServer.Filters.ContactFilter.dll.config
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Release\Filters\EXPEDIT.MailServer.Filters.ContactFilter.dll
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Filters\ContactFilter\obj\Release\EXPEDIT.MailServer.ContactFilter.csprojResolveAssemblyReference.cache
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Filters\ContactFilter\obj\Release\EXPEDIT.MailServer.Filters.ContactFilter.dll

@@ -1,0 +1,4 @@
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Release\MailServerManager.exe.config
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Release\MailServerManager.exe
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\MailServerManager\obj\Release\MailServerManager.csprojResolveAssemblyReference.cache
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\MailServerManager\obj\Release\MailServerManager.exe

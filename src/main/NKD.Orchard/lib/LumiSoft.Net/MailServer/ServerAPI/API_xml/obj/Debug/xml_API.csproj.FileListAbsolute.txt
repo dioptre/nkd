@@ -1,0 +1,6 @@
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Debug\xml_API.dll
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Debug\xml_API.pdb
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Debug\ServerApi.xml
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\ServerAPI\API_xml\obj\Debug\xml_API.csprojResolveAssemblyReference.cache
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\ServerAPI\API_xml\obj\Debug\xml_API.dll
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\ServerAPI\API_xml\obj\Debug\xml_API.pdb

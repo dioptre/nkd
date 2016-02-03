@@ -1,0 +1,6 @@
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\Net\Net\bin\Debug\LumiSoft.Net.dll
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\Net\Net\bin\Debug\LumiSoft.Net.pdb
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\Net\Net\bin\Debug\LumiSoft.Net.xml
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\Net\Net\obj\Debug\Lumisoft.Net.csprojResolveAssemblyReference.cache
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\Net\Net\obj\Debug\LumiSoft.Net.dll
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\Net\Net\obj\Debug\LumiSoft.Net.pdb

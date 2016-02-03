@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>mssql_API</name>
+    </assembly>
+    <members>
+        <member name="T:LumiSoft.MailServer._InternalHeader">
+            <summary>
+            Internal .eml file header. Obsolete, get rid of in new versions.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer._InternalHeader.#ctor(System.IO.FileStream)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="fs">Message file stream.</param>
+        </member>
+        <member name="P:LumiSoft.MailServer._InternalHeader.MessageFlags">
+            <summary>
+            Gets message flags.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer._InternalHeader.Envelope">
+            <summary>
+            Gets messgae IMAP ENVELOPE.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer._InternalHeader.Body">
+            <summary>
+            Gets message IMAP BODY.
+            </summary>
+        </member>
+        <member name="T:LumiSoft.MailServer.RecycleBinMessageInfo">
+            <summary>
+            This class holds recycle bin message info.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.RecycleBinMessageInfo.#ctor(System.String,System.DateTime,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="messageID">Message ID.</param>
+            <param name="deleteTime">Message delete time.</param>
+            <param name="user">User name.</param>
+            <param name="folder">Folder name with path. This is folder what originally contained message.</param>
+            <param name="size">Message size in bytes.</param>
+            <param name="envelope">Message IMAP Envelope string.</param>
+        </member>
+        <member name="P:LumiSoft.MailServer.RecycleBinMessageInfo.MessageID">
+            <summary>
+            Gets message ID.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.RecycleBinMessageInfo.DeleteTime">
+            <summary>
+            Gets message delete time.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.RecycleBinMessageInfo.User">
+            <summary>
+            Gets user name whos message it is.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.RecycleBinMessageInfo.Folder">
+            <summary>
+            Gets name with path. This is folder what originally contained message.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.RecycleBinMessageInfo.Size">
+            <summary>
+            Gets message size in bytes,
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.RecycleBinMessageInfo.Envelope">
+            <summary>
+            Gets message IMAP Envelope string.
+            </summary>
+        </member>
+        <member name="T:LumiSoft.MailServer.RecycleBinManager">
+            <summary>
+            Recycle Bin manager.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.RecycleBinManager.GetMessagesInfo(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            Gets specified folder messages info.
+            </summary>
+            <param name="user">User who's recyclebin messages to get or null if all users messages.</param>
+            <param name="startDate">Messages from specified date. Pass DateTime.MinValue if not used.</param>
+            <param name="endDate">Messages to specified date. Pass DateTime.MinValue if not used.</param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.RecycleBinManager.StoreToRecycleBin(System.String,System.String,System.String)">
+            <summary>
+            Stores specified message to recycle bin.
+            </summary>
+            <param name="folderOwner">Folder woner user.</param>
+            <param name="folder">Folder what message it is.</param>
+            <param name="messageFile">Message file name with path.</param>
+        </member>
+        <member name="M:LumiSoft.MailServer.RecycleBinManager.GetRecycleBinMessage(System.String)">
+            <summary>
+            Gets recycle bin message stream. NOTE: This method caller must take care of closing stream.
+            </summary>
+            <param name="messageID">Message ID if of message what to get.</param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.RecycleBinManager.DeleteRecycleBinMessage(System.String)">
+            <summary>
+            Deletes specified message from recycle bin.
+            </summary>
+            <param name="messageID">Message ID which to restore.</param>
+        </member>
+        <member name="M:LumiSoft.MailServer.RecycleBinManager.RestoreFromRecycleBin(System.String,LumiSoft.MailServer.IMailServerApi)">
+            <summary>
+            Restores specified message from recycle bin.
+            </summary>
+            <param name="messageID">Message ID which to restore.</param>
+            <param name="api">Reference to API.</param>
+        </member>
+        <member name="M:LumiSoft.MailServer.RecycleBinManager.GetFile">
+            <summary>
+            Gets messages info file.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.RecycleBinManager.Vacuum(System.IO.FileStream)">
+            <summary>
+            Vacuums flags database, deletes deleted rows empty used space from file.
+            </summary>
+            <param name="fs">Database file stream.</param>
+        </member>
+        <member name="P:LumiSoft.MailServer.RecycleBinManager.RecycleBinPath">
+            <summary>
+            Gets or sets recycle bin path.
+            </summary>
+        </member>
+        <member name="T:LumiSoft.MailServer.ResManager">
+            <summary>
+            Resource manager.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.ResManager.GetText(System.String,System.Text.Encoding)">
+            <summary>
+            Gets stored resource as text.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LumiSoft.MailServer.UpdateSync">
+            <summary>
+            Updates synchronizer.
+            </summary>
+        </member>
+        <member name="T:LumiSoft.MailServer.WSqlCommand">
+            <summary>
+            Summary description for WSqlCommand.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.WSqlCommand.#ctor(System.String,System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="connectionString">Connection string.</param>
+            <param name="commandText">Command text.</param>
+        </member>
+        <member name="M:LumiSoft.MailServer.WSqlCommand.AddParameter(System.String,System.Data.SqlDbType,System.Object)">
+            <summary>
+            Adds parameter to Sql Command.
+            </summary>
+            <param name="name">Parameter name.</param>
+            <param name="dbType">Parameter datatype.</param>
+            <param name="value">Parameter value.</param>
+        </member>
+        <member name="M:LumiSoft.MailServer.WSqlCommand.Execute">
+            <summary>
+            Executes command.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:LumiSoft.MailServer.WSqlCommand.CommandTimeout">
+            <summary>
+            Gets or sets command timeout time.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.WSqlCommand.CommandType">
+            <summary>
+            Gets or sets command type.
+            </summary>
+        </member>
+    </members>
+</doc>

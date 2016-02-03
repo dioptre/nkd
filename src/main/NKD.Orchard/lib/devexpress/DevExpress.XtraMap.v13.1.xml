@@ -1,0 +1,5222 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.XtraMap.v13.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.XtraMap.ColorScaleLegend">
+
+            <summary>
+                <para>A color legend represented as a color scale.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ColorScaleLegend.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ColorScaleLegend class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.NavigationPanelOptions">
+
+            <summary>
+                <para>Contains options that define the appearance, position and layout of the navigation panel element.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.NavigationPanelOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the NavigationPanelOptions class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.NavigationPanelOptions.BackgroundStyle">
+            <summary>
+                <para>Gets a style applied to the navigation panel's background. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.BackgroundStyle"/> object, applied to the navigation panel's background.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.NavigationPanelOptions.CoordinatesStyle">
+            <summary>
+                <para>Provides access to style settings of coordinate scale labels on the map navigation panel.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.TextElementStyle"/> object that contains style settings to customize the coordinate scale labels.  
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.NavigationPanelOptions.Height">
+            <summary>
+                <para>Gets or sets the navigation panel's height.
+</para>
+            </summary>
+            <value>An integer value that is the navigation panel's height.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.NavigationPanelOptions.HotTrackedItemStyle">
+            <summary>
+                <para>Gets a background style applied to a hot-tracked map item on the navigation panel. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.BackgroundStyle"/> object, applied to a hot-tracked map item on the navigation panel. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.NavigationPanelOptions.ItemStyle">
+            <summary>
+                <para>Gets a background style applied to a map item on the navigation panel. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.BackgroundStyle"/> object, applied to a map item.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.NavigationPanelOptions.PressedItemStyle">
+            <summary>
+                <para>Gets a style applied to the pressed item's background on the navigation panel. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.BackgroundStyle"/> object, applied to the pressed item's background.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.NavigationPanelOptions.ScaleStyle">
+            <summary>
+                <para>Provides access to the style settings of the navigation panel scale. 
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.TextElementStyle"/> object that contains style settings to customize the navigation panel scale. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.NavigationPanelOptions.ShowCoordinates">
+            <summary>
+                <para>Gets or sets a value indicating whether or not the <b>Coordinates</b> should be displayed.
+</para>
+            </summary>
+            <value><b>true</b>, to show Coordinates; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.NavigationPanelOptions.ShowKilometersScale">
+            <summary>
+                <para>Gets or sets a value indicating whether or not the <b>Kiliometers Scale</b> should be displayed.
+</para>
+            </summary>
+            <value><b>true</b>, to show the Kilometers Scale; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.NavigationPanelOptions.ShowMilesScale">
+            <summary>
+                <para>Gets or sets a value indicating whether or not the <b>Miles Scale</b> should be displayed.
+</para>
+            </summary>
+            <value><b>true</b>, to show the Miles Scale; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.NavigationPanelOptions.ShowScrollButtons">
+            <summary>
+                <para>Gets or sets a value indicating whether or not the <b>Scroll Buttons</b> should be displayed.
+</para>
+            </summary>
+            <value><b>true</b>, to show Scroll Buttons; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.NavigationPanelOptions.ShowZoomTrackbar">
+            <summary>
+                <para>Gets or sets a value indicating whether or not the <b>Zoom Trackbar</b> should be displayed.
+</para>
+            </summary>
+            <value><b>true</b>, to show the Zoom Trackbar; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.NavigationPanelOptions.Visible">
+            <summary>
+                <para>Gets or sets a value indicating whether or not the navigation panel should be displayed.
+</para>
+            </summary>
+            <value><b>true</b> to display the navigation panel; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapPolyline">
+
+            <summary>
+                <para>The class used to draw a polyline on a map.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPolyline.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MapPolyline class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPolyline.Fill">
+            <summary>
+                <para>Overrides the <see cref="P:DevExpress.XtraMap.MapShape.Fill"/> property to hide it.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> that specifies the color used to fill a map polyline. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPolyline.Points">
+            <summary>
+                <para>Gets or sets a collection that contains the vertex points of the polyline.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.GeoPointCollection"/> object that contains the vertex points of the polyline.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPolyline.ToString">
+            <summary>
+                <para>Returns the textual representation of MapPolyline.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of MapPolyline.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.ElementSelectionMode">
+
+            <summary>
+                <para>Lists the values used to specify the selection mode of a map element.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraMap.ElementSelectionMode.Extended">
+            <summary>
+                <para>Selects multiple consecutive map elements while holding down the SHIFT key.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.ElementSelectionMode.Multiple">
+            <summary>
+                <para>Selects multiple map elements. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.ElementSelectionMode.None">
+            <summary>
+                <para>The selection of a map element is disabled. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.ElementSelectionMode.Single">
+            <summary>
+                <para>Selects the only map element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapItemAttributeMapping">
+
+            <summary>
+                <para>The mapping of an attribute applied to a map item. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapItemAttributeMapping.#ctor(System.String,System.String,DevExpress.XtraMap.FieldValueType)">
+            <summary>
+                <para>Initializes a new instance of the MapItemAttributeMapping class with the specified mapping attributes of a map item.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that is an attribute name.  This value is assigned to the <see cref="P:DevExpress.XtraMap.MapItemAttributeMapping.Name"/> property.
+
+
+            </param>
+            <param name="member">
+		A <see cref="T:System.String"/> value that is the attribute member. This value is assigned to the <see cref="P:DevExpress.XtraMap.MapItemAttributeMapping.Type"/> property.
+
+
+            </param>
+            <param name="valueType">
+		A <see cref="T:DevExpress.XtraMap.FieldValueType"/> enumeration value that is the current attribute type.  This value is assigned to the <see cref="P:DevExpress.XtraMap.MapItemAttributeMapping.ValueType"/> property.
+
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapItemAttributeMapping.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MapItemAttributeMapping class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapItemAttributeMapping.#ctor(System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the MapItemAttributeMapping class with the specified mapping attributes of a map item.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that is an attribute name. This value is assigned to the <see cref="P:DevExpress.XtraMap.MapItemAttributeMapping.Name"/> property.
+
+
+            </param>
+            <param name="member">
+		A <see cref="T:System.String"/> value that is the attribute member. This value is assigned to the <see cref="P:DevExpress.XtraMap.MapItemAttributeMapping.Type"/> property.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemAttributeMapping.Member">
+            <summary>
+                <para>Gets or sets the member attribute to define mappings of a map item. 
+</para>
+            </summary>
+            <value>A string value that defines the member attribute.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemAttributeMapping.Name">
+            <summary>
+                <para>Gets or sets a name of the map item attribute mapping.   
+
+</para>
+            </summary>
+            <value>A string value that is the name attribute.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemAttributeMapping.Type">
+            <summary>
+                <para>Returns the type to define attribute mappings of a map item.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.Type"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemAttributeMapping.ValueType">
+            <summary>
+                <para>Gets or sets the mapping's map item attribute value type.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.FieldValueType"/> enumeration value which represents the map item attribute type.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapControl">
+
+            <summary>
+                <para>A Map control to display raster and vector maps.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapControl.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MapControl class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapControl.About">
+            <summary>
+                <para>Activates the MapControl's <b>About</b> dialog box.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapControl.BackColor">
+            <summary>
+                <para>Gets or sets the map control's background color.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> object representing the background color.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapControl.CalcHitInfo(System.Drawing.Point)">
+            <summary>
+                <para>Returns information on the map elements located at the specified point.
+</para>
+            </summary>
+            <param name="hitPoint">
+		A <see cref="T:System.Drawing.Point"/> structure which specifies the hit point coordinates relative to the map's top-left corner.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapHitInfo"/> object, which contains information about the map elements located at the hit point.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapControl.CenterPoint">
+            <summary>
+                <para>Gets or sets a point that should be placed at the map center.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object that specifies the map center in geographical coordinates.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapControl.Colorizer">
+            <summary>
+                <para>Gets or sets a value specifying the map colorizer (choropleth colorizer or graph colorizer) with which to colorize map shapes. 
+
+
+</para>
+            </summary>
+            <value>A  <see cref="T:DevExpress.XtraMap.MapColorizer"/> class descendant specifying the colorizer type. 
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraMap.MapControl.DrawMapItem">
+            <summary>
+                <para>Provides the ability to custom paint map items.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapControl.DrawToBitmap(System.Drawing.Bitmap,System.Drawing.Rectangle)">
+            <summary>
+                <para>Supports rendering to the specified bitmap. 
+</para>
+            </summary>
+            <param name="bitmap">
+		The bitmap to be drawn to.
+
+            </param>
+            <param name="targetBounds">
+		The bounds within which the map control is rendered.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapControl.EnableScrolling">
+            <summary>
+                <para>Gets or sets a value indicating whether or not scrolling is enabled.
+</para>
+            </summary>
+            <value><b>true</b> if scrolling is enabled; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapControl.EnableZooming">
+            <summary>
+                <para>Gets or sets a value indicating whether or not zooming is enabled.
+</para>
+            </summary>
+            <value><b>true</b> if zooming is enabled; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapControl.ImageList">
+            <summary>
+                <para>Gets or sets the source of images to be displayed within a map control.
+</para>
+            </summary>
+            <value>An object which represents the source of the images that can be displayed within the map control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapControl.Layers">
+            <summary>
+                <para>Provides access to the collection of layers to be displayed within the MapControl.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.LayerCollection"/> object containing map layers.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapControl.NavigationPanelOptions">
+            <summary>
+                <para>Provides access to the navigation panel options of a map control.  
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.NavigationPanelOptions"/> object that contains the navigation panel settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapControl.RenderMode">
+            <summary>
+                <para>Gets or sets a value specifying the map render mode.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.RenderMode"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapControl.ResumeRender">
+            <summary>
+                <para>Pauses the rendering of map items.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraMap.MapControl.SelectionChanged">
+            <summary>
+                <para>Fires after the selection has been changed. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraMap.MapControl.SelectionChanging">
+            <summary>
+                <para>Occurs before a map item is selected, enabling a handler to cancel the map item selection change.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapControl.SelectionMode">
+            <summary>
+                <para>Gets or sets a value specifying how the map control is selected.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraMap.ElementSelectionMode"/> enumeration member specifying the map's selection behavior.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapControl.SetMapItemFactory(DevExpress.XtraMap.IMapItemFactory)">
+            <summary>
+                <para>Assigns the specified map item factory to the MapControl.
+</para>
+            </summary>
+            <param name="factory">
+		An object that implements the <see cref="T:DevExpress.XtraMap.IMapItemFactory"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapControl.ShowToolTips">
+            <summary>
+                <para>Gets or sets a value that specifies whether to show tooltips on a map.
+</para>
+            </summary>
+            <value><b>true</b>, to show tooltips on a map; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapControl.SuspendRender">
+            <summary>
+                <para>Suspends the rendering of map items.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapControl.Text">
+            <summary>
+                <para>Gets or sets the text for a map control when it participates in data binding.
+</para>
+            </summary>
+            <value>A string value that is the text for a map control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapControl.ToolTipController">
+            <summary>
+                <para>Specifies the tooltip controller component that controls the appearance, position and other settings of tooltips displayed for the Map control. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.ToolTipController"/> object. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapControl.Zoom(System.Double)">
+            <summary>
+                <para>Zooms a map to the specified level.
+</para>
+            </summary>
+            <param name="zoomLevel">
+		A double value specifying the level to which a map should be zoomed.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapControl.Zoom(System.Double,DevExpress.XtraMap.MapPoint)">
+            <summary>
+                <para>Zooms a map to the specified level and anchor point. 
+</para>
+            </summary>
+            <param name="newZoomLevel">
+		A double value specifying the new level to which a map should be zoomed. 
+
+            </param>
+            <param name="anchorPoint">
+		A <see cref="T:DevExpress.XtraMap.MapPoint"/> value specifying an anchor point to which a map should be zoomed. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapControl.ZoomIn">
+            <summary>
+                <para>Zooms a map in.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapControl.ZoomLevel">
+            <summary>
+                <para>Gets or sets the current zoom level of a Map Control.
+</para>
+            </summary>
+            <value>An integer value specifying the current zoom level.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapControl.ZoomOut">
+            <summary>
+                <para>Zooms a map out. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.ColorLegendBase">
+
+            <summary>
+                <para>The base class for all color legends.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ColorLegendBase.Alignment">
+            <summary>
+                <para>Gets or sets the alignment of the color legend. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.LegendAlignment"/> enumeration value that specifies the alignment of the map color legend.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ColorLegendBase.BackgroundStyle">
+            <summary>
+                <para>Gets a style applied to the color legend's background. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.BackgroundStyle"/> object, applied to the color legend's background.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.ColorLegendBase.DefaultAlignment">
+            <summary>
+                <para>Represents the default legend alignment.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ColorLegendBase.Description">
+            <summary>
+                <para>Gets or sets the description of the color legend.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value that specifies the text of the color legend.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ColorLegendBase.DescriptionStyle">
+            <summary>
+                <para>Gets the style settings of the color legend's description. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.TextElementStyle"/> object that contains style settings to customize the color legend's description. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ColorLegendBase.Header">
+            <summary>
+                <para>Gets or sets the content of the color legend's header.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value that specifies the content of the color legend's header.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ColorLegendBase.HeaderStyle">
+            <summary>
+                <para>Gets the style settings of the color legend's header. 
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.TextElementStyle"/> object that contains style settings to customize the color legend's header. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ColorLegendBase.ItemStyle">
+            <summary>
+                <para>Gets a style that defines the appearance of a map item. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapElementStyle"/> that contains style settings applied to a map item.  
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ColorLegendBase.RangeStopsFormat">
+            <summary>
+                <para>Specifies the display format of range stops on a color legend. 
+</para>
+            </summary>
+            <value>A string value that specifies the text representation of range stops on a color legend.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapItemAttributeCollection">
+
+            <summary>
+                <para>A collection of attributes for an individual map item.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapItemAttributeCollection.#ctor(DevExpress.XtraMap.MapItem)">
+            <summary>
+                <para>Initializes a new instance of the MapItemAttributeCollection class with the specified owner.
+</para>
+            </summary>
+            <param name="mapItem">
+		A <see cref="T:DevExpress.XtraMap.MapItem"/> class descendant that is the owner of this attribute collection.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemAttributeCollection.Item(System.String)">
+            <summary>
+                <para>Provides access to the attribute of a map item with the specified name. 
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value, specifying the name of an attribute within the collection. 
+
+            </param>
+            <value>A <see cref="T:DevExpress.XtraMap.MapItemAttribute"/> object. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemAttributeCollection.Owner">
+            <summary>
+                <para>Gets or sets the object that owns this map item attribute collection.
+</para>
+            </summary>
+            <value>An object that owns the current <see cref="T:DevExpress.XtraMap.MapItemAttributeCollection"/>. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.EqualAreaProjection">
+
+            <summary>
+                <para>A class that defines methods specific to the <a href="http://en.wikipedia.org/wiki/Equal-area_projection#Equal-area">Equal Area Projection</a>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.EqualAreaProjection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the EqualAreaProjection class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.EqualAreaProjection.GeoPointToMapUnit(DevExpress.XtraMap.GeoPoint)">
+            <summary>
+                <para>Converts the specified geographical point into internal map units.
+</para>
+            </summary>
+            <param name="geoPoint">
+		A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapUnit"/> object containing internal map coordinates.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.EqualAreaProjection.MapUnitToGeoPoint(DevExpress.XtraMap.MapUnit)">
+            <summary>
+                <para>Converts the specified map unit into the corresponding geographical point.
+</para>
+            </summary>
+            <param name="mapUnit">
+		A <see cref="T:DevExpress.XtraMap.MapUnit"/> object to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object containing geographical coordinates.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.EqualAreaProjection.ToString">
+            <summary>
+                <para>Returns the textual representation of EqualAreaProjection.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of EqualAreaProjection.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.FileLoadedEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraMap.MapFileLoaderBase.FileLoaded"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.FileLoadedEventHandler.Invoke(System.Object,DevExpress.XtraMap.FileLoadedEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraMap.MapFileLoaderBase.FileLoaded"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraMap.FileLoadedEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapNotificationOptions">
+
+            <summary>
+                <para>Contains options to support map notification. 
+</para>
+            </summary>
+
+        </member>
+        <member name="E:DevExpress.XtraMap.MapNotificationOptions.Changed">
+            <summary>
+                <para>Occurs after the map setting has been changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapNotificationOptions.Reset">
+            <summary>
+                <para>Resets all map notification settings to the default values.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapPoint">
+
+            <summary>
+                <para>The coordinates of a map point.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPoint.#ctor(System.Double,System.Double)">
+            <summary>
+                <para>Initializes a new instance of the MapPoint class with the specified X and Y locations of the map point. 
+</para>
+            </summary>
+            <param name="x">
+		A <see cref="T:System.Double"/> value which specifies the X position of the map point. This value is assigned to the <see cref="P:DevExpress.XtraMap.MapPoint.X"/> property.
+
+            </param>
+            <param name="y">
+		A <see cref="T:System.Double"/> value which specifies the Y position of the map point. This value is assigned to the <see cref="P:DevExpress.XtraMap.MapPoint.Y"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.MapPoint.Empty">
+            <summary>
+                <para>Represents a map point with zero coordinates. 
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPoint.Equals(DevExpress.XtraMap.MapPoint,DevExpress.XtraMap.MapPoint)">
+            <summary>
+                <para>Determines whether the two specified MapPoint objects are equal.
+</para>
+            </summary>
+            <param name="Point1">
+		A MapPoint instance that specifies the first map point to compare.
+
+            </param>
+            <param name="Point2">
+		A MapPoint instance that specifies the second map point to compare.
+
+            </param>
+            <returns><b>true</b> if specified objects are equal; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPoint.Equals(System.Object)">
+            <summary>
+                <para>Determines whether the specified object is equal to the current MapPoint instance.
+</para>
+            </summary>
+            <param name="obj">
+		The object to compare with the current object.
+
+            </param>
+            <returns><b>true</b> if the specified object is equal to the current MapPoint instance; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPoint.GetHashCode">
+            <summary>
+                <para>Gets the hash code (a number) that corresponds to the value of the current MapPoint object.
+</para>
+            </summary>
+            <returns>An integer value that is the hash code for the current object.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPoint.IsEmpty">
+            <summary>
+                <para>Gets a value that indicates whether this MapPoint object's coordinates are initialized.
+</para>
+            </summary>
+            <value><b>true</b> if the MapPoint object is empty; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPoint.Parse(System.String)">
+            <summary>
+                <para>Converts the string representation of a map point to its MapPoint equivalent.
+</para>
+            </summary>
+            <param name="source">
+		A string containing map point coordinates, separated by a comma.
+
+            </param>
+            <returns>A MapPoint object that is equivalent to the specified string.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPoint.ToPoint">
+            <summary>
+                <para>Converts a  MapPoint to a point.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.Drawing.Point"/> structure that represents a point.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPoint.ToPointF">
+            <summary>
+                <para>Converts a  MapPoint to a floating point.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.Drawing.PointF"/> structure that represents a floating point.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPoint.ToString">
+            <summary>
+                <para>Returns the textual representation of MapPoint.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of MapPoint.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPoint.ToString(System.IFormatProvider)">
+            <summary>
+                <para>Returns the textual representation of MapPoint.
+</para>
+            </summary>
+            <param name="provider">
+		An object, implementing the <see cref="T:System.IFormatProvider"/> interface.
+
+            </param>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of MapPoint.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPoint.X">
+            <summary>
+                <para>A horizontal coordinate of a MapPoint.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Double"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPoint.Y">
+            <summary>
+                <para>A vertical coordinate of a MapPoint.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Double"/> value.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapWebRequestEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraMap.MapDataProviderBase.WebRequest"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapWebRequestEventHandler.Invoke(System.Object,DevExpress.XtraMap.MapWebRequestEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraMap.MapDataProviderBase.WebRequest"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraMap.MapWebRequestEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapWebRequestEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraMap.MapDataProviderBase.WebRequest"/> event. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapWebRequestEventArgs.#ctor(System.Uri,System.Net.HttpWebRequest)">
+            <summary>
+                <para>Initializes a new instance of the MapWebRequestEventArgs class with the specified settings.
+</para>
+            </summary>
+            <param name="uri">
+		A <see cref="T:System.Uri"/> object. This value is assigned to the <see cref="P:DevExpress.XtraMap.MapWebRequestEventArgs.Uri"/> property.
+
+            </param>
+            <param name="client">
+		A <see cref="T:System.Net.WebClient"/> which provides common methods for sending data to and receiving data from a resource identified by a URI. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapWebRequestEventArgs.Credentials">
+            <summary>
+                <para>Gets or sets authentication information for the map web request. 
+</para>
+            </summary>
+            <value>An <see cref="T:System.Net.ICredentials"/> that contains the authentication credentials associated with the request. The default is <b>null</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapWebRequestEventArgs.Headers">
+            <summary>
+                <para>Gets or sets a collection of web headers associated with a request or response.  
+</para>
+            </summary>
+            <value>A <see cref="T:System.Net.WebHeaderCollection"/> that is a collection of protocol headers.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapWebRequestEventArgs.Proxy">
+            <summary>
+                <para>Gets or sets proxy information for the request.
+</para>
+            </summary>
+            <value>The <see cref="T:System.Net.IWebProxy"/>  that  is used to proxy the request.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapWebRequestEventArgs.Uri">
+            <summary>
+                <para>Get the URI of the Internet resource associated with the map web request.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Uri"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapWebRequestEventArgs.UseDefaultCredentials">
+            <summary>
+                <para>Gets or sets a value that indicates whether to use the default authentication information for the map web request. 
+</para>
+            </summary>
+            <value><b>true</b>, if the default credentials are used; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.ColorCollection">
+
+            <summary>
+                <para>A collection of colors.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ColorCollection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ColorCollection class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapSelectionChangingEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraMap.MapControl.SelectionChanging"/> event. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapSelectionChangingEventHandler.Invoke(System.Object,DevExpress.XtraMap.MapSelectionChangingEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraMap.MapControl.SelectionChanging"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraMap.MapSelectionChangingEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.ViewportChangedEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraMap.LayerBase.ViewportChanged"/> event. 
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ViewportChangedEventHandler.Invoke(System.Object,DevExpress.XtraMap.ViewportChangedEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraMap.LayerBase.ViewportChanged"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraMap.ViewportChangedEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.LinearRangeDistribution">
+
+            <summary>
+                <para>Represents the linear distribution of color ranges in a colorizer.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LinearRangeDistribution.#ctor">
+            <summary>
+                <para>Initializes a new instance of the LinearRangeDistribution class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LinearRangeDistribution.ConvertRangeValue(System.Double)">
+            <summary>
+                <para>Converts the specified range value.
+</para>
+            </summary>
+            <param name="value">
+		A value to be converted.
+
+            </param>
+            <returns>A <a href="#" onclick="dxHelpRedirect('T:System.Double')">Double</a> object that is the result of the conversion.
+
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.LinearRangeDistribution.Default">
+            <summary>
+                <para>Returns the default linear distribution of color ranges in a colorizer. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.LinearRangeDistribution"/> object representing the default linear distribution.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LinearRangeDistribution.ToString">
+            <summary>
+                <para>Returns the textual representation of LinearRangeDistribution.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value which is the textual representation of LinearRangeDistribution.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.IColorizerValueProvider">
+
+            <summary>
+                <para>Interface that should be implemented by any object which supports a method required for a colorizer value provider. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.IColorizerValueProvider.GetValue(System.Object)">
+            <summary>
+                <para>Returns the value  from the data source (Shapefile or KML file) that specifies how to color map shapes. 
+</para>
+            </summary>
+            <param name="item">
+		An object representing the map item to color by a colorizer.   
+
+            </param>
+            <returns>A double value from the data source (Shapefile or KML file).
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapItemMappingInfo">
+
+            <summary>
+                <para>Contains information about the mapping of a map item. 
+
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemMappingInfo.ImageIndex">
+            <summary>
+                <para>Gets or sets an image index that should be mapped to a specific member in a datasource.  
+</para>
+            </summary>
+            <value>A string value that is the image index of the bound data field.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemMappingInfo.Latitude">
+            <summary>
+                <para>Gets or sets the data field to which a <see cref="P:DevExpress.XtraMap.GeoPoint.Latitude"/>  property is bound. 
+
+</para>
+            </summary>
+            <value>A string value that specifies the name of the bound data field. 
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemMappingInfo.Longitude">
+            <summary>
+                <para>Gets or sets the data field to which a <see cref="P:DevExpress.XtraMap.GeoPoint.Longitude"/>  property is bound. 
+
+</para>
+            </summary>
+            <value>A string value that specifies the name of the bound data field. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemMappingInfo.Text">
+            <summary>
+                <para>Gets or sets the data field to which a <see cref="P:DevExpress.XtraMap.MapCustomElement.Text"/>  property is bound. 
+
+</para>
+            </summary>
+            <value>A string value that specifies the name of the bound data field. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemMappingInfo.Type">
+            <summary>
+                <para>Gets or sets the data field type of the datasource the vector items layer is bound to.  
+</para>
+            </summary>
+            <value>A string value that is the data field type. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.EllipticalMercatorProjection">
+
+            <summary>
+                <para>A class that defines methods specific to the Elliptical <a href="http://en.wikipedia.org/wiki/Mercator_projection">Mercator Projection</a>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.EllipticalMercatorProjection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the EllipticalMercatorProjection class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.EllipticalMercatorProjection.GeoPointToMapUnit(DevExpress.XtraMap.GeoPoint)">
+            <summary>
+                <para>Converts the specified geographical point into internal map units.
+</para>
+            </summary>
+            <param name="geoPoint">
+		A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapUnit"/> object containing internal map coordinates.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.EllipticalMercatorProjection.MapUnitToGeoPoint(DevExpress.XtraMap.MapUnit)">
+            <summary>
+                <para>Converts the specified map unit into the corresponding geographical point.
+</para>
+            </summary>
+            <param name="mapUnit">
+		A <see cref="T:DevExpress.XtraMap.MapUnit"/> object to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object containing geographical coordinates.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.EllipticalMercatorProjection.ToString">
+            <summary>
+                <para>Returns the textual representation of EllipticalMercatorProjection.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of EllipticalMercatorProjection.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.OwnedCollection`1">
+
+            <summary>
+                <para>The base class of the generic owned collection.
+</para>
+            </summary>
+
+        </member>
+        <member name="T:DevExpress.XtraMap.BingMapDataProvider">
+
+            <summary>
+                <para>The class that loads map images from the <a href="http://www.bing.com/maps/">Bing Maps</a> data provider.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.BingMapDataProvider.#ctor">
+            <summary>
+                <para>Initializes a new instance of the BingMapDataProvider class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.BingMapDataProvider.BingKey">
+            <summary>
+                <para>Get or sets the key that is required to connect to the <b>Bing Maps</b> data provider.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that stores a Bing Maps key.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.BingMapDataProvider.GetMapSizeInPixels(System.Double)">
+            <summary>
+                <para>Returns the map size (in pixels) for the specified zoom level.
+</para>
+            </summary>
+            <param name="zoomLevel">
+		A double value that specifies the zoom level.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapSize"/> object that is the map size.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.BingMapDataProvider.Kind">
+            <summary>
+                <para>Gets or sets a value specifying the type of images to be displayed on a map.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.BingMapKind"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.BingMapDataProvider.Projection">
+            <summary>
+                <para>Returns the projection supported by BingMapDataProvider.
+</para>
+            </summary>
+            <value>Always <b>SphericalMercatorProjection</b>. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.BingMapDataProvider.ToString">
+            <summary>
+                <para>Returns the textual representation of BingMapDataProvider.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of BingMapDataProvider.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapPathSegment">
+
+            <summary>
+                <para>A segment of a <b>MapPathSegment</b> object.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPathSegment.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MapPathSegment class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPathSegment.Fill">
+            <summary>
+                <para>Gets or sets the color that is used to fill a map path segment.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> that specifies the color used to fill a map path segment. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPathSegment.IsClosed">
+            <summary>
+                <para>Gets or sets whether a map path segment is closed. 
+</para>
+            </summary>
+            <value><b>true</b>, if  a map path segment is closed on a map; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPathSegment.IsFilled">
+            <summary>
+                <para>Specifies whether a map path segment is filled.
+</para>
+            </summary>
+            <value><b>true</b>, if  a map path segment is filled on a map; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPathSegment.Layer">
+            <summary>
+                <para>Provides access to the map items layer to be displayed within the MapPathSegment.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapItemsLayerBase"/> object containing map items layers.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPathSegment.Points">
+            <summary>
+                <para>Gets or sets a collection that contains points of the map path segment.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.GeoPointCollection"/> object that contains points of the map path segment. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPathSegment.Stroke">
+            <summary>
+                <para>Gets or sets the color that specifies how the map path segment outline is painted.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> value that specifies how the map path segment outline is painted.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPathSegment.StrokeWidth">
+            <summary>
+                <para>Gets or sets a value that specifies the width of the stroke on the current map path segment.
+</para>
+            </summary>
+            <value>An integer value that is the width of the stroke on the map path segment. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapPathSegmentCollection">
+
+            <summary>
+                <para>A collection of map path segments.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPathSegmentCollection.#ctor(System.Object)">
+            <summary>
+                <para>Initializes a new instance of the MapPathSegmentCollection class.
+</para>
+            </summary>
+            <param name="owner">
+		An object, which will receive change notifications when properties of the created object are changed.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapElementStyle">
+
+            <summary>
+                <para>A style of a map element.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapElementStyle.Fill">
+            <summary>
+                <para>Gets or sets the color that is used to fill a map element. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> that specifies the color used to fill a map element. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapElementStyle.ToString">
+            <summary>
+                <para>Returns the textual representation of MapElementStyle.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value which is the textual representation of MapElementStyle.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.KmlFileLoader">
+
+            <summary>
+                <para>Provides the functionality to load vector data from a file in KML format. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.KmlFileLoader.#ctor">
+            <summary>
+                <para>Initializes a new instance of the KmlFileLoader class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.KmlFileLoader.FileUri">
+            <summary>
+                <para>Gets or sets an Uri that defines location of a KML file with vector data. 
+</para>
+            </summary>
+            <value>A  <see cref="T:System.Uri"/> object that contains an Uri to the KML file.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapSize">
+
+            <summary>
+                <para>Specifies the map size.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapSize.#ctor(System.Double,System.Double)">
+            <summary>
+                <para>Initializes a new instance of the MapSize class with the specified width and height. 
+</para>
+            </summary>
+            <param name="width">
+		A <see cref="T:System.Double"/> value which specifies the map's width. This value is assigned to the <see cref="P:DevExpress.XtraMap.MapSize.Width"/> property.
+
+            </param>
+            <param name="height">
+		A <see cref="T:System.Double"/> value which specifies the map's height. This value is assigned to the <see cref="P:DevExpress.XtraMap.MapSize.Height"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.MapSize.Empty">
+            <summary>
+                <para>Represents an empty map size that corresponds to the zero value. 
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapSize.Equals(System.Object)">
+            <summary>
+                <para>Determines whether the specified object is equal to the current MapSize instance.
+</para>
+            </summary>
+            <param name="obj">
+		The object to compare with the current object.
+
+            </param>
+            <returns><b>true</b> if the specified object is equal to the current MapSize instance; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapSize.Equals(DevExpress.XtraMap.MapSize,DevExpress.XtraMap.MapSize)">
+            <summary>
+                <para>Determines whether the two specified MapSize objects are equal.
+</para>
+            </summary>
+            <param name="size1">
+		A MapSize instance that specifies the first map size to compare.
+
+            </param>
+            <param name="size2">
+		A MapSize instance that specifies the second map size to compare.
+
+            </param>
+            <returns><b>true</b> if specified objects are equal; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapSize.GetHashCode">
+            <summary>
+                <para>Gets the hash code (a number) that corresponds to the value of the current MapSize object.
+</para>
+            </summary>
+            <returns>An integer value that is the hash code for the current object.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapSize.Height">
+            <summary>
+                <para>Gets or sets the map's height.
+</para>
+            </summary>
+            <value>A double value that is the map's height.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapSize.IsEmpty">
+            <summary>
+                <para>Gets a value that indicates whether this MapSize object's coordinates are initialized.
+</para>
+            </summary>
+            <value><b>true</b> if the MapSize object is empty; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapSize.Width">
+            <summary>
+                <para>Gets or sets the map's width.
+</para>
+            </summary>
+            <value>A double value that specifies the map's width. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.FileLoadedEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraMap.MapFileLoaderBase.FileLoaded"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraMap.FileLoadedEventArgs.Shapes">
+            <summary>
+                <para>Provides access to the collection of shapes loaded before the <see cref="E:DevExpress.XtraMap.MapFileLoaderBase.FileLoaded"/> event has occurred.
+</para>
+            </summary>
+            <value>A list of <see cref="T:DevExpress.XtraMap.MapItem"/> objects.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.IColorizerElement">
+
+            <summary>
+                <para>Interface that should be implemented by any object which can colorize a map element. 
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraMap.IColorizerElement.ColorizerColor">
+            <summary>
+                <para>Gets or sets a color to colorize a map element.
+</para>
+            </summary>
+            <value>A Color object that represents a color to colorize the map element.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapElementStyleBase">
+
+            <summary>
+                <para>The base for classes that define the style of a map element.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapElementStyleBase.MergeStyles(DevExpress.XtraMap.MapElementStyleBase,DevExpress.XtraMap.MapElementStyleBase,DevExpress.XtraMap.MapElementStyleBase)">
+            <summary>
+                <para>Merges styles of a map element into the destination style.
+</para>
+            </summary>
+            <param name="style1">
+		A <see cref="T:DevExpress.XtraMap.MapElementStyleBase"/> object representing the first style of a map element.
+
+            </param>
+            <param name="style2">
+		A <see cref="T:DevExpress.XtraMap.MapElementStyleBase"/> object representing the second style of a map element.
+
+            </param>
+            <param name="destinationStyle">
+		A <see cref="T:DevExpress.XtraMap.MapElementStyleBase"/> object that represents the destination style of a map element.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.SelectedItemCollection">
+
+            <summary>
+                <para>A collection of selected map items.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.SelectedItemCollection.#ctor(DevExpress.XtraMap.MapItemsLayerBase)">
+            <summary>
+                <para>Initializes a new instance of the SelectedItemCollection class with the specified owner.
+</para>
+            </summary>
+            <param name="layer">
+		A <see cref="T:DevExpress.XtraMap.MapItemsLayerBase"/> object that is the owner of this selected item collection.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapItemAttribute">
+
+            <summary>
+                <para>An attribute that can be applied to map items.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapItemAttribute.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MapItemAttribute class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemAttribute.Name">
+            <summary>
+                <para>Gets or sets the name attribute to define mappings of a map item.
+</para>
+            </summary>
+            <value>A  name attribute of the map item mapping. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemAttribute.Type">
+            <summary>
+                <para>Specifies a type of the map item attribute mapping.
+</para>
+            </summary>
+            <value>A map item attribute type.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemAttribute.Value">
+            <summary>
+                <para>Specifies the mapping value of the map item attribute.  
+
+</para>
+            </summary>
+            <value>An object that is the value of the map item attribute.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.GraphColorizer">
+
+            <summary>
+                <para>Represents the Graph colorizer that tries to paint shapes that have a common border using different colors.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.GraphColorizer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the GraphColorizer class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.GraphColorizer.ColorizeElement(DevExpress.XtraMap.IColorizerElement)">
+            <summary>
+                <para>Colorize a map element.
+</para>
+            </summary>
+            <param name="element">
+		An object implementing the <see cref="T:DevExpress.XtraMap.IColorizerElement"/> interface that contains a map element to colorize.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.GraphColorizer.ToString">
+            <summary>
+                <para>Returns the textual representation of GraphColorizer.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of GraphColorizer.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.ColorListLegend">
+
+            <summary>
+                <para>A color legend represented as a list of colors.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ColorListLegend.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ColorListLegend class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapLine">
+
+            <summary>
+                <para>The class used to draw a line on a map.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapLine.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MapLine class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapLine.Fill">
+            <summary>
+                <para>Overrides the <see cref="P:DevExpress.XtraMap.MapShape.Fill"/> property to hide it.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> that specifies the color used to fill a map line. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapLine.Point1">
+            <summary>
+                <para>Gets or sets the first coordinate of a line.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object that stores the line start.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapLine.Point2">
+            <summary>
+                <para>Gets or sets the second coordinate of a line.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object that stores the line end.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapLine.ToString">
+            <summary>
+                <para>Returns the textual representation of MapLine.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value which is the textual representation of MapLine.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.CacheOptions">
+
+            <summary>
+                <para>Contains settings that define the parameters of a local cache for storing image tiles.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.CacheOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the CacheOptions class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.CacheOptions.DiskExpireTime">
+            <summary>
+                <para>Specifies the time interval after which tile images are updated from a map data provider.     
+</para>
+            </summary>
+            <value>A <see cref="T:System.TimeSpan"/> structure that is the keep interval for a local cache.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.CacheOptions.DiskFolder">
+            <summary>
+                <para>Gets or sets a disk folder to which the saved image tiles of the map control are stored.
+</para>
+            </summary>
+            <value>A string value that is the disk folder for saved images.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.CacheOptions.DiskLimit">
+            <summary>
+                <para>Specifies the disk space (in megabytes) to store tile images obtained from a map data provider.  
+
+</para>
+            </summary>
+            <value>An integer value that is the disk limit for storing tile images, in megabytes. 
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.CacheOptions.MemoryLimit">
+            <summary>
+                <para>Gets or sets the amount of memory on the computer, in megabytes, for storing tile images obtained from a data provider.
+
+</para>
+            </summary>
+            <value>An integer value that is the memory limit (in megabytes).
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraMap.CacheOptions.PropertyChanged">
+            <summary>
+                <para>Occurs after a field's property has been changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapPolygon">
+
+            <summary>
+                <para>The class used to draw a polygon on a map.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPolygon.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MapPolygon class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPolygon.Points">
+            <summary>
+                <para>Gets or sets a collection that contains the vertex points of the polygon.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.GeoPointCollection"/> object that contains the vertex points of the polygon.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPolygon.ToString">
+            <summary>
+                <para>Returns the textual representation of MapPolygon.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value which is the textual representation of MapPolygon.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapItemStyle">
+
+            <summary>
+                <para>Specifies a style for a map item.  
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapItemStyle.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MapItemStyle class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemStyle.Fill">
+            <summary>
+                <para>Gets or sets the color that is used to fill a map item. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> that specifies the color used to fill a map item. 
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemStyle.Font">
+            <summary>
+                <para>Gets or sets a font used to display a map item. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Font"/> that specifies a font used to display a map item.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemStyle.Stroke">
+            <summary>
+                <para>Gets or sets the color that specifies how the map item outline is painted.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> value that specifies how the map item outline is painted.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemStyle.StrokeWidth">
+            <summary>
+                <para>Gets or sets a value that specifies the width of the stroke on the current map item.
+</para>
+            </summary>
+            <value>An integer value that is the width of the stroke on the current map item. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemStyle.TextColor">
+            <summary>
+                <para>Gets or sets the text color of a map item.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> object that is the text color of a map item.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapItemStyle.ToString">
+            <summary>
+                <para>Returns the textual representation of MapItemStyle.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of MapItemStyle.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.GeoPointCollection">
+
+            <summary>
+                <para>A collection of geo points.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.GeoPointCollection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the GeoPointCollection class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.GeoPointCollection.Item(System.Int32)">
+            <summary>
+                <para>Provides indexed access to individual items in the collection.
+</para>
+            </summary>
+            <param name="index">
+		A zero-based integer specifying the desired geo point item's position within the collection. If it's negative or exceeds the last available index, an exception is raised. 
+
+            </param>
+            <value>An object that is a geo point item at the specified position.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapItemAttributeMappingCollection">
+
+            <summary>
+                <para>A mapping collection of map item attributes.  
+</para>
+            </summary>
+
+        </member>
+        <member name="T:DevExpress.XtraMap.LayerMapItemCollection">
+
+            <summary>
+                <para>A collection of map items within a layer.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LayerMapItemCollection.#ctor(DevExpress.XtraMap.LayerBase)">
+            <summary>
+                <para>Initializes a new instance of the LayerMapItemCollection class with the specified owner.
+</para>
+            </summary>
+            <param name="layer">
+		A <see cref="T:DevExpress.XtraMap.LayerBase"/> object that is the owner of this layer map item collection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LayerMapItemCollection.Add(DevExpress.XtraMap.MapItem)">
+            <summary>
+                <para>Appends the specified map item to the layer map item collection.
+</para>
+            </summary>
+            <param name="value">
+		A <see cref="T:DevExpress.XtraMap.MapItem"/> object representing the map item to be added.  
+
+            </param>
+            <returns>An integer value that specifies the position at which the map item has been added. 
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LayerMapItemCollection.Remove(DevExpress.XtraMap.MapItem)">
+            <summary>
+                <para>Removes the specified layer map item from the collection.
+</para>
+            </summary>
+            <param name="value">
+		A <see cref="T:DevExpress.XtraMap.MapItem"/> object, specifying the map item to be removed from the collection.
+
+            </param>
+            <returns><b>true</b>, if the map layer item has been removed; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.ColorizerValueProviderBase">
+
+            <summary>
+                <para>A class that is a value provider of a colorizer. 
+</para>
+            </summary>
+
+        </member>
+        <member name="T:DevExpress.XtraMap.ColorizerRangeDistributionBase">
+
+            <summary>
+                <para>The base for classes that define distribution of color ranges in a colorizer.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ColorizerRangeDistributionBase.ConvertRangeValue(System.Double)">
+            <summary>
+                <para>Converts the specified range value.
+</para>
+            </summary>
+            <param name="value">
+		A value to be converted.
+
+            </param>
+            <returns>A <a href="#" onclick="dxHelpRedirect('T:System.Double')">Double</a> object that is the result of the conversion.
+
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.EquirectangularProjection">
+
+            <summary>
+                <para>A class that defines methods specific to the <a href="http://en.wikipedia.org/wiki/Equirectangular_projection">Equirectangular Projection</a>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.EquirectangularProjection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the EquirectangularProjection class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.EquirectangularProjection.GeoPointToMapUnit(DevExpress.XtraMap.GeoPoint)">
+            <summary>
+                <para>Converts the specified geographical point into internal map units.
+</para>
+            </summary>
+            <param name="geoPoint">
+		A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapUnit"/> object containing internal map coordinates.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.EquirectangularProjection.MapUnitToGeoPoint(DevExpress.XtraMap.MapUnit)">
+            <summary>
+                <para>Converts the specified map unit into the corresponding geographical point.
+</para>
+            </summary>
+            <param name="mapUnit">
+		A <see cref="T:DevExpress.XtraMap.MapUnit"/> object to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object containing geographical coordinates.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.EquirectangularProjection.ToString">
+            <summary>
+                <para>Returns the textual representation of EquirectangularProjection.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of EquirectangularProjection.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.ProjectionBase">
+
+            <summary>
+                <para>The base class for all projections used in the <see cref="T:DevExpress.XtraMap.MapControl"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ProjectionBase.GeoPointToMapUnit(DevExpress.XtraMap.GeoPoint)">
+            <summary>
+                <para>Converts the specified geographical point into internal map units.
+</para>
+            </summary>
+            <param name="geoPoint">
+		A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapUnit"/> object containing internal map coordinates.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ProjectionBase.GeoToKilometersSize(DevExpress.XtraMap.GeoPoint,DevExpress.XtraMap.MapSize)">
+            <summary>
+                <para>Converts the specified size in geographical points into the corresponding size in kilometers for the specified anchor point.
+</para>
+            </summary>
+            <param name="anchorPoint">
+		A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object containing geographical coordinates for which it is necessary to convert the size.
+
+            </param>
+            <param name="size">
+		A <see cref="T:DevExpress.XtraMap.MapSize"/> value specifying the size to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapSize"/> in kilometers.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ProjectionBase.KilometersToGeoSize(DevExpress.XtraMap.GeoPoint,DevExpress.XtraMap.MapSize)">
+            <summary>
+                <para>Converts the specified size in kilometers into the corresponding size in geographical points for the specified anchor point.
+</para>
+            </summary>
+            <param name="anchorPoint">
+		A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object containing geographical coordinates for which it is necessary to convert the size.
+
+            </param>
+            <param name="size">
+		A <see cref="T:DevExpress.XtraMap.MapSize"/> value specifying the size to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapSize"/> in geographical points.
+</returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.ProjectionBase.LatToKilometersRatio">
+            <summary>
+                <para>Defines the ratio of <b>1</b> latitude degree to <b>1</b> kilometer.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.ProjectionBase.LonToKilometersRatio">
+            <summary>
+                <para>Defines the ratio of <b>1</b> longitude degree to <b>1</b> kilometer.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ProjectionBase.MapUnitToGeoPoint(DevExpress.XtraMap.MapUnit)">
+            <summary>
+                <para>Converts the specified map unit into the corresponding geographical point.
+</para>
+            </summary>
+            <param name="mapPoint">
+		A <see cref="T:DevExpress.XtraMap.MapUnit"/> object to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object containing geographical coordinates.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ProjectionBase.OffsetX">
+            <summary>
+                <para>Gets or sets the horizontal offset for this projection.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Double"/> value specifying the horizontal offset (in map units).
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ProjectionBase.OffsetY">
+            <summary>
+                <para>Gets or sets the vertical offset for this projection.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Double"/> value specifying the vertical offset (in map units).
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ProjectionBase.ScaleX">
+            <summary>
+                <para>Gets or sets a value that defines the ratio of map units to degrees of longitude (in radians).
+</para>
+            </summary>
+            <value>A <see cref="T:System.Double"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ProjectionBase.ScaleY">
+            <summary>
+                <para>Gets or sets a value that defines the ratio of map units to degrees of latitude (in radians).
+</para>
+            </summary>
+            <value>A <see cref="T:System.Double"/> value.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MillerProjection">
+
+            <summary>
+                <para>A class that defines methods specific to the <a href="http://en.wikipedia.org/wiki/Miller_projection">Miller Projection</a>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MillerProjection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MillerProjection class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MillerProjection.GeoPointToMapUnit(DevExpress.XtraMap.GeoPoint)">
+            <summary>
+                <para>Converts the specified geographical point into internal map units.
+</para>
+            </summary>
+            <param name="geoPoint">
+		A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapUnit"/> object containing internal map coordinates.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MillerProjection.MapUnitToGeoPoint(DevExpress.XtraMap.MapUnit)">
+            <summary>
+                <para>Converts the specified map unit into the corresponding geographical point.
+</para>
+            </summary>
+            <param name="mapUnit">
+		A <see cref="T:DevExpress.XtraMap.MapUnit"/> object to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object containing geographical coordinates.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MillerProjection.ToString">
+            <summary>
+                <para>Returns the textual representation of MillerProjection.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value which is the textual representation of MillerProjection.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapShape">
+
+            <summary>
+                <para>The base class for all vector items that have an outline.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapShape.Fill">
+            <summary>
+                <para>Gets or sets the color to fill the shape's interior.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> that specifies how to fill the shape's interior.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapShape.Stroke">
+            <summary>
+                <para>Gets or sets the Color that specifies how the shape outline is painted.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> value that specifies how the shape outline is painted.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapShape.StrokeWidth">
+            <summary>
+                <para>Gets or sets a value that specifies the width of the stroke on the map shape.
+</para>
+            </summary>
+            <value>An integer value that is the width of the stroke on the map shape. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapSelectionChangedEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraMap.MapControl.SelectionChanged"/> event. 
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapSelectionChangedEventHandler.Invoke(System.Object,DevExpress.XtraMap.MapSelectionChangedEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraMap.MapControl.SelectionChanged"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraMap.MapSelectionChangedEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapSelectionChangedEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraMap.MapControl.SelectionChanged"/> event. 
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapSelectionChangedEventArgs.#ctor(System.Collections.Generic.IEnumerable`1)">
+            <summary>
+                <para>Initializes a new instance of the MapSelectionChangedEventArgs class with the specified map selection.
+</para>
+            </summary>
+            <param name="selection">
+		An object that implements the <see cref="T:System.Collections.IEnumerable"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapRectangle">
+
+            <summary>
+                <para>The class used to draw a rectangle on a map.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapRectangle.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MapRectangle class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapRectangle.Height">
+            <summary>
+                <para>Gets or sets the height of the rectangle.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Double"/> value specifying the height of the rectangle.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapRectangle.Location">
+            <summary>
+                <para>Gets or sets a location of the rectangle on a map.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object containing geographical coordinates of the rectangle location.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapRectangle.ToString">
+            <summary>
+                <para>Returns the textual representation of MapRectangle.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value which is the textual representation of MapRectangle.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapRectangle.Width">
+            <summary>
+                <para>Gets or sets the width of the rectangle.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Double"/> value specifying the width of the rectangle.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.RenderMode">
+
+            <summary>
+                <para>Lists the values used to specify the render mode of a map control.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraMap.RenderMode.Auto">
+            <summary>
+                <para>The supported render mode is applied automatically in either Gdi+ or DirectX.   
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.RenderMode.DirectX">
+            <summary>
+                <para>Specifies that the map control is rendered using DirectX. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.RenderMode.GdiPlus">
+            <summary>
+                <para>Specifies that the map control is rendered using GdiPlus. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.ImageTilesLayer">
+
+            <summary>
+                <para>A layer that displays image tiles obtained from one of the supported map providers.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ImageTilesLayer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ImageTilesLayer class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ImageTilesLayer.DataProvider">
+            <summary>
+                <para>Provides access to an object that obtains map data from online data providers.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapDataProviderBase"/> class descendant that is a specific data provider.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ImageTilesLayer.ToString">
+            <summary>
+                <para>Returns the textual representation of ImageTilesLayer.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value which is the textual representation of ImageTilesLayer.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.LayerBase">
+
+            <summary>
+                <para>Serves as the base class for all layers.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LayerBase.CalculateKilometersScale(DevExpress.XtraMap.GeoPoint)">
+            <summary>
+                <para>Calculates a kilometers scale by the geographical center point on a map.
+</para>
+            </summary>
+            <param name="centerPoint">
+		A <see cref="T:DevExpress.XtraMap.GeoPoint"/> instance that specifies the geographical center point on a map.  
+
+            </param>
+            <returns>A double value representing the kilometers scale.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LayerBase.GeoPointToMapUnit(DevExpress.XtraMap.GeoPoint)">
+            <summary>
+                <para>Converts the specified geographical point into internal map units.
+</para>
+            </summary>
+            <param name="point">
+		A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapUnit"/> object containing internal map coordinates.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LayerBase.GeoToKilometersSize(DevExpress.XtraMap.GeoPoint,DevExpress.XtraMap.MapSize)">
+            <summary>
+                <para>Converts the specified size in geographical points into the corresponding size in kilometers for the specified anchor point.
+</para>
+            </summary>
+            <param name="anchorPoint">
+		A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object containing geographical coordinates for which it is necessary to convert the size.
+
+            </param>
+            <param name="size">
+		A <see cref="T:DevExpress.XtraMap.MapSize"/> value specifying the size to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapSize"/> in kilometers.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LayerBase.GeoToScreenPoint(DevExpress.XtraMap.GeoPoint)">
+            <summary>
+                <para>Converts the specified geographical point into the point on a screen.
+</para>
+            </summary>
+            <param name="geoPoint">
+		A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapPoint"/> value.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LayerBase.KilometersToGeoSize(DevExpress.XtraMap.GeoPoint,DevExpress.XtraMap.MapSize)">
+            <summary>
+                <para>Converts the specified size in kilometers into the corresponding size in geographical points for the specified anchor point.
+</para>
+            </summary>
+            <param name="anchorPoint">
+		A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object containing geographical coordinates for which it is necessary to convert the size.
+
+            </param>
+            <param name="size">
+		A <see cref="T:DevExpress.XtraMap.MapSize"/> value specifying the size to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapSize"/> in geographical points.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LayerBase.MapUnitToGeoPoint(DevExpress.XtraMap.MapUnit)">
+            <summary>
+                <para>Converts the specified map unit into the corresponding geographical point.
+</para>
+            </summary>
+            <param name="unit">
+		A <see cref="T:DevExpress.XtraMap.MapUnit"/> object to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object containing geographical coordinates.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LayerBase.MapUnitToScreenPoint(DevExpress.XtraMap.MapUnit,System.Boolean)">
+            <summary>
+                <para>Converts the specified map unit into the point on a screen.
+</para>
+            </summary>
+            <param name="mapUnit">
+		A <see cref="T:DevExpress.XtraMap.MapUnit"/> object to be converted.
+
+            </param>
+            <param name="useSpringsAnimation">
+		<b>true</b> to use springs animation; otherwise, <b>false</b>.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapPoint"/> value.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LayerBase.MapUnitToScreenPoint(DevExpress.XtraMap.MapUnit,System.Double,DevExpress.XtraMap.GeoPoint,System.Drawing.Size)">
+            <summary>
+                <para>Converts the specified map unit into the point on a screen.
+</para>
+            </summary>
+            <param name="mapUnit">
+		A <see cref="T:DevExpress.XtraMap.MapUnit"/> object to be converted.
+
+            </param>
+            <param name="zoomLevel">
+		A <see cref="T:System.Double"/> value specifying the map zoom level.
+
+            </param>
+            <param name="centerPoint">
+		A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object specifying the map center point.
+
+            </param>
+            <param name="clientSize">
+		A <see cref="T:System.Drawing.Size"/> value.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapPoint"/> value.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LayerBase.MapUnitToScreenPoint(DevExpress.XtraMap.MapUnit,System.Double,DevExpress.XtraMap.GeoPoint)">
+            <summary>
+                <para>Converts the specified map unit into the point on a screen.
+</para>
+            </summary>
+            <param name="mapUnit">
+		A <see cref="T:DevExpress.XtraMap.MapUnit"/> object to be converted.
+
+            </param>
+            <param name="zoomLevel">
+		A <see cref="T:System.Double"/> value specifying the map zoom level.
+
+            </param>
+            <param name="centerPoint">
+		A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object specifying the map center point.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapPoint"/> value.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.LayerBase.MaxZoomLevel">
+            <summary>
+                <para>Gets or sets the maximum zoom level at which this layer should be visible.
+</para>
+            </summary>
+            <value>An integer value specifying the maximum zoom level.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.LayerBase.MinZoomLevel">
+            <summary>
+                <para>Gets or sets the minimum zoom level at which this layer should be visible.
+</para>
+            </summary>
+            <value>An integer value specifying the minimum zoom level.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LayerBase.ScreenPointToGeoPoint(DevExpress.XtraMap.MapPoint)">
+            <summary>
+                <para>Converts the specified screen point into the corresponding geographical point.
+</para>
+            </summary>
+            <param name="point">
+		A <see cref="T:DevExpress.XtraMap.MapPoint"/> value to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object containing geographical coordinates.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LayerBase.ScreenPointToMapUnit(DevExpress.XtraMap.MapPoint)">
+            <summary>
+                <para>Converts the specified screen point into internal map units.
+</para>
+            </summary>
+            <param name="point">
+		A <see cref="T:DevExpress.XtraMap.MapPoint"/> value to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapUnit"/> object containing internal map coordinates.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.XtraMap.LayerBase.ViewportChanged">
+            <summary>
+                <para>Occurs every time the current viewport is changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.LayerBase.Visible">
+            <summary>
+                <para>Gets or sets a value specifying whether or not a layer should be visible.
+</para>
+            </summary>
+            <value><b>true</b> to display a layer; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.LayerBase.ZIndex">
+            <summary>
+                <para>Gets or sets a value that is the order on the z-plane in which a map layer element (e.g., image tiles layer or vector layer) appears.
+
+</para>
+            </summary>
+            <value>An integer value that is the order on the z-plane in which this element appears. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.IProjection">
+
+            <summary>
+                <para>If implemented by a class, provides methods required for a <see cref="T:DevExpress.XtraMap.MapControl"/> to operate with a map projection.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.IProjection.GeoPointToMapUnit(DevExpress.XtraMap.GeoPoint)">
+            <summary>
+                <para>Converts the specified geographical point into internal map units.
+</para>
+            </summary>
+            <param name="geoPoint">
+		A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapUnit"/> object containing internal map coordinates.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.IProjection.GeoToKilometersSize(DevExpress.XtraMap.GeoPoint,DevExpress.XtraMap.MapSize)">
+            <summary>
+                <para>Converts the specified size in geographical points into the corresponding size in kilometers for the specified anchor point.
+</para>
+            </summary>
+            <param name="anchorPoint">
+		A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object containing geographical coordinates for which it is necessary to convert the size.
+
+            </param>
+            <param name="size">
+		A <see cref="T:DevExpress.XtraMap.MapSize"/>  value specifying the size to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapSize"/>  in kilometers.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.IProjection.KilometersToGeoSize(DevExpress.XtraMap.GeoPoint,DevExpress.XtraMap.MapSize)">
+            <summary>
+                <para>Converts the specified size in kilometers into the corresponding size in geographical points for the specified anchor point.
+</para>
+            </summary>
+            <param name="anchorPoint">
+		A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object containing geographical coordinates for which it is necessary to convert the size.
+
+            </param>
+            <param name="size">
+		A <see cref="T:DevExpress.XtraMap.MapSize"/>  value specifying the size to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapSize"/> in geographical points.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.IProjection.MapUnitToGeoPoint(DevExpress.XtraMap.MapUnit)">
+            <summary>
+                <para>Converts the specified map unit into the corresponding geographical point.
+</para>
+            </summary>
+            <param name="mapUnit">
+		A <see cref="T:DevExpress.XtraMap.MapUnit"/> object to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object containing geographical coordinates.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapPath">
+
+            <summary>
+                <para>The class used to draw a path on a map.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPath.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MapPath class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPath.Segments">
+            <summary>
+                <para>Gets or sets segments of a map path.  
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapPathSegmentCollection"/> object that is a collection of  map path segments.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPath.ToString">
+            <summary>
+                <para>Returns the textual representation of MapPath.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value which is the textual representation of MapPath.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapCustomElement">
+
+            <summary>
+                <para>The class used to draw any custom element on a map.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapCustomElement.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MapCustomElement class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapCustomElement.Fill">
+            <summary>
+                <para>Gets or sets the color that is used to fill a map custom element. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> that specifies the color used to fill a map custom element. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapCustomElement.Font">
+            <summary>
+                <para>Gets or sets a font used to display a map custom element. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Font"/> that specifies a font used to display a custom map element.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapCustomElement.Padding">
+            <summary>
+                <para>Specifies the internal space between the map custom element's content and its edge, in pixels.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraLayout.Utils.Padding"/> object that contains inner indents between the custom element's borders and its content.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapCustomElement.Stroke">
+            <summary>
+                <para>Gets or sets the color that specifies how the map custom element outline is painted.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> value that specifies how the map custom element outline is painted.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapCustomElement.StrokeWidth">
+            <summary>
+                <para>Gets or sets a value that specifies the width of the stroke on the current map custom element.
+</para>
+            </summary>
+            <value>An integer value that is the width of the stroke on the map custom element. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapCustomElement.Text">
+            <summary>
+                <para>Gets or sets the text of a custom map element.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that is the text of a custom map element.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapCustomElement.TextColor">
+            <summary>
+                <para>Gets or sets the text color of a custom map element.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> object that is the text color.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapCustomElement.ToString">
+            <summary>
+                <para>Returns the textual representation of MapCustomElement.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value which is the textual representation of MapCustomElement.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.GeoPoint">
+
+            <summary>
+                <para>A geographical point on the map.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.GeoPoint.#ctor(System.Double,System.Double)">
+            <summary>
+                <para>Initializes a new instance of the GeoPoint class with the specified latitude and longitude.
+</para>
+            </summary>
+            <param name="latitude">
+		A <see cref="T:System.Double"/> value which specifies the latitude of the geographical point. This value is assigned to the <see cref="P:DevExpress.XtraMap.GeoPoint.Latitude"/> property.
+
+            </param>
+            <param name="longitude">
+		A <see cref="T:System.Double"/> value which specifies the longitude of the geographical point. This value is assigned to the <see cref="P:DevExpress.XtraMap.GeoPoint.Longitude"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.GeoPoint.Empty">
+            <summary>
+                <para>Returns a GeoPoint object whose coordinates are not initialized.
+</para>
+            </summary>
+            <value>An empty <see cref="T:DevExpress.XtraMap.GeoPoint"/>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.GeoPoint.Equals(DevExpress.XtraMap.GeoPoint,DevExpress.XtraMap.GeoPoint)">
+            <summary>
+                <para>Determines whether the two specified GeoPoint objects are equal.
+</para>
+            </summary>
+            <param name="point1">
+		A GeoPoint instance that specifies the first geographical point to compare.
+
+            </param>
+            <param name="point2">
+		A GeoPoint instance that specifies the second geographical point to compare.
+
+            </param>
+            <returns><b>true</b> if specified objects are equal; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.GeoPoint.Equals(System.Object)">
+            <summary>
+                <para>Determines whether the specified object is equal to the current GeoPoint instance.
+</para>
+            </summary>
+            <param name="o">
+		The object to compare with the current object.
+
+            </param>
+            <returns><b>true</b> if the specified object is equal to the current GeoPoint instance; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.GeoPoint.GetHashCode">
+            <summary>
+                <para>Gets the hash code (a number) that corresponds to the value of the current GeoPoint object.
+</para>
+            </summary>
+            <returns>An integer value that is the hash code for the current object.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.GeoPoint.IsEmpty">
+            <summary>
+                <para>Gets a value that indicates whether this GeoPoint object's coordinates are initialized.
+</para>
+            </summary>
+            <value><b>true</b> if the GeoPoint object is empty; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.GeoPoint.Latitude">
+            <summary>
+                <para>Gets or sets a latitude value for the current geographical coordinate.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Double"/> value that is the latitude for this <see cref="T:DevExpress.XtraMap.GeoPoint"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.GeoPoint.Longitude">
+            <summary>
+                <para>Gets or sets a longitude value for the current geographical coordinate.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Double"/> value that is the longitude for this <see cref="T:DevExpress.XtraMap.GeoPoint"/>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.GeoPoint.Normalize(DevExpress.XtraMap.GeoPoint)">
+            <summary>
+                <para>Normalizes the specified geographical point's coordinates.
+</para>
+            </summary>
+            <param name="geoPoint">
+		A non-normalized GeoPoint object.
+
+            </param>
+            <returns>A normalized GeoPoint object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.GeoPoint.Parse(System.String)">
+            <summary>
+                <para>Converts the string representation of a geographical point to its GeoPoint equivalent.
+</para>
+            </summary>
+            <param name="source">
+		A string containing geographical coordinates, separated by a comma.
+
+            </param>
+            <returns>A GeoPoint object that is equivalent to the specified string.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.GeoPoint.ToString(System.IFormatProvider)">
+            <summary>
+                <para>Returns the textual representation of GeoPoint.
+</para>
+            </summary>
+            <param name="provider">
+		An object, implementing the <see cref="T:System.IFormatProvider"/> interface.
+
+            </param>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of GeoPoint.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.GeoPoint.ToString">
+            <summary>
+                <para>Returns the textual representation of GeoPoint.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of GeoPoint.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.GeoPoint.Zero">
+            <summary>
+                <para>Gets the default location of a map's geographic point that corresponds to (0;0) coordinate.  
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object that is the zero location (0;0) of the geographic point on a map. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.VectorItemsLayer">
+
+            <summary>
+                <para>A layer that displays a collection of vector elements.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.VectorItemsLayer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the VectorItemsLayer class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.VectorItemsLayer.AttributeMappings">
+            <summary>
+                <para>Provides access to the collection of attribute mappings.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapItemAttributeMappingCollection"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.VectorItemsLayer.DataMember">
+            <summary>
+                <para>Gets or sets a data source member whose data is supplied to the vector items layer.
+</para>
+            </summary>
+            <value>A string value representing the data source member.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.VectorItemsLayer.DataSource">
+            <summary>
+                <para>Gets or sets the data source providing data for a map control.
+</para>
+            </summary>
+            <value>An object used as a data source.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.VectorItemsLayer.GetItemSourceObject(DevExpress.XtraMap.MapItem)">
+            <summary>
+                <para>Gets a source object for a map item.
+</para>
+            </summary>
+            <param name="item">
+		A <see cref="T:DevExpress.XtraMap.MapItem"/> for which a source object is searched.
+
+            </param>
+            <returns>A source object to search.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.VectorItemsLayer.GetMapItemBySourceObject(System.Object)">
+            <summary>
+                <para>Gets a map item by the source object.
+</para>
+            </summary>
+            <param name="sourceObject">
+		A source object.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapItem"/> object that is obtained from the source object.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.VectorItemsLayer.Items">
+            <summary>
+                <para>Gets the collection of items which constitute the VectorItemsLayer object.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.LayerMapItemCollection"/> object representing the collection of vector items layer.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.VectorItemsLayer.Mappings">
+            <summary>
+                <para>Provides access to the <see cref="T:DevExpress.XtraMap.MapItemMappingInfo"/> object to define mappings between the data fields and the respective <see cref="T:DevExpress.XtraMap.VectorItemsLayer"/> properties.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapItemMappingInfo"/> object
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.VectorItemsLayer.ToString">
+            <summary>
+                <para>Returns the textual representation of VectorItemsLayer.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value which is the textual representation of VectorItemsLayer.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.VectorFileLayer">
+
+            <summary>
+                <para>A layer that displays vector elements loaded from a file (e.g., Shapefile or KML).
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.VectorFileLayer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the VectorFileLayer class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.VectorFileLayer.FileLoader">
+            <summary>
+                <para>Gets or sets an object that loads  data from either a Shapefile or KML file into a Map control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapFileLoaderBase"/> class descendant that is a data loader for either a Shapefile or KML file format.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.VectorFileLayer.ToString">
+            <summary>
+                <para>Returns the textual representation of VectorFileLayer.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of VectorFileLayer.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.ShapefileLoader">
+
+            <summary>
+                <para>Provides functionality to load shape data from an external file in a Shapefiles format.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ShapefileLoader.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ShapefileLoader class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ShapefileLoader.FileUri">
+            <summary>
+                <para>Gets or sets an Uri that defines location of a Shapefile with shapes data.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Uri"/> object that contains an Uri to the Shapefile.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.OpenStreetMapDataProvider">
+
+            <summary>
+                <para>The class that loads map images from a web resource that provides data in the <b>OpenStreetMap</b> format.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.OpenStreetMapDataProvider.#ctor">
+            <summary>
+                <para>Initializes a new instance of the OpenStreetMapDataProvider class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.OpenStreetMapDataProvider.GetMapSizeInPixels(System.Double)">
+            <summary>
+                <para>Returns the map size (in pixels) for the specified zoom level.
+</para>
+            </summary>
+            <param name="zoomLevel">
+		A double value that specifies the zoom level.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapSize"/> object that is the map size.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.OpenStreetMapDataProvider.Projection">
+            <summary>
+                <para>Returns the projection supported by OpenStreetMapDataProvider.
+</para>
+            </summary>
+            <value>Always <b>SphericalMercatorProjection</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.OpenStreetMapDataProvider.TileUriTemplate">
+            <summary>
+                <para>Gets or sets a template that is used to obtain image tiles from the current <b>OpenStreetMap</b> provider.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> containing the template Uri.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.OpenStreetMapDataProvider.ToString">
+            <summary>
+                <para>Returns the textual representation of OpenStreetMapDataProvider.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of OpenStreetMapDataProvider.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.DistanceMeasureUnit">
+
+            <summary>
+                <para>Lists the values used to specify units to measure distances on a map.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraMap.DistanceMeasureUnit.Kilometer">
+            <summary>
+                <para>All distances are measured in kilometers.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.DistanceMeasureUnit.Mile">
+            <summary>
+                <para>All distances are measured in miles.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.BingMapKind">
+
+            <summary>
+                <para>Lists the values used to specify the kind of maps to be obtained from the <see cref="T:DevExpress.XtraMap.BingMapDataProvider"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraMap.BingMapKind.Area">
+            <summary>
+                <para>The map shows photo images of the Earth's surface.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.BingMapKind.Hybrid">
+            <summary>
+                <para>The map shows a combination of Earth images and road schemas.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.BingMapKind.Road">
+            <summary>
+                <para>The map shows road schemas.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.ChoroplethColorizer">
+
+            <summary>
+                <para>Represents the <a href="http://en.wikipedia.org/wiki/Choropleth">Choropleth</a>-like colorizer.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ChoroplethColorizer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ChoroplethColorizer class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ChoroplethColorizer.ApproximateColors">
+            <summary>
+                <para>Gets or sets a value specifying whether to apply an approximation algorithm to colors in a colorizer. 
+</para>
+            </summary>
+            <value><b>true</b>, if an approximation algorithm is applied to colors; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ChoroplethColorizer.ColorizeElement(DevExpress.XtraMap.IColorizerElement)">
+            <summary>
+                <para>Colorize map elements.
+</para>
+            </summary>
+            <param name="element">
+		An object implementing the <see cref="T:DevExpress.XtraMap.IColorizerElement"/> interface that contains a map element to colorize. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ChoroplethColorizer.GetColor(System.Double)">
+            <summary>
+                <para>Returns a color by its value that corresponds to specified range stops on a map legend. 
+</para>
+            </summary>
+            <param name="value">
+		A double value that is a range stop.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.Color"/> structure that is a color on a map legend to colorize map shapes. 
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ChoroplethColorizer.Legend">
+            <summary>
+                <para>Gets or sets a map legend (color list or color scale legend type).
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.ColorLegendBase"/> class descendant representing a map legend. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ChoroplethColorizer.RangeDistribution">
+            <summary>
+                <para>Gets or sets the distribution type of range colors in a colorizer. 
+</para>
+            </summary>
+            <value>An object that implements the <see cref="T:DevExpress.Map.IColorizerRangeDistribution"/> interface.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ChoroplethColorizer.RangeStops">
+            <summary>
+                <para>Gets range stops for the Choropleth colorizer.
+</para>
+            </summary>
+            <value>A collection of double values that represents colorizer range stops.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ChoroplethColorizer.ToString">
+            <summary>
+                <para>Returns the textual representation of ChoroplethColorizer.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value which is the textual representation of ChoroplethColorizer.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ChoroplethColorizer.ValueProvider">
+            <summary>
+                <para>Provides values from the data source (Shapefile or KML file) to color map shapes according to data.
+</para>
+            </summary>
+            <value>An object that implements the <see cref="T:DevExpress.XtraMap.IColorizerValueProvider"/> interface.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.ColorizerBase`1">
+
+            <summary>
+                <para>The base class for all colorizers.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ColorizerBase`1.ColorizeElement(DevExpress.XtraMap.T)">
+            <summary>
+                <para>Colorize a map element.
+</para>
+            </summary>
+            <param name="element">
+		A @lt;T@gt; object that contains a map element to colorize.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapDataProviderBase">
+
+            <summary>
+                <para>The base class for all data providers.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapDataProviderBase.CacheOptions">
+            <summary>
+                <para>Gets or sets the settings for a map's cache. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.CacheOptions"/> object. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapDataProviderBase.GetMapSizeInPixels(System.Double)">
+            <summary>
+                <para>Returns the map size (in pixels) for the specified zoom level.
+</para>
+            </summary>
+            <param name="zoomLevel">
+		A double value that specifies the zoom level.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapSize"/> object that is the map size.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapDataProviderBase.Projection">
+            <summary>
+                <para>Returns the projection supported by the current map provider.
+</para>
+            </summary>
+            <value>An object that implements an <see cref="T:DevExpress.XtraMap.IProjection"/> interface.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapDataProviderBase.TileSource">
+            <summary>
+                <para>Gets or sets a tile source associated with the current data provider.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapTileSourceBase"/> class descendant that contains settings for obtaining image tiles from a specific data provider.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraMap.MapDataProviderBase.WebRequest">
+            <summary>
+                <para>Contains settings to customize a web request to a map provider. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapItem">
+
+            <summary>
+                <para>The base class for different map items.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItem.Attributes">
+            <summary>
+                <para>Gets the attributes for this map item.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapItemAttributeCollection"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItem.IsHitTestVisible">
+            <summary>
+                <para>Gets or sets a value that defines whether or not a map item can be returned as a hit-testing result.
+ 
+</para>
+            </summary>
+            <value><b>true</b> if the map item can be shown as the result of hit testing; otherwise <b>false</b>.   
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItem.IsUpdateLocked">
+            <summary>
+                <para>Gets whether a map item has been locked for updating.
+</para>
+            </summary>
+            <value><b>true</b>, if a map item is locked; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItem.Layer">
+            <summary>
+                <para>Provides access to the map items layer object. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapItemsLayerBase"/> object representing the items layer of a map control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItem.ToolTipPattern">
+            <summary>
+                <para>Gets or sets a string which represents the pattern specifying the text to be displayed within a tooltip that appears for a map item.
+</para>
+            </summary>
+            <value>A string value that is the tooltip pattern.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItem.Visible">
+            <summary>
+                <para>Gets or sets a value indicating whether or not a map item should be displayed.
+</para>
+            </summary>
+            <value><b>true</b> to display a map item; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapColorizer">
+
+            <summary>
+                <para>The base class for all  colorizers that are used in a Map control.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapColorizer.Colors">
+            <summary>
+                <para>Provides access to the collection of colors with which to colorize map shapes. 
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.ColorCollection"/> object that contains colors to colorize map shapes.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.DoubleCollection">
+
+            <summary>
+                <para>An ordered collection of Double values.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.DoubleCollection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DoubleCollection class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MultiScaleTileSource">
+
+            <summary>
+                <para>The class that provides functionality to load image tiles for different zoom scales from an external image tile source.
+</para>
+            </summary>
+
+        </member>
+        <member name="T:DevExpress.XtraMap.FieldValueType">
+
+            <summary>
+                <para>Lists the field value types of the map item attribute.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraMap.FieldValueType.Boolean">
+            <summary>
+                <para>Indicates that the attribute field of a map item contains Boolean values (the <see cref="T:System.Boolean"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.FieldValueType.DateTime">
+            <summary>
+                <para>Indicates that the attribute field of a map item contains Date Time values (the <see cref="T:System.DateTime"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.FieldValueType.Decimal">
+            <summary>
+                <para>Indicates that the attribute field of a map item contains Decimal values (the <see cref="T:System.Decimal"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.FieldValueType.Integer">
+            <summary>
+                <para>Indicates that the attribute field of a map item contains Integer values (the <see cref="T:System.Int32"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.FieldValueType.Object">
+            <summary>
+                <para>Indicates that the attribute field of a map item contains values of the Object type (the <see cref="T:System.Object"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.FieldValueType.String">
+            <summary>
+                <para>Indicates that the attribute field of a map item contains String values (the <see cref="T:System.String"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapItemsLayerBase">
+
+            <summary>
+                <para>The base class for layers that display map items.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemsLayerBase.EnableHighlighting">
+            <summary>
+                <para>Specifies whether highlighting map items is enabled on the map control.
+
+</para>
+            </summary>
+            <value><b>true</b>, if a highlighting  of map items is enabled; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemsLayerBase.HighlightedItemStyle">
+            <summary>
+                <para>Gets a style applied to a highlighted map item. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapItemStyle"/> object, applied to a highlighted map item. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemsLayerBase.InitialMapSize">
+            <summary>
+                <para>Gets or sets the size of a map shape tile to provide a map projection.  
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Size"/> value containing the size of the map tiles that correspond to the zero zoom level. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemsLayerBase.ItemImageIndex">
+            <summary>
+                <para>Gets or sets the index of the image assigned to the map item.
+</para>
+            </summary>
+            <value>An integer which specifies the index of the map item's image in a collection of images.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemsLayerBase.ItemStyle">
+            <summary>
+                <para>Gets a style applied to a map item. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapItemStyle"/> object that contains style settings to customize a map item. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemsLayerBase.Projection">
+            <summary>
+                <para>Gets or sets a projection for a map items layer. 
+</para>
+            </summary>
+            <value>An object that implements an <see cref="T:DevExpress.XtraMap.IProjection"/> interface.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemsLayerBase.SelectedItem">
+            <summary>
+                <para>Gets or sets the currently selected item on a map.
+</para>
+            </summary>
+            <value>An object that is the currently selected map item.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemsLayerBase.SelectedItems">
+            <summary>
+                <para>Gets the collection of selected items of the MapItemsLayerBase object.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.SelectedItemCollection"/> object representing the collection of selected map items.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemsLayerBase.SelectedItemStyle">
+            <summary>
+                <para>Gets a style applied to the selected map item. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapItemStyle"/> that contains style settings to customize the selected map item. 
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapItemsLayerBase.ToolTipPattern">
+            <summary>
+                <para>Gets or sets a string which represents the pattern specifying the text to be displayed within a tooltip.
+</para>
+            </summary>
+            <value>A System.String, which represents the tooltip pattern. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapFileLoaderBase">
+
+            <summary>
+                <para>The base for classes that provide the functionality for loading shape and vector data from an external file. 
+
+</para>
+            </summary>
+
+        </member>
+        <member name="E:DevExpress.XtraMap.MapFileLoaderBase.FileLoaded">
+            <summary>
+                <para>Occurs after the file loader has finished loading data from a file in Shapefile or KML format.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapFileLoaderBase.FileUri">
+            <summary>
+                <para>Gets or sets an Uri that defines the location of either a Shapefile or KML file containing data.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.Uri"/> object that contains an Uri to either the Shapefile or KML file.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapUnit">
+
+            <summary>
+                <para>A class that contains a location in internal map units.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapUnit.#ctor(System.Double,System.Double)">
+            <summary>
+                <para>Initializes a new instance of the MapUnit class with the specified X and Y locations of the map unit. 
+</para>
+            </summary>
+            <param name="x">
+		A <see cref="T:System.Double"/> value which specifies the X position of the map unit. This value is assigned to the <see cref="P:DevExpress.XtraMap.MapUnit.X"/> property.
+
+            </param>
+            <param name="y">
+		A <see cref="T:System.Double"/> value which specifies the Y position of the map unit. This value is assigned to the <see cref="P:DevExpress.XtraMap.MapUnit.Y"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapUnit.Equals(DevExpress.XtraMap.MapUnit,DevExpress.XtraMap.MapUnit)">
+            <summary>
+                <para>Determines whether the two specified MapUnit objects are equal.
+</para>
+            </summary>
+            <param name="unit1">
+		A MapUnit instance that specifies the first map unit to compare.
+
+            </param>
+            <param name="unit2">
+		A MapUnit instance that specifies the second map unit to compare.
+
+            </param>
+            <returns><b>true</b> if specified objects are equal; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapUnit.Equals(System.Object)">
+            <summary>
+                <para>Determines whether the specified object is equal to the current MapUnit instance.
+</para>
+            </summary>
+            <param name="o">
+		The object to compare with the current object.
+
+            </param>
+            <returns><b>true</b> if the specified object is equal to the current MapUnit instance; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapUnit.GetHashCode">
+            <summary>
+                <para>Gets the hash code (a number) that corresponds to the value of the current MapUnit object.
+</para>
+            </summary>
+            <returns>An integer value that is the hash code for the current object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapUnit.Normalize(DevExpress.XtraMap.MapUnit)">
+            <summary>
+                <para>Normalizes the specified map unit's coordinates to the range from <b>0</b> to <b>1</b>.
+</para>
+            </summary>
+            <param name="mapUnit">
+		A non-normalized MapUnit object.
+
+            </param>
+            <returns>A normalized MapUnit object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapUnit.ToString">
+            <summary>
+                <para>Returns the textual representation of MapUnit.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of MapUnit.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapUnit.ToString(System.IFormatProvider)">
+            <summary>
+                <para>Returns the textual representation of MapUnit.
+</para>
+            </summary>
+            <param name="provider">
+		An object, implementing the <see cref="T:System.IFormatProvider"/> interface.
+
+            </param>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of MapUnit.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapUnit.X">
+            <summary>
+                <para>A horizontal coordinate of a MapUnit.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Double"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapUnit.Y">
+            <summary>
+                <para>A vertical coordinate of a MapUnit.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Double"/> value.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapHitInfo">
+
+            <summary>
+                <para>Contains information about what is located at a specific point within the map.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapHitInfo.HitObjects">
+            <summary>
+                <para>Gets a collection of objects which represent all map visual elements located under the test point.
+</para>
+            </summary>
+            <value>A collection of <see cref="T:System.Object"/>s which represent all map elements under the test point.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapHitInfo.HitPoint">
+            <summary>
+                <para>Gets the test point.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Point"/> object representing the test point.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapHitInfo.InMapCustomElement">
+            <summary>
+                <para>Gets a value indicating whether the test point is within a <see cref="T:DevExpress.XtraMap.MapCustomElement"/>.
+</para>
+            </summary>
+            <value><b>true</b> if the test point is within a map custom element; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapHitInfo.InMapDot">
+            <summary>
+                <para>Gets a value indicating whether the test point is within a <see cref="T:DevExpress.XtraMap.MapDot"/>.
+</para>
+            </summary>
+            <value><b>true</b> if the test point is within a dot; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapHitInfo.InMapLine">
+            <summary>
+                <para>Gets a value indicating whether the test point is within a <see cref="T:DevExpress.XtraMap.MapLine"/>.
+</para>
+            </summary>
+            <value><b>true</b> if the test point is within a map line; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapHitInfo.InMapPath">
+            <summary>
+                <para>Gets a value indicating whether the test point is within a <see cref="T:DevExpress.XtraMap.MapPath"/>.
+</para>
+            </summary>
+            <value><b>true</b> if the test point is within a path; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapHitInfo.InMapPolygon">
+            <summary>
+                <para>Gets a value indicating whether the test point is within a <see cref="T:DevExpress.XtraMap.MapPolygon"/>.
+</para>
+            </summary>
+            <value><b>true</b> if the test point is within a polygon; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapHitInfo.InMapPolyline">
+            <summary>
+                <para>Gets a value indicating whether the test point is within a <see cref="T:DevExpress.XtraMap.MapPolyline"/>.
+</para>
+            </summary>
+            <value><b>true</b> if the test point is within a map polyline; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapHitInfo.InMapPushpin">
+            <summary>
+                <para>Gets a value indicating whether the test point is within a <see cref="T:DevExpress.XtraMap.MapPushpin"/>.
+</para>
+            </summary>
+            <value><b>true</b> if the test point is within a pushpin; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapHitInfo.InMapRectangle">
+            <summary>
+                <para>Gets a value indicating whether the test point is within a <see cref="T:DevExpress.XtraMap.MapRectangle"/>.
+</para>
+            </summary>
+            <value><b>true</b> if the test point is within a rectangle; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapHitInfo.MapCustomElement">
+            <summary>
+                <para>Gets a <see cref="T:DevExpress.XtraMap.MapCustomElement"/> which is located under the test point.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapCustomElement"/> object that is the map custom element located under the test point.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapHitInfo.MapDot">
+            <summary>
+                <para>Gets a <see cref="T:DevExpress.XtraMap.MapDot"/> which is located under the test point.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapDot"/> object that is the dot located under the test point.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapHitInfo.MapLine">
+            <summary>
+                <para>Gets a <see cref="T:DevExpress.XtraMap.MapLine"/> which is located under the test point.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapLine"/> object that is the line located under the test point.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapHitInfo.MapPath">
+            <summary>
+                <para>Gets a <see cref="T:DevExpress.XtraMap.MapPath"/> which is located under the test point.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapPath"/> object that is the path located under the test point.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapHitInfo.MapPolygon">
+            <summary>
+                <para>Gets a <see cref="T:DevExpress.XtraMap.MapPolygon"/> which is located under the test point.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapPolygon"/> object that is the polygon located under the test point.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapHitInfo.MapPolyline">
+            <summary>
+                <para>Gets a <see cref="T:DevExpress.XtraMap.MapPolyline"/> which is located under the test point.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapPolyline"/> object that is the polyline located under the test point.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapHitInfo.MapPushpin">
+            <summary>
+                <para>Gets a <see cref="T:DevExpress.XtraMap.MapPushpin"/> which is located under the test point.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapPushpin"/> object that is the pushpin located under the test point.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapHitInfo.MapRectangle">
+            <summary>
+                <para>Gets a <see cref="T:DevExpress.XtraMap.MapRectangle"/> which is located under the test point.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapRectangle"/> object that is the rectangle located under the test point.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.LayerCollection">
+
+            <summary>
+                <para>A collection of layers.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LayerCollection.Swap(System.Int32,System.Int32)">
+            <summary>
+                <para>Swaps two indexes of a layer in the layer collection. 
+</para>
+            </summary>
+            <param name="index1">
+		An integer value that represents the first layer's index to be swapped with the second layer's index in the layer collection.
+
+            </param>
+            <param name="index2">
+		An integer value that represents the second layer's index to be swapped with the first layer's index in the layer collection.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.DrawMapItemHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraMap.MapControl.DrawMapItem"/> event. 
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.DrawMapItemHandler.Invoke(System.Object,DevExpress.XtraMap.DrawMapItemEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraMap.MapControl.DrawMapItem"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraMap.DrawMapItemEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.LegendAlignment">
+
+            <summary>
+                <para>Contains values that specify how a map legend is aligned.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraMap.LegendAlignment.BottomCenter">
+            <summary>
+                <para>The legend is vertically aligned at the bottom and horizontally aligned in the center. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.LegendAlignment.BottomLeft">
+            <summary>
+                <para>The legend is vertically aligned at the bottom and horizontally aligned on the left. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.LegendAlignment.BottomRight">
+            <summary>
+                <para>The legend is vertically aligned at the bottom and horizontally aligned on the right. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.LegendAlignment.MiddleLeft">
+            <summary>
+                <para>The legend is vertically centered and horizontally aligned on the left.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.LegendAlignment.MiddleRight">
+            <summary>
+                <para>The legend is vertically centered and horizontally aligned on the right.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.LegendAlignment.TopCenter">
+            <summary>
+                <para>The legend is vertically aligned at the top and horizontally aligned in the center. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.LegendAlignment.TopLeft">
+            <summary>
+                <para>The legend is vertically aligned at the top and horizontally aligned on the left.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.LegendAlignment.TopRight">
+            <summary>
+                <para>The legend is vertically aligned at the top and horizontally aligned on the right.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapSelectionEventArgs">
+
+            <summary>
+                <para>The base for classes that provide data for the map selection events. 
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapSelectionEventArgs.Selection">
+            <summary>
+                <para>Gets the list of selected objects on a map. 
+</para>
+            </summary>
+            <value>A list of selected objects.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.DrawMapItemEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraMap.MapControl.DrawMapItem"/> event. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.DrawMapItemEventArgs.#ctor(DevExpress.XtraMap.MapItem)">
+            <summary>
+                <para>Initializes a new instance of the DrawMapItemEventArgs class with the specified map item.
+</para>
+            </summary>
+            <param name="item">
+		A <see cref="T:DevExpress.XtraMap.MapItem"/> value specifying a map item to be drawn. This value is assigned to the <see cref="P:DevExpress.XtraMap.DrawMapItemEventArgs.Item"/> property. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.DrawMapItemEventArgs.Fill">
+            <summary>
+                <para>Gets or sets the color that is used to fill a map item when the <see cref="E:DevExpress.XtraMap.MapControl.DrawMapItem"/> event is fired. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> that specifies how to fill a map item. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.DrawMapItemEventArgs.IsHighlighted">
+            <summary>
+                <para>Gets a value that indicates whether a map item is highlighted. 
+</para>
+            </summary>
+            <value><b>true</b>, if a map item is highlighted; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.DrawMapItemEventArgs.IsSelected">
+            <summary>
+                <para>Gets a value that indicates whether a map item is selected. 
+</para>
+            </summary>
+            <value><b>true</b>, if a map item is selected; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.DrawMapItemEventArgs.Item">
+            <summary>
+                <para>Gets an object representing a map item when handling the <see cref="E:DevExpress.XtraMap.MapControl.DrawMapItem"/> event.
+</para>
+            </summary>
+            <value>A  <see cref="T:DevExpress.XtraMap.MapItem"/> object that is a map item.  
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.DrawMapItemEventArgs.Layer">
+            <summary>
+                <para>Gets an object representing a map items layer when handling the <see cref="E:DevExpress.XtraMap.MapControl.DrawMapItem"/> event.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapItemsLayerBase"/> object that is a map items layer.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.DrawMapItemEventArgs.Stroke">
+            <summary>
+                <para>Gets or sets the Color that specifies how the map item outline is painted.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> value that specifies how the  map item outline is painted.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.DrawMapItemEventArgs.StrokeWidth">
+            <summary>
+                <para>Gets or sets a value that specifies the width of the stroke on the current map item.
+</para>
+            </summary>
+            <value>An integer value that is the width of the stroke on the current map item. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapPushpin">
+
+            <summary>
+                <para>The class used to draw a pushpin on a map.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPushpin.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MapPushpin class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapPushpin.ToString">
+            <summary>
+                <para>Returns the textual representation of MapPushpin.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value which is the textual representation of MapPushpin.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.SphericalMercatorProjection">
+
+            <summary>
+                <para>A class that defines methods specific to the <a href="http://en.wikipedia.org/wiki/Mercator_projection">Spherical Mercator Projection</a>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.SphericalMercatorProjection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SphericalMercatorProjection class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.SphericalMercatorProjection.GeoPointToMapUnit(DevExpress.XtraMap.GeoPoint)">
+            <summary>
+                <para>Converts the specified geographical point into internal map units.
+</para>
+            </summary>
+            <param name="geoPoint">
+		A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.MapUnit"/> object containing internal map coordinates.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.SphericalMercatorProjection.MapUnitToGeoPoint(DevExpress.XtraMap.MapUnit)">
+            <summary>
+                <para>Converts the specified map unit into the corresponding geographical point.
+</para>
+            </summary>
+            <param name="mapUnit">
+		A <see cref="T:DevExpress.XtraMap.MapUnit"/> object to be converted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object containing geographical coordinates.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.SphericalMercatorProjection.ToString">
+            <summary>
+                <para>Returns the textual representation of SphericalMercatorProjection.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of SphericalMercatorProjection.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapTileSourceBase">
+
+            <summary>
+                <para>The base for all classes that can load image tiles from external map data providers.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapTileSourceBase.GetTileByZoomLevel(System.Int32,System.Int32,System.Int32)">
+            <summary>
+                <para>Returns the image tile by its X and Y positions for the specified zoom level.
+</para>
+            </summary>
+            <param name="zoomLevel">
+		An integer value that specifies the zoom level.
+
+            </param>
+            <param name="tilePositionX">
+		An integer value specifying the X-position of the tile within the map image.
+
+            </param>
+            <param name="tilePositionY">
+		An integer value specifying the Y-position of the tile within the map image.
+
+            </param>
+            <returns>A <see cref="T:System.Uri"/> value that is the path to the image tile.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.LogarithmicRangeDistribution">
+
+            <summary>
+                <para>Represents the logarithmic distribution of color ranges in a colorizer.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LogarithmicRangeDistribution.#ctor">
+            <summary>
+                <para>Initializes a new instance of the LogarithmicRangeDistribution class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LogarithmicRangeDistribution.ConvertRangeValue(System.Double)">
+            <summary>
+                <para>Converts the specified range value.
+</para>
+            </summary>
+            <param name="value">
+		A value to be converted.
+
+            </param>
+            <returns>A <a href="#" onclick="dxHelpRedirect('T:System.Double')">Double</a> object that is the result of the conversion.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.LogarithmicRangeDistribution.ToString">
+            <summary>
+                <para>Returns the textual representation of LogarithmicRangeDistribution.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of LogarithmicRangeDistribution.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapDotShapeKind">
+
+            <summary>
+                <para>Lists the values used to specify the shape of map dots.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraMap.MapDotShapeKind.Circle">
+            <summary>
+                <para>A map dot is painted as a circle.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraMap.MapDotShapeKind.Rectangle">
+            <summary>
+                <para>A map dot is painted as a rectangle.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.ExponentialRangeDistribution">
+
+            <summary>
+                <para>Represents the exponential distribution of color ranges in a colorizer.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ExponentialRangeDistribution.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ExponentialRangeDistribution class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ExponentialRangeDistribution.ConvertRangeValue(System.Double)">
+            <summary>
+                <para>Converts the specified range value.
+</para>
+            </summary>
+            <param name="value">
+		A value to be converted.
+
+            </param>
+            <returns>A <a href="#" onclick="dxHelpRedirect('T:System.Double')">Double</a> object that is the result of the conversion.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ExponentialRangeDistribution.ToString">
+            <summary>
+                <para>Returns the textual representation of ExponentialRangeDistribution.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of ExponentialRangeDistribution.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.ViewportChangedEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraMap.LayerBase.ViewportChanged"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ViewportChangedEventArgs.BottomRight">
+            <summary>
+                <para>Returns the bottom-right coordinate of the current viewport.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.GeoPoint"/> containing information about the bottom-right coordinate.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ViewportChangedEventArgs.TopLeft">
+            <summary>
+                <para>Returns the top-left coordinate of the current viewport.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.GeoPoint"/> containing information about the top-left coordinate.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ViewportChangedEventArgs.ZoomLevel">
+            <summary>
+                <para>Returns the zoom level of the current viewport.
+</para>
+            </summary>
+            <value>A double value that is the zoom level of the current viewport.  
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.EquationRangeDistribution">
+
+            <summary>
+                <para>The base for classes that define exponential and logarithmic distribution of color ranges in a colorizer.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraMap.EquationRangeDistribution.Factor">
+            <summary>
+                <para>Gets or sets the factor specifying the percentages of the starting color and the ending color in the colorizer.
+
+</para>
+            </summary>
+            <value>A  factor that specifies the percentages of the starting color and the ending color to be used at the corresponding position in the colorizer.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapDot">
+
+            <summary>
+                <para>The class used to draw a dot on a map.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapDot.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MapDot class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapDot.Location">
+            <summary>
+                <para>Gets or sets a location of the map dot on a map.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object containing geographic coordinates of the dot location.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapDot.ShapeKind">
+            <summary>
+                <para>Gets or sets a value specifying the shape that is used to draw a dot on a map.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapDotShapeKind"/> enumeration value specifying the shape kind.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapDot.Size">
+            <summary>
+                <para>Gets or sets the size of the map dot. 
+</para>
+            </summary>
+            <value>A double value that represents the size of the map dot (in pixels). 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapDot.ToString">
+            <summary>
+                <para>Returns the textual representation of MapDot.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value which is the textual representation of MapDot.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.ShapeAttributeValueProvider">
+
+            <summary>
+                <para>The class that is used to obtain an attribute from a shape file source (Shapefile or KML file) that is applied to shape items.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ShapeAttributeValueProvider.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ShapeAttributeValueProvider class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.ShapeAttributeValueProvider.AttributeName">
+            <summary>
+                <para>Gets or sets the name of the attribute that is applied to shape items.
+</para>
+            </summary>
+            <value>A string value that is the name attribute.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.ShapeAttributeValueProvider.ToString">
+            <summary>
+                <para>Returns the textual representation of ShapeAttributeValueProvider.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value which is the textual representation of ShapeAttributeValueProvider.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.TextElementStyle">
+
+            <summary>
+                <para>Defines a style of the text element within a map.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraMap.TextElementStyle.Font">
+            <summary>
+                <para>Gets or sets a font used to display a map text element. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Font"/> that specifies a font used to display the content of a map text element.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.TextElementStyle.TextColor">
+            <summary>
+                <para>Gets or sets the color of a text element.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> object that is the color of a text element.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.TextElementStyle.ToString">
+            <summary>
+                <para>Returns the textual representation of TextElementStyle.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of TextElementStyle.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapPointer">
+
+            <summary>
+                <para>The class used to draw a map pointer on a map.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPointer.Image">
+            <summary>
+                <para>Gets or sets an image that is assigned to a map pointer.
+</para>
+            </summary>
+            <value>An Image object that represents the image assigned to a map pointer.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPointer.ImageIndex">
+            <summary>
+                <para>Gets or sets the image index value of an image assigned to the map pointer.
+</para>
+            </summary>
+            <value>An Int32 value that is the image index assigned to the map pointer.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPointer.ImageUri">
+            <summary>
+                <para>Gets or sets a Uri that defines the location of an Image file with vector data. 
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.Uri"/> object that contains a Uri to the  Image file.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPointer.Location">
+            <summary>
+                <para>Gets or sets the location of a map pointer on a map.  
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.GeoPoint"/> object containing geographic coordinates of the map pointer location.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapPointer.RenderOrigin">
+            <summary>
+                <para>Gets or sets the center point of the render transform relative to the bounds of the  <see cref="T:DevExpress.XtraMap.MapPointer"/> element. This is a dependency property.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraMap.MapPoint"/> object that declares the render transform.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.BackgroundStyle">
+
+            <summary>
+                <para>A background style applied to a map element. 
+
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraMap.BackgroundStyle.Fill">
+            <summary>
+                <para>Gets or sets the color that is used to fill the background of a particular map element. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> that specifies the color used to fill the background of a map element. 
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraMap.BackgroundStyle.ToString">
+            <summary>
+                <para>Returns the textual representation of BackgroundStyle.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value which is the textual representation of BackgroundStyle.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapSelectionChangingEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraMap.MapControl.SelectionChanging"/> event. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapSelectionChangingEventArgs.#ctor(System.Collections.Generic.IEnumerable`1)">
+            <summary>
+                <para>Initializes a new instance of the MapSelectionChangingEventArgs class with the specified map selection.
+</para>
+            </summary>
+            <param name="selection">
+		An object that implements the <see cref="T:System.Collections.IEnumerable"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraMap.MapSelectionChangingEventArgs.Cancel">
+            <summary>
+                <para>Gets or sets whether the selection of a map item should be canceled.
+
+</para>
+            </summary>
+            <value><b>true</b>, if the selection of a map item should be canceled; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraMap.MapDisposableObject">
+
+            <summary>
+                <para>Supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraMap.MapDisposableObject.Dispose">
+            <summary>
+                <para>Disposes of the current object.
+</para>
+            </summary>
+
+
+        </member>
+    </members>
+</doc>

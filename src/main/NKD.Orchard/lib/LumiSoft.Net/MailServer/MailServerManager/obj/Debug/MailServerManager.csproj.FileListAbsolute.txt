@@ -1,0 +1,6 @@
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\MailServerManager\obj\Debug\MailServerManager.csprojResolveAssemblyReference.cache
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Debug\MailServerManager.exe.config
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Debug\MailServerManager.exe
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Debug\MailServerManager.pdb
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\MailServerManager\obj\Debug\MailServerManager.exe
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\MailServerManager\obj\Debug\MailServerManager.pdb

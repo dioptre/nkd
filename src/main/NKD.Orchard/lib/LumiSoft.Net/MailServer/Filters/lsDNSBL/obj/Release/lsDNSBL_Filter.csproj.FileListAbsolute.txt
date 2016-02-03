@@ -1,0 +1,4 @@
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Release\Filters\lsDNSBL_Filter.exe.config
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Release\Filters\lsDNSBL_Filter.exe
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Filters\lsDNSBL\obj\Release\lsDNSBL_Filter.csprojResolveAssemblyReference.cache
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Filters\lsDNSBL\obj\Release\lsDNSBL_Filter.exe

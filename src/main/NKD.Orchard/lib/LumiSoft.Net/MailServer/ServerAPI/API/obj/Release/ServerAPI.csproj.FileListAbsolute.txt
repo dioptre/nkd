@@ -1,0 +1,6 @@
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Release\LumiSoft.MailServerAPI.dll
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Release\LumiSoft.MailServerAPI.xml
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\ServerAPI\API\obj\Release\ServerAPI.csprojResolveAssemblyReference.cache
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\ServerAPI\API\obj\Release\LumiSoft.MailServer.wfrm_BuildInitString_base.resources
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\ServerAPI\API\obj\Release\ServerAPI.csproj.GenerateResource.Cache
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\ServerAPI\API\obj\Release\LumiSoft.MailServerAPI.dll

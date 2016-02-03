@@ -1,0 +1,105 @@
+# Orchard resource strings - ru-RU
+# Copyright (c) 2010 Outercurve Foundation
+# All rights reserved
+# This file is distributed under the BSD license
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/EditorTemplates/Parts/Faq.cshtml
+#| msgid "FaqType"
+msgid "FaqType"
+msgstr "Faq Type"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/EditorTemplates/Parts/Faq.cshtml
+#| msgid "Question"
+msgid "Question"
+msgstr "Question"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/EditorTemplates/Parts/Faq.cshtml
+#| msgid "ChooseType"
+msgid "ChooseType"
+msgstr "Choose type"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/EditorTemplates/Parts/FaqType.cshtml
+#| msgid "Title"
+msgid "Title"
+msgstr "Title"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/EditorTemplates/Parts/LastFaqWidget.cshtml
+#| msgid "ViewCount"
+msgid "ViewCount"
+msgstr "Quantity of question to show"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/EditorTemplates/Parts/LastFaqWidget.cshtml
+#| msgid "Page"
+msgid "Page"
+msgstr "Pagination"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/FaqType.cshtml
+#| msgid "Title"
+msgid "Title"
+msgstr "Title"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/Faq.cshtml
+#| msgid "FaqType"
+msgid "FaqType"
+msgstr "Faq Type"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/Faq.cshtml
+#| msgid "Question"
+msgid "Question"
+msgstr "Question"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/FaqWidget.cshtml
+#| msgid "NoItems"
+msgid "NoItems"
+msgstr "No items"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml
+#| msgid "NoItems"
+msgid "NoItems"
+msgstr "No items"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml
+#| msgid "Hide"
+msgid "Hide"
+msgstr "Hide"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml
+#| msgid "Answer"
+msgid "Answer"
+msgstr "Answer"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml
+#| msgid "FirstPage"
+msgid "FirstPage"
+msgstr "First"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml
+#| msgid "PreviousPage"
+msgid "PreviousPage"
+msgstr "Previous"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml
+#| msgid "NextPage"
+msgid "NextPage"
+msgstr "Next"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml
+#| msgid "LastPage"
+msgid "LastPage"
+msgstr "Last"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml
+#| msgid "FAQ"
+msgid "FAQ"
+msgstr "Faq"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml
+#| msgid "Section"
+msgid "Section"
+msgstr "Section"
+
+#: Belitsoft.Orchard.Faq.Drivers.FaqTypeDriver
+#| msgid "Faq Type with the same name already exists."
+msgctxt "Belitsoft.Orchard.Faq.Drivers.FaqTypeDriver"
+msgid "Faq Type with the same name already exists."
+msgstr "Faq Type with the same name already exists."

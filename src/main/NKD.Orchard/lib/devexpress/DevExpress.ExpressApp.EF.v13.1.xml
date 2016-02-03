@@ -1,0 +1,830 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.EF.v13.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.EF.EFObjectSpace">
+
+            <summary>
+                <para>An Object Space which is used for data manipulation via the <a href="http://msdn.microsoft.com/en-us/library/bb399572.aspx">Entity Framework</a>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.#ctor(DevExpress.ExpressApp.DC.ITypesInfo,DevExpress.ExpressApp.EF.EFTypeInfoSource,DevExpress.ExpressApp.EF.CreateObjectContextHandler)">
+            <summary>
+                <para>Creates a new instance of the EFObjectSpace class.
+</para>
+            </summary>
+            <param name="typesInfo">
+		An <see cref="T:DevExpress.ExpressApp.DC.ITypesInfo"/> object providing access to XAF-related information on business classes.
+
+            </param>
+            <param name="efTypeInfoSource">
+		An <b>EFTypeInfoSource</b> object that provides information on business classes related to the Entity Framework.
+
+
+            </param>
+            <param name="createObjectContextDelegate">
+		A <b>CreateObjectContextHandler</b> object that is a delegate encapsulating a method for creating an <b>ObjectContext</b> for the current Object Space. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.#ctor(DevExpress.ExpressApp.DC.ITypesInfo,DevExpress.ExpressApp.EF.EFTypeInfoSource,DevExpress.ExpressApp.EF.CreateObjectContextHandler,DevExpress.ExpressApp.EF.UpdateSchemaHandler)">
+            <summary>
+                <para>Creates a new instance of the EFObjectSpace class.
+</para>
+            </summary>
+            <param name="typesInfo">
+		An <see cref="T:DevExpress.ExpressApp.DC.ITypesInfo"/> object providing access to XAF-related information on business classes.
+
+            </param>
+            <param name="efTypeInfoSource">
+		An <b>EFTypeInfoSource</b> object that provides Entity Framework - related information on business classes.
+
+
+            </param>
+            <param name="createObjectContextDelegate">
+		A <b>CreateObjectContextHandler</b> object that is a delegate encapsulating a method for creating an <b>ObjectContext</b> for the current Object Space. 
+
+            </param>
+            <param name="updateSchemaDelegate">
+		A <b>UpdateSchemaHandler</b> object that is a delegate encapsulating a method for updating schema.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.EF.EFObjectSpace.AllowUpdateSchema">
+            <summary>
+                <para>Indicates whether or not a schema update is allowed.
+
+</para>
+            </summary>
+            <value><b>false</b>, when the <b>UpdateSchemaHandler</b> object passed to the EFObjectSpace constructor is not null; otherwise - <b>true</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.ApplyCriteria(System.Object,DevExpress.Data.Filtering.CriteriaOperator)">
+            <summary>
+                <para>Filters the specified collection according to the specified criteria on the server side.
+</para>
+            </summary>
+            <param name="collection">
+		An Object that is the collection to be filtered.
+
+
+            </param>
+            <param name="criteria">
+		A <b>DevExpress.Data.Filtering.CriteriaOperator</b> object that specifies the criteria used to filter objects on the server side.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.ApplyFilter(System.Object,DevExpress.Data.Filtering.CriteriaOperator)">
+            <summary>
+                <para>Filters a particular collection on the client side.
+</para>
+            </summary>
+            <param name="collection">
+		A collection to be filtered.
+
+            </param>
+            <param name="filter">
+		A <b>DevExpress.Data.Filtering.CriteriaOperator</b> object that specifies the criteria used to filter objects.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.CanApplyCriteria(System.Type)">
+            <summary>
+                <para>Indicates whether collections of a particular type can be filtered on the server side.
+</para>
+            </summary>
+            <param name="collectionType">
+		A <see cref="T:System.Type"/> object specifying the type of collections whose server-side filtering capability must be determined.
+
+            </param>
+            <returns><b>true</b>, if collections of the specified type can be filtered on the server side; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.CanApplyFilter(System.Object)">
+            <summary>
+                <para>Indicates whether a particular collection can be filtered on the client side.
+</para>
+            </summary>
+            <param name="collection">
+		A collection that is tested on whether it can be filtered.
+
+
+            </param>
+            <returns><b>false</b>
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.CanInstantiate(System.Type)">
+            <summary>
+                <para>Indicates whether instances of a particular type can be created.
+</para>
+            </summary>
+            <param name="type">
+		An object type for which it must be determined whether its instances can be created.
+
+            </param>
+            <returns><b>true</b>, if instances of the specified type can be created; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.EF.EFObjectSpace.Connection">
+            <summary>
+                <para>Gets the connection to the underlying data source.
+</para>
+            </summary>
+            <value>An <b>IDbConnection</b> object that is the connection to the underlying data source.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.Contains(System.Object)">
+            <summary>
+                <para>Indicates whether a specified object belongs to the current Object Space.
+</para>
+            </summary>
+            <param name="obj">
+		A persistent object to be tested.
+
+
+            </param>
+            <returns><b>true</b> if the specified persistent object belongs to the current Object Space; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.CreateNestedObjectSpace">
+            <summary>
+                <para>Creates a nested Object Space.
+</para>
+            </summary>
+            <returns>An <b>IObjectSpace</b> object which is supposed to be created.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.CreateParseCriteriaScope">
+            <summary>
+                <para>Used when parsing a CriteriaOperator represented by a string and containing persistent objects.
+</para>
+            </summary>
+            <returns>An <b>IDisposable</b> object used to restore persistent objects from a serialized string.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.CreateServerCollection(System.Type,DevExpress.Data.Filtering.CriteriaOperator)">
+            <summary>
+                <para>Creates and initializes a new instance of the <b>EFServerCollection</b> class with criteria-specific options.
+</para>
+            </summary>
+            <param name="objectType">
+		The type of persistent objects to include into the collection.
+
+            </param>
+            <param name="criteria">
+		The <b>DevExpress.Data.Filtering.CriteriaOperator</b> that specifies the criteria for object selection in a data store. 
+
+            </param>
+            <returns>A server collection that includes the persistent objects of the specified type. In addition, only objects that satisfy the specified criteria will be retrieved to this collection.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.EF.EFObjectSpace.Database">
+            <summary>
+                <para>Gets the name of the database used when a connection associated with the current Object Space's <see cref="P:DevExpress.ExpressApp.EF.EFObjectSpace.ObjectContext"/> is opened. 
+</para>
+            </summary>
+            <value>A string that is the name of the database used when a connection is opened.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.Dispose">
+            <summary>
+                <para>Releases all resources used by an EFObjectSpace object.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.EnableObjectDeletionOnRemove(System.Object,System.Boolean)">
+            <summary>
+                <para>Enables/disables the deletion of persistent objects from the data source when they are removed from the specified collection.
+</para>
+            </summary>
+            <param name="collection">
+		A collection of persistent objects that are requested to be removed from the database along with their removal from the collection.
+
+
+            </param>
+            <param name="deleteObjectOnRemove">
+		<b>true</b>, to enable the object deletion from the database along with their removal from the collection; <b>false</b>, to disable it.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.FindObject(System.Type,DevExpress.Data.Filtering.CriteriaOperator,System.Boolean)">
+            <summary>
+                <para>Searches for the first object which matches the specified criteria.
+</para>
+            </summary>
+            <param name="type">
+		A <see cref="T:System.Type"/> object which is the type of objects to search for. 
+
+            </param>
+            <param name="criteria">
+		A <b>DevExpress.Data.Filtering.CriteriaOperator</b> descendant which is the criteria for matching persistent objects. 
+
+            </param>
+            <param name="inTransaction">
+		A boolean value. It is not used during the search.
+
+            </param>
+            <returns>An object which is the first persistent object which matches the specified criteria. <b>null</b> (<b>Nothing</b> in Visual Basic) if there is no persistent object which matches the criteria. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetCollectionSorting(System.Object)">
+            <summary>
+                <para>Returns the sort settings for a particular collection. 
+</para>
+            </summary>
+            <param name="collection">
+		An Object that is the collection whose sort settings are requested.
+
+            </param>
+            <returns>A list of <b>SortProperty</b> objects specifying the sort order for the <i>collection</i>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetCriteria(System.Object)">
+            <summary>
+                <para>Returns the criteria used to filter a particular collection on the server side.
+</para>
+            </summary>
+            <param name="collection">
+		A collection whose server-side filter must be retrieved.
+
+            </param>
+            <returns>A <b>DevExpress.Data.Filtering.CriteriaOperator</b> object that specifies the criteria used to filter objects on the server side.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetDefaultDisplayableMembers(DevExpress.ExpressApp.DC.ITypeInfo)">
+            <summary>
+                <para>Returns the list of default displayable members declared in the specified type.
+</para>
+            </summary>
+            <param name="typeInfo">
+		An <see cref="T:DevExpress.ExpressApp.DC.ITypeInfo"/> object that supplies metadata information on a type.
+
+
+            </param>
+            <returns>An <b>IList@lt;IMemberInfo@gt;</b> list of default displayable members.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetDisplayableProperties(System.Object)">
+            <summary>
+                <para>Gets the properties considered visible by the specified collection.
+</para>
+            </summary>
+            <param name="collection">
+		A collection whose visible properties will be retrieved.
+
+            </param>
+            <returns>A semicolon-separated list of property names considered visible by a particular collection.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetEvaluatorContextDescriptor(System.Type)">
+            <summary>
+                <para>Creates an instance of the <b>EvaluatorContextDescriptor</b> that is used to supply metadata on the specified type to the <b>ExpressionEvaluator</b> objects. 
+</para>
+            </summary>
+            <param name="type">
+		An <b>EvaluatorContextDescriptor</b> object initialized for the specified type. 
+
+            </param>
+            <returns>A type for which an instance of the <b>EvaluatorContextDescriptor</b> class must be created. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetFilter(System.Object)">
+            <summary>
+                <para>Returns null (Nothing in VB).
+</para>
+            </summary>
+            <param name="collection">
+		A collection to be tested.
+
+            </param>
+            <returns>A null value.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetKeyPropertyName(System.Type)">
+            <summary>
+                <para>Gets the name of the specified type's key property.
+</para>
+            </summary>
+            <param name="objectType">
+		A <see cref="T:System.Type"/> object which is the type of the objects whose key property name is requested. 
+
+            </param>
+            <returns>A string specifying the key property's name.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetKeyPropertyType(System.Type)">
+            <summary>
+                <para>Gets the key property type of objects of the specified type.
+</para>
+            </summary>
+            <param name="objectType">
+		A <see cref="T:System.Type"/> object which is the type of the objects whose key property type is requested. 
+
+            </param>
+            <returns>A <see cref="T:System.Type"/> object which is the type of the specified type's key property.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetKeyValueAsString(System.Object)">
+            <summary>
+                <para>Returns the key property's value of the specified object, converted to a string representation.
+</para>
+            </summary>
+            <param name="obj">
+		An object whose key property value is requested.
+
+            </param>
+            <returns>A string which is the value of the specified object's key property. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetObject(System.Object)">
+            <summary>
+                <para>Retrieves an object from another Object Space to the current Object Space.
+</para>
+            </summary>
+            <param name="objectFromDifferentObjectSpace">
+		An object that represents a template object from another Object Space.
+
+            </param>
+            <returns>An object retrieved from the database via the current Object Space.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetObjectByKey(System.Type,System.Object)">
+            <summary>
+                <para>Returns the persistent object that has the specified value for its key property.
+</para>
+            </summary>
+            <param name="type">
+		A <see cref="T:System.Type"/> object which is the type of the object to search for. 
+
+            </param>
+            <param name="key">
+		An object that is the persistent object's key property value. 
+
+            </param>
+            <returns>A persistent object with the specified value for its key property.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetObjectKey(System.Type,System.String)">
+            <summary>
+                <para>Converts the key property value string representation into its actual type.
+</para>
+            </summary>
+            <param name="type">
+		A <see cref="T:System.Type"/> object which is the type of the object whose key property value is to be converted. 
+
+            </param>
+            <param name="objectKeyString">
+		A string that is the key property value to be converted.
+
+            </param>
+            <returns>An object that is the value of the specified type's key property.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetObjectsCount(System.Type,DevExpress.Data.Filtering.CriteriaOperator)">
+            <summary>
+                <para>Returns the number of objects specified.
+</para>
+            </summary>
+            <param name="type">
+		A <see cref="T:System.Type"/> object that identifies the type of objects against which the calculation will be performed. 
+
+            </param>
+            <param name="criteria">
+		The <b>DevExpress.Data.Filtering.CriteriaOperator</b> that specifies the criteria for object selection in the database.
+
+            </param>
+            <returns>An integer value that is the count of persistent objects that satisfy the specified criteria.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetObjectsToDelete(System.Boolean)">
+            <summary>
+                <para>Returns a collection of persistent objects that are marked as deleted in the current object context.
+</para>
+            </summary>
+            <param name="includeParent">
+		A boolean value. It is not used during the request for the objects to delete.
+
+            </param>
+            <returns>A <see cref="T:System.Collections.ICollection"/> object representing the collection of persistent objects that are deleted in the transaction currently in progress.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetObjectsToSave(System.Boolean)">
+            <summary>
+                <para>Returns a collection of persistent objects that are added, deleted or modified in the current object context.
+</para>
+            </summary>
+            <param name="includeParent">
+		A boolean value. It is not used during the request for the objects to save.
+
+            </param>
+            <returns>The collection of persistent objects that are added, deleted or modified in the transaction currently in progress. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetReferenceMemberNames(DevExpress.ExpressApp.DC.ITypeInfo,System.String)">
+            <summary>
+                <para>Returns the list of reference members' names declared in the specified type.
+</para>
+            </summary>
+            <param name="typeInfo">
+		An <see cref="T:DevExpress.ExpressApp.DC.ITypeInfo"/> object that supplies metadata information on a type.
+
+
+            </param>
+            <param name="memberNames">
+		A string which contains the displayable member names, separated by semicolons.
+
+            </param>
+            <returns>A string array of the reference members' names
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetReferenceMemberNames(DevExpress.ExpressApp.DC.ITypeInfo,System.Collections.Generic.IList`1)">
+            <summary>
+                <para>Returns the list of reference members' names declared in the specified type.
+</para>
+            </summary>
+            <param name="typeInfo">
+		An <see cref="T:DevExpress.ExpressApp.DC.ITypeInfo"/> object that supplies metadata information on a type.
+
+            </param>
+            <param name="memberNames">
+		An <b>IList@lt;String@gt;</b> list which contains the member names for display.
+
+
+            </param>
+            <returns>A string array of the reference members' names.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetSqlException(System.Exception)">
+            <summary>
+                <para>Converts the passed <a href="http://msdn.microsoft.com/en-us/library/system.exception.aspx">Exception</a> to an <a href="http://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlexception.aspx">SqlException</a> that is thrown when SQL Server returns a warning or error.
+</para>
+            </summary>
+            <param name="exception">
+		An <a href="http://msdn.microsoft.com/en-us/library/system.exception.aspx">Exception</a> error that occurs during application execution.
+
+
+            </param>
+            <returns>An <a href="http://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlexception.aspx">SqlException</a> that is thrown when SQL Server returns a warning or error.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.GetTopReturnedObjectsCount(System.Object)">
+            <summary>
+                <para>Returns the maximum number of objects to be retrieved by the specified collection from a data store.
+</para>
+            </summary>
+            <param name="collection">
+		A collection that is the subject for determining the number of objects that can be retrieved by it.
+
+
+            </param>
+            <returns>An integer value specifying the maximum number of objects that can be retrieved by the specified collection from the database.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.IsCollectionLoaded(System.Object)">
+            <summary>
+                <para>Indicates whether a particular collection is loaded with objects from the database.
+</para>
+            </summary>
+            <param name="collection">
+		An object representing the collection for which it must be determined whether it is loaded with objects from the database.
+
+            </param>
+            <returns><b>true</b>, if the specified collection is loaded with objects from the database; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.EF.EFObjectSpace.IsConnected">
+            <summary>
+                <para>Indicates whether the connection of the EFObjectSpace's Object Context is open.
+</para>
+            </summary>
+            <value><b>true</b>, if the <see cref="P:DevExpress.ExpressApp.EF.EFObjectSpace.ObjectContext"/> is connected to the database; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.IsDeletedObject(System.Object)">
+            <summary>
+                <para>Indicates whether the specified persistent object is deleted from the database.
+</para>
+            </summary>
+            <param name="obj">
+		The object to be tested. 
+
+            </param>
+            <returns><b>true</b> if the specified object is deleted; otherwise, <b>false</b>. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.IsDeletionDefferedType(System.Type)">
+            <summary>
+                <para>Indicates whether the specified type supports the Deferred Deletion mode.
+</para>
+            </summary>
+            <param name="type">
+		A type to be tested.
+
+            </param>
+            <returns><b>true</b> if the type specified as the <i>type</i> parameter supports the Deferred Deletion mode; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.IsDisposedObject(System.Object)">
+            <summary>
+                <para>Determines whether an object has been disposed of.
+</para>
+            </summary>
+            <param name="obj">
+		An object to test.
+
+            </param>
+            <returns><b>true</b>, if the specified object has been disposed of; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.IsNewObject(System.Object)">
+            <summary>
+                <para>Indicates whether a specified object has been created but has not been saved to the database.
+</para>
+            </summary>
+            <param name="obj">
+		An object to be tested.
+
+            </param>
+            <returns><b>true</b> if the specified object has not been yet saved to the database; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.IsObjectDeletionOnRemoveEnabled(System.Object)">
+            <summary>
+                <para>Indicates whether the deletion of persistent objects from the data source when they are removed from the specified collection is enabled.
+</para>
+            </summary>
+            <param name="collection">
+		A collection of persistent objects that are requested to be removed from the database along with their removal from the collection.
+
+
+            </param>
+            <returns><b>true</b>, if deletion from the database along with removal from the collection is enabled; <b>false</b>, if disabled.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.IsObjectToDelete(System.Object)">
+            <summary>
+                <para>Indicates whether the specified object has been deleted but not committed in the current object context.
+</para>
+            </summary>
+            <param name="obj">
+		The persistent object to test.
+
+            </param>
+            <returns><b>true</b>, if the specified object is marked as deleted and should be committed; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.IsObjectToSave(System.Object)">
+            <summary>
+                <para>Indicates whether the specified object has been added, deleted or modified, but not committed in the current object context.
+</para>
+            </summary>
+            <param name="obj">
+		An object for which it is requested whether it should be saved.
+
+
+            </param>
+            <returns><b>true</b> if the specified object has been added, deleted or modified and should be committed; <b>false</b> if the object has not been modified since the last commit.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.EF.EFObjectSpace.ModifiedObjects">
+            <summary>
+                <para>Returns a collection of objects that have been created, modified or deleted in the current object context.
+
+</para>
+            </summary>
+            <value>An IList collection of persistent objects that are added, deleted or modified in the transaction currently in progress. 
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.EF.EFObjectSpace.ObjectContext">
+            <summary>
+                <para>Provides access to an Object Context that is used to work with entry data as persistent objects. 
+
+</para>
+            </summary>
+            <value>A <b>System.Data.Objects.ObjectContext</b> object which is used by the current Object Space to work with entry data as persistent objects.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.EF.EFObjectSpace.ObjectStateManagerChanged">
+            <summary>
+                <para>Occurs when entities are added to or removed from the state manager.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.ParseCriteria(System.String)">
+            <summary>
+                <para>Tries to convert the specified string representation of an expression to its <a href="http://documentation.devexpress.com/#CoreLibraries/clsDevExpressDataFilteringCriteriaOperatortopic">CriteriaOperator</a> equivalent.
+</para>
+            </summary>
+            <param name="criteria">
+		A string representation of the criteria.
+
+            </param>
+            <returns>A <a href="http://documentation.devexpress.com/#CoreLibraries/clsDevExpressDataFilteringCriteriaOperatortopic">CriteriaOperator</a> equivalent of the expression contained in <i>criteria</i>. 
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.ReloadCollection(System.Object)">
+            <summary>
+                <para>Clears the specified collection. 
+</para>
+            </summary>
+            <param name="collection">
+		An Object that is the collection to be reloaded. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.ReloadObject(System.Object)">
+            <summary>
+                <para>Updates the specified object in the current Object Space's <see cref="P:DevExpress.ExpressApp.EF.EFObjectSpace.ObjectContext"/> with data from the data source.
+</para>
+            </summary>
+            <param name="obj">
+		An object which represents the persistent object whose state needs to be reloaded. 
+
+            </param>
+            <returns>The object specified by the <i>obj</i> parameter after it has been reloaded.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.RemoveFromModifiedObjects(System.Object)">
+            <summary>
+                <para>Removes the specified object from the object context and then attaches it again, to remove all the tracked changes that have not been committed.
+
+</para>
+            </summary>
+            <param name="obj">
+		An object to be removed from the list of modified objects.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.SetCollectionSorting(System.Object,System.Collections.Generic.IList`1)">
+            <summary>
+                <para>Applies the specified sorting to a given collection.
+</para>
+            </summary>
+            <param name="collection">
+		An object that is a collection to be sorted.
+
+            </param>
+            <param name="sorting">
+		An <b>IList@lt;</b><a href="http://documentation.devexpress.com/#CoreLibraries/clsDevExpressXpoSortPropertytopic">SortProperty</a><b>@gt;</b> object that specifies the sorting to be applied.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.SetDisplayableProperties(System.Object,System.String)">
+            <summary>
+                <para>Sets the properties to be visible by the specified collection.
+</para>
+            </summary>
+            <param name="collection">
+		A collection whose visible properties are set.
+
+            </param>
+            <param name="displayableProperties">
+		A semicolon-separated list of property names to be visible by a particular collection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.EF.EFObjectSpace.SetTopReturnedObjectsCount(System.Object,System.Int32)">
+            <summary>
+                <para>Sets the maximum number of objects that can be retrieved by the specified collection from a data store.
+</para>
+            </summary>
+            <param name="collection">
+		A collection that is the subject for determining the number of objects that can be retrieved by it.
+
+
+            </param>
+            <param name="topReturnedObjects">
+		An integer value specifying the maximum number of objects that can be retrieved by the specified collection from the database. <b>0</b> indicates that all objects will be retrieved. 
+
+            </param>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.EF.EFObjectSpace.UnableToOpenDatabaseErrorNumber">
+            <summary>
+                <para>An <a href="http://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlexception.number.aspx">SqlException.Number</a> value that indicates that an <b>UnableToOpenDatabaseException</b> occurs. By default, 4060.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+    </members>
+</doc>

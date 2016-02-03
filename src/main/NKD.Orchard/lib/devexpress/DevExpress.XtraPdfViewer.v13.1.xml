@@ -1,0 +1,1961 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.XtraPdfViewer.v13.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfViewerCommand">
+
+            <summary>
+                <para>The base class for each PDF Viewer command.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfViewerCommand.CreateContextMenuBarItem(DevExpress.XtraBars.BarManager)">
+            <summary>
+                <para>Supports the context menu initialization in a PDF Viewer.
+</para>
+            </summary>
+            <param name="barManager">
+		A <see cref="T:DevExpress.XtraBars.BarManager"/> that maintains the application bars and individual bar items. 
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraBars.BarItem"/> element.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfViewerCommand.ForceExecute(DevExpress.Utils.Commands.ICommandUIState)">
+            <summary>
+                <para>Forces the application user interface to ignore the current applicability of a command, and trigger its execution at all hazards.
+</para>
+            </summary>
+            <param name="state">
+		An object implementing the <see cref="T:DevExpress.Utils.Commands.ICommandUIState"/> interface that defines the current status of a command in the overall context of the application user interface.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfZoom75Command">
+
+            <summary>
+                <para>Sets the zoom factor value to <b>75</b> percent of the original document size.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfZoom75Command.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfZoom75Command class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfZoom75Command.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a menu caption for a command.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfZoomOutCommand">
+
+            <summary>
+                <para>Decreases the document zoom factor by ten percent.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfZoomOutCommand.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfZoomOutCommand class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfZoomOutCommand.DescriptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a command description.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfZoomOutCommand.Id">
+            <summary>
+                <para>Gets the ID of the specified PdfZoomOutCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId"/> member that is the command identifier.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfZoomOutCommand.ImageName">
+            <summary>
+                <para>Gets the name of the icon associated with the PdfZoomOutCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the image name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfZoomOutCommand.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of the menu caption of a command.
+
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfZoomInCommand">
+
+            <summary>
+                <para>Increases the document zoom factor by ten percent.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfZoomInCommand.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfZoomInCommand class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfZoomInCommand.DescriptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a command description.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfZoomInCommand.Id">
+            <summary>
+                <para>Gets the ID of the specified PdfZoomInCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId"/> member that is the command identifier.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfZoomInCommand.ImageName">
+            <summary>
+                <para>Gets the name of the icon associated with the PdfZoomInCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the image name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfZoomInCommand.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of the menu caption of a command.
+
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfZoomCommand">
+
+            <summary>
+                <para>The base for classes that provide fixed zoom factor values.
+</para>
+            </summary>
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfZoom50Command">
+
+            <summary>
+                <para>Sets the zoom factor value to <b>50</b> percent of the original document size.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfZoom50Command.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfZoom50Command class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfZoom50Command.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a menu caption for a command.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfZoom500Command">
+
+            <summary>
+                <para>Sets the zoom factor value to <b>500</b> percent of the original document size.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfZoom500Command.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfZoom500Command class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfZoom500Command.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a menu caption for a command.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfZoom400Command">
+
+            <summary>
+                <para>Sets the zoom factor value to <b>400</b> percent of the original document size.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfZoom400Command.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfZoom400Command class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfZoom400Command.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a menu caption for a command.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfZoom25Command">
+
+            <summary>
+                <para>Sets the zoom factor value to <b>25</b> percent of the original document size.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfZoom25Command.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfZoom25Command class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfZoom25Command.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a menu caption for a command.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfZoom200Command">
+
+            <summary>
+                <para>Sets the zoom factor value to <b>200</b> percent of the original document size.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfZoom200Command.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfZoom200Command class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfZoom200Command.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a menu caption for a command.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfZoom150Command">
+
+            <summary>
+                <para>Sets the zoom factor value to <b>150</b> percent of the original document size.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfZoom150Command.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfZoom150Command class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfZoom150Command.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a menu caption for a command.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfZoom100Command">
+
+            <summary>
+                <para>Sets the zoom factor value to show the original document size.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfZoom100Command.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfZoom100Command class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfZoom100Command.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a menu caption for a command.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfShowDocumentPropertiesCommand">
+
+            <summary>
+                <para>Runs the <b>Document Properties</b> dialog that provides detailed information about the current document.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfShowDocumentPropertiesCommand.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfShowDocumentPropertiesCommand class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfShowDocumentPropertiesCommand.DescriptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a command description.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfShowDocumentPropertiesCommand.Id">
+            <summary>
+                <para>Gets the ID of the specified PdfShowDocumentPropertiesCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId"/> member that is the command identifier.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfShowDocumentPropertiesCommand.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of the menu caption of a command.
+
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfShowDocumentPropertiesCommand.UpdateUIState(DevExpress.Utils.Commands.ICommandUIState)">
+            <summary>
+                <para>Anticipates a command's execution, by assigning a new status to the command in the context of its current applicability to the application user interface.
+
+
+
+
+
+</para>
+            </summary>
+            <param name="state">
+		An object implementing the <see cref="T:DevExpress.Utils.Commands.ICommandUIState"/> interface that defines the current status of a command in the overall context of the application user interface.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfSetZoomCommand">
+
+            <summary>
+                <para>Varies the current document zoom factor value by ten percent.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfSetZoomCommand.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfSetZoomCommand class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfSetZoomCommand.DescriptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a command description.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfSetZoomCommand.ForceExecute(DevExpress.Utils.Commands.ICommandUIState)">
+            <summary>
+                <para>Forces the application user interface to ignore the current applicability of a command, and trigger its execution at all hazards.
+</para>
+            </summary>
+            <param name="state">
+		An object implementing the <see cref="T:DevExpress.Utils.Commands.ICommandUIState"/> interface that defines the current status of a command in the overall context of the application user interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfSetZoomCommand.Id">
+            <summary>
+                <para>Gets the ID of the specified PdfSetZoomCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId"/> member that is the command identifier.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfSetZoomCommand.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of the menu caption of a command.
+
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfSetPageLevelZoomModeCommand">
+
+            <summary>
+                <para>Adjusts the document zoom factor value to attain a page size appropriate to the application window's dimensions.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfSetPageLevelZoomModeCommand.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfSetPageLevelZoomModeCommand class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfSetPageLevelZoomModeCommand.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of the menu caption of a command.
+
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfSetFitWidthZoomModeCommand">
+
+            <summary>
+                <para>Adjusts the document zoom factor value to adjust the page width to the application window's dimensions.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfSetFitWidthZoomModeCommand.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfSetFitWidthZoomModeCommand class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfSetFitWidthZoomModeCommand.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of the menu caption of a command.
+
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfSetFitVisibleZoomModeCommand">
+
+            <summary>
+                <para>Adjusts the document zoom factor value to contain the visible part of the page content within the application window's dimensions
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfSetFitVisibleZoomModeCommand.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfSetFitVisibleZoomModeCommand class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfSetFitVisibleZoomModeCommand.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of the menu caption of a command.
+
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfSetActualSizeZoomModeCommand">
+
+            <summary>
+                <para>Restores the default zoom factor value, showing the document in its actual size.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfSetActualSizeZoomModeCommand.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfSetActualSizeZoomModeCommand class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfSetActualSizeZoomModeCommand.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of the menu caption of a command.
+
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfPrintFileCommand">
+
+            <summary>
+                <para>Runs the system <b>Print</b> dialog to adjust the print settings and send the current document to a printer.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfPrintFileCommand.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfPrintFileCommand class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfPrintFileCommand.DescriptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a command description.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfPrintFileCommand.Id">
+            <summary>
+                <para>Gets the ID of the specified PdfPrintFileCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId"/> member that is the command identifier.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfPrintFileCommand.ImageName">
+            <summary>
+                <para>Gets the name of the icon associated with the PdfPrintFileCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the image name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfPrintFileCommand.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of the menu caption of a command.
+
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfCheckableCommand">
+
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfCheckableCommand.DescriptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a command description.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfCheckableCommand.Id">
+            <summary>
+                <para>Gets the ID of the specified PdfCheckableCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId"/> member that is the command identifier.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfCheckableCommand.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of the menu caption of a command.
+
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfOpenFileCommand">
+
+            <summary>
+                <para>Opens a document.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfOpenFileCommand.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfOpenFileCommand class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfOpenFileCommand.DescriptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a command description.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfOpenFileCommand.Id">
+            <summary>
+                <para>Gets the ID of the specified PdfOpenFileCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId"/> member that is the command identifier.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfOpenFileCommand.ImageName">
+            <summary>
+                <para>Gets the name of the icon associated with the PdfOpenFileCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value specifying the image name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfOpenFileCommand.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of the menu caption of a command.
+
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.PdfCurrentPageChangedEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraPdfViewer.PdfViewer.CurrentPageChanged"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.PdfCurrentPageChangedEventHandler.Invoke(System.Object,DevExpress.XtraPdfViewer.PdfCurrentPageChangedEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraPdfViewer.PdfViewer.CurrentPageChanged"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		A <see cref="T:System.Object"/> value, specifying the event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfCurrentPageChangedEventArgs"/> object, containing the event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.PdfCurrentPageChangedEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraPdfViewer.PdfViewer.CurrentPageChanged"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfCurrentPageChangedEventArgs.PageCount">
+            <summary>
+                <para>Specifies the document page count.
+</para>
+            </summary>
+            <value>An integer value, specifying the total number of pages in the document.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfCurrentPageChangedEventArgs.PageNumber">
+            <summary>
+                <para>Specifies the page number of the currently displayed page.
+</para>
+            </summary>
+            <value>An integer value, specifying the current page number.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.PdfZoomMode">
+
+            <summary>
+                <para>Lists the document zoom modes provided by a PDF Viewer.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.PdfZoomMode.ActualSize">
+            <summary>
+                <para>Sets the document zoom factor value to 100%.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.PdfZoomMode.Custom">
+            <summary>
+                <para>The document zoom factor is defined by the <see cref="P:DevExpress.XtraPdfViewer.PdfViewer.ZoomFactor"/> property value.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.PdfZoomMode.FitToVisible">
+            <summary>
+                <para>The document zoom factor is calculated to fit the actual content of a page (if possible).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.PdfZoomMode.FitToWidth">
+            <summary>
+                <para>Sets the document zoom factor value to fit the entire page width.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.PdfZoomMode.PageLevel">
+            <summary>
+                <para>Sets the document zoom factor value to fit the entire page height.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.PdfDocumentChangedEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraPdfViewer.PdfViewer.DocumentChanged"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfDocumentChangedEventArgs.DocumentFilePath">
+            <summary>
+                <para>Specifies the path to the document.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the path to the document.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfZoom125Command">
+
+            <summary>
+                <para>Sets the zoom factor value to <b>125</b> percent of the original size.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfZoom125Command.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfZoom125Command class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfZoom125Command.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a menu caption for a command.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.PdfViewer">
+
+            <summary>
+                <para>A control to display PDF files directly in your WinForms application without the need to install an external PDF viewer on your end user's machine. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.PdfViewer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the PdfViewer class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.PdfViewer.CreateBars">
+            <summary>
+                <para>Creates a toolbar with actions specific to the PdfViewer control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.PdfViewer.CreateBitmap(System.Int32,System.Int32)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="pageNumber">
+		 [To be supplied] 
+            </param>
+            <param name="largestEdgeLength">
+		 [To be supplied] 
+            </param>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.PdfViewer.CreateRibbon">
+            <summary>
+                <para>Creates a Ribbon tab with actions specific to the PdfViewer control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraPdfViewer.PdfViewer.CurrentPageChanged">
+            <summary>
+                <para>Occurs after the currently displayed page has been changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfViewer.CurrentPageNumber">
+            <summary>
+                <para>Specifies the number of the currently displayed page.
+</para>
+            </summary>
+            <value>An integer value, specifying the current page number.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraPdfViewer.PdfViewer.DocumentChanged">
+            <summary>
+                <para>Occurs when a PdfViewer control loads another PDF document.
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfViewer.DocumentFilePath">
+            <summary>
+                <para>Gets or sets the path to the PDF file, which is currently opened in the PdfViewer control.
+</para>
+            </summary>
+            <value>A string value containing the file path.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfViewer.DocumentProperties">
+            <summary>
+                <para>Provides access to the basic information about a document.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraPdfViewer.PdfDocumentProperties"/> object.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.PdfViewer.GetPageSize(System.Int32)">
+            <summary>
+                <para>Returns the size of the specified document page.
+</para>
+            </summary>
+            <param name="pageNumber">
+		An integer value, specifying the document page index.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.SizeF"/> structure, specifying the page width and height.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.PdfViewer.LoadDocument(System.String)">
+            <summary>
+                <para>Loads the PDF document from the specified path.
+</para>
+            </summary>
+            <param name="path">
+		A string specifying the path to the PDF document.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.PdfViewer.LoadDocument(System.IO.Stream)">
+            <summary>
+                <para>Loads the PDF document from the specified stream.
+</para>
+            </summary>
+            <param name="stream">
+		A Stream class descendant.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfViewer.MenuManager">
+            <summary>
+                <para>Specifies an object that controls the look and feel of the popup menus.
+</para>
+            </summary>
+            <value>An object that controls the look and feel of the popup menus. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfViewer.PageCount">
+            <summary>
+                <para>Returns the total number of pages in a document.
+</para>
+            </summary>
+            <value>An integer value, specifying the document page count.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraPdfViewer.PdfViewer.PopupMenuShowing">
+            <summary>
+                <para>Occurs after the popup menu of a PDF Viewer has been invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.PdfViewer.Print">
+            <summary>
+                <para>Prints the current document using the system default print settings.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.PdfViewer.Print(System.Drawing.Printing.PrinterSettings)">
+            <summary>
+                <para>Prints the current document using the specified print settings.
+
+</para>
+            </summary>
+            <param name="printerSettings">
+		A <see cref="T:System.Drawing.Printing.PrinterSettings"/> object.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.PdfViewer.ScrollHorizontal(System.Int32)">
+            <summary>
+                <para>Scrolls the document horizontally by the specified number of units.
+
+</para>
+            </summary>
+            <param name="amount">
+		An integer value, specifying the scrolling amount.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.PdfViewer.ScrollVertical(System.Int32)">
+            <summary>
+                <para>Scrolls the document vertically by the specified number of units.
+
+</para>
+            </summary>
+            <param name="amount">
+		An integer value, specifying the scrolling amount.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfViewer.ShowPrintStatusDialog">
+            <summary>
+                <para>Specifies whether or not to show a print status dialog when printing a document. 
+</para>
+            </summary>
+            <value><b>true</b>, to show a print status dialog; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraPdfViewer.PdfViewer.ZoomChanged">
+            <summary>
+                <para>Occurs after the current zoom factor has been changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfViewer.ZoomFactor">
+            <summary>
+                <para>Specifies the document zoom factor.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Single"/> value, specifying the document zoom factor (as a percentage).
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfViewer.ZoomMode">
+            <summary>
+                <para>Specifies the document zoom mode.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraPdfViewer.PdfZoomMode"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.PdfZoomChangedEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraPdfViewer.PdfViewer.ZoomChanged"/> event.
+
+
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfZoomChangedEventArgs.ZoomFactor">
+            <summary>
+                <para>Indicates the current document zoom factor value.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Single"/> value, specifying the zoom factor.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfZoomChangedEventArgs.ZoomMode">
+            <summary>
+                <para>Indicates the current document zoom mode.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraPdfViewer.PdfZoomMode"/> enumeration value, specifying the document zoom mode.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfShowExactZoomListCommand">
+
+            <summary>
+                <para>Adjust the document zoom factor to match one of the predefined static values.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfShowExactZoomListCommand.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfShowExactZoomListCommand class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfShowExactZoomListCommand.DescriptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a command description.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfShowExactZoomListCommand.Id">
+            <summary>
+                <para>Gets the ID of the specified PdfShowExactZoomListCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId"/> member that is the command identifier.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfShowExactZoomListCommand.ImageName">
+            <summary>
+                <para>Gets the name of the icon associated with the PdfShowExactZoomListCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the image name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfShowExactZoomListCommand.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of the menu caption of a command.
+
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfSetZoomModeCommand">
+
+            <summary>
+                <para>The base for classes that provide custom document zoom factor modes.
+</para>
+            </summary>
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfPreviousPageCommand">
+
+            <summary>
+                <para>Navigates to the previous document page.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfPreviousPageCommand.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfPreviousPageCommand class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfPreviousPageCommand.DescriptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a command description.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfPreviousPageCommand.Id">
+            <summary>
+                <para>Gets the ID of the specified PdfPreviousPageCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId"/> member that is the command identifier.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfPreviousPageCommand.ImageName">
+            <summary>
+                <para>Gets the name of the icon associated with the PdfPreviousPageCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the image name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfPreviousPageCommand.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of the menu caption of a command.
+
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfNextPageCommand">
+
+            <summary>
+                <para>Navigates to the next document page.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfNextPageCommand.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfNextPageCommand class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfNextPageCommand.DescriptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a command description.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfNextPageCommand.Id">
+            <summary>
+                <para>Gets the ID of the specified PdfNextPageCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId"/> member that is the command identifier.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfNextPageCommand.ImageName">
+            <summary>
+                <para>Gets the name of the icon associated with the PdfNextPageCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the image name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfNextPageCommand.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of the menu caption of a command.
+
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.PdfZoomChangedEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraPdfViewer.PdfViewer.ZoomChanged"/> event.
+
+
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.PdfZoomChangedEventHandler.Invoke(System.Object,DevExpress.XtraPdfViewer.PdfZoomChangedEventArgs)">
+            <summary>
+                <para>Occurs after a document zoom factor value has changed.
+</para>
+            </summary>
+            <param name="sender">
+		A <see cref="T:System.Object"/> value, specifying the event sender.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfZoomChangedEventArgs"/> object, providing data to the event.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.PdfDocumentChangedEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraPdfViewer.PdfViewer.DocumentChanged"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.PdfDocumentChangedEventHandler.Invoke(System.Object,DevExpress.XtraPdfViewer.PdfDocumentChangedEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraPdfViewer.PdfViewer.DocumentChanged"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		A <see cref="T:System.Object"/> value, specifying the event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfDocumentChangedEventArgs"/> object, containing the event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfZoom10Command">
+
+            <summary>
+                <para>Sets the zoom factor value to <b>10</b> percent.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfZoom10Command.#ctor(DevExpress.XtraPdfViewer.PdfViewer)">
+            <summary>
+                <para>Initializes a new instance of the PdfZoom10Command class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraPdfViewer.PdfViewer"/> that is the command owner.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.Commands.PdfZoom10Command.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a menu caption for a command.
+</para>
+            </summary>
+            <value>An <b>XtraPdfViewerStringId</b> enumeration value that is the resource string identifier. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.PdfDocumentProperties">
+
+            <summary>
+                <para>Shows the information related to the currently opened document in the <b>Document Properties</b> dialog.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfDocumentProperties.Application">
+            <summary>
+                <para>Indicates the application that generated the document.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfDocumentProperties.Author">
+            <summary>
+                <para>Indicates a document's author.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfDocumentProperties.CreationDate">
+            <summary>
+                <para>Indicates the date of a document's creation.
+</para>
+            </summary>
+            <value>An array of <see cref="T:System.DateTime"/> structures.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfDocumentProperties.FileLocation">
+            <summary>
+                <para>Indicates the physical location of a document.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfDocumentProperties.FileName">
+            <summary>
+                <para>Indicates a document's file name.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the file name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfDocumentProperties.FilePath">
+            <summary>
+                <para>Indicates a path to the folder that contains the document file.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the path to the folder that contains the document file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfDocumentProperties.FileSize">
+            <summary>
+                <para>Indicates the physical size of the document file.
+</para>
+            </summary>
+            <value>A long integer value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfDocumentProperties.Keywords">
+            <summary>
+                <para>Indicates the keywords that describe the primary topics covered in a document.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, providing a set of document keywords.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfDocumentProperties.ModificationDate">
+            <summary>
+                <para>Indicates the date of a document's last modification.
+</para>
+            </summary>
+            <value>An array of <see cref="T:System.DateTime"/> structures.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfDocumentProperties.Producer">
+            <summary>
+                <para>Indicates an application that produces a PDF.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the application name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfDocumentProperties.Subject">
+            <summary>
+                <para>Indicates the primary subject of a document.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the document subject.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfDocumentProperties.Title">
+            <summary>
+                <para>Indicates the title of a document.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the document title.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPdfViewer.PdfDocumentProperties.Version">
+            <summary>
+                <para>Specifies the PDF version of a document.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the PDF version.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId">
+
+            <summary>
+                <para>Lists the values that identify the PDF Viewer commands.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.#ctor(System.Int32)">
+            <summary>
+                <para>Initializes a new instance of the PdfViewerCommandId class with the specified value. 
+</para>
+            </summary>
+            <param name="value">
+		A System.Int32 value.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.Equals(System.Object)">
+            <summary>
+                <para>Determines whether or not the specified object is equal to the current PdfViewerCommandId instance.
+</para>
+            </summary>
+            <param name="obj">
+		The object to compare with the current object. 
+
+            </param>
+            <returns><b>true</b>, if the specified object is equal to the current PdfViewerCommandId instance; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.Equals(DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId)">
+            <summary>
+                <para>Determines whether or not the specified object is equal to the current PdfViewerCommandId instance.
+</para>
+            </summary>
+            <param name="other">
+		The object to compare with the current object. 
+
+            </param>
+            <returns><b>true</b>, if the specified object is equal to the current PdfViewerCommandId instance; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.GetHashCode">
+            <summary>
+                <para>Gets the hash code (a number) that corresponds to the value of the current PdfViewerCommandId object.
+</para>
+            </summary>
+            <returns>An integer value specifying the hash code for the current object.
+</returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.NextPage">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfNextPageCommand"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.None">
+            <summary>
+                <para>Indicates an undefined command.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.OpenFile">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfOpenFileCommand"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.PreviousPage">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfPreviousPageCommand"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.PrintFile">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfPrintFileCommand"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.SetActualSizeZoomMode">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfSetActualSizeZoomModeCommand"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.SetFitVisibleZoomMode">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfSetFitVisibleZoomModeCommand"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.SetFitWidthZoomMode">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfSetFitWidthZoomModeCommand"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.SetPageLevelZoomMode">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfSetPageLevelZoomModeCommand"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.SetZoom">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfSetZoomCommand"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.ShowDocumentProperties">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfShowDocumentPropertiesCommand"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.ShowExactZoomList">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfShowExactZoomListCommand"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.Zoom10">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfZoom10Command"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.Zoom100">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfZoom100Command"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.Zoom125">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfZoom125Command"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.Zoom150">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfZoom150Command"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.Zoom200">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfZoom200Command"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.Zoom25">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfZoom25Command"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.Zoom400">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfZoom400Command"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.Zoom50">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfZoom50Command"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.Zoom500">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfZoom500Command"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.Zoom75">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfZoom75Command"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.ZoomIn">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfZoomInCommand"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPdfViewer.Commands.PdfViewerCommandId.ZoomOut">
+            <summary>
+                <para>Identifies the <see cref="T:DevExpress.XtraPdfViewer.Commands.PdfZoomOutCommand"/>.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+    </members>
+</doc>

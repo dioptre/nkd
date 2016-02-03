@@ -1,0 +1,148 @@
+# Orchard resource strings - ru-RU
+# Copyright (c) 2010 Outercurve Foundation
+# All rights reserved
+# This file is distributed under the BSD license
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/EditorTemplates/Parts/Faq.cshtml
+#| msgid "FaqType"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/EditorTemplates/Parts/Faq.cshtml"
+msgid "FaqType"
+msgstr "Раздел"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/EditorTemplates/Parts/Faq.cshtml
+#| msgid "Question"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/EditorTemplates/Parts/Faq.cshtml"
+msgid "Question"
+msgstr "Вопрос"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/EditorTemplates/Parts/Faq.cshtml
+#| msgid "ChooseType"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/EditorTemplates/Parts/Faq.cshtml"
+msgid "ChooseType"
+msgstr "Выберите раздел"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/EditorTemplates/Parts/FaqType.cshtml
+#| msgid "Title"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/EditorTemplates/Parts/FaqType.cshtml"
+msgid "Title"
+msgstr "Название"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/EditorTemplates/Parts/LastFaqWidget.cshtml
+#| msgid "ViewCount"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/EditorTemplates/Parts/LastFaqWidget.cshtml"
+msgid "ViewCount"
+msgstr "Показывать вопросов"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/EditorTemplates/Parts/LastFaqWidget.cshtml
+#| msgid "Page"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/EditorTemplates/Parts/LastFaqWidget.cshtml"
+msgid "Page"
+msgstr "Разделять на страницы"
+
+
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/FaqType.cshtml
+#| msgid "Title"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/Parts/FaqType.cshtml"
+msgid "Title"
+msgstr "Название"
+
+
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/Faq.cshtml
+#| msgid "FaqType"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/Parts/Faq.cshtml"
+msgid "FaqType"
+msgstr "Название раздела"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/Faq.cshtml
+#| msgid "Question"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/Parts/Faq.cshtml"
+msgid "Question"
+msgstr "Вопрос"
+
+
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/FaqWidget.cshtml
+#| msgid "NoItems"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/Parts/FaqWidget.cshtml"
+msgid "NoItems"
+msgstr " Не создано ни одной категории "
+
+
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml
+#| msgid "NoItems"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml"
+msgid "NoItems"
+msgstr "Не найдено ни одного вопроса"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml
+#| msgid "Hide"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml"
+msgid "Hide"
+msgstr "Скрыть"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml
+#| msgid "Answer"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml"
+msgid "Answer"
+msgstr "Ответ"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml
+#| msgid "FirstPage"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml"
+msgid "FirstPage"
+msgstr "первая"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml
+#| msgid "PreviousPage"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml"
+msgid "PreviousPage"
+msgstr "предыдущая"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml
+#| msgid "NextPage"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml"
+msgid "NextPage"
+msgstr "следующая"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml
+#| msgid "LastPage"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml"
+msgid "LastPage"
+msgstr "последняя"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml
+#| msgid "FAQ"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml"
+msgid "FAQ"
+msgstr "Вопрос-Ответ"
+
+#: ~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml
+#| msgid "Section"
+msgctxt "~/Modules/Belitsoft.Orchard.Faq/Views/Parts/LastFaqWidget.cshtml"
+msgid "Section"
+msgstr "Раздел"
+
+msgctxt "Belitsoft.Orchard.Faq.DataMigrations.Migrations"
+msgid "Faq"
+msgstr "Вопрос-Oтвет"
+
+msgctxt "Belitsoft.Orchard.Faq.DataMigrations.Migrations"
+msgid "FaqType"
+msgstr "Тип 'Вопрос-Ответ'"
+
+msgctxt "Belitsoft.Orchard.Faq.DataMigrations.Migrations"
+msgid "FaqWidget"
+msgstr "Вопрос-Ответ"
+
+msgctxt "Belitsoft.Orchard.Faq.DataMigrations.Migrations"
+msgid "LastFaqWidget"
+msgstr "Вопросы-Ответы"
+
+#: Belitsoft.Orchard.Faq.Drivers.FaqTypeDriver
+#| msgid "Faq Type with the same name already exists."
+msgctxt "Belitsoft.Orchard.Faq.Drivers.FaqTypeDriver"
+msgid "Faq Type with the same name already exists."
+msgstr "Тип Вопрос-Ответ с таким именем уже существует"

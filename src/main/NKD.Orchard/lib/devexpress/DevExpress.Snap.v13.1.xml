@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Snap.v13.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Snap.SnapControl">
+
+            <summary>
+                <para>A control that provides Snap functionality to your application.
+
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.SnapControl.#ctor">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.Snap.SnapControl"/> class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.SnapControl.About">
+            <summary>
+                <para>For internal use. Invokes the <b>About</b> dialog window.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.SnapControl.CreateDocumentServer">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <returns>An object implementing the <see cref="T:DevExpress.XtraRichEdit.IRichEditDocumentServer"/> interface.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.SnapControl.Document">
+            <summary>
+                <para>Provides access to the specified document.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Snap.Core.API.SnapDocument"/> object.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.SnapControl.ReportStructureEditorFormShowing">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.SnapControl.SnxBytes">
+            <summary>
+                <para>Specifies the report content as an array of bytes in the <b>.snx</b> format. 
+</para>
+            </summary>
+            <value>An array of <see cref="T:System.Byte"/> values, containing data in the <b>.snx</b> format.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.SnapControl.TableCellStyleFormShowing">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+    </members>
+</doc>

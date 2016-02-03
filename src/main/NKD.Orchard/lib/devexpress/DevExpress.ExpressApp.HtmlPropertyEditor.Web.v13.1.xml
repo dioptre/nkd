@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.HtmlPropertyEditor.Web.v13.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.HtmlPropertyEditor.Web.HtmlPropertyEditorAspNetModule">
+
+            <summary>
+                <para>The module contained in the <i>DevExpress.ExpressApp.HTMLPropertyEditor.Web.v13.1.dll</i> assembly.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.HtmlPropertyEditor.Web.HtmlPropertyEditorAspNetModule.#ctor">
+            <summary>
+                <para>Creates an instance of the HtmlPropertyEditorAspNetModule class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.HtmlPropertyEditor.Web.HtmlPropertyEditorAspNetModule.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+            <summary>
+                <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the HtmlPropertyEditorAspNetModule module.
+</para>
+            </summary>
+            <param name="objectSpace">
+		An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.
+
+            </param>
+            <param name="versionFromDB">
+		A <b>System.Version</b> object which represents the current database version.
+
+            </param>
+            <returns>An IEnumerable@lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>@gt; list of updaters that handle database updates for the HtmlPropertyEditorAspNetModule module.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.HtmlPropertyEditor.Web.HtmlPropertyEditorAspNetModule.GetXafResourceLocalizerTypes">
+            <summary>
+                <para>Returns a collection of additional Resource Localizer types that can be used in an application that uses the HtmlPropertyEditorAspNetModule.
+</para>
+            </summary>
+            <returns>An <b>ICollection@lt;Type@gt;</b> collection containing the types of the Resource Localizers supplied with the <b>HtmlPropertyEditorAspNetModule</b>.
+</returns>
+
+
+        </member>
+    </members>
+</doc>

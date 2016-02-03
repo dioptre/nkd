@@ -1,0 +1,1513 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.DataAccess.v13.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.FileConnectionParametersBase">
+
+            <summary>
+                <para>Serves as the base for classes that contain the parameters used to connect to database files.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.FileConnectionParametersBase.FileName">
+            <summary>
+                <para>Gets or sets the path to a database file.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the path to a database file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.FileConnectionParametersBase.Password">
+            <summary>
+                <para>Gets or sets the password used to access the database file.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the password used to access the database file.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.HandleConnectionErrorEventArgs">
+
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.HandleConnectionErrorEventArgs.#ctor(System.String,DevExpress.DataAccess.ConnectionParameters.DataConnectionParametersBase,System.Exception)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="connectionName">
+		 [To be supplied] 
+            </param>
+            <param name="connectionParameters">
+		 [To be supplied] 
+            </param>
+            <param name="exception">
+		 [To be supplied] 
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.HandleConnectionErrorEventArgs.Cancel">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.HandleConnectionErrorEventArgs.Exception">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.HandleConnectionErrorEventArgs.Handled">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.DB2ConnectionParameters">
+
+            <summary>
+                <para>Contains parameters used to establish a connection to a DB2 database server.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.DB2ConnectionParameters.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DB2ConnectionParameters class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.DB2ConnectionParameters.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the DB2ConnectionParameters class.
+</para>
+            </summary>
+            <param name="serverName">
+		A <see cref="T:System.String"/> that specifies the name of the DB2 server to which the connection should be established. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.ServerName"/> property.
+
+            </param>
+            <param name="databaseName">
+		A <see cref="T:System.String"/> that specifies the name of the database that contains the required data. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.DatabaseName"/> property.
+
+            </param>
+            <param name="userName">
+		A <see cref="T:System.String"/> that specifies the user name used to authenticate to the DB2 server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.UserName"/> property.
+
+            </param>
+            <param name="password">
+		A <see cref="T:System.String"/> that specifies the password used to authenticate to the DB2 server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.Password"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.HandleConnectionErrorEventHandler">
+
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.HandleConnectionErrorEventHandler.Invoke(System.Object,DevExpress.DataAccess.HandleConnectionErrorEventArgs)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="sender">
+		 [To be supplied] 
+            </param>
+            <param name="e">
+		 [To be supplied] 
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.AseConnectionParameters">
+
+            <summary>
+                <para>Contains parameters used to establish a connection to an ASE database server.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.AseConnectionParameters.#ctor">
+            <summary>
+                <para>Initializes a new instance of the AseConnectionParameters class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.AseConnectionParameters.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the AseConnectionParameters class.
+</para>
+            </summary>
+            <param name="serverName">
+		A <see cref="T:System.String"/> that specifies the name of the ASE server to which the connection should be established. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.ServerName"/> property.
+
+
+            </param>
+            <param name="databaseName">
+		A <see cref="T:System.String"/> that specifies the name of the database that contains the required data. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.DatabaseName"/> property.
+
+
+
+            </param>
+            <param name="userName">
+		A <see cref="T:System.String"/> that specifies the user name used to authenticate to the ASE server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.UserName"/> property.
+
+
+            </param>
+            <param name="password">
+		A <see cref="T:System.String"/> that specifies the password used to authenticate to the ASE server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.Password"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.MsSqlConnectionParameters">
+
+            <summary>
+                <para>Contains parameters used to establish a connection to a Microsoft SQL Server.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.MsSqlConnectionParameters.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MsSqlConnectionParameters class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.MsSqlConnectionParameters.#ctor(System.String,System.String,System.String,System.String,DevExpress.DataAccess.ConnectionParameters.MsSqlAuthorizationType)">
+            <summary>
+                <para>Initializes a new instance of the MsSqlConnectionParameters class.
+</para>
+            </summary>
+            <param name="serverName">
+		A <see cref="T:System.String"/> that specifies the name of the Microsoft SQL Server to which the connection should be established. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.ServerName"/> property.
+
+            </param>
+            <param name="databaseName">
+		A <see cref="T:System.String"/> that specifies the name of the database that contains the required data. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.DatabaseName"/> property.
+
+            </param>
+            <param name="userName">
+		A <see cref="T:System.String"/> that specifies the user name used to authenticate to the Microsoft SQL Server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.UserName"/> property.
+
+            </param>
+            <param name="password">
+		A <see cref="T:System.String"/> that specifies the password used to authenticate to the Microsoft SQL Server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.Password"/> property.
+
+            </param>
+            <param name="authorizationType">
+		A <see cref="T:DevExpress.DataAccess.ConnectionParameters.MsSqlAuthorizationType"/> value that specifies the authentication mode of the Microsoft SQL Server.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.MsSqlConnectionParameters.AuthorizationType">
+            <summary>
+                <para>Gets or sets the authentication mode of the Microsoft SQL Server.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DataAccess.ConnectionParameters.MsSqlAuthorizationType"/> value that specifies the authentication mode of the Microsoft SQL Server.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.MsSqlCEConnectionParameters">
+
+            <summary>
+                <para>Contains parameters used to establish a connection to a Microsoft SQL Server Compact Edition database file.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.MsSqlCEConnectionParameters.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MsSqlCEConnectionParameters class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.MsSqlCEConnectionParameters.#ctor(System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the MsSqlCEConnectionParameters class.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> that specifies the path to the Microsoft SQL Server Compact Edition database file. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FileConnectionParametersBase.FileName"/> property.
+
+            </param>
+            <param name="password">
+		A <see cref="T:System.String"/> that specifies the password used for authentication. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FileConnectionParametersBase.Password"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.DataConnectionParametersBase">
+
+            <summary>
+                <para>Serves as the base for classes that contain the parameters of data connections.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.CustomStringConnectionParameters">
+
+            <summary>
+                <para>Contains a connection string.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.CustomStringConnectionParameters.#ctor">
+            <summary>
+                <para>Initializes a new instance of the CustomStringConnectionParameters class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.CustomStringConnectionParameters.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the CustomStringConnectionParameters class.
+</para>
+            </summary>
+            <param name="connectionString">
+		A <see cref="T:System.String"/> that contains connection parameters. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.CustomStringConnectionParameters.ConnectionString"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.CustomStringConnectionParameters.ConnectionString">
+            <summary>
+                <para>Gets or sets a connection string.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that contains connection parameters.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.MsSqlAuthorizationType">
+
+            <summary>
+                <para>Lists values that specify the authentication mode of the Microsoft SQL Server.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.DataAccess.ConnectionParameters.MsSqlAuthorizationType.SqlServer">
+            <summary>
+                <para>Authenticate with a SQL server account.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DataAccess.ConnectionParameters.MsSqlAuthorizationType.Windows">
+            <summary>
+                <para>Authenticate with a Windows user account.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionType">
+
+            <summary>
+                <para>Lists values that specify the type of the connection destination.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionType.Embedded">
+            <summary>
+                <para>The connection is established to an embedded Firebird database.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionType.ServerBased">
+            <summary>
+                <para>A connection is established to a Firebird database server.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.AdvantageConnectionParameters">
+
+            <summary>
+                <para>Contains parameters used to establish a connection to an Advantage database file.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.AdvantageConnectionParameters.#ctor">
+            <summary>
+                <para>Initializes a new instance of the AdvantageConnectionParameters class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.AdvantageConnectionParameters.#ctor(System.String,System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the AdvantageConnectionParameters class.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> that specifies the path to the Advantage database file. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FileConnectionParametersBase.FileName"/> property.
+
+            </param>
+            <param name="userName">
+		A <see cref="T:System.String"/> that specifies the user name used for authentication. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.AdvantageConnectionParameters.UserName"/> property.
+
+            </param>
+            <param name="password">
+		A <see cref="T:System.String"/> that specifies the password used for authentication. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FileConnectionParametersBase.Password"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.AdvantageConnectionParameters.UserName">
+            <summary>
+                <para>Gets or sets the user name used to authenticate to the database.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the user name used to authenticate to the database.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.Access97ConnectionParameters">
+
+            <summary>
+                <para>Contains parameters used to establish a connection to an Access 97 database file.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.Access97ConnectionParameters.#ctor">
+            <summary>
+                <para>Initializes a new instance of the Access97ConnectionParameters class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.Access97ConnectionParameters.#ctor(System.String,System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the Access97ConnectionParameters class.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> that specifies the path to the Access 97 database file. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FileConnectionParametersBase.FileName"/> property.
+
+            </param>
+            <param name="userName">
+		A <see cref="T:System.String"/> that specifies the user name used for authentication. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.Access97ConnectionParameters.UserName"/> property.
+
+            </param>
+            <param name="password">
+		A <see cref="T:System.String"/> that specifies the password used for authentication. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FileConnectionParametersBase.Password"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.Access97ConnectionParameters.UserName">
+            <summary>
+                <para>Gets or sets the user name used to authenticate to the database.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the user name used to authenticate to the database.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.DataSourceBase">
+
+            <summary>
+                <para>Serves as the base class for classes that represent the data source.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.DataAccess.DataSourceBase.Name">
+            <summary>
+                <para>Gets or sets the name of the data source.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the name of the data source.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.DataAccess.DataSourceBase.XmlDataConnection">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.DataAccess.DataSourceBase.XmlDataSource">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.DataAccess.DataSourceBase.XmlSupportSql">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.Access2007ConnectionParameters">
+
+            <summary>
+                <para>Contains parameters used to establish a connection to an Access 2007 database file.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.Access2007ConnectionParameters.#ctor">
+            <summary>
+                <para>Initializes a new instance of the Access2007ConnectionParameters class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.Access2007ConnectionParameters.#ctor(System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the Access2007ConnectionParameters class.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> that specifies the path to the Access 2007 database file. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FileConnectionParametersBase.FileName"/> property.
+
+            </param>
+            <param name="password">
+		A <see cref="T:System.String"/> that specifies the password used for authentication. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FileConnectionParametersBase.Password"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.SQLiteConnectionParameters">
+
+            <summary>
+                <para>Contains parameters used to establish a connection to a SQLite database file.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.SQLiteConnectionParameters.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SQLiteConnectionParameters class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.SQLiteConnectionParameters.#ctor(System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the SQLiteConnectionParameters class.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> that specifies the path to the SQLite database file. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FileConnectionParametersBase.FileName"/> property.
+
+            </param>
+            <param name="password">
+		A <see cref="T:System.String"/> that specifies the password used for authentication. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FileConnectionParametersBase.Password"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.DataLoadingEventHandler">
+
+            <summary>
+                <para>References a method that will handle the <see cref="E:DevExpress.DashboardWin.DashboardDesigner.DataLoading"/> or <see cref="E:DevExpress.DashboardWin.DashboardViewer.DataLoading"/> event. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.DataLoadingEventHandler.Invoke(System.Object,DevExpress.DataAccess.DataLoadingEventArgs)">
+            <summary>
+                <para>References a method that will handle <b>DataLoading</b> events. 
+</para>
+            </summary>
+            <param name="sender">
+		The event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.DataAccess.DataLoadingEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.PervasiveSqlConnectionParameters">
+
+            <summary>
+                <para>Contains parameters used to establish a connection to a Pervasive PSQL database server.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.PervasiveSqlConnectionParameters.#ctor">
+            <summary>
+                <para>Initializes a new instance of the PervasiveSqlConnectionParameters class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.PervasiveSqlConnectionParameters.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the PervasiveSqlConnectionParameters class.
+</para>
+            </summary>
+            <param name="serverName">
+		A <see cref="T:System.String"/> that specifies the name of the Pervasive PSQL server to which the connection should be established. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.ServerName"/> property.
+
+            </param>
+            <param name="databaseName">
+		A <see cref="T:System.String"/> that specifies the name of the database that contains the required data. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.DatabaseName"/> property.
+
+            </param>
+            <param name="userName">
+		A <see cref="T:System.String"/> that specifies the user name used to authenticate to the Pervasive PSQL server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.UserName"/> property.
+
+            </param>
+            <param name="password">
+		A <see cref="T:System.String"/> that specifies the password used to authenticate to the Pervasive PSQL server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.Password"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.CustomFilterExpressionEventArgs">
+
+            <summary>
+                <para>Provides data for the <b>CustomFilterExpression</b> events of the <see cref="T:DevExpress.DashboardWin.DashboardDesigner"/> and <see cref="T:DevExpress.DashboardWin.DashboardViewer"/>. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.CustomFilterExpressionEventArgs.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the CustomFilterExpressionEventArgs class. 
+
+</para>
+            </summary>
+            <param name="dataSourceName">
+		A <see cref="T:System.String"/> that specifies the name of the data source for which the event is raised. This value is assigned to the <see cref="P:DevExpress.DataAccess.CustomFilterExpressionEventArgs.DataSourceName"/> property. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.CustomFilterExpressionEventArgs.DataSourceName">
+            <summary>
+                <para>Gets the name of the data source for which the event has been raised.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the name of the data source for which the event has been raised.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.CustomFilterExpressionEventArgs.FilterExpression">
+            <summary>
+                <para>Gets or sets the filter expression that defines a WHERE clause included in the SQL query.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> descendant that specifies the filter expression that defines a WHERE clause included in the SQL query.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.VistaDBConnectionParameters">
+
+            <summary>
+                <para>Contains parameters used to establish a connection to a VistaDB database file.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.VistaDBConnectionParameters.#ctor">
+            <summary>
+                <para>Initializes a new instance of the VistaDBConnectionParameters class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.VistaDBConnectionParameters.#ctor(System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the VistaDBConnectionParameters class.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> that specifies the path to the VistaDB database file. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FileConnectionParametersBase.FileName"/> property.
+
+            </param>
+            <param name="password">
+		A <see cref="T:System.String"/> that specifies the password used for authentication. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FileConnectionParametersBase.Password"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters">
+
+            <summary>
+                <para>Contains parameters used to establish a connection to an Oracle server.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters.#ctor">
+            <summary>
+                <para>Initializes a new instance of the OracleConnectionParameters class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters.#ctor(System.String,System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the OracleConnectionParameters class.
+</para>
+            </summary>
+            <param name="serverName">
+		A <see cref="T:System.String"/> that specifies the name of the Oracle server to which the connection should be established. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters.ServerName"/> property.
+
+            </param>
+            <param name="userName">
+		A <see cref="T:System.String"/> that specifies the user name used to authenticate to the Oracle server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters.UserName"/> property.
+
+            </param>
+            <param name="password">
+		A <see cref="T:System.String"/> that specifies the password used to authenticate to the Oracle server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters.Password"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters.Password">
+            <summary>
+                <para>Gets or sets the password used to authenticate to an Oracle server.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the password used to authenticate to an Oracle server.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters.ServerName">
+            <summary>
+                <para>Gets or sets the name of the Oracle server to which the connection should be established.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the name of the Oracle server to which the connection should be established.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters.UserName">
+            <summary>
+                <para>Gets or sets the user name used to authenticate to the Oracle server.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the user name used to authenticate to the Oracle server.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConfigureDataConnectionEventArgs">
+
+            <summary>
+                <para>Provides data for the <b>ConfigureDataConnection</b> events. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConfigureDataConnectionEventArgs.#ctor(System.String,DevExpress.DataAccess.ConnectionParameters.DataConnectionParametersBase)">
+            <summary>
+                <para>Initializes a new instance of the ConfigureDataConnectionEventArgs class.
+</para>
+            </summary>
+            <param name="connectionName">
+		A <see cref="T:System.String"/> that specifies the name of the connection for which the event has been raised. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConfigureDataConnectionEventArgs.ConnectionName"/> property.
+
+            </param>
+            <param name="connectionParameters">
+		A <see cref="T:DevExpress.DataAccess.ConnectionParameters.DataConnectionParametersBase"/> descendant that contains connection parameters. This object is assigned to the <see cref="P:DevExpress.DataAccess.ConfigureDataConnectionEventArgs.ConnectionParameters"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConfigureDataConnectionEventArgs.ConnectionName">
+            <summary>
+                <para>Gets the name of the connection for which the event has been raised. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the name of the connection for which the event has been raised. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConfigureDataConnectionEventArgs.ConnectionParameters">
+            <summary>
+                <para>Gets or sets parameters used to establish a connection to data.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DataAccess.ConnectionParameters.DataConnectionParametersBase"/> descendant that contains parameters used to establish a connection to data.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase">
+
+            <summary>
+                <para>Serves as the base for classes that contain parameters used to connect to SQL servers.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.DatabaseName">
+            <summary>
+                <para>Gets or sets the name of the database that contains the required data.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the name of the database that contains the required data.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.Password">
+            <summary>
+                <para>Gets or sets the password used to authenticate to a SQL server.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the password used to authenticate to a SQL server.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.ServerName">
+            <summary>
+                <para>Gets or sets the name of the SQL server to which the connection should be established.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the name of the SQL server to which the connection should be established.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.UserName">
+            <summary>
+                <para>Gets or sets the user name used to authenticate to the SQL server.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the user name used to authenticate to the SQL server.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.UniqueItemCollection`1">
+
+            <summary>
+                <para>A collection that contains no duplicated items.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.UniqueItemCollection`1.#ctor">
+            <summary>
+                <para>Initializes a new instance of the UniqueItemCollection@lt;T@gt; class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters">
+
+            <summary>
+                <para>Contains parameters used to establish a connection to a PostgreSQL database server.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters.#ctor">
+            <summary>
+                <para>Initializes a new instance of the PostgreSqlConnectionParameters class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the PostgreSqlConnectionParameters class.
+</para>
+            </summary>
+            <param name="serverName">
+		A <see cref="T:System.String"/> that specifies the name of the PostgreSQL server to which the connection should be established. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.ServerName"/> property.
+
+            </param>
+            <param name="databaseName">
+		A <see cref="T:System.String"/> that specifies the name of the database that contains the required data. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.DatabaseName"/> property.
+
+            </param>
+            <param name="userName">
+		A <see cref="T:System.String"/> that specifies the user name used to authenticate to the PostgreSQL server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.UserName"/> property.
+
+            </param>
+            <param name="password">
+		A <see cref="T:System.String"/> that specifies the password used to authenticate to the PostgreSQL server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.Password"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.OlapConnectionParameters">
+
+            <summary>
+                <para>Contains parameters used to establish a connection to a cube in an MS Analysis Services database.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.OlapConnectionParameters.#ctor">
+            <summary>
+                <para>Initializes a new instance of the OlapConnectionParameters class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.OlapConnectionParameters.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the OlapConnectionParameters class.
+</para>
+            </summary>
+            <param name="connectionString">
+		A <see cref="T:System.String"/> that represents a connection string to a cube in an MS Analysis Services database.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.DataLoadingEventArgs">
+
+            <summary>
+                <para>Provides data for the <b>DataLoading</b> events of the <see cref="T:DevExpress.DashboardWin.DashboardDesigner"/> and <see cref="T:DevExpress.DashboardWin.DashboardViewer"/>. 
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.DataLoadingEventArgs.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the DataLoadingEventArgs class. 
+</para>
+            </summary>
+            <param name="dataSourceName">
+		A <see cref="T:System.String"/> that specifies the name of the data source for which the event is raised. This value is assigned to the <see cref="P:DevExpress.DataAccess.DataLoadingEventArgs.DataSourceName"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.DataLoadingEventArgs.Data">
+            <summary>
+                <para>Gets or sets data for the current data source.
+</para>
+            </summary>
+            <value>Data for the current data source.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.DataLoadingEventArgs.DataSourceName">
+            <summary>
+                <para>Gets the name of the data source for which the event has been raised.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the name of the data source for which the event has been raised. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.CustomFilterExpressionEventHandler">
+
+            <summary>
+                <para>References a method that will handle the <see cref="E:DevExpress.DashboardWin.DashboardDesigner.CustomFilterExpression"/> or <see cref="E:DevExpress.DashboardWin.DashboardViewer.CustomFilterExpression"/> event. 
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.CustomFilterExpressionEventHandler.Invoke(System.Object,DevExpress.DataAccess.CustomFilterExpressionEventArgs)">
+            <summary>
+                <para>References a method that will handle the <b>CustomFilterExpression</b> events.
+</para>
+            </summary>
+            <param name="sender">
+		The event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.DataAccess.CustomFilterExpressionEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.NotifyingCollectionChangedEventArgs`1">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.Utils.NotificationCollection`1.CollectionChanged"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.NotifyingCollectionChangedEventArgs`1.#ctor(System.Collections.Generic.IList`1,System.Collections.Generic.IList`1)">
+            <summary>
+                <para>Initializes a new instance of the NotifyingCollectionChangedEventArgs@lt;T@gt; class.
+</para>
+            </summary>
+            <param name="addedItems">
+		A <see cref="T:System.Collections.Generic.IList"/> collection that contains items that have been added to the collection. This value is assigned to the <see cref="P:DevExpress.DataAccess.NotifyingCollectionChangedEventArgs`1.AddedItems"/> property.
+
+            </param>
+            <param name="removedItems">
+		A <see cref="T:System.Collections.Generic.IList"/> collection that contains items that have been removed from the collection. This value is assigned to the <see cref="P:DevExpress.DataAccess.NotifyingCollectionChangedEventArgs`1.RemovedItems"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.NotifyingCollectionChangedEventArgs`1.AddedItems">
+            <summary>
+                <para>Gets the items that have been added to the collection.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Collections.Generic.IList"/> collection containing items that have been added to the collection. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.NotifyingCollectionChangedEventArgs`1.RemovedItems">
+            <summary>
+                <para>Gets the items that have been removed from the collection.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Collections.Generic.IList"/> collection containing items that have been removed from the collection. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.NotifyingCollection`1">
+
+            <summary>
+                <para>A collection that sends notification when its content is changed.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.NotifyingCollection`1.#ctor">
+            <summary>
+                <para>Initializes a new instance of the NotifyingCollection@lt;T@gt; class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.NotifyingCollection`1.AddRange(System.Collections.Generic.IEnumerable`1)">
+            <summary>
+                <para>Adds items in the specified collection to the current collection.
+</para>
+            </summary>
+            <param name="items">
+		A <see cref="T:System.Collections.Generic.IEnumerable"/> object representing the collection of items to append to the collection. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.NotifyingCollection`1.AddRange(DevExpress.DataAccess.T[])">
+            <summary>
+                <para>Adds the specified items to the collection.
+</para>
+            </summary>
+            <param name="items">
+		An array that contains zero or more T objects to add to the collection. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.NotifyingCollection`1.BeginUpdate">
+            <summary>
+                <para>Locks updates of the NotifyingCollection@lt;T@gt; until the <see cref="M:DevExpress.DataAccess.NotifyingCollection`1.EndUpdate"/> method call.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.DataAccess.NotifyingCollection`1.CollectionChanged">
+            <summary>
+                <para>Occurs after items are added to or removed from the collection.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.NotifyingCollection`1.Contains(System.Predicate`1)">
+            <summary>
+                <para>Determines whether the collection contains an item that matches the specified predicate.
+</para>
+            </summary>
+            <param name="match">
+		A <see cref="T:System.Predicate"/> that specifies the condition used to determine whether the collection contains an item.
+
+            </param>
+            <returns><b>true</b>, if the collection contains an item that matches the specified predicate; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.NotifyingCollection`1.EndUpdate">
+            <summary>
+                <para>Unlocks the NotifyingCollection@lt;T@gt;.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.NotifyingCollection`1.FindFirst(System.Predicate`1)">
+            <summary>
+                <para>Returns the first item that matches the specified predicate.
+</para>
+            </summary>
+            <param name="match">
+		A <see cref="T:System.Predicate"/> that specifies the condition used to obtain the first item.
+
+            </param>
+            <returns>A T object representing the first item that matches the specified predicate.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.NotifyingCollection`1.ForEach(System.Action`1)">
+            <summary>
+                <para>Performs the specified action on each element of the current collection.
+</para>
+            </summary>
+            <param name="action">
+		The <see cref="T:System.Action"/> action to perform on each element of the collection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.NotifyingCollection`1.RemoveRange(DevExpress.DataAccess.T[])">
+            <summary>
+                <para>Removes the specified items from the collection.
+</para>
+            </summary>
+            <param name="items">
+		An array that contains zero or more T objects to remove from the collection. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.NotifyingCollection`1.RemoveRange(System.Collections.Generic.IEnumerable`1)">
+            <summary>
+                <para>Removes items in the specified collection from the current collection.
+</para>
+            </summary>
+            <param name="items">
+		A <see cref="T:System.Collections.Generic.IEnumerable"/> object representing the collection of items to remove from the collection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.NotifyingCollection`1.ToArray">
+            <summary>
+                <para>Returns the elements of the NotifyingCollection@lt;T@gt; collection as an array.
+</para>
+            </summary>
+            <returns>An array containing the elements of the NotifyingCollection@lt;T@gt; collection.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.MySqlConnectionParameters">
+
+            <summary>
+                <para>Contains parameters used to establish a connection to a MySQL server.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.MySqlConnectionParameters.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MySqlConnectionParameters class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.MySqlConnectionParameters.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the MySqlConnectionParameters class.
+</para>
+            </summary>
+            <param name="serverName">
+		A <see cref="T:System.String"/> that specifies the name of the MySQL server to which the connection should be established. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.ServerName"/> property.
+
+            </param>
+            <param name="databaseName">
+		A <see cref="T:System.String"/> that specifies the name of the database that contains the required data. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.DatabaseName"/> property.
+
+            </param>
+            <param name="userName">
+		A <see cref="T:System.String"/> that specifies the user name used to authenticate to the MySQL server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.UserName"/> property.
+
+            </param>
+            <param name="password">
+		A <see cref="T:System.String"/> that specifies the password used to authenticate to the MySQL server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.Password"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.XmlFileConnectionParameters">
+
+            <summary>
+                <para>Contains parameters used to establish a connection to an XML file.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.XmlFileConnectionParameters.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XmlFileConnectionParameters class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.XmlFileConnectionParameters.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the XmlFileConnectionParameters class.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> that specifies the path to the XML file. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.XmlFileConnectionParameters.FileName"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.XmlFileConnectionParameters.FileName">
+            <summary>
+                <para>Gets or sets the path to an XML file.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the path to an XML file.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConfigureDataConnectionEventHandler">
+
+            <summary>
+                <para>References a method that will handle the <b>ConfigureDataConnection</b> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConfigureDataConnectionEventHandler.Invoke(System.Object,DevExpress.DataAccess.ConfigureDataConnectionEventArgs)">
+            <summary>
+                <para>References a method that will handle the <b>ConfigureDataConnection</b> events.
+</para>
+            </summary>
+            <param name="sender">
+		The event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.DataAccess.ConfigureDataConnectionEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.NamedItemCollection`1">
+
+            <summary>
+                <para>A collection that contains unique named items.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.NamedItemCollection`1.#ctor">
+            <summary>
+                <para>Initializes a new instance of the NamedItemCollection@lt;T@gt; class.
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.NamedItemCollection`1.ContainsName(System.String)">
+            <summary>
+                <para>Determines whether an item with the specified name is contained in the collection.
+</para>
+            </summary>
+            <param name="name">
+		The <see cref="T:System.String"/> that specifies the name of an item.
+
+            </param>
+            <returns><b>true</b>, if an item with the specified name is contained in the collection; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.NamedItemCollection`1.GetNextUniqueName(System.String)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="namePrefix">
+		@nbsp;
+
+            </param>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.NamedItemCollection`1.Item(System.String)">
+            <summary>
+                <para>Gets an item with the specified name.
+</para>
+            </summary>
+            <param name="name">
+		The <see cref="T:System.String"/> that specifies the name of an item.
+
+            </param>
+            <value>A T object that corresponds to the item with the specified name.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.NamedItemCollection`1.Remove(System.String)">
+            <summary>
+                <para>Removes an item with the specified name from the collection.
+</para>
+            </summary>
+            <param name="name">
+		The <see cref="T:System.String"/> that specifies the name of an item to remove from the collection.
+
+            </param>
+            <returns><b>true</b>, if an item with the specified name is successfully removed from the collection; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters">
+
+            <summary>
+                <para>Contains parameters used to establish a connection to a Firebird database server or embedded database.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.#ctor">
+            <summary>
+                <para>Initializes a new instance of the FireBirdConnectionParameters class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the FireBirdConnectionParameters class with the specified parameters required to connect to a Firebird database server.
+</para>
+            </summary>
+            <param name="serverName">
+		A <see cref="T:System.String"/> that specifies the name of the Firebird server to which the connection should be established. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.ServerName"/> property.
+
+            </param>
+            <param name="databaseName">
+		A <see cref="T:System.String"/> that specifies the name of the database that contains the required data. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.DatabaseName"/> property.
+
+            </param>
+            <param name="userName">
+		A <see cref="T:System.String"/> that specifies the user name used to authenticate to the Firebird server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.UserName"/> property.
+
+            </param>
+            <param name="password">
+		A <see cref="T:System.String"/> that specifies the password used to authenticate to the Firebird server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.Password"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.#ctor(System.String,System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the FireBirdConnectionParameters class with the specified parameters required to connect to an embedded Firebird database.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> that specifies the path to the Firebird database file. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.FileName"/> property.
+
+            </param>
+            <param name="userName">
+		A <see cref="T:System.String"/> that specifies the user name used for authentication. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.UserName"/> property.
+
+            </param>
+            <param name="password">
+		A <see cref="T:System.String"/> that specifies the password used for authentication. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.Password"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.ConnectionType">
+            <summary>
+                <para>Gets or sets whether to connect to a database server or an embedded database.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionType"/> enumeration member that specifies whether to connect to a database server or an embedded database.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.DatabaseName">
+            <summary>
+                <para>Gets or sets the name of the database that contains the required data.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the name of the database that contains the required data.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.FileName">
+            <summary>
+                <para>Gets or sets the path to a database file.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the path to a database file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.Password">
+            <summary>
+                <para>Gets or sets the password used for authentication.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the password used for authentication.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.ServerName">
+            <summary>
+                <para>Gets or sets the name of the Firebird server to which the connection should be established.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the name of the Firebird server to which the connection should be established.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.UserName">
+            <summary>
+                <para>Gets or sets the user name used for authentication.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the user name used for authentication.
+</value>
+
+
+        </member>
+    </members>
+</doc>

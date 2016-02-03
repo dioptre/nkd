@@ -1,0 +1,8 @@
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Debug\Mail Server Configuration.exe.config
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Debug\Mail Server Configuration.exe
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\Application\Debug\Mail Server Configuration.pdb
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\MailServerConfiguration\obj\Debug\MailServerConfiguration.csprojResolveAssemblyReference.cache
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\MailServerConfiguration\obj\Debug\Mail_Server_Configuration.Properties.Resources.resources
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\MailServerConfiguration\obj\Debug\MailServerConfiguration.csproj.GenerateResource.Cache
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\MailServerConfiguration\obj\Debug\Mail Server Configuration.exe
+E:\expedit\projects\nkd\src\main\NKD.Orchard\lib\LumiSoft.Net\MailServer\MailServerConfiguration\obj\Debug\Mail Server Configuration.pdb

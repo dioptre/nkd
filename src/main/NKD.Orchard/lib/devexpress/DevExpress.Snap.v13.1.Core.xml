@@ -1,0 +1,3530 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Snap.v13.1.Core</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Snap.Core.API.SnapImage">
+
+            <summary>
+                <para>Provides functionality to manipulate images in Snap documents.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapImage.DataFieldName">
+            <summary>
+                <para>Specifies the data field that supplies data to the SnapImage.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value specifying the name of the bound data field.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapImage.Height">
+            <summary>
+                <para>Specifies the image height.
+</para>
+            </summary>
+            <value>An integer value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapImage.ImageSizeMode">
+            <summary>
+                <para>Specifies how the image is resized within the SnapImage's dimensions.
+
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraPrinting.ImageSizeMode"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapImage.ScaleX">
+            <summary>
+                <para>Specifies the image horizontal scale relative to the SnapImage size.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.Single"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapImage.ScaleY">
+            <summary>
+                <para>Specifies the image vertical scale relative to the SnapImage size.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.Single"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapImage.Size">
+            <summary>
+                <para>Specifies the image size.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Size"/> structure, specifying the image size.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapImage.UpdateMode">
+            <summary>
+                <para>Specifies whether to preserve the image box size or the original image proportions when the SnapImage is resized.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Snap.Core.Fields.UpdateMergeImageFieldMode"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapImage.Width">
+            <summary>
+                <para>Specifies the image width.
+</para>
+            </summary>
+            <value>An integer value.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.SnapCheckBox">
+
+            <summary>
+                <para>Provides functionality to manipulate check boxes in Snap documents.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapCheckBox.DataFieldName">
+            <summary>
+                <para>Specifies the data field that supplies data to the SnapCheckBox.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value specifying the name of the bound data field.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapCheckBox.State">
+            <summary>
+                <para>Specifies the check state of the SnapCheckBox.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.CheckState"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.SnapBarCode">
+
+            <summary>
+                <para>Provides functionality to manipulate bar codes in Snap documents.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapBarCode.Alignment">
+            <summary>
+                <para>Specifies the alignment of the bar code image within the control's bounds.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraPrinting.TextAlignment"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapBarCode.AutoModule">
+            <summary>
+                <para>Specifies whether or not the <see cref="P:DevExpress.Snap.Core.API.SnapBarCode.Module"/> property value should be calculated automatically based upon the bar code size.
+</para>
+            </summary>
+            <value><b>true</b>, if the bar code module is calculated automatically; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapBarCode.Data">
+            <summary>
+                <para>Provides data to the SnapBarCode.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value containing the bar code's data.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapBarCode.DataFieldName">
+            <summary>
+                <para>Specifies the data field that supplies data to the SnapBarCode.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value specifying the name of the bound data field.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapBarCode.GetGenerator">
+            <summary>
+                <para>Returns the SnapBarCode's generator that specifies the bar code type.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraPrinting.BarCode.BarCodeGeneratorBase"/> descendant specifying the bar code generator type.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapBarCode.Module">
+            <summary>
+                <para>Specifies the width of the narrowest bar or space in the bar code.
+</para>
+            </summary>
+            <value>An integer value, specifying the width of the narrowest bar or space.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapBarCode.Orientation">
+            <summary>
+                <para>Specifies the angle by which a bar code is rotated.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraPrinting.BarCode.BarCodeOrientation"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapBarCode.SetGenerator(DevExpress.XtraPrinting.BarCode.BarCodeGeneratorBase)">
+            <summary>
+                <para>Assigns a generator that specifies the bar code type to the SnapBarCode.
+</para>
+            </summary>
+            <param name="value">
+		A <see cref="T:DevExpress.XtraPrinting.BarCode.BarCodeGeneratorBase"/> descendant, specifying the bar code generator type.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapBarCode.ShowData">
+            <summary>
+                <para>Specifies whether or not to display the SnapBarCode's incoming data as plain text together with the encoded bar code image.
+</para>
+            </summary>
+            <value><b>true</b> to show the bar code text; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapBarCode.TextAlignment">
+            <summary>
+                <para>Specifies the alignment of the bar code's text.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraPrinting.TextAlignment"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.DataFieldInfo">
+
+            <summary>
+                <para>Provides information about a data field.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataFieldInfo.#ctor(System.Object,System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the DataFieldInfo class with the specified settings. 
+</para>
+            </summary>
+            <param name="dataSource">
+		A <see cref="T:System.Object"/> value.
+
+            </param>
+            <param name="dataMember">
+		A <see cref="T:System.String"/> value.
+
+            </param>
+            <param name="displayName">
+		A <see cref="T:System.String"/> value.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataFieldInfo.#ctor(System.Object,System.String[])">
+            <summary>
+                <para>Initializes a new instance of the DataFieldInfo class with the specified settings. 
+</para>
+            </summary>
+            <param name="dataSource">
+		A <see cref="T:System.Object"/> value.
+
+            </param>
+            <param name="dataPaths">
+		An array of <see cref="T:System.String"/> values.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataFieldInfo.#ctor(System.Object,System.String[],System.String)">
+            <summary>
+                <para>Initializes a new instance of the DataFieldInfo class with the specified settings. 
+</para>
+            </summary>
+            <param name="dataSource">
+		A <see cref="T:System.Object"/> value.
+
+            </param>
+            <param name="dataPaths">
+		An array of <see cref="T:System.String"/> values.
+
+            </param>
+            <param name="displayName">
+		A <see cref="T:System.String"/> value.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataFieldInfo.#ctor(System.Object,System.String)">
+            <summary>
+                <para>Initializes a new instance of the DataFieldInfo class with the specified settings. 
+</para>
+            </summary>
+            <param name="dataSource">
+		A <see cref="T:System.Object"/> value.
+
+            </param>
+            <param name="dataMember">
+		A <see cref="T:System.String"/> value.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.DataFieldInfo.DataPaths">
+            <summary>
+                <para>Specifies the path to the data field.
+</para>
+            </summary>
+            <value>An array of <see cref="T:System.String"/> values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.DataFieldInfo.DataSource">
+            <summary>
+                <para>Specifies the bound data source.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Object"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.DataFieldInfo.DisplayName">
+            <summary>
+                <para>Specifies the display name of the DataFieldInfo.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.Localization.SnapResLocalizer">
+
+            <summary>
+                <para>A default localizer to translate a Snap application's resources.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.Localization.SnapResLocalizer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SnapResLocalizer class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapResLocalizer.DefaultResourceFile">
+            <summary>
+                <para>"<b>LocalizationRes</b>"
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.Localization.SnapLocalizer">
+
+            <summary>
+                <para>Provides the means to localize the user interface elements of a Snap application.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.Localization.SnapLocalizer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SnapLocalizer class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.Localization.SnapLocalizer.Active">
+            <summary>
+                <para>Specifies a localizer object providing localization of a Snap application at runtime.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> descendant, used to localize the user interface at runtime. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.Localization.SnapLocalizer.CreateDefaultLocalizer">
+            <summary>
+                <para>Returns a Localizer object storing resources based on the thread's language and regional settings (culture).
+
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> object, storing resources based on the thread's language and regional settings (culture).
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.Localization.SnapLocalizer.CreateResXLocalizer">
+            <summary>
+                <para>For internal use. Returns a Localizer object storing resources based on the thread's language and regional settings (culture). 
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> object, storing resources based on the thread's language and regional settings (culture).
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.Localization.SnapLocalizer.GetString(DevExpress.Snap.Core.Localization.SnapStringId)">
+            <summary>
+                <para>Returns a localized string for the given string identifier.
+</para>
+            </summary>
+            <param name="id">
+		A <see cref="T:DevExpress.Snap.Core.Localization.SnapStringId"/> enumeration value, identifying the string to localize.
+
+            </param>
+            <returns>A <see cref="T:System.String"/> value, corresponding to the specified identifier.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.Localization.SnapStringId">
+
+            <summary>
+                <para>Contains values corresponding to strings that can be localized for a Snap application.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ArraysLengthsMismatchException">
+            <summary>
+                <para><b>"Arrays must have same length"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ChangeEditorRowLimitCommand_Description">
+            <summary>
+                <para><b>"Define the maximum number of rows shown in the document lists and groups during your editing session.\r\nThis option allows you to save time when working with large datasources. It does not affect the document's data in the print preview."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ChangeEditorRowLimitCommand_MenuCaption">
+            <summary>
+                <para><b>"Editor Row Limit"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ChangeThemeCommand_Description">
+            <summary>
+                <para><b>"Change Theme"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ChangeThemeCommand_MenuCaption">
+            <summary>
+                <para><b>"Change Theme"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ConvertToParagraphsCommand_Description">
+            <summary>
+                <para><b>"Click to convert the tables to paragraphs.\r\nEvery field will then be presented in a separate paragraph, and you can highlight fields by using the Highlight option in the View tab of this toolbar."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ConvertToParagraphsCommand_MenuCaption">
+            <summary>
+                <para><b>"Convert to Paragraphs"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.CustomSortForm_Text">
+            <summary>
+                <para><b>"Sort"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.DeleteListCommand_Description">
+            <summary>
+                <para><b>"Delete the list."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.DeleteListCommand_MenuCaption">
+            <summary>
+                <para><b>"Delete List"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.EditorRowLimitShowAll">
+            <summary>
+                <para><b>"(Show All)"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ExportDocumentCommand_Description">
+            <summary>
+                <para><b>"Export Document"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ExportDocumentCommand_MenuCaption">
+            <summary>
+                <para><b>"Export Document"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.FileFilterDescription_SnapFiles">
+            <summary>
+                <para><b>"Snap Document"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.FilterFieldCommand_Description">
+            <summary>
+                <para><b>"Select which rows from the field to include in the list.\r\nTo define more complex filtering criteria, use the Filter option in the List tab."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.FilterFieldCommand_MenuCaption">
+            <summary>
+                <para><b>"Filter"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.FilterListCommand_Description">
+            <summary>
+                <para><b>"Click to define a filter criterion for the list.\r\nTo only select which data records to display for a specific field, use the Filter option in the Field tab."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.FilterListCommand_MenuCaption">
+            <summary>
+                <para><b>"Filter"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.GroupByFieldCommand_Description">
+            <summary>
+                <para><b>"Click to enable/disable grouping by field.\r\nThis will break the list into groups with the selected field being used as a grouping criterion."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.GroupByFieldCommand_MenuCaption">
+            <summary>
+                <para><b>"Group By Field"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.GroupFieldsCollectionCommand_Description">
+            <summary>
+                <para><b>"Click to manage the group's criteria.\r\nEvery group can have multiple criteria. In the document, a separate group section is created for every grouping criterion, with its own header and footer."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.GroupFieldsCollectionCommand_MenuCaption">
+            <summary>
+                <para><b>"Group Fields"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.GroupFooterCommand_Description">
+            <summary>
+                <para><b>"Click to add or remove a group footer.\r\nThe footer displays the group summary function result. By default, the Count summary is being calculated, which you can change using the Summary option in the Field tab.\r\nHiding both the header and footer of a group will disable grouping altogether."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.GroupFooterCommand_MenuCaption">
+            <summary>
+                <para><b>"Footer"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.GroupHeaderCommand_Description">
+            <summary>
+                <para><b>"Click to add or remove a group header.\r\nThe group header is created after a grouping has been applied by a field. The header displays the grouping criterion field.\r\nHiding both the header and footer of a group will disable grouping altogether."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.GroupHeaderCommand_MenuCaption">
+            <summary>
+                <para><b>"Header"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.HighlightActiveElementCommand_Description">
+            <summary>
+                <para><b>"Click to show the information about the current element's type and bounds"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.HighlightActiveElementCommand_MenuCaption">
+            <summary>
+                <para><b>"Highlight"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertBarCodeCommand_Description">
+            <summary>
+                <para><b>"Insert Bar Code"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertBarCodeCommand_MenuCaption">
+            <summary>
+                <para><b>"Bar Code"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertChartCommand_Description">
+            <summary>
+                <para><b>"Insert Chart"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertChartCommand_MenuCaption">
+            <summary>
+                <para><b>"Chart"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertCheckBoxCommand_Description">
+            <summary>
+                <para><b>"Insert Check Box"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertCheckBoxCommand_MenuCaption">
+            <summary>
+                <para><b>"Check Box"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertDataRowSeparatorCommand_Descritpion">
+            <summary>
+                <para><b>"Select a separator to be inserted at the current carriage position"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertDataRowSeparatorCommand_MenuCaption">
+            <summary>
+                <para><b>"Separator"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertEmptyParagraphDataRowSeparatorCommand_Description">
+            <summary>
+                <para><b>"Empty Paragraph"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertEmptyParagraphDataRowSeparatorCommand_MenuCaption">
+            <summary>
+                <para><b>"Empty Paragraph"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertEmptyParagraphGroupSeparatorCommand_Description">
+            <summary>
+                <para><b>"Empty Paragraph"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertEmptyParagraphGroupSeparatorCommand_MenuCaption">
+            <summary>
+                <para><b>"Empty Paragraph"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertEmptyRowDataRowSeparatorCommand_Description">
+            <summary>
+                <para><b>"Empty Row"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertEmptyRowDataRowSeparatorCommand_MenuCaption">
+            <summary>
+                <para><b>"Empty Row"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertEmptyRowGroupSeparatorCommand_Description">
+            <summary>
+                <para><b>"Empty Row"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertEmptyRowGroupSeparatorCommand_MenuCaption">
+            <summary>
+                <para><b>"Empty Row"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertGroupFooterCommand_Description">
+            <summary>
+                <para><b>"Add Footer"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertGroupFooterCommand_MenuCaption">
+            <summary>
+                <para><b>"Add Footer"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertGroupHeaderCommand_Description">
+            <summary>
+                <para><b>"Add Header"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertGroupHeaderCommand_MenuCaption">
+            <summary>
+                <para><b>"Add Header"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertGroupSeparatorCommand_Descritpion">
+            <summary>
+                <para><b>"Select a separator to be inserted at the current carriage position"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertGroupSeparatorCommand_MenuCaption">
+            <summary>
+                <para><b>"Separator"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertListFooterCommand_Description">
+            <summary>
+                <para><b>"Add Footer"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertListFooterCommand_MenuCaption">
+            <summary>
+                <para><b>"Add Footer"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertListHeaderCommand_Description">
+            <summary>
+                <para><b>"Add Header"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertListHeaderCommand_MenuCaption">
+            <summary>
+                <para><b>"Add Header"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertNoneDataRowSeparatorCommand_Description">
+            <summary>
+                <para><b>"None"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertNoneDataRowSeparatorCommand_MenuCaption">
+            <summary>
+                <para><b>"None"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertNoneGroupSeparatorCommand_Description">
+            <summary>
+                <para><b>"None"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertNoneGroupSeparatorCommand_MenuCaption">
+            <summary>
+                <para><b>"None"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertPageBreakDataRowSeparatorCommand_Description">
+            <summary>
+                <para><b>"PageBreak"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertPageBreakDataRowSeparatorCommand_MenuCaption">
+            <summary>
+                <para><b>"None"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertPageBreakGroupSeparatorCommand_Description">
+            <summary>
+                <para><b>"Page Break</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertPageBreakGroupSeparatorCommand_MenuCaption">
+            <summary>
+                <para><b>"Page Break"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertSectionBreakEvenPageDataRowSeparatorCommand_Description">
+            <summary>
+                <para><b>"Section (Even Page)"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertSectionBreakEvenPageDataRowSeparatorCommand_MenuCaption">
+            <summary>
+                <para><b>"Section (Even Page)"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertSectionBreakEvenPageGroupSeparatorCommand_Description">
+            <summary>
+                <para><b>"Section (Even Page)"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertSectionBreakEvenPageGroupSeparatorCommand_MenuCaption">
+            <summary>
+                <para><b>"Section (Even Page)"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertSectionBreakNextPageDataRowSeparatorCommand_Description">
+            <summary>
+                <para><b>"Section (Next Page)"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertSectionBreakNextPageDataRowSeparatorCommand_MenuCaption">
+            <summary>
+                <para><b>"Section (Next Page)"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertSectionBreakNextPageGroupSeparatorCommand_Description">
+            <summary>
+                <para><b>"Section (Next Page)"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertSectionBreakNextPageGroupSeparatorCommand_MenuCaption">
+            <summary>
+                <para><b>"Section (Next Page)"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertSectionBreakOddPageDataRowSeparatorCommand_Description">
+            <summary>
+                <para><b>"Section (Odd Page)"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertSectionBreakOddPageDataRowSeparatorCommand_MenuCaption">
+            <summary>
+                <para><b>"Section (Odd Page)"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertSectionBreakOddPageGroupSeparatorCommand_Description">
+            <summary>
+                <para><b>"Section (Odd Page)"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.InsertSectionBreakOddPageGroupSeparatorCommand_MenuCaption">
+            <summary>
+                <para><b>"Section (Odd Page)"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ListFooterCommand_Description">
+            <summary>
+                <para><b>"Click to add or remove a list footer.\r\n It is blank by default. You can use it to present list summaries and other information."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ListFooterCommand_MenuCaption">
+            <summary>
+                <para><b>"Footer"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ListHeaderCommand_Description">
+            <summary>
+                <para><b>"Click to add or remove a list header.\r\nIt contains columns captions by default."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ListHeaderCommand_MenuCaption">
+            <summary>
+                <para><b>"Header"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.MenuCmd_DeleteTableCellStyle">
+            <summary>
+                <para><b>"Delete Table Cell Style"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.MenuCmd_ModifyTableCellStyle">
+            <summary>
+                <para><b>"Modify Table Cell Style"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.MenuCmd_NewTableCellStyle">
+            <summary>
+                <para><b>"New Table Cell Style"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.MoveDown_Description">
+            <summary>
+                <para><b>"Move Down"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.MoveDown_MenuCaption">
+            <summary>
+                <para><b>"Move Down"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.MoveUp_Description">
+            <summary>
+                <para><b>"Move Up"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.MoveUp_MenuCaption">
+            <summary>
+                <para><b>"Move Up"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.Msg_DataSourceNameExists">
+            <summary>
+                <para><b>"A datasource with the same name already exists"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.Msg_FieldAlreadyDefinedAsGroupingCriterion">
+            <summary>
+                <para><b>"The {0} field has already been defined as a grouping criterion."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.Msg_FieldDefinedAsSortingCriterionMoreThanOnce">
+            <summary>
+                <para><b>"The {0} field can be defined as a sorting criterion only once."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.Msg_InvalidEditorRowLimit">
+            <summary>
+                <para><b>"Invalid value"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.Msg_UnsupportedDocumentVersion">
+            <summary>
+                <para><b>"Unsupported Snap document version"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.NewDataSourceCommand_Description">
+            <summary>
+                <para><b>"Add new Data Source"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.NewDataSourceCommand_MenuCaption">
+            <summary>
+                <para><b>"Add new Data Source"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.PropertiesCommand_Description">
+            <summary>
+                <para><b>"Click to browse and customize the field's properties.\r\nThis will invoke a menu that lists the main properties specific to the selected element's type."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.PropertiesCommand_MenuCaption">
+            <summary>
+                <para><b>"Properties"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.RemoveGroupFooterCommand_Description">
+            <summary>
+                <para><b>"Remove Footer"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.RemoveGroupFooterCommand_MenuCaption">
+            <summary>
+                <para><b>"Remove Footer"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.RemoveGroupHeaderCommand_Description">
+            <summary>
+                <para><b>"Remove Header"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.RemoveGroupHeaderCommand_MenuCaption">
+            <summary>
+                <para><b>"Remove Header"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.RemoveListFooterCommand_Description">
+            <summary>
+                <para><b>"Remove Footer"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.RemoveListFooterCommand_MenuCaption">
+            <summary>
+                <para><b>"Remove Footer"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.RemoveListHeaderCommand_Description">
+            <summary>
+                <para><b>"Remove Header"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.RemoveListHeaderCommand_MenuCaption">
+            <summary>
+                <para><b>"Remove Header"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ReorderReportStructureForm_Text">
+            <summary>
+                <para><b>"Groups Order Editor"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.RunChartWizardCommand_Description">
+            <summary>
+                <para><b>"Run wizard..."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.RunChartWizardCommand_MenuCaption">
+            <summary>
+                <para><b>"Run wizard..."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ShowCustomSortForm_Description">
+            <summary>
+                <para><b>"Sort"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ShowCustomSortForm_MenuCaption">
+            <summary>
+                <para><b>"Sort"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ShowGroupSortingsCheckBox_Text">
+            <summary>
+                <para><b>"Show Group Sortings"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ShowReportStructureEditorForm_Description">
+            <summary>
+                <para><b>"Arrange Groups"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ShowReportStructureEditorForm_MenuCaption">
+            <summary>
+                <para><b>"Arrange Groups"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SnapEntityAddLock">
+            <summary>
+                <para><b>"Unable to add new {0} while updating another field"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SnapEntityRemoveLock">
+            <summary>
+                <para><b>"Unable to remove field while updating another one"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SnapListLockException">
+            <summary>
+                <para><b>"Modify attempt before BeginUpdate() call"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SnapListPropertyOutOfDataException">
+            <summary>
+                <para><b>"Value is out of data, list property must be reread after EndUpdate() call"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SnapListSecondBeginUpdateException">
+            <summary>
+                <para><b>"Previous update should be finished before start new one"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SortFieldAscendingCommand_Description">
+            <summary>
+                <para><b>"Click to sort (in ascending order) by the field."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SortFieldAscendingCommand_MenuCaption">
+            <summary>
+                <para><b>"Sort Ascending"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SortFieldDescendingCommand_Description">
+            <summary>
+                <para><b>"Click to sort (in descending order) by the field."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SortFieldDescendingCommand_MenuCaption">
+            <summary>
+                <para><b>"Sort Descending"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SummaryAverageCommand_Description">
+            <summary>
+                <para><b>"Average"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SummaryAverageCommand_MenuCaption">
+            <summary>
+                <para><b>"Average"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SummaryCommand_Description">
+            <summary>
+                <para><b>"Choose the summary function to calculate for the field.\r\nThe summary function result will be shown at the list footer which is made visible if it previously was not."</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SummaryCommand_MenuCaption">
+            <summary>
+                <para><b>"Summary"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SummaryCountCommand_Description">
+            <summary>
+                <para><b>"Count"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SummaryCountCommand_MenuCaption">
+            <summary>
+                <para><b>"Count"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SummaryMaxCommand_Description">
+            <summary>
+                <para><b>"Max"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SummaryMaxCommand_MenuCaption">
+            <summary>
+                <para><b>"Max"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SummaryMinCommand_Description">
+            <summary>
+                <para><b>"Min"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SummaryMinCommand_MenuCaption">
+            <summary>
+                <para><b>"Min"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SummarySumCommand_Description">
+            <summary>
+                <para><b>"Sum"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SummarySumCommand_MenuCaption">
+            <summary>
+                <para><b>"Sum"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.SummaryTooltip">
+            <summary>
+                <para><b>"Calculates the {0} summary function by the {1} field for the {2}"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ToggleFieldHighlighting_Description">
+            <summary>
+                <para><b>"Click to highlight all data fields in the document"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Localization.SnapStringId.ToggleFieldHighlighting_MenuCaption">
+            <summary>
+                <para><b>"Highlight Fields"</b>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.SnapListGroupInfo">
+
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapListGroupInfo.CreateFooter">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapListGroupInfo.CreateHeader">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapListGroupInfo.CreateSeparator">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapListGroupInfo.Footer">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapListGroupInfo.Header">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapListGroupInfo.RemoveFooter">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapListGroupInfo.RemoveHeader">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapListGroupInfo.RemoveSeparator">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapListGroupInfo.Separator">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.SnapListGroupParam">
+
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapListGroupParam.#ctor(System.String,DevExpress.Data.ColumnSortOrder)">
+            <summary>
+                <para>Initializes a new instance of the SnapListGroupParam class with the specified settings.
+</para>
+            </summary>
+            <param name="fieldName">
+		A <see cref="T:System.String"/> value, specifying the field name.
+
+            </param>
+            <param name="sortOrder">
+		A <see cref="T:DevExpress.Data.ColumnSortOrder"/> enumeration value.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapListGroupParam.#ctor(System.String,DevExpress.Data.ColumnSortOrder,DevExpress.Snap.Core.API.GroupInterval)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="fieldName">
+		 [To be supplied] 
+            </param>
+            <param name="sortOrder">
+		 [To be supplied] 
+            </param>
+            <param name="interval">
+		 [To be supplied] 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapListGroupParam.Equals(System.Object)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="obj">
+		 [To be supplied] 
+            </param>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapListGroupParam.FieldName">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapListGroupParam.GetHashCode">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapListGroupParam.Interval">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapListGroupParam.SortOrder">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapListGroupParam.ToString">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.SnapListGroups">
+
+            <summary>
+                <para>Provides functionality to group lists.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapListGroups.CreateSnapListGroupInfo">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <returns>An object implementing the <see cref="T:DevExpress.Snap.Core.API.SnapListGroupInfo"/> interface.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapListGroups.CreateSnapListGroupInfo(DevExpress.Snap.Core.API.SnapListGroupParam)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="groupParameter">
+		A <see cref="T:DevExpress.Snap.Core.API.SnapListGroupParam"/> structure.
+
+            </param>
+            <returns>An object implementing the <see cref="T:DevExpress.Snap.Core.API.SnapListGroupInfo"/> interface.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapListGroups.CreateSnapListGroupInfo(System.Collections.Generic.IEnumerable`1)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="groupParameters">
+		A collection of <see cref="T:DevExpress.Snap.Core.API.SnapListGroupParam"/> structures.
+
+            </param>
+            <returns>An object implementing the <see cref="T:DevExpress.Snap.Core.API.SnapListGroupInfo"/> interface.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.SnapListFilters">
+
+            <summary>
+                <para>Provides functionality to filter lists.
+</para>
+            </summary>
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.Fields.UpdateMergeImageFieldMode">
+
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Fields.UpdateMergeImageFieldMode.KeepScale">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Fields.UpdateMergeImageFieldMode.KeepSize">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.DataSourceChangeType">
+
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.API.DataSourceChangeType.CalculatedFields">
+            <summary>
+                <para>A collection of calculated fields.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.API.DataSourceChangeType.DataSource">
+            <summary>
+                <para>A data source.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.Fields.SummaryRunning">
+
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Fields.SummaryRunning.Group">
+            <summary>
+                <para>The summary function is calculated across the specified group.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Fields.SummaryRunning.None">
+            <summary>
+                <para>The running scope of the summary function is not specified.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.Fields.SummaryRunning.Report">
+            <summary>
+                <para>The summary function is calculated across the entire report.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.DataSourceChangedEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.DataSourceChanged"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataSourceChangedEventHandler.Invoke(System.Object,DevExpress.Snap.Core.API.DataSourceChangedEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.DataSourceChanged"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		A <see cref="T:System.Object"/> value, specifying the event source.
+
+            </param>
+            <param name="e">
+		An <see cref="T:DevExpress.Snap.Core.API.DataSourceChangedEventArgs"/> object that contains the event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.DataSourceChangedEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.DataSourceChanged"/> event.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataSourceChangedEventArgs.#ctor(DevExpress.Snap.Core.API.DataSourceInfo,DevExpress.Snap.Core.API.DataSourceChangeType)">
+            <summary>
+                <para>Initializes a new instance of the DataSourceChangedEventArgs class with the specified settings. 
+</para>
+            </summary>
+            <param name="changedDataSourceInfo">
+		A <see cref="T:DevExpress.Snap.Core.API.DataSourceInfo"/> object.
+
+            </param>
+            <param name="dataSourceChangeType">
+		A <see cref="T:DevExpress.Snap.Core.API.DataSourceChangeType"/> enumeration value.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.DataSourceChangedEventArgs.ChangedDataSourceInfo">
+            <summary>
+                <para>Provides information about a data source that is being changed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Snap.Core.API.DataSourceInfo"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.DataSourceChangedEventArgs.DataSourceChangeType">
+            <summary>
+                <para>Specifies the type of the data source that is being changed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Snap.Core.API.DataSourceChangeType"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.DataSourceChangedEventArgs.Name">
+            <summary>
+                <para>Specifies the name of the data source that is being changed.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.SnapEntity">
+
+            <summary>
+                <para>The base for classes that provide functionality to manipulate various entities in Snap documents.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapEntity.Active">
+            <summary>
+                <para>Indicates whether or not the SnapEntity is locked.
+</para>
+            </summary>
+            <value><b>true</b> if the entity is locked; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapEntity.BeginUpdate">
+            <summary>
+                <para>Locks the SnapEntity by preventing visual updates of the object until the <see cref="M:DevExpress.Snap.Core.API.SnapEntity.EndUpdate"/> method is called.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapEntity.Document">
+            <summary>
+                <para>Provides access to a <see cref="T:DevExpress.Snap.Core.API.SnapDocument"/>, to which the SnapEntity belongs.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Snap.Core.API.SnapDocument"/> object.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapEntity.EndUpdate">
+            <summary>
+                <para>Unlocks the SnapEntity after a call to the <see cref="M:DevExpress.Snap.Core.API.SnapEntity.BeginUpdate"/> method and causes an immediate visual update of the object.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapEntity.Field">
+            <summary>
+                <para>Provides access to a <see cref="T:DevExpress.XtraRichEdit.API.Native.Field"/> associated with the SnapEntity.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.Field"/> object.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.SnapDocumentFormat">
+
+            <summary>
+                <para>A document format to which a Snap document can be saved.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.API.SnapDocumentFormat.Pdf">
+            <summary>
+                <para>Saves a document to a PDF file.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Core.API.SnapDocumentFormat.Snap">
+            <summary>
+                <para>Saves a document to a SNX file (Snap native format).
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.SnapText">
+
+            <summary>
+                <para>Provides functionality to manipulate text in Snap documents.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapText.FieldName">
+            <summary>
+                <para>Specifies the name of a data field that is bound to the SnapText.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapText.FormatString">
+            <summary>
+                <para>Specifies a string format applied to the SnapText.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapText.SummaryFunc">
+            <summary>
+                <para>Specifies a summary function applied to the SnapText.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraTreeList.SummaryItemType"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapText.SummaryIgnoreNullValues">
+            <summary>
+                <para>Specifies whether or not to ignore empty fields when calculating a summary for the SnapText.
+</para>
+            </summary>
+            <value><b>true</b> to ignore null values; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapText.SummaryRunning">
+            <summary>
+                <para>Specifies the range across which a summary function is calculated.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Snap.Core.Fields.SummaryRunning"/> enumeration value.$
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapText.TextAfterIfFieldNotBlank">
+            <summary>
+                <para>Specifies the text added to the SnapText after the content obtained from the bound data field (if this content is not empty).
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapText.TextBeforeIfFieldNotBlank">
+            <summary>
+                <para>Specifies the text added to the SnapText before the content obtained from the bound data field (if this content is not empty).
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.SnapList">
+
+            <summary>
+                <para>Provides functionality to manipulate lists in Snap documents.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapList.ApplyTableStyles(System.Int32)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="level">
+		An integer value.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapList.ApplyTableStyles">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapList.DataMember">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapList.DataSourceName">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapList.EditorRowLimit">
+            <summary>
+                <para>Specifies the maximum number of data rows to include in the document during the design session.
+</para>
+            </summary>
+            <value>An integer value, specifying the maximum number of data rows to include in the document during the design session. The default is <b>20</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapList.Filters">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Snap.Core.API.SnapListFilters"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapList.Groups">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Snap.Core.API.SnapListGroups"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapList.KeepLastSeparator">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapList.ListFooter">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Snap.Core.API.SnapDocument"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapList.ListHeader">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Snap.Core.API.SnapDocument"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapList.Name">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapList.RowTemplate">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Snap.Core.API.SnapDocument"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapList.Sorting">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Snap.Core.API.SnapListSorting"/> object.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.PrepareSnListEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.PrepareSnList"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.PrepareSnListEventHandler.Invoke(System.Object,DevExpress.Snap.Core.API.PrepareSnListEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.PrepareSnList"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		A <see cref="T:System.Object"/> value, specifying the event source.
+
+            </param>
+            <param name="e">
+		An <see cref="T:DevExpress.Snap.Core.API.PrepareSnListEventArgs"/> object that contains the event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.PrepareSnListEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.PrepareSnList"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.PrepareSnListEventArgs.Template">
+            <summary>
+                <para>Provides access to a document template.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:DevExpress.Snap.Core.API.SnapDocument"/> interface.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.PrepareSnListDetailEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.PrepareSnListDetail"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.PrepareSnListDetailEventArgs.Template">
+            <summary>
+                <para>Provides access to a document template.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:DevExpress.Snap.Core.API.SnapDocument"/> interface.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.PrepareSnListDetailEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.PrepareSnListDetail"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.PrepareSnListDetailEventHandler.Invoke(System.Object,DevExpress.Snap.Core.API.PrepareSnListDetailEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.PrepareSnListDetail"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		A <see cref="T:System.Object"/> value, specifying the event source.
+
+            </param>
+            <param name="e">
+		An <see cref="T:DevExpress.Snap.Core.API.PrepareSnListDetailEventArgs"/> object that contains the event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.BeforeInsertSnListEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.BeforeInsertSnList"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.BeforeInsertSnListEventHandler.Invoke(System.Object,DevExpress.Snap.Core.API.BeforeInsertSnListEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.BeforeInsertSnList"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		A <see cref="T:System.Object"/> value, specifying the event source.
+
+            </param>
+            <param name="e">
+		An <see cref="T:DevExpress.Snap.Core.API.BeforeInsertSnListEventArgs"/> object that contains the event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.BeforeInsertSnListEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.BeforeInsertSnList"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.BeforeInsertSnListEventArgs.DataFields">
+            <summary>
+                <para>Specifies the data added to the inserted list.
+</para>
+            </summary>
+            <value>A collection of <see cref="T:DevExpress.Snap.Core.API.DataFieldInfo"/> objects.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.BeforeInsertSnListEventArgs.Position">
+            <summary>
+                <para>Specifies the document position at which the list is inserted.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentPosition"/> object.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.BeforeInsertSnListColumnsEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.BeforeInsertSnListColumns"/> event.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.BeforeInsertSnListColumnsEventHandler.Invoke(System.Object,DevExpress.Snap.Core.API.BeforeInsertSnListColumnsEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.BeforeInsertSnListColumns"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		A <see cref="T:System.Object"/> value, specifying the event source.
+
+            </param>
+            <param name="e">
+		An <see cref="T:DevExpress.Snap.Core.API.BeforeInsertSnListColumnsEventArgs"/> object that contains the event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.BeforeInsertSnListColumnsEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.BeforeInsertSnListColumns"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.BeforeInsertSnListColumnsEventArgs.DataFields">
+            <summary>
+                <para>Specifies the data added to the inserted list.
+</para>
+            </summary>
+            <value>A collection of <see cref="T:DevExpress.Snap.Core.API.DataFieldInfo"/> objects.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.BeforeInsertSnListColumnsEventArgs.Target">
+            <summary>
+                <para>Provides access to the target list into which an inserted list is placed.
+
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:DevExpress.Snap.Core.API.SnapList"/> interface.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.BeforeInsertSnListColumnsEventArgs.TargetColumnIndex">
+            <summary>
+                <para>Specifies the index of a target column, to which an inserted list is placed.
+</para>
+            </summary>
+            <value>An integer value.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.AfterInsertSnListEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.AfterInsertSnList"/> event.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.AfterInsertSnListEventHandler.Invoke(System.Object,DevExpress.Snap.Core.API.AfterInsertSnListEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.AfterInsertSnList"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		A <see cref="T:System.Object"/> value, specifying the event source.
+
+            </param>
+            <param name="e">
+		An <see cref="T:DevExpress.Snap.Core.API.AfterInsertSnListEventArgs"/> object that contains the event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.AfterInsertSnListEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.AfterInsertSnList"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.AfterInsertSnListEventArgs.Range">
+            <summary>
+                <para>Provides access to the document range of the inserted list.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentRange"/> interface.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.AfterInsertSnListDetailEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.AfterInsertSnListDetail"/> event.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.AfterInsertSnListDetailEventHandler.Invoke(System.Object,DevExpress.Snap.Core.API.AfterInsertSnListDetailEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.AfterInsertSnListDetail"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		A <see cref="T:System.Object"/> value, specifying the event source.
+
+            </param>
+            <param name="e">
+		An <see cref="T:DevExpress.Snap.Core.API.AfterInsertSnListColumnsEventArgs"/> object that contains the event data.
+
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.AfterInsertSnListDetailEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.AfterInsertSnListDetail"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.AfterInsertSnListDetailEventArgs.Master">
+            <summary>
+                <para>Provides access to the master list to which the detail list is inserted.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:DevExpress.Snap.Core.API.SnapList"/> interface.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.AfterInsertSnListColumnsEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.AfterInsertSnListColumns"/> event.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.AfterInsertSnListColumnsEventHandler.Invoke(System.Object,DevExpress.Snap.Core.API.AfterInsertSnListColumnsEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.AfterInsertSnListColumns"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		A <see cref="T:System.Object"/> value, specifying the event source.
+
+            </param>
+            <param name="e">
+		An <see cref="T:DevExpress.Snap.Core.API.AfterInsertSnListColumnsEventArgs"/> object that contains the event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.AfterInsertSnListColumnsEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.AfterInsertSnListColumns"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.AfterInsertSnListColumnsEventArgs.SnList">
+            <summary>
+                <para>Provides access to a <see cref="T:DevExpress.Snap.Core.API.SnapList"/> object for which the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.AfterInsertSnListColumns"/> event is raised.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:DevExpress.Snap.Core.API.SnapList"/> interface.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.Parameter">
+
+            <summary>
+                <para>Provides functionality to a report parameter.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.Parameter.#ctor">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.Snap.Core.API.Parameter"/> class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.Parameter.Name">
+            <summary>
+                <para>Specifies the parameter's name.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the parameter's name. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.Parameter.Type">
+            <summary>
+                <para>Specifies the type for the parameter.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Type"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.Parameter.Value">
+            <summary>
+                <para>Specifies the parameter's value.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Object"/> value, specifying the parameter's value.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.PrepareSnListColumnsEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.PrepareSnListColumns"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.PrepareSnListColumnsEventArgs.Body">
+            <summary>
+                <para>Provides access to a document's body.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:DevExpress.Snap.Core.API.SnapDocument"/> interface.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.PrepareSnListColumnsEventArgs.Header">
+            <summary>
+                <para>Provides access to a document's header.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:DevExpress.Snap.Core.API.SnapDocument"/> interface.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.ParameterCollection">
+
+            <summary>
+                <para>A collection of a document's parameters.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.ParameterCollection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.Snap.Core.API.ParameterCollection"/> class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.ParameterCollection.AddRange(DevExpress.Snap.Core.API.Parameter[])">
+            <summary>
+                <para>Appends an array of parameters to the storage collection.
+
+</para>
+            </summary>
+            <param name="parameters">
+		An array of <see cref="T:DevExpress.Snap.Core.API.Parameter"/> objects to append to the collection. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.ParameterCollection.Item(System.String)">
+            <summary>
+                <para>Provides access to the parameter with the specified name. 
+</para>
+            </summary>
+            <param name="parameterName">
+		A <see cref="T:System.String"/> value, specifying the name of a parameter within the collection. 
+
+            </param>
+            <value>A <see cref="T:DevExpress.Snap.Core.API.Parameter"/> object. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.IDataSourceOwner">
+
+            <summary>
+                <para>If implemented by a class, contains properties related to a Snap application's datasource.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.IDataSourceOwner.CalculatedFields">
+            <summary>
+                <para>Provides access to a report's collection of calculated fields. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Snap.Core.API.CalculatedFieldCollection"/> object. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.IDataSourceOwner.DataSource">
+            <summary>
+                <para>Specifies the datasource for the <see cref="T:DevExpress.Snap.Core.API.DataSourceInfo"/> collection.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Object"/> descendant, specifying the datasource.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.PrepareSnListColumnsEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.PrepareSnListColumns"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.PrepareSnListColumnsEventHandler.Invoke(System.Object,DevExpress.Snap.Core.API.PrepareSnListColumnsEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.PrepareSnListColumns"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		A <see cref="T:System.Object"/> value, specifying the event source.
+
+            </param>
+            <param name="e">
+		An <see cref="T:DevExpress.Snap.Core.API.PrepareSnListColumnsEventArgs"/> object that contains the event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.DataSourceInfo">
+
+            <summary>
+                <para>Contains information about a document's datasource.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataSourceInfo.#ctor(System.String,System.Object)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.Snap.Core.API.DataSourceInfo"/> class with the specified name and datasource.
+</para>
+            </summary>
+            <param name="dataSourceName">
+		A <see cref="T:System.String"/> value, specifying the datasource name.
+
+            </param>
+            <param name="dataSource">
+		A <see cref="T:System.Object"/> value, specifying the datasource.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.DataSourceInfo.CalculatedFields">
+            <summary>
+                <para>Provides access to the collection of calculated fields. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Snap.Core.API.CalculatedFieldCollection"/> object, containing the collection of calculated fields. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.DataSourceInfo.DataSource">
+            <summary>
+                <para>Specifies the report's data source.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Object"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.DataSourceInfo.DataSourceName">
+            <summary>
+                <para>Provides access to the report datasource name.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the datasource name.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.BeforeInsertSnListDetailEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.BeforeInsertSnListDetail"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.BeforeInsertSnListDetailEventHandler.Invoke(System.Object,DevExpress.Snap.Core.API.BeforeInsertSnListDetailEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.BeforeInsertSnListDetail"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		A <see cref="T:System.Object"/> value, specifying the event source.
+
+            </param>
+            <param name="e">
+		An <see cref="T:DevExpress.Snap.Core.API.BeforeInsertSnListDetailEventArgs"/> object that contains the event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.SnapListSorting">
+
+            <summary>
+                <para>Provides functionality to sort lists.
+</para>
+            </summary>
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.CalculatedFieldCollection">
+
+            <summary>
+                <para>A collection of a document's calculated fields.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.CalculatedFieldCollection.#ctor(DevExpress.Snap.Core.API.IDataSourceOwner)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.Snap.Core.API.CalculatedFieldCollection"/> class with the specified owner. 
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Snap.Core.API.IDataSourceOwner"/> interface (typically, this is a <see cref="T:DevExpress.Snap.Core.API.DataSourceInfo"/> instance). 
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.CalculatedField">
+
+            <summary>
+                <para>Provides the functionality for calculated fields.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.CalculatedField.#ctor(System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.Snap.Core.API.CalculatedField"/> class with the specified name and data member.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value, specifying the name of the calculated field.
+
+            </param>
+            <param name="dataMember">
+		A <see cref="T:System.String"/> value, specifying the data member for the calculated field.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.CalculatedField.DataMember">
+            <summary>
+                <para>Provides access to the calculated field's data member.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying a calculated field's data member. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.CalculatedField.DataSource">
+            <summary>
+                <para>Provides access to the calculated field's datasource.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Object"/> value, specifying the calculated field's datasource.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.CalculatedField.DisplayName">
+            <summary>
+                <para>Provides access to the display name of the calculated field.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the display name of the calculated field.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.CalculatedField.Dispose">
+            <summary>
+                <para>Disposes of the <see cref="T:DevExpress.Snap.Core.API.CalculatedField"/> object.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.Core.API.CalculatedField.Disposed">
+            <summary>
+                <para>Occurs after the current calculated field has been disposed of.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.CalculatedField.Expression">
+            <summary>
+                <para>Specifies the expression of the current calculated field.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.CalculatedField.FieldType">
+            <summary>
+                <para>Specifies the type of the calculated field.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraReports.UI.FieldType"/> enumeration value, specifying the calculated field's value type. The default is <b>FieldType.None</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.CalculatedField.Name">
+            <summary>
+                <para>Specifies the calculated field name.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the calculated field name.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.DataSourceInfoCollection">
+
+            <summary>
+                <para>A collection of a document's datasources and calculated fields.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataSourceInfoCollection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.Snap.Core.API.DataSourceInfoCollection"/> class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataSourceInfoCollection.Add(System.String,System.Object)">
+            <summary>
+                <para>Adds the specified object to the <see cref="T:DevExpress.Snap.Core.API.DataSourceInfoCollection"/> and returns the newly created object. 
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value, specifying the name of the added object. 
+
+            </param>
+            <param name="dataSource">
+		A <see cref="T:System.Object"/> value, specifying the datasource object. 
+
+            </param>
+            <returns>Returns the <see cref="T:DevExpress.Snap.Core.API.DataSourceInfo"/> object.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.Core.API.DataSourceInfoCollection.CollectionChanged">
+            <summary>
+                <para>Occurs when the collection has been changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.Core.API.DataSourceInfoCollection.DataSourceChanged">
+            <summary>
+                <para>Occurs when changing the datasource or calculated fields within the collection.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.DataSourceInfoCollection.DefaultDataSourceInfo">
+            <summary>
+                <para>Provides access to the default datasource. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Snap.Core.API.DataSourceInfo"/> object, specifying the default settings. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataSourceInfoCollection.Dispose">
+            <summary>
+                <para>Disposes of the <see cref="T:DevExpress.Snap.Core.API.DataSourceInfoCollection"/> object.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataSourceInfoCollection.GetCalculatedFields">
+            <summary>
+                <para>Returns the collection of calculated fields belonging to DataSourceInfoCollection.
+</para>
+            </summary>
+            <returns>A collection containing the report's calculated fields.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataSourceInfoCollection.GetCalculatedFieldsByDataSource(System.Object)">
+            <summary>
+                <para>Provides access to the collection of the calculated fields by the specified datasource object. 
+</para>
+            </summary>
+            <param name="dataSource">
+		A <see cref="T:System.Object"/> value, specifying the datasource. 
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Snap.Core.API.CalculatedFieldCollection"/> object. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataSourceInfoCollection.GetCalculatedFieldsByDataSourceName(System.String)">
+            <summary>
+                <para>Provides access to the collection of calculated fields by the specified datasource name. 
+</para>
+            </summary>
+            <param name="dataSourceName">
+		A <see cref="T:System.String"/> value, specifying the name of a datasource. 
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Snap.Core.API.CalculatedFieldCollection"/> object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataSourceInfoCollection.GetDataSourceByName(System.String)">
+            <summary>
+                <para>Provides access to the report's datasource by its name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value, specifying the datasource's name.
+
+            </param>
+            <returns>A <see cref="T:System.Object"/> value, specifying the datasource.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataSourceInfoCollection.GetDataSourceNameByDataSource(System.Object)">
+            <summary>
+                <para>Returns the name of the specified datasource.
+</para>
+            </summary>
+            <param name="dataSource">
+		A <see cref="T:System.Object"/> value, specifying the datasource.
+
+            </param>
+            <returns>A <see cref="T:System.String"/> value, specifying the datasource name.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataSourceInfoCollection.GetDataSources">
+            <summary>
+                <para>Obtains the available datasources from the <see cref="T:DevExpress.Snap.Core.API.DataSourceInfoCollection"/>.
+</para>
+            </summary>
+            <returns>A collection of <see cref="T:System.Object"/> values specifying the available datasources.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataSourceInfoCollection.GetInfo(System.Object)">
+            <summary>
+                <para>Returns an object that contains information about a report's datasource.
+
+</para>
+            </summary>
+            <param name="dataSource">
+		A <see cref="T:System.Object"/> object value specifying the datasource. 
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Snap.Core.API.DataSourceInfo"/> object or <b>null</b> (<b>Nothing</b> in Visual Basic) if not found. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataSourceInfoCollection.IsDefaultDataSource(System.Object)">
+            <summary>
+                <para>Specifies whether or not the specified datasource is the default one.
+
+
+</para>
+            </summary>
+            <param name="dataSource">
+		A <see cref="T:System.Object"/> value, specifying the datasource.
+
+            </param>
+            <returns><b>true</b> if the specified object is the default datasource; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.DataSourceInfoCollection.Item(System.String)">
+            <summary>
+                <para>Returns the <see cref="T:DevExpress.Snap.Core.API.DataSourceInfo"/> element with the specified name. 
+</para>
+            </summary>
+            <param name="dataSourceName">
+		A <see cref="T:System.String"/> value, specifying the name of the report's parameter within the collection. 
+
+            </param>
+            <value>A <see cref="T:DevExpress.Snap.Core.API.DataSourceInfo"/> descendant. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.DataSourceInfoCollection.Remove(System.String)">
+            <summary>
+                <para>Removes the specified datasource from <see cref="T:DevExpress.Snap.Core.API.DataSourceInfoCollection"/>.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value, specifying the datasource name.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.SnapDocument">
+
+            <summary>
+                <para>A central element of a Snap application that constitutes a report document and accounts for the creation and editing of a Snap report.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapDocument.ActiveEntity">
+            <summary>
+                <para>Specifies a field for which the <see cref="P:DevExpress.Snap.Core.API.SnapEntity.Active"/> property is enabled.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Snap.Core.API.SnapEntity"/> object.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.Core.API.SnapDocument.AfterInsertSnList">
+            <summary>
+                <para>Occurs after the list has been inserted into a document.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.Core.API.SnapDocument.AfterInsertSnListColumns">
+            <summary>
+                <para>Occurs after inserting columns into the target list.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.Core.API.SnapDocument.AfterInsertSnListDetail">
+            <summary>
+                <para>Occurs after the detail section has been added to the list.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.Core.API.SnapDocument.BeforeInsertSnList">
+            <summary>
+                <para>Occurs before a new list is created.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.Core.API.SnapDocument.BeforeInsertSnListColumns">
+            <summary>
+                <para>Occurs before a new set of columns is created.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.Core.API.SnapDocument.BeforeInsertSnListDetail">
+            <summary>
+                <para>Occurs before a new detail list is created.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.BeginUpdateDataSource">
+            <summary>
+                <para>Updates the <see cref="T:DevExpress.Snap.Core.API.DataSourceInfo"/> collection.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.Core.API.SnapDocument.ConfigureDataConnection">
+            <summary>
+                <para>Allows you to customize connection settings before the SnapDocument connects to a database.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.CreateSnBarCode(DevExpress.XtraRichEdit.API.Native.DocumentPosition)">
+            <summary>
+                <para>Creates a bar code in the document.
+</para>
+            </summary>
+            <param name="position">
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentPosition"/> object.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Snap.Core.API.SnapBarCode"/> object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.CreateSnCheckBox(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.String)">
+            <summary>
+                <para>Creates a check box in the document.
+</para>
+            </summary>
+            <param name="position">
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentPosition"/> object.
+
+            </param>
+            <param name="dataFieldName">
+		A <see cref="T:System.String"/> value, specifying the data field to which a bar code is bound.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Snap.Core.API.SnapCheckBox"/> object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.CreateSnImage(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.String)">
+            <summary>
+                <para>Creates an image in the document.
+</para>
+            </summary>
+            <param name="position">
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentPosition"/> object.
+
+            </param>
+            <param name="dataFieldName">
+		A <see cref="T:System.String"/> value, specifying the data field to which an image is bound.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Snap.Core.API.SnapImage"/> object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.CreateSnList(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.String)">
+            <summary>
+                <para>Creates a new list in the document.
+</para>
+            </summary>
+            <param name="position">
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentPosition"/> object.
+
+            </param>
+            <param name="name">
+		A <see cref="T:System.String"/> value, specifying the list name.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Snap.Core.API.SnapList"/> object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.CreateSnText(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.String)">
+            <summary>
+                <para>Creates a new text field in the document.
+</para>
+            </summary>
+            <param name="position">
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentPosition"/> object.
+
+            </param>
+            <param name="dataFieldName">
+		A <see cref="T:System.String"/> value, specifying the data field to which a text field is bound.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Snap.Core.API.SnapText"/> object.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.Core.API.SnapDocument.CustomFilterExpression">
+            <summary>
+                <para>Allows you to include WHERE clauses in SQL queries. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.Core.API.SnapDocument.DataLoading">
+            <summary>
+                <para>Allows you to provide data for a data source assigned in code.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.Core.API.SnapDocument.DataSourceChanged">
+            <summary>
+                <para>Occurs when the data source has been changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapDocument.DataSources">
+            <summary>
+                <para>Provides access to the collection of a document's datasources.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Snap.Core.API.DataSourceInfoCollection"/> object, specifying the collection of the datasources. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.EndUpdateDataSource">
+            <summary>
+                <para>Ends the initialization of the <see cref="T:DevExpress.Snap.Core.API.DataSourceInfo"/> collection.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.ExportDocument(System.IO.Stream,DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Exports the document to a stream in the specified format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object.
+
+            </param>
+            <param name="format">
+		A <see cref="T:DevExpress.XtraRichEdit.DocumentFormat"/> structure.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.ExportDocument(System.String,DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Exports the document to a file in the specified format.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> value, specifying the file path.
+
+            </param>
+            <param name="format">
+		A <see cref="T:DevExpress.XtraRichEdit.DocumentFormat"/> structure.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.FindListByName(System.String)">
+            <summary>
+                <para>Finds the specified list by its name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value, specifying the list name.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Snap.Core.API.SnapList"/> object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.GetDataSourceOwner(System.Object)">
+            <summary>
+                <para>Returns an object that contains information about the specified datasource. 
+</para>
+            </summary>
+            <param name="dataSource">
+		A <see cref="T:System.Object"/> value specifying the datasource. 
+
+            </param>
+            <returns>An object that implements the <see cref="T:DevExpress.Snap.Core.API.IDataSourceOwner"/> interface (typically, this is a <see cref="T:DevExpress.Snap.Core.API.DataSourceInfo"/> object).
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.Core.API.SnapDocument.HandleConnectionError">
+            <summary>
+                <para>Fires if any error occurs while establishing a connection to a data source.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.SnapDocument.Parameters">
+            <summary>
+                <para>Provides access to the report's parameters collection. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Snap.Core.API.ParameterCollection"/> object. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.ParseField(System.Int32)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="index">
+		An integer value.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Snap.Core.API.SnapEntity"/> object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.ParseField(DevExpress.XtraRichEdit.API.Native.Field)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="field">
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.Field"/> object.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Snap.Core.API.SnapEntity"/> object.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.Core.API.SnapDocument.PrepareSnList">
+            <summary>
+                <para>Occurs after generating a list template.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.Core.API.SnapDocument.PrepareSnListColumns">
+            <summary>
+                <para>Occurs for every added column after its body and header templates are created. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Snap.Core.API.SnapDocument.PrepareSnListDetail">
+            <summary>
+                <para>Occurs after generating a detail list template.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.RemoveField(System.Int32)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="index">
+		An integer value.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.RemoveSnList(System.String)">
+            <summary>
+                <para>Removes the specified list from a document.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value, specifying the list name.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.SaveDocument(System.IO.Stream)">
+            <summary>
+                <para>Saves the document to a stream.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.SaveDocument(System.String,DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Saves the document to a file in the specified format.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> value, specifying the file name.
+
+            </param>
+            <param name="format">
+		A <see cref="T:DevExpress.XtraRichEdit.DocumentFormat"/> structure.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.SaveDocument(System.IO.Stream,DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Saves the document to a stream in the specified format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object.
+
+            </param>
+            <param name="format">
+		A <see cref="T:DevExpress.XtraRichEdit.DocumentFormat"/> structure.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Core.API.SnapDocument.SaveDocument(System.String)">
+            <summary>
+                <para>Saves the document to a file.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> value, specifying the file name.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Core.API.BeforeInsertSnListDetailEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.Snap.Core.API.SnapDocument.BeforeInsertSnListDetail"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.BeforeInsertSnListDetailEventArgs.DataFields">
+            <summary>
+                <para>Specifies the data added to the inserted list.
+</para>
+            </summary>
+            <value>A collection of <see cref="T:DevExpress.Snap.Core.API.DataFieldInfo"/> objects.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Core.API.BeforeInsertSnListDetailEventArgs.Master">
+            <summary>
+                <para>Provides access to the master list to which the detail list is inserted.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:DevExpress.Snap.Core.API.SnapList"/> interface.
+</value>
+
+
+        </member>
+    </members>
+</doc>

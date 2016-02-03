@@ -1,0 +1,3991 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.Web.v13.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.Web.SystemModule.InlineEditMode">
+
+            <summary>
+                <para>Contains values that specify how cell values are edited by ASP.NET Web List Editors.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.SystemModule.InlineEditMode.EditForm">
+            <summary>
+                <para>Specifies that cell values are edited via the Edit Form. The data row whose values are currently being edited is not displayed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.SystemModule.InlineEditMode.EditFormAndDisplayRow">
+            <summary>
+                <para>Specifies that cell values are edited via the Edit Form. The data row whose values are currently being edited is displayed above the Edit Form.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.SystemModule.InlineEditMode.Inline">
+            <summary>
+                <para>Specifies that cell values are edited within the In-Line Edit Row.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.SystemModule.InlineEditMode.PopupEditForm">
+            <summary>
+                <para>Specifies that cell values are edited via the Pop-up Edit Form.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.SystemModule.IModelListViewWeb">
+
+            <summary>
+                <para>Used to extend the Application Model's Views node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.SystemModule.IModelListViewWeb.FilterExpression">
+            <summary>
+                <para>This property is obsolete. Use <see cref="P:DevExpress.ExpressApp.Model.IModelListView.Filter"/> instead.
+</para>
+            </summary>
+            <value>@nbsp;
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.SystemModule.IModelListViewWeb.InlineEditMode">
+            <summary>
+                <para>Specifies the way cell values are edited.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.Web.SystemModule.InlineEditMode"/> enumeration value specifying the way cell values are edited.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.SystemModule.IModelListViewWeb.PageIndex">
+            <summary>
+                <para>Specifies the index of the currently selected page.
+</para>
+            </summary>
+            <value>An integer value specifying the index of the currently selected page.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.SystemModule.IModelListViewWeb.PageSize">
+            <summary>
+                <para>Specifies the number of records displayed on a List Editor page.
+</para>
+            </summary>
+            <value>An integer value specifying the number of records displayed on a List Editor page.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.SystemModule.IModelListViewWeb.ShowSelectionColumn">
+            <summary>
+                <para>Specifies whether selection checkboxes are displayed for the records in the <see cref="T:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor"/>.
+
+</para>
+            </summary>
+            <value><b>true</b>, if selection checkboxes are displayed for the records; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.IModelListViewStateStore">
+
+            <summary>
+                <para>Used to extend the Application Model's ListView node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.IModelListViewStateStore.SaveStateInCookies">
+            <summary>
+                <para>Specifies whether the List View settings are persisted in cookies when the browser cookie storage is enabled.
+
+</para>
+            </summary>
+            <value><b>true</b>, if the List View settings are persisted in cookies when the browser cookie storage is enabled; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.SystemModule.IModelOptionsWeb">
+
+            <summary>
+                <para>Used to extend the Application Model's Options node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.SystemModule.IModelOptionsWeb.ListViewAllowSort">
+            <summary>
+                <para>Specifies whether end-users can sort data.
+</para>
+            </summary>
+            <value><b>true</b>, if end-users can sort data; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.SystemModule.IModelOptionsWeb.ListViewEnableColumnChooser">
+            <summary>
+                <para>Specifies whether the column chooser is enabled.
+</para>
+            </summary>
+            <value><b>true</b>, if the column chooser is enabled; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.SystemModule.IModelOptionsWeb.ListViewEnablePageSizeChooser">
+            <summary>
+                <para>Specifies whether the page size chooser is enabled.
+</para>
+            </summary>
+            <value><b>true</b>, if the page size chooser is enabled; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.IModelOptionsStateStore">
+
+            <summary>
+                <para>Used to extend the Application Model's Options node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.IModelOptionsStateStore.SaveListViewStateInCookies">
+            <summary>
+                <para>Specifies whether the application can use the browser cookie storage to persist List View settings.
+
+</para>
+            </summary>
+            <value><b>true</b>, if the application can use the browser cookie storage to persist List View settings; otherwise, <b>false</b>.
+
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.Editors.StaticTextDetailItem">
+
+            <summary>
+                <para>Represents the Static Text View Item used in <b>XAF</b> ASP.NET applications.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.StaticTextDetailItem.#ctor(DevExpress.ExpressApp.Model.IModelStaticText,System.Type)">
+            <summary>
+                <para>Creates and initializes a new instance of the StaticTextDetailItem class.
+</para>
+            </summary>
+            <param name="model">
+		An <see cref="T:DevExpress.ExpressApp.Model.IModelStaticText"/> object that represents the Application Model's <b>Views</b> | <b>DetailView</b> | <b>Items</b> | <b>DetailViewItem</b> node that defines the current View Item. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Editors.StaticText.Model"/> property.
+
+            </param>
+            <param name="objectType">
+		A <see cref="T:System.Type"/> object that represents the type of the object for which the current View Item's View is created. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Editors.ViewItem.ObjectType"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.StaticTextDetailItem.BreakLinksToControl(System.Boolean)">
+            <summary>
+                <para>Unsubscribes from events and then performs the <see cref="M:DevExpress.ExpressApp.Editors.ViewItem.BreakLinksToControl"/> method of the ancestor.
+</para>
+            </summary>
+            <param name="unwireEventsOnly">
+		<b>true</b> to only unsubscribe from events in the <see cref="M:DevExpress.ExpressApp.Editors.ViewItem.BreakLinksToControl"/> method of the ancestor; <b>false</b> to unsubscribe from events and disposes the Static Text Detail Item's control.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.StaticTextDetailItem.ClientId">
+            <summary>
+                <para>Gets the StaticTextDetailItem control's identifier generated by ASP.NET. 
+</para>
+            </summary>
+            <value>A string value representing the server control identifier generated by ASP.NET. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.StaticTextDetailItem.Control">
+            <summary>
+                <para>Provides access to the control used by the StaticTextDetailItem.
+</para>
+            </summary>
+            <value>A <b>System.Web.UI.WebControls.Label</b> object which represents the <b>StaticTextDetailItem</b>'s control.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.Editors.StaticTextDetailItem.ControlInitialized">
+            <summary>
+                <para>For internal use only.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.StaticTextDetailItem.TestCaption">
+            <summary>
+                <para>For internal use only.
+</para>
+            </summary>
+            <value>A string value representing a caption of the test control used for the current <b>StaticTextDetailItem</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.StaticTextDetailItem.TestControl">
+            <summary>
+                <para>For internal use only.
+</para>
+            </summary>
+            <value>An <b>IJScriptTestControl</b> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.StaticTextDetailItem.TestControlType">
+            <summary>
+                <para>For internal use only.
+</para>
+            </summary>
+            <value>A <b>TestControlType</b> enumeration value representing the type of a test control used for the current <b>StaticTextDetailItem</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.Editors.StaticImageDetailItem">
+
+            <summary>
+                <para>The Static Image View Item used in <b>XAF</b> ASP.NET applications.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.StaticImageDetailItem.#ctor(DevExpress.ExpressApp.Model.IModelStaticImage,System.Type)">
+            <summary>
+                <para>Creates and initializes a new instance of the StaticImageDetailItem class.
+</para>
+            </summary>
+            <param name="model">
+		An <see cref="T:DevExpress.ExpressApp.Model.IModelStaticImage"/> object that represents the Application Model's <b>Views</b> | <b>DetailView</b> | <b>Items</b> | <b>DetailViewItem</b> node that defines the current View Item. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Editors.StaticImage.Model"/> property.
+
+            </param>
+            <param name="objectType">
+		A <see cref="T:System.Type"/> object that represents the type of the object for which the current View Item's View is created. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Editors.ViewItem.ObjectType"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor">
+
+            <summary>
+                <para>Represents the List Editor used by default in <b>XAF</b> ASP.NET Web applications to display List Views in a UI.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.#ctor(DevExpress.ExpressApp.Model.IModelListView)">
+            <summary>
+                <para>Creates and initializes an instance of the ASPxGridListEditor class.
+</para>
+            </summary>
+            <param name="info">
+		An <see cref="T:DevExpress.ExpressApp.Model.IModelListView"/> object representing the Application Model's node, which contains information on the View that will use the instantiated List Editor.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.BeginUpdateSelection">
+            <summary>
+                <para>Begins updating the ASPxGridListEditor's selection. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.BreakLinksToControls">
+            <summary>
+                <para>Removes references to the ASPxGridListEditor's control and its event handlers.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.CanManageFilterExpressionDisplayText">
+            <summary>
+                <para>Specifies if the ASPxGridListEditor List Editor updates the filter string displayed within the <a href="http://documentation.devexpress.com/#AspNet/CustomDocument5139">FilterBar</a>
+</para>
+            </summary>
+            <value><b>true</b>, if the <b>ASPxGridListEditor</b> updates the filter string displayed within the filter bar; otherwise - <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.CanSelectRows">
+            <summary>
+                <para>Indicates whether the ASPxGridListEditor's rows can be selected in a UI.
+</para>
+            </summary>
+            <value><b>true</b> if it is possible to select <b>ASPxGridListEditor</b>'s rows in a UI; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.Columns">
+            <summary>
+                <para>Provides access to a collection of objects representing the ASPxGridListEditor's columns.
+</para>
+            </summary>
+            <value>An <b>IList@lt;ColumnWrapper@gt;</b> object representing a collection of ASPxGridListEditor's column wrappers.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.ContextMenuTemplate">
+            <summary>
+                <para>Provides access to the ASPxGridListEditor's Context Menu Template.
+</para>
+            </summary>
+            <value>A control which implements the <b>IContextMenuTemplate</b> interface and represents a List Editor's Context Menu Template.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.ControlInitialized">
+            <summary>
+                <para>For internal use only.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.CustomHandleAutoFilterCellEditor">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.CustomizeAutoFilterCellEditor">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.Dispose">
+            <summary>
+                <para>Releases all resources used by the ASPxGridListEditor.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.EnableGroupTemplate">
+            <summary>
+                <para>Specifies whether to use an XAF group template for a group row.
+</para>
+            </summary>
+            <value><b>true</b>, if the XAF group template is enabled; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.EndCallbackHandlers">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <returns>$
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.EndUpdateSelection">
+            <summary>
+                <para>Ends updating the ASPxGridListEditor's selection. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.FocusedObject">
+            <summary>
+                <para>Gets or sets the focused object in the ASPxGridListEditor.
+</para>
+            </summary>
+            <value>The focused object.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.GetContainerId(System.Web.UI.Control,System.String)">
+            <summary>
+                <para>This method is intended for internal use.
+</para>
+            </summary>
+            <param name="container">
+		@nbsp;
+
+            </param>
+            <param name="propertyName">
+		@nbsp;
+
+            </param>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.GetControlSelectedObjects">
+            <summary>
+                <para>Returns a list of objects selected in the <see cref="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.Grid"/> control.
+</para>
+            </summary>
+            <returns>An <b>IList@lt;object@gt;</b> list of objects selected in the <see cref="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.Grid"/> control.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.GetIndexByObject(System.Object)">
+            <summary>
+                <para>Returns the index of an object that represents a <see cref="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.Grid"/>'s row.
+</para>
+            </summary>
+            <param name="obj">
+		An object that represents a <b>Grid</b>'s row.
+
+            </param>
+            <returns>An index of an object that represents a <b>Grid</b>'s row.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.GetObject(System.Web.UI.Control)">
+            <summary>
+                <para>This method is intended for internal use.
+</para>
+            </summary>
+            <param name="container">
+		@nbsp;
+
+            </param>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.GetObjectByIndex(System.Int32)">
+            <summary>
+                <para>Returns an object that represents the <see cref="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.Grid"/>'s row with the specified index. 
+</para>
+            </summary>
+            <param name="index">
+		The index of a <b>Grid</b>'s row.
+
+            </param>
+            <returns>An object that represents the <b>Grid</b>'s row with the specified index.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.GetOrderedObjects">
+            <summary>
+                <para>Returns an ordered list of objects that represent the <see cref="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.Grid"/>'s rows.
+</para>
+            </summary>
+            <returns>An ordered list of objects that represent the <b>Grid</b>'s rows.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.GetTestableControls">
+            <summary>
+                <para>For internal use only.
+</para>
+            </summary>
+            <returns>$
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.Grid">
+            <summary>
+                <para>Provides access to the ASPxGridListEditor's control.
+</para>
+            </summary>
+            <value>An <b>ASPxGridView</b> object that represents the <b>ASPxGridListEditor</b>'s control.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.GroupSummary">
+            <summary>
+                <para>Holds the <b>GroupSummary</b> property's name of the Application Model's <b>Views</b> | <b>List View</b> node.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.IsFooterVisible">
+            <summary>
+                <para>Specifies whether the ASPxGridListEditor's footer is visible.
+</para>
+            </summary>
+            <value><b>true</b>, if the footer is visible; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.IsServerModeSupported">
+            <summary>
+                <para>Indicates whether the List Editor supports server mode (see <see cref="P:DevExpress.ExpressApp.CollectionSourceBase.IsServerMode"/>).
+</para>
+            </summary>
+            <value><b>true</b>, if the List Editor supports server mode; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.ModelSaving">
+            <summary>
+                <para>Occurs when the ASPxGridListEditor's control customizations are saved to the Application Model.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.NewItemRowPosition">
+            <summary>
+                <para>Gets or sets the position of the new item row within the ASPxGridListEditor.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.NewItemRowPosition"/> enumeration value that specifies the position of the new item row within the <b>GridListEditor</b>. The default value is specified by the <b>NewItemRowPosition</b> property of the Application Model's <b>Views</b> | <b>List View</b> node.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.NewObject">
+            <summary>
+                <para>Holds the object that has been created via the ASPxGridListEditor's new item row, but has not been persisted yet.
+</para>
+            </summary>
+            <value>An object that has been created via the <b>ASPxGridListEditor</b>'s new item row, but has not been persisted yet.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.OnExporting">
+            <summary>
+                <para>Performs the required pre-export actions under the ASPxGridListEditor.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.Printable">
+            <summary>
+                <para>Specifies the control to be exported via the <see cref="P:DevExpress.ExpressApp.SystemModule.ExportController.ExportAction"/>.
+</para>
+            </summary>
+            <value>An <a href="http://documentation.devexpress.com/#CoreLibraries/clsDevExpressXtraPrintingIPrintabletopic">DevExpress.XtraPrinting.IPrintable</a> object that is the control used for exporting. The default value is an <a href="http://documentation.devexpress.com/#AspNet/clsDevExpressWebASPxGridViewExportASPxGridViewExportertopic">DevExpress.Web.ASPxGridView.Export.ASPxGridViewExporter</a> (requires Internet connection) object.
+
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.PrintableChanged">
+            <summary>
+                <para>Occurs when the ASPxGridListEditor's control is created and disposed of.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.ProcessCallbackComplete">
+            <summary>
+                <para>Re-binds the ASPxGridListEditor's control to its data source after a callback has been completed. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.Refresh">
+            <summary>
+                <para>Refreshes the bound data source of the ASPxGridListEditor's control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.RegisterCallbackStartupScript">
+            <summary>
+                <para>This event is intended for internal use.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.SelectAllCheckBoxClientId_NOTFOUND">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.SelectionType">
+            <summary>
+                <para>Returns the selection type supported by the ASPxGridListEditor.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.SelectionType"/> enumeration value that represents the selection type supported by the current List Editor.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.SetControlSelectedObjects(System.Collections.Generic.IList`1)">
+            <summary>
+                <para>Changes the selection in the <see cref="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.Grid"/> control.
+</para>
+            </summary>
+            <param name="objects">
+		An <b>IList@lt;object@gt;</b> a list of objects to be selected in the <see cref="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.Grid"/> control.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.Setup(DevExpress.ExpressApp.CollectionSourceBase,DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Performs additional initialization of the ASPxGridListEditor.
+</para>
+            </summary>
+            <param name="collectionSource">
+		A <see cref="T:DevExpress.ExpressApp.CollectionSourceBase"/> object that represent the Collection Source of the List View that the current List Editor represents in a UI.
+
+            </param>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that can be used to manage the current application. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.SupportedExportFormats">
+            <summary>
+                <para>Provides access to the list of export formats supported by the current ASPxGridListEditor.
+</para>
+            </summary>
+            <value>An <b>List@lt;</b><a href="http://documentation.devexpress.com/#CoreLibraries/DevExpressXtraPrintingExportTargetEnumtopic">ExportTarget</a><b>@gt;</b> object that is a list of supported export formats.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.TestableControlsCreated">
+            <summary>
+                <para>For internal use only.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.TestControlType">
+            <summary>
+                <para>For internal use only.
+</para>
+            </summary>
+            <value>A <b>TestControlType</b> enumeration value representing the type of a test control used for the current <b>ASPxGridListEditor</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.UnselectAll">
+            <summary>
+                <para>Unselects all objects in the ASPxGridListEditor.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor.UnselectRowByKey(System.Object)">
+            <summary>
+                <para>Unselects a specified object in the ASPxGridListEditor.
+</para>
+            </summary>
+            <param name="key">
+		An object specifying the identifier of the object to unselect.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.ShowViewStrategy">
+
+            <summary>
+                <para>Represents the Show View Strategy used in <b>XAF</b> ASP.NET Web applications by default.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.ShowViewStrategy.#ctor(DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Creates and initializes an instance of the ShowViewStrategy class.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> descendant object that represents the application that will use the instantiated Show View Strategy.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.ShowViewStrategy.CanUseNestedObjectSpace">
+            <summary>
+                <para>Intended for internal use. 
+</para>
+            </summary>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.ShowViewStrategy.CollectionsEditMode">
+            <summary>
+                <para>Specifies the Show View Strategy's mode of operation, with respect to the display of nested List Views.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Editors.ViewEditMode"/> enumaration value which specifies the Show View Strategy's mode of operation with respect to the display of nested List Views. The default is <see cref="F:DevExpress.ExpressApp.Editors.ViewEditMode.View"/>.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.SystemModule.WebNewObjectViewController">
+
+            <summary>
+                <para>Inherits from the <see cref="T:DevExpress.ExpressApp.SystemModule.NewObjectViewController"/> to implement ASP.NET specific behavior.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.SystemModule.WebNewObjectViewController.#ctor">
+            <summary>
+                <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Web.SystemModule.WebNewObjectViewController"/> class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.SystemModule.WebNewObjectViewController.QuickCreateAction">
+            <summary>
+                <para>Provides access to the <see cref="T:DevExpress.ExpressApp.Web.SystemModule.WebNewObjectViewController"/>'s <b>QuickCreateAction</b> Action.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Actions.SingleChoiceAction"/> object that represents the <b>Quick create</b> Action.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.SystemModule.WebDeleteObjectsViewController">
+
+            <summary>
+                <para>Inherits from the <see cref="T:DevExpress.ExpressApp.SystemModule.DeleteObjectsViewController"/> to implement ASP.NET Web specific behavior.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.SystemModule.WebDeleteObjectsViewController.#ctor">
+            <summary>
+                <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Web.SystemModule.WebDeleteObjectsViewController"/> class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.Editors.ASPx.ASPxPropertyEditor">
+
+            <summary>
+                <para>Represents a base class for Property Editors that use controls from the Developer Express <b>ASPxEditors</b> library.
+</para>
+            </summary>
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor">
+
+            <summary>
+                <para>Represents a base class for Web Property Editors.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor.BreakLinksToControl(System.Boolean)">
+            <summary>
+                <para>Removes references to the Property Editor's control and its event handlers.
+</para>
+            </summary>
+            <param name="unwireEventsOnly">
+		<b>true</b> if event handlers should be unsubscribed only; <b>false</b>, if in addition to event unsubscription, the allocated resources should be disposed of.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor.ClientId">
+            <summary>
+                <para>Gets the Property Editor control's identifier generated by ASP.NET. 
+</para>
+            </summary>
+            <value>A string value representing the server control identifier generated by ASP.NET. 
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor.ControlInitialized">
+            <summary>
+                <para>For internal use only.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor.ControlValue">
+            <summary>
+                <para>Returns the value that is set to the current Property Editor's control.
+</para>
+            </summary>
+            <value>An object representing the value that is set in the current Property Editor's control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor.Editor">
+            <summary>
+                <para>Provides access to the Property Editor's control that is used in edit mode.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Web.UI.WebControls.WebControl"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor.EmptyValue">
+            <summary>
+                <para>Gets or sets the string displayed by the Property Editor's control when its value is <b>null</b>. Used by XAF built-in Property Editors.
+</para>
+            </summary>
+            <value>A string displayed by the Property Editor's control when its value is set to <b>null</b>. The default value is "N/A".
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor.GroupName">
+            <summary>
+                <para>For internal use only.
+</para>
+            </summary>
+            <value>A string value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor.InplaceViewModeEditor">
+            <summary>
+                <para>Provides access to the Property Editor's control that is used in view mode.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Web.UI.WebControls.WebControl"/> object representing the Property Editor's control that is used in view mode.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor.SetControlAlignment(System.Web.UI.WebControls.HorizontalAlign)">
+            <summary>
+                <para>Applies the specified horizontal alignment to the WebPropertyEditor's control.
+</para>
+            </summary>
+            <param name="alignment">
+		A <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.horizontalalign.aspx">HorizontalAlign</a> enumeration value that specifies horizintal alignment.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor.SetControlId(System.String)">
+            <summary>
+                <para>Sets the specified id for the Property Editor's control.
+</para>
+            </summary>
+            <param name="id">
+		A string that is control id.
+
+            </param>
+            <returns>A string that is the modified control id. 
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor.SupportInlineEdit">
+            <summary>
+                <para>Indicates whether the current Property Editor can be displayed in edit mode when its created for inline editing in a Grid List Editor.
+</para>
+            </summary>
+            <value><b>true</b> if the current Property Editor can be displayed in edit mode for inline editing in a Grid List Editor; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor.TestCaption">
+            <summary>
+                <para>For internal use only.
+</para>
+            </summary>
+            <value>A string value representing a caption of the test control used for the current Property Editor.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor.TestControl">
+            <summary>
+                <para>For internal use only.
+</para>
+            </summary>
+            <value>An <b>IJScriptTestControl</b> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor.TestControlType">
+            <summary>
+                <para>For internal use only.
+</para>
+            </summary>
+            <value>A <b>TestControlType</b> enumeration value representing the type of a test control used for the current <b>WebPropertyEditor</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor.ViewEditMode">
+            <summary>
+                <para>Specifies the  mode for displaying the Property Editor's control.
+
+</para>
+            </summary>
+            <value>A <b>ViewEditMode</b> enumeration value that represents the current Property Editor's control display mode.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor.ViewModeControlCssClass">
+            <summary>
+                <para>Returns the default Cascading Style Sheet (CSS) class used to render the server controls in view mode. Used by XAF built-in Property Editors. The default value is "ValueViewControlClass".
+
+</para>
+            </summary>
+            <returns>A string value representing the CSS class. The default value is "ValueViewControlClass".
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.SystemModule.WebDetailViewController">
+
+            <summary>
+                <para>This class is obsolete. Use <see cref="T:DevExpress.ExpressApp.Web.SystemModule.WebModificationsController"/> instead.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.SystemModule.WebDetailViewController.#ctor">
+            <summary>
+                <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Web.SystemModule.WebModificationsController"/> class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.Templates.CustomizeTemplateContentEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.ExpressApp.Web.Templates.BaseXafPage.CustomizeTemplateContent"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Templates.CustomizeTemplateContentEventArgs.#ctor(DevExpress.ExpressApp.Web.Templates.TemplateContent)">
+            <summary>
+                <para>Initializes a new instance of the CustomizeTemplateContentEventArgs class.
+</para>
+            </summary>
+            <param name="templateContent">
+		A <b>TemplateContext</b> User Control that specifies the <see cref="T:DevExpress.ExpressApp.Web.Templates.BaseXafPage"/>page's content. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Templates.CustomizeTemplateContentEventArgs.TemplateContent">
+            <summary>
+                <para>Gets a User Control that specifies the <see cref="T:DevExpress.ExpressApp.Web.Templates.BaseXafPage"/> page's content. 
+
+</para>
+            </summary>
+            <value>A <b>TemplateContext</b> User Control that specifies the current page's content. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.SystemModule.WebModificationsController">
+
+            <summary>
+                <para>Inherits from the <see cref="T:DevExpress.ExpressApp.SystemModule.ModificationsController"/> to implement ASP.NETspecific behavior.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.SystemModule.WebModificationsController.#ctor">
+            <summary>
+                <para>Creates an instance of the WebModificationsController class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.SystemModule.WebModificationsController.EditAction">
+            <summary>
+                <para>Provides access to the <b>SwitchToEditMode</b> Action.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Actions.SimpleAction"/> object representing the <b>SwitchToEditMode</b> Action.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.SystemModule.WebModificationsController.QueryCloseAfterSave">
+            <summary>
+                <para>Occurs when the <see cref="P:DevExpress.ExpressApp.SystemModule.ModificationsController.SaveAndCloseAction"/> is executed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.Editors.WebActionContainerViewItem">
+
+            <summary>
+                <para>Represents the Action Container View Item used in XAF ASP.NET Web applications.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.WebActionContainerViewItem.#ctor(DevExpress.ExpressApp.Model.IModelActionContainerViewItem,System.Type)">
+            <summary>
+                <para>Creates and initializes a new instance of the WebActionContainerViewItem class.
+</para>
+            </summary>
+            <param name="model">
+		An <see cref="T:DevExpress.ExpressApp.Model.IModelActionContainerViewItem"/> object that represents the Application Model's <b>Views</b> | <b>DetailView</b> | <b>Items</b> | <b>ActionContainerViewItem</b> node that defines the current View Item.
+
+            </param>
+            <param name="objectType">
+		A <see cref="T:System.Type"/> object that represents the type of the object for which the current View Item's View is created. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Editors.ViewItem.ObjectType"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.WebActionContainerViewItem.Actions">
+            <summary>
+                <para>Provides access to a collection of Actions which are displayed by the Web Action Container View Item.
+</para>
+            </summary>
+            <value>An object that represents a <b>ReadOnlyCollection@lt;</b><see cref="T:DevExpress.ExpressApp.Actions.ActionBase"/><b>@gt;</b> collection that contains Actions of the current Web Action Container View Item.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.WebActionContainerViewItem.BeginUpdate">
+            <summary>
+                <para>Prevents the View Item's Action Container control from being updated until the <see cref="M:DevExpress.ExpressApp.Web.Editors.WebActionContainerViewItem.EndUpdate"/> method is called. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.WebActionContainerViewItem.Clear">
+            <summary>
+                <para>Clears the WebActionContainerViewItem's Action Container.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.WebActionContainerViewItem.ContainerId">
+            <summary>
+                <para>Specifies the Web Action Container View Item's Action Container identifier.
+</para>
+            </summary>
+            <value>A string value that represents the Web Action Container View Item's Action Container identifier.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.WebActionContainerViewItem.EndUpdate">
+            <summary>
+                <para>Unlocks the View Item's Action Container control after a call to the <see cref="M:DevExpress.ExpressApp.Web.Editors.WebActionContainerViewItem.BeginUpdate"/> method and causes an immediate update.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.WebActionContainerViewItem.Register(DevExpress.ExpressApp.Actions.ActionBase)">
+            <summary>
+                <para>Adds a specified Action to a Web Action Container View Item's <see cref="P:DevExpress.ExpressApp.Editors.ActionContainerViewItem.Actions"/> collection and creates its control.
+</para>
+            </summary>
+            <param name="action">
+		An <see cref="T:DevExpress.ExpressApp.Actions.ActionBase"/> object that represents the Action to be registered within the current Web Action Container View Item. 
+
+            </param>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.Editors.WebActionContainerViewItem.RenderMode">
+            <summary>
+                <para>Specifies the render mode of the control used by the Action Container View Item.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.RenderHelper">
+
+            <summary>
+                <para>Exposes static helper methods that create and set up ASP.NET Web controls.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.CreateASPxButton">
+            <summary>
+                <para>Creates and sets up an instance of the <b>ASPxButton</b> control.
+</para>
+            </summary>
+            <returns>An instance of the <b>ASPxButton</b> control.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.CreateASPxCheckBox">
+            <summary>
+                <para>Creates and sets up an instance of the <b>ASPxCheckBox</b> control.
+</para>
+            </summary>
+            <returns>An instance of the <b>ASPxCheckBox</b> control.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.CreateASPxComboBox">
+            <summary>
+                <para>Creates and sets up an instance of the <b>ASPxComboBox</b> control.
+</para>
+            </summary>
+            <returns>An instance of the <b>ASPxComboBox</b> control.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.CreateASPxDateEdit">
+            <summary>
+                <para>Creates and sets up an instance of the <b>ASPxDateEdit</b> control.
+</para>
+            </summary>
+            <returns>An instance of the <b>ASPxDateEdit</b> control.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.CreateASPxHyperLink">
+            <summary>
+                <para>Creates and sets up an instance of the <b>ASPxHyperLink</b> control.
+</para>
+            </summary>
+            <returns>An instance of the <b>ASPxHyperLink</b> control.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.CreateASPxImage">
+            <summary>
+                <para>Creates and sets up an instance of the <b>ASPxImage</b> control.
+</para>
+            </summary>
+            <returns>An instance of the <b>ASPxImage</b> control.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.CreateASPxLabel">
+            <summary>
+                <para>Creates and sets up an instance of the <b>ASPxLabel</b> control.
+</para>
+            </summary>
+            <returns>An instance of the <b>ASPxLabel</b> control.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.CreateASPxMemo">
+            <summary>
+                <para>Creates and sets up an instance of the <b>ASPxMemo</b> control.
+</para>
+            </summary>
+            <returns>An instance of the <b>ASPxMemo</b> control.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.CreateASPxMenu(DevExpress.Web.ASPxClasses.ControlRenderMode)">
+            <summary>
+                <para>Creates and sets up an instance of the <b>ASPxMenu</b> control.
+</para>
+            </summary>
+            <param name="renderMode">
+		A <b>DevExpress.Web.ASPxClasses.ControlRenderMode</b> enumeration value specifying the render mode of the created <b>ASPxMenu</b> control. 
+
+            </param>
+            <returns>An instance of the <b>ASPxMenu</b> control.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.CreateASPxMenu">
+            <summary>
+                <para>Creates and sets up an instance of the <b>ASPxMenu</b> control.
+</para>
+            </summary>
+            <returns>An instance of the <b>ASPxMenu</b> control.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.CreateASPxNavBar">
+            <summary>
+                <para>Creates and sets up an instance of the <b>ASPxNavBar</b> control.
+</para>
+            </summary>
+            <returns>An instance of the <b>ASPxNavBar</b> control.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.CreateASPxPageControl">
+            <summary>
+                <para>Creates and sets up an instance of the <b>ASPxNavBar</b> control.
+</para>
+            </summary>
+            <returns>An instance of the <b>ASPxNavBar</b> control.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.CreateASPxPopupMenu">
+            <summary>
+                <para>Creates and sets up an instance of the <b>ASPxPopupMenu</b> control.
+</para>
+            </summary>
+            <returns>An instance of the <b>ASPxPopupMenu</b> control.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.CreateASPxRoundPanel">
+            <summary>
+                <para>Creates and sets up an instance of the <b>ASPxRoundPanel</b> control.
+</para>
+            </summary>
+            <returns>An instance of the <b>ASPxRoundPanel</b> control.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.CreateASPxSpinEdit">
+            <summary>
+                <para>Creates and sets up an instance of the <b>ASPxSpinEdit</b> control.
+</para>
+            </summary>
+            <returns>An instance of the <b>ASPxSpinEdit</b> control.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.CreateASPxTextBox">
+            <summary>
+                <para>Creates and sets up an instance of the <b>ASPxTextBox</b> control.
+</para>
+            </summary>
+            <returns>An instance of the <b>ASPxTextBox</b> control.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.CreateTable">
+            <summary>
+                <para>Creates and sets up an instance of the <b>TableEx</b> control.
+</para>
+            </summary>
+            <returns>An instance of the <b>TableEx</b> control.
+</returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.RenderHelper.EventCancelBubbleCommand">
+            <summary>
+                <para>Returns the fully qualified name of the CSS file used by the <b>XAF</b> old style layout  ASP.NET Web applications. The default value is "<b>XAFControlsStyle.css</b>".
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.GetCallbackEventReference(System.Web.UI.Control)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="control">
+		@nbsp;
+
+            </param>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.GetCallbackEventReference(System.Web.UI.Control,System.String,System.String,System.String)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="control">
+		@nbsp;
+
+            </param>
+            <param name="param">
+		@nbsp;
+
+            </param>
+            <param name="callbackFunction">
+		@nbsp;
+
+            </param>
+            <param name="context">
+		@nbsp;
+
+            </param>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.GetCallbackEventReference(System.String,System.String,System.String,System.String)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="controlClientId">
+		@nbsp;
+
+            </param>
+            <param name="argument">
+		@nbsp;
+
+            </param>
+            <param name="clientCallback">
+		@nbsp;
+
+            </param>
+            <param name="context">
+		@nbsp;
+
+            </param>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.GetCallbackEventReference(System.Web.UI.Control,System.String,System.String)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="control">
+		@nbsp;
+
+            </param>
+            <param name="param">
+		@nbsp;
+
+            </param>
+            <param name="callbackFunction">
+		@nbsp;
+
+            </param>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.GetCallbackEventReference(System.Web.UI.Control,System.String)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="control">
+		@nbsp;
+
+            </param>
+            <param name="param">
+		@nbsp;
+
+            </param>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.GetCallbackEventReference(System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="controlClientId">
+		@nbsp;
+
+            </param>
+            <param name="argument">
+		@nbsp;
+
+            </param>
+            <param name="clientCallback">
+		@nbsp;
+
+            </param>
+            <param name="context">
+		@nbsp;
+
+            </param>
+            <param name="clientErrorCallback">
+		@nbsp;
+
+            </param>
+            <param name="useAsync">
+		@nbsp;
+
+            </param>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.GetCallbackEventReference(System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="controlClientId">
+		@nbsp;
+
+            </param>
+            <param name="argument">
+		@nbsp;
+
+            </param>
+            <param name="clientCallback">
+		@nbsp;
+
+            </param>
+            <param name="context">
+		@nbsp;
+
+            </param>
+            <param name="useAsync">
+		@nbsp;
+
+            </param>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.GetFontStyle(System.Web.UI.WebControls.WebControl)">
+            <summary>
+                <para>Retrieves the font style used by a particular control.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:System.Web.UI.WebControls.WebControl"/> descendant specifying the control whose font style will be retrieved.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.FontStyle"/> enumeration value specifying the font style used by the <i>control</i>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.GetForceButtonClickFunctionBody(DevExpress.Web.ASPxEditors.ASPxButton)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="button">
+		@nbsp;
+
+            </param>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.GetForceButtonClickFunctionName">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.GetForceButtonClickFunctionName(DevExpress.Web.ASPxEditors.ASPxButton)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="button">
+		@nbsp;
+
+            </param>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.GetPostBackEventReference(System.String,System.String)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="controlClientId">
+		@nbsp;
+
+            </param>
+            <param name="argument">
+		@nbsp;
+
+            </param>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.QuoteJScriptString(System.String,System.Boolean)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="value">
+		@nbsp;
+
+            </param>
+            <param name="forUrl">
+		@nbsp;
+
+            </param>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.QuoteJScriptString(System.String)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="value">
+		@nbsp;
+
+            </param>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.RenderHelper.RenderMode">
+            <summary>
+                <para>Specifies whether controls created via the RenderHelper methods are rendered using semantic or classic render mode. 
+</para>
+            </summary>
+            <value>A <b>DevExpress.Web.ASPxClasses.ControlRenderMode</b> enumeration value specifying the render mode of the controls created via the <b>RenderHelper</b>'s methods.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.ResetFontStyle(System.Web.UI.WebControls.WebControl)">
+            <summary>
+                <para>Removes all font styling for the specified control.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:System.Web.UI.WebControls.WebControl"/> object, whose font styling should be removed. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.SetFontStyle(System.Web.UI.WebControls.WebControl,System.Drawing.FontStyle)">
+            <summary>
+                <para>Changes the font style used by a particular control.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:System.Web.UI.WebControls.WebControl"/> descendant specifying the control whose font style will be changed.
+
+            </param>
+            <param name="fontStyle">
+		A <see cref="T:System.Drawing.FontStyle"/> enumeration value specifying the new font style to be used by the <i>control</i>.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.SetToolTip(System.Web.UI.HtmlControls.HtmlControl,System.String)">
+            <summary>
+                <para>Changes the tooltip text of a particular control.
+</para>
+            </summary>
+            <param name="control">
+		A <b>HtmlControl</b> object specifying the control whose tooltip will be changed. 
+
+            </param>
+            <param name="toolTip">
+		A string that is the tooltip text. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.SetToolTip(System.Web.UI.WebControls.WebControl,System.String)">
+            <summary>
+                <para>Changes the tooltip text of a particular control.
+</para>
+            </summary>
+            <param name="control">
+		A <b>WebControl</b> object specifying the control whose tooltip will be changed
+
+            </param>
+            <param name="toolTip">
+		A string that is the tooltip text. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.RenderHelper.SetupASPxWebControl(DevExpress.Web.ASPxClasses.ASPxWebControl)">
+            <summary>
+                <para>Sets up the specified <b>ASPxWebControl</b> to maintain a consistent visual style in an <b>XAF</b> ASP.NET Web application's UI.
+</para>
+            </summary>
+            <param name="control">
+		The <b>ASPxWebControl</b> control that must be set up.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.Templates.BaseXafPage">
+
+            <summary>
+                <para>An abstract ancestor for classes that implement Web Forms pages used in ASP.NET XAF applications.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Templates.BaseXafPage.#ctor">
+            <summary>
+                <para>Initializes a new instance of the BaseXafPage class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.Templates.BaseXafPage.ActionContainersChanged">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Templates.BaseXafPage.CallbackManager">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Templates.BaseXafPage.CurrentTheme">
+            <summary>
+                <para>Specifies the name of theme applied to the BaseXafPage page.
+</para>
+            </summary>
+            <value>A string that specifies the name of theme applied to the current page.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.Templates.BaseXafPage.CurrentThemeManager">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.Templates.BaseXafPage.CustomizeTemplateContent">
+            <summary>
+                <para>Occurs when the template content is created.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Templates.BaseXafPage.DefaultContainer">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Templates.BaseXafPage.Dispose">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Templates.BaseXafPage.GetContainers">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Templates.BaseXafPage.GetScrollableControlID">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Templates.BaseXafPage.InnerContentPlaceHolder">
+            <summary>
+                <para>Gets the control that specifies the BaseXafPage page's inner content.
+</para>
+            </summary>
+            <value>A <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.control.aspx">Control</a> object that specifies the BaseXafPage page's inner content.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Templates.BaseXafPage.IsSizeable">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Templates.BaseXafPage.RegisterActionContainers(System.Collections.Generic.IEnumerable`1)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="actionContainers">
+		 [To be supplied] 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Templates.BaseXafPage.SetCaption(System.String)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="caption">
+		 [To be supplied] 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Templates.BaseXafPage.SetStatus(System.Collections.Generic.ICollection`1)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="statusMessages">
+		 [To be supplied] 
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Templates.BaseXafPage.Settings">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Templates.BaseXafPage.SetView(DevExpress.ExpressApp.View)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="view">
+		 [To be supplied] 
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Templates.BaseXafPage.TemplateContent">
+            <summary>
+                <para>Gets a User Control that specifies the BaseXafPage page's content.
+</para>
+            </summary>
+            <value>A <b>TemplateContext</b> User Control that specifies the current page's content.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Templates.BaseXafPage.UnregisterActionContainers(System.Collections.Generic.IEnumerable`1)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="actionContainers">
+		 [To be supplied] 
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Templates.BaseXafPage.View">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.Templates.BaseXafPage.ViewChanged">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Templates.BaseXafPage.ViewSiteControl">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.SystemModule.ChooseThemeController">
+
+            <summary>
+                <para>A <see cref="T:DevExpress.ExpressApp.WindowController"/> descendant that provides the <see cref="P:DevExpress.ExpressApp.Web.SystemModule.ChooseThemeController.ChooseThemeAction"/> Action for ASP.NET applications.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.SystemModule.ChooseThemeController.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ChooseThemeController class and its <see cref="P:DevExpress.ExpressApp.Web.SystemModule.ChooseThemeController.ChooseThemeAction"/> Action.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.SystemModule.ChooseThemeController.ActiveKey_CanManageCurrentTheme">
+            <summary>
+                <para>Specifies the name of the key that is added to the <see cref="P:DevExpress.ExpressApp.Web.SystemModule.ChooseThemeController.ChooseThemeAction"/> Action's <see cref="P:DevExpress.ExpressApp.Actions.ActionBase.Active"/> collection to indicate the Action's active state.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.SystemModule.ChooseThemeController.ChooseThemeAction">
+            <summary>
+                <para>An Action used to switch themes in ASP.NET applications.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Actions.SingleChoiceAction"/> object that is an Action used to switch themes in ASP.NET applications.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.Templates.TemplateType">
+
+            <summary>
+                <para>Contains values that specify the page template type.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.Templates.TemplateType.Dialog">
+            <summary>
+                <para>A dialog window template.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.Templates.TemplateType.Horizontal">
+            <summary>
+                <para>A main window with horizontal navigation template.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.Templates.TemplateType.Logon">
+            <summary>
+                <para>A logon window template.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.Templates.TemplateType.Vertical">
+            <summary>
+                <para>A main window with vertical navigation template.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.WebWindowTemplateHttpHandler">
+
+            <summary>
+                <para>An HTTP handler used to process web requests in ASP.NET XAF applications.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindowTemplateHttpHandler.#ctor">
+            <summary>
+                <para>Initializes a new instance of the WebWindowTemplateHttpHandler class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.WebWindowTemplateHttpHandler.ActualHandler">
+            <summary>
+                <para>Gets the actual handler object.
+</para>
+            </summary>
+            <value>An <b>IHttpHandler</b> object that specifies the actual handler.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.WebWindowTemplateHttpHandler.CurrentRequestTemplateType">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.WebWindowTemplateHttpHandler.IsReusable">
+            <summary>
+                <para>Gets whether or not another request can use the WebWindowTemplateHttpHandler instance.
+</para>
+            </summary>
+            <value><b>true</b>, if another request can use the WebWindowTemplateHttpHandler instance; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.WebWindowTemplateHttpHandler.PreferredApplicationWindowTemplateType">
+            <summary>
+                <para>Specifies the Template type for the application's main page.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Web.Templates.TemplateType"/> enumeration value that specifies the Template type for the application's main page. The default is <see cref="F:DevExpress.ExpressApp.Web.Templates.TemplateType.Vertical"/>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindowTemplateHttpHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+                <para>Enables processing of HTTP Web requests by WebWindowTemplateHttpHandler.
+</para>
+            </summary>
+            <param name="context">
+		A <b>System.Web.HttpContext</b> object that provides references to the intrinsic server objects used to service HTTP requests.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.Templates.TemplateContentSettings">
+
+            <summary>
+                <para>Represents the ASP.NET template content settings that are passed to the <see cref="P:DevExpress.ExpressApp.Web.WebApplication.Settings"/> property.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Templates.TemplateContentSettings.#ctor">
+            <summary>
+                <para>Initializes a new instance of the TemplateContentSettings class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Templates.TemplateContentSettings.DefaultTemplateContentPath">
+            <summary>
+                <para>Specifies the path to a <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.usercontrol(v=vs.90).aspx">User Control</a> that implements the <b>Default</b> Template content.
+</para>
+            </summary>
+            <value>A string that specifies the path to a <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.usercontrol(v=vs.90).aspx">User Control</a> that implements the <b>Default</b> Template content.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Templates.TemplateContentSettings.DefaultVerticalTemplateContentPath">
+            <summary>
+                <para>Specifies the path to a <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.usercontrol(v=vs.90).aspx">User Control</a> that implements the <b>DefaultVertical</b> Template content.
+</para>
+            </summary>
+            <value>A string that specifies the path to a <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.usercontrol(v=vs.90).aspx">User Control</a> that implements the <b>DefaultVertical</b> Template content.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Templates.TemplateContentSettings.DialogTemplateContentPath">
+            <summary>
+                <para>Specifies the path to a <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.usercontrol(v=vs.90).aspx">User Control</a> that implements the <b>Dialog</b> Template content.
+</para>
+            </summary>
+            <value>A string that specifies the path to a <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.usercontrol(v=vs.90).aspx">User Control</a> that implements the <b>Dialog</b> Template content.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Templates.TemplateContentSettings.LogonTemplateContentPath">
+            <summary>
+                <para>Specifies the path to a <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.usercontrol(v=vs.90).aspx">User Control</a> that implements the <b>Login</b> Template content.
+</para>
+            </summary>
+            <value>A string that specifies the path to a <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.usercontrol(v=vs.90).aspx">User Control</a> that implements the <b>Login</b> Template content.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Templates.TemplateContentSettings.NestedFrameControlPath">
+            <summary>
+                <para>Specifies the path to a <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.usercontrol(v=vs.90).aspx">User Control</a> that implements the <b>NestedFrameControl</b> Template content.
+</para>
+            </summary>
+            <value>A string that specifies the path to a <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.usercontrol(v=vs.90).aspx">User Control</a> that implements the <b>NestedFrameControl</b> Template content.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.Controls.AboutInfoControl">
+
+            <summary>
+                <para>A control that provides information on the current application in ASP.NET applications.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Controls.AboutInfoControl.#ctor">
+            <summary>
+                <para>Creates an instance of the AboutInfoControl class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.ISupportModelSaving">
+
+            <summary>
+                <para>Declares members implemented by an ASP.NET Web List Editor to support saving user-customized List View settings in the Application Model settings storage (in browser cookies, by default).
+</para>
+            </summary>
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.ISupportModelSaving.ModelSaving">
+            <summary>
+                <para>Occurs when the ASP.NET Web List Editor's control customizations are saved to the Application Model.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.SystemModule.CustomWriteToResponseEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.ExpressApp.Web.SystemModule.WebExportController.CustomWriteToResponse"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.SystemModule.CustomWriteToResponseEventArgs.#ctor(System.IO.MemoryStream,System.String)">
+            <summary>
+                <para>Initializes a new instance of the <b>CustomWriteToResponseEventArgs</b> class.
+</para>
+            </summary>
+            <param name="stream">
+		A <b>System.IO.MemoryStream</b> object that is a stream that will be sent to a client's browser.
+
+
+            </param>
+            <param name="fileName">
+		A string that is the name of the file to be saved.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.SystemModule.CustomWriteToResponseEventArgs.FileName">
+            <summary>
+                <para>Specifies the name of the file to which the browser can save the stream passed as the <see cref="P:DevExpress.ExpressApp.Web.SystemModule.CustomWriteToResponseEventArgs.Stream"/> parameter.
+</para>
+            </summary>
+            <value>A string that is the name of the file to be saved.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.SystemModule.CustomWriteToResponseEventArgs.Stream">
+            <summary>
+                <para>Specifies the stream to be sent to the browser.
+</para>
+            </summary>
+            <value>A <b>System.IO.MemoryStream</b> object that is the stream that will be sent to a client's browser.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule">
+
+            <summary>
+                <para>The module contained in the <i>DevExpress.ExpressApp.Web.v13.1.dll</i> assembly.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule.#ctor">
+            <summary>
+                <para>Creates an instance of the SystemAspNetModule class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule.ConvertXml(DevExpress.ExpressApp.Updating.ConvertXmlParameters)">
+            <summary>
+                <para>Converts legacy Application Model differences containing SystemAspNetModule related data.
+</para>
+            </summary>
+            <param name="parameters">
+		A <see cref="T:DevExpress.ExpressApp.Updating.ConvertXmlParameters"/> object, representing an Application Model node's differences.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule.ExtendModelInterfaces(DevExpress.ExpressApp.Model.ModelInterfaceExtenders)">
+            <summary>
+                <para>Extends the Application Model with the <see cref="T:DevExpress.ExpressApp.Web.SystemModule.IModelListViewWeb"/>, <see cref="T:DevExpress.ExpressApp.Web.SystemModule.IModelOptionsWeb"/>, and <see cref="T:DevExpress.ExpressApp.Web.SystemModule.IModelActionWeb"/> interfaces.
+</para>
+            </summary>
+            <param name="extenders">
+		A <b>ModelInterfaceExtenders</b> object that is a collection of Application Model interface extenders. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+            <summary>
+                <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the SystemAspNetModule module.
+</para>
+            </summary>
+            <param name="objectSpace">
+		An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.
+
+            </param>
+            <param name="versionFromDB">
+		A <b>System.Version</b> object which represents the current database version.
+
+            </param>
+            <returns>An IEnumerable@lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>@gt; list of updaters that handle database updates for the SystemAspNetModule module.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule.GetXafResourceLocalizerTypes">
+            <summary>
+                <para>Returns a collection of additional Resource Localizer types that can be used in an application that uses the SystemAspNetModule.
+</para>
+            </summary>
+            <returns>An <b>ICollection@lt;Type@gt;</b> collection containing the types of the Resource Localizers supplied with the <b>SystemAspNetModule</b>.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.SystemModule.QueryCloseAfterSaveEventArgs">
+
+            <summary>
+                <para>Arguments passed to the <see cref="E:DevExpress.ExpressApp.Web.SystemModule.WebModificationsController.QueryCloseAfterSave"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.SystemModule.QueryCloseAfterSaveEventArgs.#ctor">
+            <summary>
+                <para>Creates a new instance of the QueryCloseAfterSaveEventArgs class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.SystemModule.QueryCloseAfterSaveEventArgs.CloseAfterSave">
+            <summary>
+                <para>Specifies whether to close the current Detail View after executing the <see cref="P:DevExpress.ExpressApp.SystemModule.ModificationsController.SaveAndCloseAction"/> in ASP.NET Web applications.
+</para>
+            </summary>
+            <value><b>true</b> if the View is closed after executing the <b>Save and Close</b> Action; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.PopupWindow">
+
+            <summary>
+                <para>A pop-up Window used in ASP.NET Web applications.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.PopupWindow.#ctor(DevExpress.ExpressApp.XafApplication,DevExpress.ExpressApp.TemplateContext,System.Collections.Generic.ICollection`1)">
+            <summary>
+                <para>Creates a new PopupWindow.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Frame.Application"/> property.
+
+            </param>
+            <param name="context">
+		A <see cref="T:DevExpress.ExpressApp.TemplateContext"/> object representing the created Window's context. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Frame.Context"/> property. 
+
+            </param>
+            <param name="controllers">
+		A <b>ICollection@lt;</b><see cref="T:DevExpress.ExpressApp.Controller"/><b>@gt;</b> Controllers collection. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.PopupWindow.Close(System.Boolean)">
+            <summary>
+                <para>Closes the PopupWindow and optionally refreshes its parent Window.
+</para>
+            </summary>
+            <param name="isForceParentRefresh">
+		<b>true</b> if the parent Window must be refreshed; otherwise, <b>false</b>.
+
+            </param>
+            <returns>Always <b>true</b>.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.PopupWindow.Closed">
+            <summary>
+                <para>Occurs after the current popup window is closed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.PopupWindow.ClosureScript">
+            <summary>
+                <para>Specifies the JavaScript code used to close the pop-up Window.
+</para>
+            </summary>
+            <value>A string containing the JavaScript code used to close the pop-up Window.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.PopupWindow.GetIsPostBackForced(System.Web.UI.Page)">
+            <summary>
+                <para>This method is intended for internal use.
+</para>
+            </summary>
+            <param name="page">
+		@nbsp;
+
+            </param>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.PopupWindow.ObjectIdParamName">
+            <summary>
+                <para>Specifies the name of the object parameter used in client-side scripts. Intended for internal use.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.PopupWindow.RefreshOnRedirect">
+            <summary>
+                <para>Indicates whether to refresh the current window on redirect.
+</para>
+            </summary>
+            <value><b>true</b>, if the popup window must be refreshed; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.PopupWindow.WindowHeight">
+            <summary>
+                <para>Specifies the height of pop-up Windows invoked via the <see cref="T:DevExpress.ExpressApp.Actions.PopupWindowShowAction"/> in ASP.NET Web applications.
+</para>
+            </summary>
+            <value>An integer value specifying the height of pop-up Windows in pixels.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.PopupWindow.WindowWidth">
+            <summary>
+                <para>Specifies the width of pop-up Windows invoked via the <see cref="T:DevExpress.ExpressApp.Actions.PopupWindowShowAction"/> in ASP.NET Web applications.
+</para>
+            </summary>
+            <value>An integer value specifying the width of pop-up Windows in pixels.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.WebWindow">
+
+            <summary>
+                <para>A Window used in ASP.NET Web applications.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindow.#ctor(DevExpress.ExpressApp.XafApplication,DevExpress.ExpressApp.TemplateContext,System.Collections.Generic.ICollection`1,System.Boolean,System.Boolean)">
+            <summary>
+                <para>Creates an instance of the WebWindow class.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Frame.Application"/> property.
+
+            </param>
+            <param name="context">
+		A <see cref="T:DevExpress.ExpressApp.TemplateContext"/> object representing the created Window's context. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Frame.Context"/> property. 
+
+            </param>
+            <param name="controllers">
+		A <b>ICollection@lt;</b><see cref="T:DevExpress.ExpressApp.Controller"/><b>@gt;</b> Controllers collection. 
+
+            </param>
+            <param name="isMain">
+		<b>true</b> if the created Window is main; otherwise, <b>false</b>. This value is assigned to the <see cref="P:DevExpress.ExpressApp.Window.IsMain"/> property.
+
+            </param>
+            <param name="activateControllersImmediatelly">
+		<b>true</b> if Controllers are created immediately after the Window has been created and before the Window's <see cref="P:DevExpress.ExpressApp.Window.Template"/> is created; <b>false</b> if Controllers are created after the Window's <see cref="P:DevExpress.ExpressApp.Window.Template"/> has been created.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.WebWindow.Application">
+            <summary>
+                <para>Provides access to a <see cref="T:DevExpress.ExpressApp.Web.WebApplication"/> object that can be used to manage the current application.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Web.WebApplication"/> object that provides methods and properties to manage an application. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindow.BreakLinksToControls">
+            <summary>
+                <para>Removes WebWindow references to its controls and their event handlers.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindow.CheckForRedirect">
+            <summary>
+                <para>Causes the browser to perform redirection to a different URL, if required.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindow.CheckForRedirect(System.Boolean)">
+            <summary>
+                <para>Causes the browser to perform redirection to a different URL, if required.
+</para>
+            </summary>
+            <param name="callbackOnly">
+		<b>true</b>, to perform redirection only if the <see cref="P:DevExpress.ExpressApp.Web.WebWindow.CurrentRequestPage"/> request is the result of a callback; otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindow.Close(System.Boolean)">
+            <summary>
+                <para>Closes the WebWindow.
+</para>
+            </summary>
+            <param name="isForceRefresh">
+		This parameter has no effect in the <b>WebWindow</b>'s implementation of the <b>Close</b> method.
+
+            </param>
+            <returns>Always <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.WebWindow.ControlsCreating">
+            <summary>
+                <para>Occurs before creating controls for the WebWindow's  Web Forms page.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindow.CreateControls(System.Web.UI.Page)">
+            <summary>
+                <para>Creates controls for the specified Web Forms page.
+</para>
+            </summary>
+            <param name="page">
+		A <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.page%28v=VS.80%29.aspx">Page</a> object, specifying the Web Forms page.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindow.CreateControls(System.Web.UI.Page,System.Boolean)">
+            <summary>
+                <para>Creates controls for the specified Web Forms page.
+</para>
+            </summary>
+            <param name="page">
+		A <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.page%28v=VS.80%29.aspx">Page</a> object, specifying the Web Forms page.
+
+            </param>
+            <param name="checkRequestParams">
+		<b>true</b> when the request URL is checked against the current server state; otherwise - <b>false</b>;
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindow.CreateScrollControl(System.Web.UI.Page)">
+            <summary>
+                <para>Creates an auxiliary scrolling control on the specified Web Forms page.
+</para>
+            </summary>
+            <param name="page">
+		A <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.page%28v=VS.80%29.aspx">Page</a> object, specifying the Web Forms page where the auxiliary scrolling control will be created.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindow.CreateSessionKeepAliveControl(System.Web.UI.Page)">
+            <summary>
+                <para>Creates the auxiliary control preventing an ASP.NET session from timing out, on the specified page.
+</para>
+            </summary>
+            <param name="page">
+		A <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.page%28v=VS.80%29.aspx">Page</a> object, specifying the Web Forms page where the auxiliary control preventing an ASP.NET session from timing out will be created.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.WebWindow.CurrentRequestPage">
+            <summary>
+                <para>Provides access to the page associated with the current HTTP request.
+</para>
+            </summary>
+            <value>A System.Web.UI.Page associated with the current HTTP request. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.WebWindow.CurrentRequestWindow">
+            <summary>
+                <para>Provides access to the WebWindow associated with the current HTTP request.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Web.WebWindow"/> associated with the current HTTP request.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.WebWindow.CustomRegisterTemplateDependentScripts">
+            <summary>
+                <para>Occurs when ASP.NET Template's scripts are registered.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindow.GetCurrentRequestShortcut">
+            <summary>
+                <para>Provides access to the key information on the <see cref="T:DevExpress.ExpressApp.View"/> associated with the current request.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.ExpressApp.ViewShortcut"/> object supplying key information on the <see cref="T:DevExpress.ExpressApp.View"/> associated with the current request.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindow.GetForm(System.Web.UI.Page)">
+            <summary>
+                <para>Provides access to the HTML <b>@lt;form@gt;</b> element of the specified Web Forms page.
+</para>
+            </summary>
+            <param name="page">
+		A <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.page%28v=VS.80%29.aspx">Page</a> object, specifying the Web Forms page, whose HTML <b>@lt;form@gt;</b> element will be accessed.
+
+            </param>
+            <returns>A <see cref="T:System.Web.UI.HtmlControls.HtmlForm"/> object, which is the HTML <b>@lt;form@gt;</b> element of the specified Web Forms page.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.WebWindow.PagePreRender">
+            <summary>
+                <para>Occurs after the WebWindow's Web Forms page is loaded, but prior to rendering.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindow.RegisterClientScript(System.String,System.String)">
+            <summary>
+                <para>Registers the client script with the WebWindow's page, using the specified script name and script literal, and adds script tags.
+</para>
+            </summary>
+            <param name="scriptName">
+		A string containing the name of the client script to register.
+
+            </param>
+            <param name="script">
+		A string containing the client script literal to register.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindow.RegisterClientScript(System.String,System.String,System.Boolean)">
+            <summary>
+                <para>Registers the client script with the WebWindow's page, using the specified script name and script literal, and adds script tags. Optionally overrides existing script literals.
+</para>
+            </summary>
+            <param name="scriptName">
+		A string containing the name of the client script to register.
+
+            </param>
+            <param name="script">
+		A string containing the client script literal to register.
+
+            </param>
+            <param name="overrideScript">
+		<b>true</b>, to override already registered script literals that use the same name; otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindow.RegisterClientScriptInclude(System.String,System.String)">
+            <summary>
+                <para>Registers the client script include with the WebWindow's page using the specified key and script file name. 
+
+</para>
+            </summary>
+            <param name="scriptName">
+		A string containing the key of the client script include to register. 
+
+
+            </param>
+            <param name="scriptFileName">
+		A string containing the file name of the client script include to register. 
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindow.RegisterClientScriptResource(System.Type,System.String)">
+            <summary>
+                <para>Registers the client script resource with the WebWindow's page, using the specified resource name.
+</para>
+            </summary>
+            <param name="type">
+		The type of the client script resource to register. 
+
+            </param>
+            <param name="resourceName">
+		A string containing the resource name to be registered.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindow.RegisterStartupScript(System.String,System.String,System.Boolean)">
+            <summary>
+                <para>Registers the startup script with the WebWindow's page, using the specified script name and script literal, and adds script tags. Optionally, overrides existing script literals.
+</para>
+            </summary>
+            <param name="scriptName">
+		A string containing the name of the startup script to register.
+
+            </param>
+            <param name="script">
+		A string containing the startup script literal to register.
+
+            </param>
+            <param name="overwrite">
+		<b>true</b>, to override already registered script literals that use the same name; otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindow.RegisterStartupScript(System.String,System.String)">
+            <summary>
+                <para>Registers the startup script with the WebWindow's page, using the specified script name and script literal, and adds script tags.
+</para>
+            </summary>
+            <param name="scriptName">
+		A string containing the name of the startup script to register.
+
+            </param>
+            <param name="script">
+		A string containing the startup script literal to register.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.WebWindow.ScrollControl">
+            <summary>
+                <para>Provides access to the WebWindow's auxiliary scrolling control.
+</para>
+            </summary>
+            <value>A <b>DevExpress.ExpressApp.Web.Controls.ScrollControl</b> object which is the WebWindow's auxiliary scrolling control.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebWindow.SetCurrentRequestWindow(DevExpress.ExpressApp.Web.WebWindow)">
+            <summary>
+                <para>Sets the specified window as a current session.
+</para>
+            </summary>
+            <param name="window">
+		A <see cref="T:DevExpress.ExpressApp.Web.WebWindow"/> object that is the current request window.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.ControlsCreatingEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.ExpressApp.Web.WebApplication.ControlsCreating"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.ControlsCreatingEventArgs.#ctor(System.Web.UI.Page)">
+            <summary>
+                <para>Initializes a new instance of the ControlsCreatingEventArgs class.
+</para>
+            </summary>
+            <param name="page">
+		A <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.page%28v=VS.80%29.aspx">Page</a> object, specifying the Web Forms page.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.ControlsCreatingEventArgs.Page">
+            <summary>
+                <para>Gets the Web Forms page.
+</para>
+            </summary>
+            <value>A <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.page%28v=VS.80%29.aspx">Page</a> object, specifying the Web Forms page.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.WebApplication">
+
+            <summary>
+                <para>Manages an ASP.NET XAF application.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebApplication.#ctor">
+            <summary>
+                <para>Initializes a new instance of the WebApplication class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.WebApplication.ApplicationCreated">
+            <summary>
+                <para>Occurs after the WebApplication object is instantiated.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.WebApplication.CanAutomaticallyLogonWithStoredLogonParameters">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <value>@nbsp;
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.WebApplication.CollectionsEditMode">
+            <summary>
+                <para>Specifies the application's mode of operation, with respect to the display of nested List Views.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Editors.ViewEditMode"/> enumeration value which specifies the application's mode of operation with respect to the display of nested List Views.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.WebApplication.ControlsCreating">
+            <summary>
+                <para>Occurs before creating controls for the Web Forms page.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebApplication.CreateControls(System.Web.UI.Page)">
+            <summary>
+                <para>Creates controls for the specified Web Forms page.
+</para>
+            </summary>
+            <param name="page">
+		A <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.page%28v=VS.80%29.aspx">Page</a> object, specifying the Web Forms page.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebApplication.CreateLogonControls(System.Web.UI.Page)">
+            <summary>
+                <para>This method is obsolete. There is no need to use it any longer.
+</para>
+            </summary>
+            <param name="logonPage">
+		@nbsp;
+
+            </param>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.WebApplication.DefaultPage">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <returns>
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebApplication.DisposeInstance(System.Web.SessionState.HttpSessionState)">
+            <summary>
+                <para>Disposes the ASP.NET application.
+</para>
+            </summary>
+            <param name="session">
+		A <a href="http://msdn.microsoft.com/en-us/library/system.web.sessionstate.httpsessionstate%28v=VS.80%29.aspx">HttpSessionState</a> object, which provides access to session-state values, session-level settings and lifetime management methods.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.WebApplication.FrameTemplateFactory">
+            <summary>
+                <para>Specifies the <b>IFrameTemplateFactory</b> object that provides Templates for an ASP.NET application.
+
+</para>
+            </summary>
+            <value>Specifies the <b>IFrameTemplateFactory</b> object that provides Templates for an ASP.NET application.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebApplication.GetRequestedView">
+            <summary>
+                <para>Returns the requested View.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.ExpressApp.View"/> object, which is the currently requested View.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebApplication.GetRequestedWindow">
+            <summary>
+                <para>Returns the currently requested Window.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.ExpressApp.Web.WebWindow"/> object which is the current Window.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebApplication.InitializeCulture">
+            <summary>
+                <para>Initializes culture-specific settings of the ASP.NET application.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.WebApplication.Instance">
+            <summary>
+                <para>Gets the ASP.NET application instance.
+</para>
+            </summary>
+            <value>A WebApplication object, which is the ASP.NET application instance.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.WebApplication.IsLoggedOn">
+            <summary>
+                <para>Indicates whether a user has logged on to the application.
+</para>
+            </summary>
+            <value>A boolean value indicating that a user is authenticated. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebApplication.LogOff(System.Web.SessionState.HttpSessionState)">
+            <summary>
+                <para>Performs the ASP.NET application logout.
+</para>
+            </summary>
+            <param name="session">
+		A <a href="http://msdn.microsoft.com/en-us/library/system.web.sessionstate.httpsessionstate%28v=VS.80%29.aspx">HttpSessionState</a> object, which provides access to session-state values, session-level settings and lifetime management methods.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebApplication.LogOff">
+            <summary>
+                <para>Performs the ASP.NET application logout.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebApplication.LogOff(System.Boolean)">
+            <summary>
+                <para>Performs the ASP.NET application logout.
+</para>
+            </summary>
+            <param name="canCancel">
+		<b>true</b>, if the log off can be canceled in the <see cref="E:DevExpress.ExpressApp.XafApplication.LoggingOff"/> event handler; otherwise - <b>false</b>;
+
+            </param>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.WebApplication.LogonPage">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.WebApplication.LogonWindow">
+            <summary>
+                <para>Gets the ASP.NET application's logon Window
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Web.WebWindow"/> object representing the ASP.NET application's logon Window.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.WebApplication.MainWindow">
+            <summary>
+                <para>Provides access to the ASP.NET application's main Window.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Window"/> object that represents the current application's main Window.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.WebApplication.NestedFrameTemplateControl">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <returns>
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.WebApplication.PopupWindowManager">
+            <summary>
+                <para>Gets the pop-up window manager.
+</para>
+            </summary>
+            <value>A <b>PopupWindowManager</b> object, which manages the pop-up windows of the ASP.NET application.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.WebApplication.PopupWindowTemplatePage">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <returns>
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebApplication.Redirect(System.String,System.Boolean,System.Boolean)">
+            <summary>
+                <para>Redirects a browser to the specified Uniform Resource Locator (URL).
+</para>
+            </summary>
+            <param name="url">
+		A string, which the target URL. This can be a full URL, beginning with "http://", a virtual path to a location on the same IIS server, or the name of a file contained in the same location as the original URL. 
+
+
+            </param>
+            <param name="endResponse">
+		<b>true</b>, if it is required to terminate the execution of the current page; otherwise - <b>false</b>.
+
+
+            </param>
+            <param name="useHttpLocationHeader">
+		<b>true</b>, if the redirect URL is set to the Http Location header (see <a href="http://msdn.microsoft.com/en-us/library/system.web.httpresponse.redirectlocation%28v=VS.80%29.aspx">HttpResponse.RedirectLocation</a>); otherwise - <b>false</b>, 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebApplication.Redirect(System.String,System.Boolean)">
+            <summary>
+                <para>Redirects a browser to the specified Uniform Resource Locator (URL).
+</para>
+            </summary>
+            <param name="url">
+		A string, which the target URL. This can be a full URL, beginning with "http://", a virtual path to a location on the same IIS server, or the name of a file contained in the same location as the original URL. 
+
+
+            </param>
+            <param name="endResponse">
+		<b>true</b>, if it is required to terminate execution of the current page; otherwise - <b>false</b>.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebApplication.Redirect(System.String)">
+            <summary>
+                <para>Redirects a browser to the specified Uniform Resource Locator (URL).
+</para>
+            </summary>
+            <param name="url">
+		A string, which is the target URL. This can be a full URL beginning with "http://", a virtual path to a location on the same IIS server, or the name of a file contained in the same location as the original URL. 
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.WebApplication.RequestManager">
+            <summary>
+                <para>Gets the HTTP request manager.
+</para>
+            </summary>
+            <value>An <b>IHttpRequestManager</b> object, which manages HTTP requests in the ASP.NET application.
+
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.WebApplication.SessionApplicationVariable">
+            <summary>
+                <para>A name of <a href="http://msdn.microsoft.com/en-us/library/system.web.sessionstate.httpsessionstate%28v=VS.80%29.aspx">HttpSessionState</a> key, which refers to the current WebApplication instance.
+</para>
+            </summary>
+            <returns>
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebApplication.SetInstance(System.Web.SessionState.HttpSessionState,DevExpress.ExpressApp.Web.WebApplication)">
+            <summary>
+                <para>Assigns the WebApplication instance to the <i>SessionApplicationVariable</i> Session variable. 
+</para>
+            </summary>
+            <param name="session">
+		A <a href="http://msdn.microsoft.com/en-us/library/system.web.sessionstate.httpsessionstate%28v=VS.80%29.aspx">HttpSessionState</a> object, which provides access to session-state values, session-level settings and lifetime management methods.
+
+            </param>
+            <param name="application">
+		A WebApplication instance.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebApplication.SetShared(DevExpress.ExpressApp.Web.WebApplication)">
+            <summary>
+                <para>Specifies a shared WebApplication instance that should be used to initialize shared parts of other <b>WebApplication</b> instances. 
+</para>
+            </summary>
+            <param name="application">
+		A WebApplication object that should be used to initialize shared parts of other <b>WebApplication</b> instances. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.WebApplication.Settings">
+            <summary>
+                <para>Specifies settings of the ASP.NET application's Templates content.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Web.Templates.TemplateContentSettings"/> object that specifies settings of the ASP.NET application's templates content.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebApplication.ShowDetailViewFrom(DevExpress.ExpressApp.Frame)">
+            <summary>
+                <para>Indicates whether a Views invoked from the specified <see cref="T:DevExpress.ExpressApp.Frame"/> can be displayed in a new <see cref="T:DevExpress.ExpressApp.Window"/>.
+</para>
+            </summary>
+            <param name="sourceFrame">
+		The currently active <see cref="T:DevExpress.ExpressApp.Frame"/> from which a Detail View is going to be invoked.
+
+            </param>
+            <returns><b>true</b> if a Detail View can be displayed in a new Window; <b>false</b> if a Detail View can be displayed in the specified Frame only.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.WebApplication.Start">
+            <summary>
+                <para>Starts the ASP.NET application.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.SystemModule.WebExportController">
+
+            <summary>
+                <para>The ASP.NET specific descendant of the <see cref="T:DevExpress.ExpressApp.SystemModule.ExportController"/> class.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.SystemModule.WebExportController.#ctor">
+            <summary>
+                <para>Initializes a new instance of the WebExportController class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.SystemModule.WebExportController.CustomWriteToResponse">
+            <summary>
+                <para>Occurs after the data represented by the <see cref="P:DevExpress.ExpressApp.SystemModule.ExportController.Exportable"/> List Editor has been exported.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor">
+
+            <summary>
+                <para>Represents the base class for complex built-in grid-like ASP.NET List Editors.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.#ctor(DevExpress.ExpressApp.Model.IModelListView)">
+            <summary>
+                <para>Creates and initializes an instance of the <b>ComplexWebListEditor</b> descendant.
+</para>
+            </summary>
+            <param name="info">
+		An <see cref="T:DevExpress.ExpressApp.Model.IModelListView"/> object representing the Application Model's node, which contains information on the View that will use the instantiated List Editor.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.BreakLinksToControls">
+            <summary>
+                <para>Removes references to the ComplexWebListEditor's control and its event handlers.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.CanSelectRows">
+            <summary>
+                <para>Indicates whether the ComplexWebListEditor's rows can be selected in a UI. 
+</para>
+            </summary>
+            <value><b>true</b>, if it is possible to select the <b>ComplexWebListEditor</b>'s rows in a UI; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.ClearTemporarySelectedObject">
+            <summary>
+                <para>This method is intended for internal use.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.CommitChanges">
+            <summary>
+                <para>This event is intended for internal use.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.CustomCreateCellControl">
+            <summary>
+                <para>Occurs when a control is created for the list editor cell.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.CustomizeAppearance">
+            <summary>
+                <para>Occurs before the ComplexWebListEditor's cell has been repainted in a UI. Enables the appearance settings of individual cells to be changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.Dispose">
+            <summary>
+                <para>Releases all resources used by the ComplexWebListEditor.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.FindPropertyEditor(DevExpress.ExpressApp.Model.IModelMemberViewItem,DevExpress.ExpressApp.Editors.ViewEditMode)">
+            <summary>
+                <para>Provides access to the ComplexWebListEditor's Property Editor, corresponding to the specified Application Model's node.
+</para>
+            </summary>
+            <param name="modelDetailViewItem">
+		An <see cref="T:DevExpress.ExpressApp.Model.IModelMemberViewItem"/> object, representing the Application Model's node, corresponding to the required Property Editor.
+
+            </param>
+            <param name="viewEditMode">
+		A <see cref="T:DevExpress.ExpressApp.Editors.ViewEditMode"/> enumeration value that specify the display mode.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor"/>, corresponding to the specified Application Model's node.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.FindPropertyEditor(System.String,DevExpress.ExpressApp.Editors.ViewEditMode)">
+            <summary>
+                <para>Provides access to the ComplexWebListEditor's Property Editor, representing a particular property.
+</para>
+            </summary>
+            <param name="propertyName">
+		A string holding the name of the required property.
+
+            </param>
+            <param name="viewEditMode">
+		A <see cref="T:DevExpress.ExpressApp.Editors.ViewEditMode"/> enumeration value that specify the display mode.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.ExpressApp.Web.Editors.WebPropertyEditor"/> representing the specified property.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.FindPropertyEditor(DevExpress.ExpressApp.Model.IModelMemberViewItem)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="modelDetailViewItem">
+		 [To be supplied] 
+            </param>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.GetControlSelectedObjects">
+            <summary>
+                <para>Returns a list of objects selected in the ComplexWebListEditor's control.
+</para>
+            </summary>
+            <returns>An <b>IList@lt;object@gt;</b> list of objects selected in the ComplexWebListEditor's control.
+
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.GetSelectedObjects">
+            <summary>
+                <para>Provides access to the collection of objects that are currently selected in the <see cref="T:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor"/>'s control.
+</para>
+            </summary>
+            <returns>A list of the selected objects.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.Items">
+            <summary>
+                <para>Provides access to the ComplexWebListEditor's Property Editors.
+</para>
+            </summary>
+            <value>An <b>IList@lt;</b><see cref="T:DevExpress.ExpressApp.Editors.ViewItem"/><b>@gt;</b> object representing a collection of the <b>ComplexWebListEditor</b>'s Property Editors.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.ProcessCallbackComplete">
+            <summary>
+                <para>Updates the ComplexWebListEditor after a callback has been completed. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.Refresh">
+            <summary>
+                <para>Refreshes the bound data source of the ComplexWebListEditor's control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.SetControlSelectedObjects(System.Collections.Generic.IList`1)">
+            <summary>
+                <para>Changes the selection in the ComplexWebListEditor's control.
+</para>
+            </summary>
+            <param name="objects">
+		An <b>IList@lt;object@gt;</b> list of objects to be selected in the ComplexWebListEditor's control.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.SetTemporarySelectedObject(System.Object)">
+            <summary>
+                <para>This method is intended for internal use.
+</para>
+            </summary>
+            <param name="value">
+		@nbsp;
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.Editors.ComplexWebListEditor.Setup(DevExpress.ExpressApp.CollectionSourceBase,DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Performs additional initialization of the ComplexWebListEditor.
+</para>
+            </summary>
+            <param name="collectionSource">
+		A <see cref="T:DevExpress.ExpressApp.CollectionSourceBase"/> object that represent the Collection Source of the List View that the current List Editor represents in a UI.
+
+            </param>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that can be used to manage the current application. 
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.NeedToCacheErrorInfoEventArgs">
+
+            <summary>
+                <para>Represents arguments passed to the <see cref="T:DevExpress.ExpressApp.Web.NeedToCacheErrorInfoEventArgs"/> event. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.NeedToCacheErrorInfoEventArgs.#ctor(DevExpress.ExpressApp.Web.ErrorInfo)">
+            <summary>
+                <para>Initializes a new instance of the NeedToCacheErrorInfoEventArgs class.
+</para>
+            </summary>
+            <param name="errorInfo">
+		The <b>ErrorInfo</b> object representing the error that occurred.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.NeedToCacheErrorInfoEventArgs.ErrorInfo">
+            <summary>
+                <para>Gets the <b>ErrorInfo</b> object representing the error that occurred.
+
+</para>
+            </summary>
+            <value>The <b>ErrorInfo</b> object representing the error that occurred.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.NeedToCacheErrorInfoEventArgs.IsCachingNeeded">
+            <summary>
+                <para>Specifies if caching the error information is required.
+
+</para>
+            </summary>
+            <value><b>true</b> if the error information is cached, otherwise - <b>false</b>. The default is <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.CustomSendErrorNotificationEventArgs">
+
+            <summary>
+                <para>Arguments passed to the <see cref="E:DevExpress.ExpressApp.Web.ErrorHandling.CustomSendErrorNotification"/> event. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.CustomSendErrorNotificationEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.Exception)">
+            <summary>
+                <para>Initializes a new instance of the CustomSendErrorNotificationEventArgs class.
+</para>
+            </summary>
+            <param name="errorId">
+		A string representing the identifier of the error that occurred.
+
+
+            </param>
+            <param name="errorText">
+		A string representing the text of the error message.
+
+            </param>
+            <param name="errorDetails">
+		A string representing the complete error description, including the request details, loaded assemblies, last trace entries, etc.
+
+            </param>
+            <param name="messageSubject">
+		A string representing the subject of the error notification message.
+
+            </param>
+            <param name="messageBody">
+		A string representing the body of the error notification message.
+
+            </param>
+            <param name="exception">
+		A <see cref="T:System.Exception"/> object corresponding to the error that occurred.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.CustomSendErrorNotificationEventArgs.ErrorDetails">
+            <summary>
+                <para>Gets the complete error description, including the request details, loaded assemblies, last trace entries, etc.
+</para>
+            </summary>
+            <value>A string representing the complete error description, including the request details, loaded assemblies, last trace entries, etc.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.CustomSendErrorNotificationEventArgs.ErrorId">
+            <summary>
+                <para>Gets the identifier of the error that occurred.
+
+</para>
+            </summary>
+            <value>A string representing the identifier of the error that occurred.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.CustomSendErrorNotificationEventArgs.ErrorText">
+            <summary>
+                <para>Gets the text of the error message.
+</para>
+            </summary>
+            <value>A string representing the text of the error message.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.CustomSendErrorNotificationEventArgs.Exception">
+            <summary>
+                <para>Gets the exception that occurred.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.Exception"/> object corresponding to the error that occurred.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.CustomSendErrorNotificationEventArgs.MessageBody">
+            <summary>
+                <para>Gets the body of the error notification message.
+</para>
+            </summary>
+            <value>A string representing the body of the error notification message.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.CustomSendErrorNotificationEventArgs.MessageSubject">
+            <summary>
+                <para>Gets the subject of the error notification message.
+</para>
+            </summary>
+            <value>A string representing the subject of the error notification message.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.CustomSendMailMessageEventArgs">
+
+            <summary>
+                <para>Arguments passed to the <see cref="E:DevExpress.ExpressApp.Web.ErrorHandling.CustomSendMailMessage"/> event. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.CustomSendMailMessageEventArgs.#ctor(DevExpress.ExpressApp.Web.CustomSendErrorNotificationEventArgs,System.Net.Mail.SmtpClient,System.Net.Mail.MailMessage)">
+            <summary>
+                <para>Initializes a new instance of the CustomSendMailMessageEventArgs class.
+</para>
+            </summary>
+            <param name="baseArgs">
+		A <see cref="T:DevExpress.ExpressApp.Web.CustomSendErrorNotificationEventArgs"/> object representing the <see cref="E:DevExpress.ExpressApp.Web.ErrorHandling.CustomSendErrorNotification"/> event arguments. As the CustomSendMailMessageEventArgs class is inherited from the <b>CustomSendErrorNotificationEventArgs</b>, these arguments are required for initialization.
+
+
+            </param>
+            <param name="smtp">
+		A <see cref="T:System.Net.Mail.SmtpClient"/> object, providing the ability to send e-mail using the Simple Mail Transfer Protocol (SMTP). 
+
+
+
+            </param>
+            <param name="mailMessage">
+		A <see cref="T:System.Net.Mail.MailMessage"/> object representing an error notification e-mail message that can be sent using the <b>SmtpClient</b> object.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.CustomSendMailMessageEventArgs.MailMessage">
+            <summary>
+                <para>Gets the error notification e-mail message.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Net.Mail.MailMessage"/> object, representing an error notification e-mail message that can be sent using the <b>SmtpClient</b> object.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.CustomSendMailMessageEventArgs.Smtp">
+            <summary>
+                <para>Gets an <b>SmtpClient</b> providing the ability to send e-mail by using the Simple Mail Transfer Protocol (SMTP). 
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.Net.Mail.SmtpClient"/> object, providing the ability to send e-mail by using the SMTP.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.ErrorHandling">
+
+            <summary>
+                <para>Provides static members for the error handling in ASP.NET applications.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.ErrorHandling.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ErrorHandling class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.ErrorHandling.ApplicationNameParameter">
+            <summary>
+                <para>Specifies the name of the parameter, holding the application name. This parameter value is used in the default "From" field of the error notification e-mail. 
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.ErrorHandling.CanSendAlertToAdmin">
+            <summary>
+                <para>Determines if it is possible to send an e-mail alert to the application administrator.
+</para>
+            </summary>
+            <value><b>true</b>, if it is possible to send an e-mail alert to the application administrator; otherwise - <b>false</b>;
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.ErrorHandling.CanShowDetailedInformation">
+            <summary>
+                <para>Determines if detailed error information should be shown.
+
+</para>
+            </summary>
+            <value><b>true</b>, if detailed error information should be shown; otherwise - <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.ErrorHandling.ClearApplicationError">
+            <summary>
+                <para>Clears the application errors of the current context.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.ErrorHandling.ClearCachedPageError">
+            <summary>
+                <para>Clears the cached page error in the current context. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.ErrorHandling.ClearPageError">
+            <summary>
+                <para>Clears page errors in the current context. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.ErrorHandling.ConfigDetailedErrorReaderIPKeyName">
+            <summary>
+                <para>Specifies the name of the configuration file key holding the IP address of the host, allowed to see the detailed error information.
+
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.ErrorHandling.ConfigErrorReportEmailFromKeyName">
+            <summary>
+                <para>Specifies the name of the configuration file key holding the e-mail, from which the error notifications are sent.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.ErrorHandling.ConfigErrorReportEmailFromNameKeyName">
+            <summary>
+                <para>Specifies the name of the configuration file key holding the name, from which the error notifications are sent.
+
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.ErrorHandling.ConfigErrorReportEmailKeyName">
+            <summary>
+                <para>Specifies the name of the configuration file key holding the e-mail of the application administrator receiving the error alerts.
+
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.ErrorHandling.ConfigErrorReportEmailServerKeyName">
+            <summary>
+                <para>Specifies the name of the configuration file key holding the SMTP server name or IP address. This server is used to send error alerts to the application administrator.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.ErrorHandling.ConfigErrorReportEmailSubjectKeyName">
+            <summary>
+                <para>Specifies the name of the configuration file key holding the error alert subject format string.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.ErrorHandling.ConfigErrorReportEnableSsl">
+            <summary>
+                <para>Specifies the name of the configuration file key that sets whether the connection is encrypted when sending the error alert via e-mail.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.ErrorHandling.ConfigRichErrorReportPageKeyName">
+            <summary>
+                <para>Specifies the name of the configuration file key holding the URL of the rich error page.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.ErrorHandling.ConfigSessionLostPageKeyName">
+            <summary>
+                <para>For internal use only.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.ErrorHandling.ConfigSimpleErrorReportPageKeyName">
+            <summary>
+                <para>Specifies the name of the configuration file key holding the URL of the simple error page.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.ErrorHandling.CustomSendErrorNotification">
+            <summary>
+                <para>Occurs before determining whether it is possible to send the error alert to the application administrator.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.ErrorHandling.CustomSendMailMessage">
+            <summary>
+                <para>Occurs before e-mailing the error alert to the application administrator.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.ErrorHandling.ErrorReportEmailFromDefault">
+            <summary>
+                <para>Specifies the email address from which the error notification e-mails are sent, if the <b>ErrorReportEmailFrom</b> key value is not specified in the application configuration file.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.ErrorHandling.ErrorReportEmailFromNameDefault">
+            <summary>
+                <para>Specifies the name from which the error notification e-mails are sent, if the <b>ErrorReportEmailFromName</b> key value is not specified in the application configuration file.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Web.ErrorHandling.ExceptionMessageParameter">
+            <summary>
+                <para>Specifies the name of the parameter holding the exception message. This parameter value is used in the default subject of the error notification e-mail.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.ErrorHandling.GetApplicationError">
+            <summary>
+                <para>Gets the information on the application error that occurred in the current context.
+
+</para>
+            </summary>
+            <returns>An <b>ErrorInfo</b> object representing the information on the application error occurred in the current context.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.ErrorHandling.GetCachedPageError">
+            <summary>
+                <para>Gets the information on the cached page error that occurred in the current context. 
+</para>
+            </summary>
+            <returns>An <b>ErrorInfo</b> object providing information on the cached page error that occurred in the current context.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.ErrorHandling.GetPageError">
+            <summary>
+                <para>Gets the information on the page error that occurred in the current context. 
+</para>
+            </summary>
+            <returns>An <b>ErrorInfo</b> object providing information on the page error that occurred in the current context. 
+
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.ErrorHandling.Instance">
+            <summary>
+                <para>Represents the instance of the ErrorHandling class.
+</para>
+            </summary>
+            <value>The instance of the ErrorHandling class.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.ErrorHandling.IsIgnoredException(System.Exception)">
+            <summary>
+                <para>Determines if the specified exception is ignored.
+
+</para>
+            </summary>
+            <param name="exception">
+		A <see cref="T:System.Exception"/> object representing the exception.
+
+            </param>
+            <returns><b>true</b>, if the <i>exception</i> is ignored; otherwise - <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Web.ErrorHandling.NeedToCacheErrorInfo">
+            <summary>
+                <para>Occurs before caching the error information. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.ErrorHandling.ProcessApplicationError">
+            <summary>
+                <para>Processes the last exception that occurred.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.ErrorHandling.SendAlertToAdmin(System.String,System.String,System.String)">
+            <summary>
+                <para>Sends an alert to the application administrator.
+</para>
+            </summary>
+            <param name="errorId">
+		A string representing the identifier of the error that occurred.
+
+
+            </param>
+            <param name="errorDetails">
+		A string representing detailed information on the error that occurred.
+
+
+            </param>
+            <param name="errorText">
+		A string representing the text of the error message.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.ErrorHandling.SendAlertToAdmin(System.String,System.String,System.String,System.Exception)">
+            <summary>
+                <para>Sends an alert to the application administrator.
+</para>
+            </summary>
+            <param name="errorId">
+		A string representing the identifier of the error that occurred.
+
+
+            </param>
+            <param name="errorDetails">
+		A string representing detailed information on the error that occurred.
+
+
+            </param>
+            <param name="errorText">
+		A string representing detailed information on the error occurred.
+
+
+            </param>
+            <param name="exception">
+		A <see cref="T:System.Exception"/> object representing an error occurred.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Web.ErrorHandling.SetPageError(System.Exception)">
+            <summary>
+                <para>Handles the specified exception. 
+</para>
+            </summary>
+            <param name="error">
+		A <b>System.Exception</b> object that is the error that occurred. 
+
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Web.SystemModule.IModelActionWeb">
+
+            <summary>
+                <para>Used to extend the Application Model's <see cref="T:DevExpress.ExpressApp.Model.IModelAction"/> node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Web.SystemModule.IModelActionWeb.IsPostBackRequired">
+            <summary>
+                <para>Specifies whether a postback should be performed when the Action is executed.
+</para>
+            </summary>
+            <value><b>true</b>, to perform a postback when the Action is executed; <b>false</b>, to perform a callback.
+</value>
+
+
+        </member>
+    </members>
+</doc>

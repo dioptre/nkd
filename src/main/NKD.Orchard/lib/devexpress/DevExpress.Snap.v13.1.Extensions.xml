@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Snap.v13.1.Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Snap.Extensions.Localization.SnapExtensionsLocalizer">
+
+            <summary>
+                <para>Provides the means to localize the user interface elements of a Snap application's <see cref="T:DevExpress.Snap.Extensions.SnapDockManager"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Extensions.Localization.SnapExtensionsLocalizer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SnapExtensionsLocalizer class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Extensions.Localization.SnapExtensionsLocalizer.Active">
+            <summary>
+                <para>Specifies a localizer object providing localization of a Snap application's dock manager at runtime.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> descendant, used to localize the user interface at runtime. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Extensions.Localization.SnapExtensionsLocalizer.CreateDefaultLocalizer">
+            <summary>
+                <para>Returns a Localizer object storing resources based on the thread's language and regional settings (culture).
+
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> object, storing resources based on the thread's language and regional settings (culture).
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Extensions.Localization.SnapExtensionsLocalizer.CreateResXLocalizer">
+            <summary>
+                <para>For internal use. Returns a Localizer object storing resources based on the thread's language and regional settings (culture). 
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> object, storing resources based on the thread's language and regional settings (culture).
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Extensions.Localization.SnapExtensionsLocalizer.GetString(DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId)">
+            <summary>
+                <para>Returns a localized string for the given string identifier.
+</para>
+            </summary>
+            <param name="id">
+		A <see cref="T:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId"/> enumeration value, identifying the string to localize.
+
+            </param>
+            <returns>A <see cref="T:System.String"/> value, corresponding to the specified identifier.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId">
+
+            <summary>
+                <para>Contains values corresponding to strings that can be localized for a Snap application's <see cref="T:DevExpress.Snap.Extensions.SnapDockManager"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.AddDataSource">
+            <summary>
+                <para><para>"<b>Add Data Source...</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.BarCodeSmartTagItem_Alignment">
+            <summary>
+                <para><para>"<b>Alignment</b>"</para>
+
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.BarCodeSmartTagItem_AutoModule">
+            <summary>
+                <para><para>"<b>Auto-Module</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.BarCodeSmartTagItem_Data">
+            <summary>
+                <para><para>"<b>Data</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.BarCodeSmartTagItem_Module">
+            <summary>
+                <para><para>"<b>Module</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.BarCodeSmartTagItem_Orientation">
+            <summary>
+                <para><para>"<b>Orientation</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.BarCodeSmartTagItem_ShowData">
+            <summary>
+                <para><para>"<b>Show Data</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.BarCodeSmartTagItem_Symbology">
+            <summary>
+                <para><para>"<b>Symbology</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.BarCodeSmartTagItem_TextAlignment">
+            <summary>
+                <para><para>"<b>Text Alignment</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.Caption_Appearance">
+            <summary>
+                <para><para>"<b>Appearance</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.Caption_Data">
+            <summary>
+                <para><para>"<b>Data Tools</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.Caption_Group">
+            <summary>
+                <para><para>"<b>Group Tools</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.Caption_GroupDesign">
+            <summary>
+                <para><para>"<b>Group</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.Caption_SNList">
+            <summary>
+                <para><para>"<b>List Tools</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.Caption_SNListDesign">
+            <summary>
+                <para><para>"<b>List</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.Caption_SNMergeField">
+            <summary>
+                <para><para>"<b>Field Tools</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.Caption_SNMergeFieldDesign">
+            <summary>
+                <para><para>"<b>Field</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.EditDataSource">
+            <summary>
+                <para><para>"<b>Edit Data Source...</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.FieldListDockPanel_Text">
+            <summary>
+                <para><para>"<b>Data Explorer</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.ImageSmartTagItem_Sizing">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.ImageSmartTagItem_UpdateMode">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.Msg_ContainsIllegalSymbols">
+            <summary>
+                <para><para>"<b>Input format string contains illegal symbol(s).</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.Msg_Error">
+            <summary>
+                <para><para>"<b>Error</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.RemoveDataSource">
+            <summary>
+                <para><para>"<b>Remove Data Source</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.ReportExplorerDockPanel_Text">
+            <summary>
+                <para><para>"<b>Report Explorer</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.SnapBarToolbarsListItem_Caption">
+            <summary>
+                <para><para>"<b>@amp;amp;Windows</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.ThemesBar_Text">
+            <summary>
+                <para><para>"<b>Themes</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.ThemesRibbonPageGroup_Text">
+            <summary>
+                <para><para>"<b>Themes</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.ViewBar_Text">
+            <summary>
+                <para><para>"<b>View</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Snap.Extensions.Localization.SnapExtensionsStringId.ViewRibbonPageGroup_Text">
+            <summary>
+                <para><para>"<b>View</b>"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Snap.Extensions.SnapDockManager">
+
+            <summary>
+                <para>Provides dock panels for a Snap application.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Snap.Extensions.SnapDockManager.#ctor">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.Snap.Extensions.SnapDockManager"/> class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Extensions.SnapDockManager.#ctor(System.Windows.Forms.ContainerControl)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.Snap.Extensions.SnapDockManager"/> class with the specified container control.
+</para>
+            </summary>
+            <param name="form">
+		A <see cref="T:System.Windows.Forms.ContainerControl"/> object, specifying the container control that will display the dock panels owned by the created dock manager.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Extensions.SnapDockManager.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.Snap.Extensions.SnapDockManager"/> class with the specified container.
+</para>
+            </summary>
+            <param name="container">
+		A <see cref="T:System.ComponentModel.IContainer"/> object, specifying functionality for containers. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Snap.Extensions.SnapDockManager.InitializeCore">
+            <summary>
+                <para>Performs basic initialization of the created <see cref="T:DevExpress.Snap.Extensions.SnapDockManager"/> object and assigns the specified Design Panel to it.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Snap.Extensions.SnapDockManager.SnapControl">
+            <summary>
+                <para>Specifies the <see cref="T:DevExpress.Snap.SnapControl"/> and its settings. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Snap.SnapControl"/> object that contains the Snap's settings. 
+</value>
+
+
+        </member>
+    </members>
+</doc>
